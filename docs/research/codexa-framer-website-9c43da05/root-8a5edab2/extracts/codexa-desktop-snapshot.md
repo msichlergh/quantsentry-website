@@ -1,0 +1,398 @@
+- generic [active] [ref=e1] [box=0,0,1425,10146]:
+  - generic [ref=e3] [box=0,0,1425,10146]:
+    - navigation [ref=e6] [box=0,0,1425,72]:
+      - generic [ref=e7] [box=113,0,1200,72]:
+        - link "Codexa" [ref=e10] [cursor=pointer] [box=137,20,113,32]:
+          - /url: ./#home
+          - paragraph [ref=e15] [box=171,20,79,32]: Codexa
+        - generic [ref=e16] [box=515,21,396,30]:
+          - link "Features" [ref=e18] [cursor=pointer] [box=515,21,80,30]:
+            - /url: ./product/features
+            - heading "Features" [level=4] [ref=e20] [box=526,27,58,18]
+          - link "Pricing" [ref=e22] [cursor=pointer] [box=594,21,67,30]:
+            - /url: ./product/pricing
+            - heading "Pricing" [level=4] [ref=e24] [box=605,27,45,18]
+          - link "Changelog" [ref=e26] [cursor=pointer] [box=662,21,94,30]:
+            - /url: ./product/changelog
+            - heading "Changelog" [level=4] [ref=e28] [box=673,27,72,18]
+          - heading "Company" [level=4] [ref=e32] [cursor=pointer] [box=766,27,63,18]
+          - link "FAQs" [ref=e35] [cursor=pointer] [box=853,21,57,30]:
+            - /url: ./product/faqs
+            - heading "FAQs" [level=4] [ref=e37] [box=864,27,35,18]
+        - generic [ref=e38] [box=922,18,366,36]:
+          - link "Contact Contact" [ref=e40] [cursor=pointer] [box=1090,18,81,36]:
+            - /url: ./company/support#support
+            - generic [ref=e41] [box=1103,27,55,18]:
+              - heading "Contact" [level=4] [ref=e43] [box=1103,27,55,18]
+              - heading "Contact" [level=4] [ref=e45] [box=1103,45,55,18]
+          - link "Get Started Get Started" [ref=e47] [cursor=pointer] [box=1183,18,105,36]:
+            - /url: ./company/sales#sales
+            - generic [ref=e48] [box=1196,27,79,18]:
+              - heading "Get Started" [level=4] [ref=e50] [box=1196,27,79,18]
+              - heading "Get Started" [level=4] [ref=e52] [box=1196,45,79,18]
+    - main [ref=e54] [box=0,0,1425,9385]:
+      - generic [ref=e56] [box=113,0,1200,1220]:
+        - generic [ref=e59] [box=185,130,1056,265]:
+          - generic [ref=e60] [box=185,130,1056,199]:
+            - heading "Everything you need to build with AI" [level=1] [ref=e62] [box=413,130,600,134]
+            - paragraph [ref=e64] [box=488,276,450,52]: Write workflow logic in code and let Codexa automate, schedule, and optimize everything.
+          - link "Get started free Get started free" [ref=e69] [cursor=pointer] [box=634,353,156,42]:
+            - /url: ./company/sales#sales
+            - generic [ref=e70] [box=658,365,108,18]:
+              - paragraph [ref=e72] [box=658,365,108,18]: Get started free
+              - paragraph [ref=e74] [box=658,383,108,18]: Get started free
+        - img "BG" [ref=e94] [box=165,445,1096,638]
+        - generic [ref=e97] [box=145,1133,1136,55]:
+          - paragraph [ref=e99] [box=177,1142,160,36]: TRUSTED BY INDUSTRY LEADERS WORLDWIDE
+          - list [ref=e102] [box=332,1133,880,55]:
+            - listitem [ref=e103] [box=332,1143,817,35]
+            - listitem [ref=e113] [box=1213,1143,817,35]
+            - listitem [ref=e123] [box=2094,1143,817,35]
+            - listitem [ref=e133] [box=2975,1143,817,35]
+      - generic [ref=e144] [box=113,1220,1200,941]:
+        - generic [ref=e145] [box=113,1284,1200,221]:
+          - paragraph [ref=e154] [box=678,1291,89,17]: THE SOLUTION
+          - heading "A unified platform built for scalable development" [level=2] [ref=e156] [box=388,1326,650,114]
+          - paragraph [ref=e158] [box=463,1452,500,52]: Codexa brings workflows, automation, API integration, and AI-driven insights into one cohesive system.
+        - generic [ref=e159] [box=113,1553,1200,480]:
+          - generic [ref=e160] [box=113,1553,384,480]:
+            - generic [ref=e166] [box=137,1667,336,102]:
+              - heading "Clean, powerful APIs" [level=3] [ref=e168] [box=137,1667,336,26]
+              - paragraph [ref=e170] [box=137,1699,302,70]: Integrate your systems instantly with well-documented, developer-first API endpoints.
+            - generic [ref=e176] [box=137,1907,336,102]:
+              - heading "AI-enhanced insights" [level=3] [ref=e178] [box=137,1907,336,26]
+              - paragraph [ref=e180] [box=137,1939,302,70]: Analyze performance, detect issues, and optimize reliability with intelligent, real-time metrics.
+          - generic [ref=e184] [box=521,1577,384,432]:
+            - generic [ref=e185] [box=521,1573,384,440]: ".`!+_>,.. ..I+?+,. ..I+lcOCUUCv~. '(xrvYQO?ii`' .;QMqW@$#f-_tk#>. ^X*C1_]Q@@&mah/`. .c@#k$&cf[. :0@L`./BM+ I|tk$dp%8l ^1a$Q]0d$$$$$MmC@$ai.X$$dOM@$$$$B0J(8@uI. ')W$$$MC@$@$8wcrvq%@$-:w$$*JxxCo$$$$#q$$$@X;. 'YoXqC<:h$$qdbaY^[qak$-\"Z@awz'}ZvqCB$B]l[wUOh! 'zz8$$@@Q^}YBU\\$$Y'h@$@-;d$$$!~B$W~Mo_,<MWB$@0j>. `(B$$WJBWpz%@$@B&@W~~%$%+`J$$J^J$W&Mk$$pU#@k#$$$c^. ^L$@%ML@*%$$$@$$oL;''_@$$-;b$$j`,:)OB$$$$$@hBhd%%$hl. ^QMoMvt$$$$$$$$*hhuoW%@$$$-`J$$$B&MYzMhB$$$$$$$pvWh*oi. }z8$@8p$$@$$$$o%$d;fW@$$$$[;b$$$$%ql+$BnB$$$$$$Mq$$BQf` -M$$#`^Lw@$r>ZM$$$*0u|j%8B?,w$MY]|zw8$$$vX~M@Ld-^v@$@u` \"*$ob$#%$$$$BIXh$$$$$@@@$@hl.|B$$@@$$$$$@C_z$$$$Ba@8p$$). 't@8n@$$$$@h$$_LJb$B@|>jw@$$?,m$$hU]iLaB$YM_k$$W$$$$$dw$@I' ')[+-B$@$$$WB$$b;!vk@$@$$$$@$1!M$$$$$@$@#Z],X$$$p$$$$$$zZ|1\" :w$*Q$$$$Q(0J$$$$$$$$@%M#%@$$?Ia@$BW*WB$$$$$$$$8nZjB@$$oL$8[' :o$$#Z$B$$$*~XUB$$$$$$$@Mb8$BqI.|MW$%qM$$$$$$$@hw+w$@$@$Md$@$1. \"Z$$$8\\xc%$$@$B*z%$$$$$$$$$$$$hl.n@$$$$$$$$@$$$mb$$$$$$*X-O$$$M~. -W%@pd#WY%$$@$$@Q<\\)uM$$$@$$$$$}:p$$@$$$$$Bm}r|1*$$$@$$d#Mdz@&@n. .1w*0B$$Mtw@$$@X@$$J`j8W(M$@$$$$|i&$@$@$$Yd@&1[&$$m*$$@@]L$$$Od0v' '>(r@$$$$@k*$$@$@$$@$b1!uw&&$$$${i&$$$@onw+?YB$@$$$B@$$YB$$@$$w{i. ]$@B$$@@c$$$$$$$$$$$$$MX&$$@$$-:p$$$$@@M$$$$$$$$$$@$$88$$$%$$O' ^t$$w$$$$C$$$$$$*$$$$$$$$$$$$$bI'z$$$$$$@$$$$$$#@$$$$$8&$$$*8$ai. .mb0&b$$$$zW$$$$$$LB$$$$$$$$@pUI'.'+U%@$$@$$$$$U&$$$$$@)%$$$$hht@~ -@ZY\\k$@@$$kdoMo0o@p|#aW$$$$$@$$-^L$$$@$$$$#oUnB%J**Mbm@$$$@$)vt&Z. 1X#$&v$$$@$@$%Z@$$$%C%$o0@$$$$$$f!M$$$$@$#0@$$$$$@$ba@$$$@$$8q@8nX. `a$$@0b$$$$$$B@$$$$$$$$$@n$$@$@$z>B$$$$$**$$$$$$$$$@8$$$$@$@f%$$B+ i$@$$@ja$$$$$$$$$$$$@@$$$a$$$$@${!M@$$$$$M$$$$$$$@$@$$$$$$BY&$$$$C. I@$$$$$k/#B$$$$$$@*$$$$@$@$$$$@*i.c$$$$@$@$$$$@8%$$$$@$@8LtB$$@B@n. 'md$$$$$$*tJ&$8mZz*qo$$@$$$$@$#t..,d$@@$$$$$$@QdqUw*@BpjmB@$$$$&h> -c$$$$$@@mWO*B$$$$$bW$$$$$$$$$oi.z@$$$$$@$@$X@$$$$@&0WpW$$$$@$d]' '\"M$$$$$hB$$$$$$$$$@k&$$$$$$$$${Ia$$$$$@$$$d%$$$$$$$$@$#@$@$$$].. \"/qBa&$@$$$$@$$$@$$$8Q8&B$$$$$)iW$$$$$%8hq@$$$$$$$$$$$@$$qB*|f. iBWoc0$$$$$$$$@$$$$$$$oB@$$$$8+^C@$$$@@*$$@@$@$$$$$$$$$$#jZb&w' `ka$Md0@$$$$%#hqO%$$$$$$$$$$@Z>^j&$$$$$$$$$$$Zmb*&@$$$$aZq#@d]. .lq@$@8Jd$$$$$$$Wk$@$$$$$$@a#$)iW8@$$$$$$$$$ab$$$$$$$Bc*$$$W-. .}B$@$$$%ao@$$$$*#$$$@$$$$$$$]Ih$$$$$$$@$$BQ@$$@$8aW$$@$$@v' .^q@$$$$@U@$$$$$%L&$$$$$$$$m:'tB$$$$$$$@b0$$$$$@oo$$$$$&]. ^n@$$$$WZB$@$$$$&ZqLqkpddLI'/mhmbdOZwa@$@$$$$ah$$$$$q>' -bb*p$$@aZ8$$$$@@@@B%B$$$?:w$$$BB@$$$$$$$$qp%$$&MOOL` 'J$$&n@$$$BXjB$$$$$$$$$$&~`J$$$$$$$$$$$0\\#$$$$pw$$Bl. `j%$$8qW@$Wk$#wZ#$$$$$$k>^nB$$@$$%dZhB%W$B%ba$$$ZI .\"ud@$$$$@p*$$$$$$$$$w*-^QO#$@$$$$$$$w8$$$$@qU~' ']qUk$$$$*Uw$$$$@kOBdI.u@hJ@$$$@WLqB$$@axCv:. .^x%Wh0q@@@%#aMB@$B\\,'fq$$B8#*8@@$oUqW%OI.. .^>nB%Xa@$$$$%ZQ^. .}O*$$$$$8Zb@d~,' '<zk%bppmOw]. <ZwqkbhW#L+,. '\">]}?!.. ..;_[]~;'."
+            - generic [ref=e186] [box=521,1573,384,440]: ".`!+_>,.. ..I+?+,. ..I+lcOCUUCv~. '(xrvYQO?ii`' .;QMqW@$#f-_tk#>. ^X*C1_]Q@@&mah/`. .c@#k$&cf[. :0@L`./BM+ I|tk$dp%8l ^1a$Q]0d$$$$$MmC@$ai.X$$dOM@$$$$B0J(8@uI. ')W$$$MC@$@$8wcrvq%@$-:w$$*JxxCo$$$$#q$$$@X;. 'YoXqC<:h$$qdbaY^[qak$-\"Z@awz'}ZvqCB$B]l[wUOh! 'zz8$$@@Q^}YBU\\$$Y'h@$@-;d$$$!~B$W~Mo_,<MWB$@0j>. `(B$$WJBWpz%@$@B&@W~~%$%+`J$$J^J$W&Mk$$pU#@k#$$$c^. ^L$@%ML@*%$$$@$$oL;''_@$$-;b$$j`,:)OB$$$$$@hBhd%%$hl. ^QMoMvt$$$$$$$$*hhuoW%@$$$-`J$$$B&MYzMhB$$$$$$$pvWh*oi. }z8$@8p$$@$$$$o%$d;fW@$$$$[;b$$$$%ql+$BnB$$$$$$Mq$$BQf` -M$$#`^Lw@$r>ZM$$$*0u|j%8B?,w$MY]|zw8$$$vX~M@Ld-^v@$@u` \"*$ob$#%$$$$BIXh$$$$$@@@$@hl.|B$$@@$$$$$@C_z$$$$Ba@8p$$). 't@8n@$$$$@h$$_LJb$B@|>jw@$$?,m$$hU]iLaB$YM_k$$W$$$$$dw$@I' ')[+-B$@$$$WB$$b;!vk@$@$$$$@$1!M$$$$$@$@#Z],X$$$p$$$$$$zZ|1\" :w$*Q$$$$Q(0J$$$$$$$$@%M#%@$$?Ia@$BW*WB$$$$$$$$8nZjB@$$oL$8[' :o$$#Z$B$$$*~XUB$$$$$$$@Mb8$BqI.|MW$%qM$$$$$$$@hw+w$@$@$Md$@$1. \"Z$$$8\\xc%$$@$B*z%$$$$$$$$$$$$hl.n@$$$$$$$$@$$$mb$$$$$$*X-O$$$M~. -W%@pd#WY%$$@$$@Q<\\)uM$$$@$$$$$}:p$$@$$$$$Bm}r|1*$$$@$$d#Mdz@&@n. .1w*0B$$Mtw@$$@X@$$J`j8W(M$@$$$$|i&$@$@$$Yd@&1[&$$m*$$@@]L$$$Od0v' '>(r@$$$$@k*$$@$@$$@$b1!uw&&$$$${i&$$$@onw+?YB$@$$$B@$$YB$$@$$w{i. ]$@B$$@@c$$$$$$$$$$$$$MX&$$@$$-:p$$$$@@M$$$$$$$$$$@$$88$$$%$$O' ^t$$w$$$$C$$$$$$*$$$$$$$$$$$$$bI'z$$$$$$@$$$$$$#@$$$$$8&$$$*8$ai. .mb0&b$$$$zW$$$$$$LB$$$$$$$$@pUI'.'+U%@$$@$$$$$U&$$$$$@)%$$$$hht@~ -@ZY\\k$@@$$kdoMo0o@p|#aW$$$$$@$$-^L$$$@$$$$#oUnB%J**Mbm@$$$@$)vt&Z. 1X#$&v$$$@$@$%Z@$$$%C%$o0@$$$$$$f!M$$$$@$#0@$$$$$@$ba@$$$@$$8q@8nX. `a$$@0b$$$$$$B@$$$$$$$$$@n$$@$@$z>B$$$$$**$$$$$$$$$@8$$$$@$@f%$$B+ i$@$$@ja$$$$$$$$$$$$@@$$$a$$$$@${!M@$$$$$M$$$$$$$@$@$$$$$$BY&$$$$C. I@$$$$$k/#B$$$$$$@*$$$$@$@$$$$@*i.c$$$$@$@$$$$@8%$$$$@$@8LtB$$@B@n. 'md$$$$$$*tJ&$8mZz*qo$$@$$$$@$#t..,d$@@$$$$$$@QdqUw*@BpjmB@$$$$&h> -c$$$$$@@mWO*B$$$$$bW$$$$$$$$$oi.z@$$$$$@$@$X@$$$$@&0WpW$$$$@$d]' '\"M$$$$$hB$$$$$$$$$@k&$$$$$$$$${Ia$$$$$@$$$d%$$$$$$$$@$#@$@$$$].. \"/qBa&$@$$$$@$$$@$$$8Q8&B$$$$$)iW$$$$$%8hq@$$$$$$$$$$$@$$qB*|f. iBWoc0$$$$$$$$@$$$$$$$oB@$$$$8+^C@$$$@@*$$@@$@$$$$$$$$$$#jZb&w' `ka$Md0@$$$$%#hqO%$$$$$$$$$$@Z>^j&$$$$$$$$$$$Zmb*&@$$$$aZq#@d]. .lq@$@8Jd$$$$$$$Wk$@$$$$$$@a#$)iW8@$$$$$$$$$ab$$$$$$$Bc*$$$W-. .}B$@$$$%ao@$$$$*#$$$@$$$$$$$]Ih$$$$$$$@$$BQ@$$@$8aW$$@$$@v' .^q@$$$$@U@$$$$$%L&$$$$$$$$m:'tB$$$$$$$@b0$$$$$@oo$$$$$&]. ^n@$$$$WZB$@$$$$&ZqLqkpddLI'/mhmbdOZwa@$@$$$$ah$$$$$q>' -bb*p$$@aZ8$$$$@@@@B%B$$$?:w$$$BB@$$$$$$$$qp%$$&MOOL` 'J$$&n@$$$BXjB$$$$$$$$$$&~`J$$$$$$$$$$$0\\#$$$$pw$$Bl. `j%$$8qW@$Wk$#wZ#$$$$$$k>^nB$$@$$%dZhB%W$B%ba$$$ZI .\"ud@$$$$@p*$$$$$$$$$w*-^QO#$@$$$$$$$w8$$$$@qU~' ']qUk$$$$*Uw$$$$@kOBdI.u@hJ@$$$@WLqB$$@axCv:. .^x%Wh0q@@@%#aMB@$B\\,'fq$$B8#*8@@$oUqW%OI.. .^>nB%Xa@$$$$%ZQ^. .}O*$$$$$8Zb@d~,' '<zk%bppmOw]. <ZwqkbhW#L+,. '\">]}?!.. ..;_[]~;'."
+          - generic [ref=e187] [box=929,1553,384,480]:
+            - generic [ref=e193] [box=953,1667,336,102]:
+              - heading "Automation tools built in" [level=3] [ref=e195] [box=953,1667,336,26]
+              - paragraph [ref=e197] [box=953,1699,302,70]: Create workflows, triggers, and background jobs without external services or extra infrastructure.
+            - generic [ref=e203] [box=953,1907,336,102]:
+              - heading "Enterprise-level control" [level=3] [ref=e205] [box=953,1907,336,26]
+              - paragraph [ref=e207] [box=953,1939,302,70]: Manage roles, permissions, compliance, and security — all handled automatically at scale.
+      - generic [ref=e209] [box=113,2161,1200,1896]:
+        - generic [ref=e210] [box=113,2225,1200,156]:
+          - paragraph [ref=e219] [box=693,2231,60,17]: FEATURES
+          - heading "Build real products with powerful developer tooling" [level=2] [ref=e221] [box=388,2307,650,114]
+        - generic [ref=e222] [box=113,2429,1200,1500]:
+          - generic [ref=e223] [box=113,2429,1200,500]:
+            - generic [ref=e227] [box=233,2527,360,304]:
+              - generic [ref=e229] [box=249,2543,328,22]:
+                - heading "Workflow sync" [level=5] [ref=e231] [box=249,2543,236,22]
+                - paragraph [ref=e240] [box=513,2545,48,18]: Active
+              - generic [ref=e242] [box=249,2605,328,22]:
+                - heading "Automation enabled" [level=5] [ref=e244] [box=249,2605,236,22]
+                - paragraph [ref=e253] [box=513,2608,48,18]: Active
+              - generic [ref=e255] [box=249,2668,328,22]:
+                - heading "Error handling" [level=5] [ref=e257] [box=249,2668,236,22]
+                - paragraph [ref=e266] [box=513,2670,64,18]: Inactive
+              - generic [ref=e268] [box=249,2730,328,22]:
+                - heading "API integration" [level=5] [ref=e270] [box=249,2730,236,22]
+                - paragraph [ref=e279] [box=513,2732,64,18]: Inactive
+              - generic [ref=e281] [box=249,2793,328,22]:
+                - heading "Rate limits" [level=5] [ref=e283] [box=249,2793,236,22]
+                - paragraph [ref=e292] [box=513,2795,64,18]: Inactive
+            - generic [ref=e296] [box=713,2519,600,321]:
+              - generic [ref=e297] [box=745,2543,536,155]:
+                - heading "Build automation with clean code" [level=3] [ref=e299] [box=745,2543,440,97]
+                - paragraph [ref=e301] [box=745,2651,400,46]: Define workflows, manage execution, and control system behavior using readable functions.
+              - generic [ref=e303] [box=745,2722,536,94]:
+                - paragraph [ref=e308] [box=771,2722,510,23]: Define automation using simple, explicit logic
+                - paragraph [ref=e313] [cursor=pointer] [box=771,2757,510,23]: Process data reliably across different execution states
+                - paragraph [ref=e318] [box=771,2792,510,23]: Scale workflows without breaking existing behavior
+          - generic [ref=e319] [box=113,2929,1200,500]:
+            - generic [ref=e323] [box=113,3019,600,321]:
+              - generic [ref=e324] [box=145,3043,536,155]:
+                - heading "Track system metrics instantly" [level=3] [ref=e326] [box=145,3043,440,97]
+                - paragraph [ref=e328] [box=145,3151,400,46]: Observe how your workflows perform in production with clear metrics, live signals.
+              - generic [ref=e330] [box=145,3222,536,94]:
+                - paragraph [ref=e335] [box=171,3222,510,23]: Monitor execution rates and queue performance
+                - paragraph [ref=e340] [cursor=pointer] [box=171,3257,510,23]: Detect errors and retries as they happen
+                - paragraph [ref=e345] [box=171,3292,510,23]: Make informed decisions using live operational data
+            - generic [ref=e349] [box=833,2999,360,360]:
+              - generic [ref=e350] [box=833,3023,360,17]:
+                - paragraph [ref=e352] [box=843,3023,52,17]: PLANNED
+                - paragraph [ref=e354] [box=982,3023,52,17]: TESTING
+                - paragraph [ref=e356] [box=1122,3023,60,17]: RELEASED
+              - generic [ref=e388] [box=853,3097,381,220]:
+                - paragraph [ref=e392] [box=1030,3289,126,17]: Core Dashboard v3
+                - paragraph [ref=e396] [box=950,3229,126,17]: Execution retries
+                - paragraph [ref=e400] [box=870,3169,141,17]: Performance metrics
+                - paragraph [ref=e404] [box=1029,3109,97,17]: Release Bento
+          - generic [ref=e407] [box=113,3429,1200,500]:
+            - generic [ref=e411] [box=245,3511,336,336]:
+              - generic [ref=e412] [box=245,3511,336,70]:
+                - generic [ref=e413] [box=245,3511,336,53]
+                - paragraph [ref=e425] [box=245,3564,126,17]: System throughput
+              - generic [ref=e426] [box=245,3605,336,242]:
+                - paragraph [ref=e436] [box=257,3806,53,17]
+                - paragraph [ref=e448] [box=339,3806,60,17]
+                - paragraph [ref=e460] [box=425,3806,60,17]
+                - paragraph [ref=e472] [box=511,3806,60,17]
+            - generic [ref=e478] [box=713,3519,600,321]:
+              - generic [ref=e479] [box=745,3543,536,155]:
+                - heading "Automate and stabilize your pipelines" [level=3] [ref=e481] [box=745,3543,440,97]
+                - paragraph [ref=e483] [box=745,3651,400,46]: Turn real-time system signals into reliable automation. Define clear execution logic, handle failures.
+              - generic [ref=e485] [box=745,3722,536,94]:
+                - paragraph [ref=e490] [box=771,3722,510,23]: Run custom logic with simple Python decorators
+                - paragraph [ref=e495] [cursor=pointer] [box=771,3757,510,23]: Process batches and handle data programmatically
+                - paragraph [ref=e500] [box=771,3792,510,23]: Scale workflows as your project grows
+      - generic [ref=e502] [box=113,4057,1200,913]:
+        - generic [ref=e503] [box=113,4121,1200,156]:
+          - paragraph [ref=e512] [box=678,4168,89,17]: HOW IT WORKS
+          - heading "From setup to automation in 3 simple steps" [level=2] [ref=e514] [box=388,4203,650,114]
+        - generic [ref=e515] [box=113,4325,1200,517]:
+          - generic [ref=e519] [box=137,4349,352,469]:
+            - heading "INTEGRATING…" [level=5] [ref=e552] [cursor=pointer] [box=264,4447,97,17]:
+              - mark [ref=e553] [box=264,4446,97,20]: INTEGRATING…
+            - generic [ref=e558] [box=137,4709,352,109]:
+              - heading "STEP 1" [level=5] [ref=e560] [cursor=pointer] [box=137,4709,60,18]:
+                - mark [ref=e561] [box=137,4708,60,21]: STEP 1
+              - generic [ref=e562] [box=137,4740,352,78]:
+                - heading "Connect your existing tools" [level=5] [ref=e564] [box=137,4740,352,26]
+                - paragraph [ref=e566] [box=137,4772,317,46]: We integrate with your stack instantly, without complex setup.
+          - generic [ref=e570] [box=537,4349,352,469]:
+            - generic [ref=e574] [box=537,4349,352,378]:
+              - generic [ref=e576] [box=551,4363,289,41]:
+                - paragraph [ref=e578] [box=551,4363,289,22]: Flow engine
+                - paragraph [ref=e580] [box=551,4388,289,17]
+              - generic [ref=e585] [box=551,4441,289,41]:
+                - paragraph [ref=e587] [box=551,4441,289,22]: Integration layer
+                - paragraph [ref=e589] [box=551,4465,289,17]: Synced recently
+              - generic [ref=e597] [box=551,4518,289,41]:
+                - paragraph [ref=e599] [box=551,4518,289,22]: Automation scheduler
+                - paragraph [ref=e601] [box=551,4542,289,17]: Next cycle in 1h
+              - generic [ref=e605] [box=551,4595,289,41]:
+                - paragraph [ref=e607] [box=551,4595,289,22]: Action queue
+                - paragraph [ref=e609] [box=551,4619,289,17]: 120 items remaining
+              - generic [ref=e613] [box=551,4672,289,41]:
+                - paragraph [ref=e615] [box=551,4672,289,22]: System health
+                - paragraph [ref=e617] [box=551,4697,289,17]: No issues detected
+            - generic [ref=e620] [box=537,4709,352,109]:
+              - heading "STEP 2" [level=5] [ref=e622] [cursor=pointer] [box=537,4709,60,18]:
+                - mark [ref=e623] [box=537,4708,60,21]: STEP 2
+              - generic [ref=e624] [box=537,4740,352,78]:
+                - heading "Automate your daily workflows" [level=5] [ref=e626] [box=537,4740,352,26]
+                - paragraph [ref=e628] [box=537,4772,317,46]: Create streamlined processes that remove repetitive tasks.
+          - generic [ref=e632] [box=937,4349,352,469]:
+            - generic [ref=e636] [box=937,4349,336,336]:
+              - paragraph [ref=e653] [box=1083,4501,97,18]: 128 runs/min
+              - generic [ref=e654] [box=937,4349,119,70]:
+                - paragraph [ref=e661] [box=965,4349,67,53]: "128"
+                - paragraph [ref=e663] [box=937,4402,119,17]: Active Workflows
+            - generic [ref=e664] [box=937,4709,352,109]:
+              - heading "STEP 3" [level=5] [ref=e666] [cursor=pointer] [box=937,4709,60,18]:
+                - mark [ref=e667] [box=937,4708,60,21]: STEP 3
+              - generic [ref=e668] [box=937,4740,352,78]:
+                - heading "Track everything in real time" [level=5] [ref=e670] [box=937,4740,352,26]
+                - paragraph [ref=e672] [box=937,4772,317,46]: Monitor performance, spot bottlenecks early, and optimize operations.
+      - generic [ref=e674] [box=113,4970,1200,898]:
+        - generic [ref=e675] [box=113,5034,1200,156]:
+          - paragraph [ref=e684] [box=659,5081,126,17]: BEHIND THE SCENES
+          - heading "The decisions that keep Codexa reliable" [level=2] [ref=e686] [box=388,5116,650,114]
+        - generic [ref=e689] [box=113,5278,1200,502]:
+          - generic [ref=e690] [box=113,5278,1200,68]:
+            - heading "Developer Experience" [level=4] [ref=e694] [cursor=pointer] [box=486,5319,149,18]
+            - heading "Layout Stability" [level=4] [ref=e698] [cursor=pointer] [box=673,5319,107,18]
+            - heading "Production Ready" [level=4] [ref=e702] [cursor=pointer] [box=818,5319,121,18]
+          - generic [ref=e703] [box=113,5346,1200,434]:
+            - figure [ref=e707] [box=-5,5378,643,370]:
+              - code [ref=e719] [box=17,5432,591,240]: "useEffect(() => { const timer = setTimeout(() => { setEnabled(true); }, 500); return () => clearTimeout(timer); }, []); if (!enabled) return null; return <div>Feature enable"
+            - generic [ref=e721] [box=852,5378,429,271]:
+              - generic [ref=e722] [box=852,5378,429,205]:
+                - heading "Production-first behavior, without compromises" [level=3] [ref=e724] [box=852,5378,429,77]
+                - paragraph [ref=e726] [box=852,5467,400,116]: Every component is built with predictable, production-first behavior in mind. The structure stays clean and readable as projects grow, without relying on visual tricks or artificial demo states. What you see is what actually ships.
+              - link "Get Started Get Started" [ref=e728] [cursor=pointer] [box=852,5607,127,42]:
+                - /url: ./company/sales#sales
+                - generic [ref=e729] [box=876,5619,79,18]
+      - generic [ref=e735] [box=113,5868,1200,728]:
+        - generic [ref=e736] [box=113,5932,1200,156]:
+          - paragraph [ref=e745] [box=652,5939,141,17]: WHY TEAMS CHOOSE US
+          - heading "Your all-in-one platform for workflows" [level=2] [ref=e747] [box=388,5974,650,114]: Your all-in-one platformfor workflows
+        - generic [ref=e751] [box=293,6137,840,332]:
+          - generic [ref=e752] [box=293,6137,420,325]:
+            - paragraph [ref=e754] [box=325,6169,356,26]: Other Tools
+            - generic [ref=e755] [box=325,6227,356,203]:
+              - paragraph [ref=e760] [box=357,6227,324,23]: Slow onboarding, manual configuration
+              - paragraph [ref=e765] [box=357,6266,324,46]: Separate tools for automation, logs, monitoring
+              - paragraph [ref=e770] [box=357,6329,324,23]: Limited or no automation support
+              - paragraph [ref=e775] [box=357,6368,324,23]: Blind spots, delayed detection
+              - paragraph [ref=e780] [box=357,6407,324,23]: Extra cost, complex setup
+          - generic [ref=e781] [box=713,6137,420,332]:
+            - link "Codexa" [ref=e782] [cursor=pointer] [box=745,6169,111,32]:
+              - /url: ./#home
+              - paragraph [ref=e787] [box=777,6169,79,32]: Codexa
+            - generic [ref=e788] [box=745,6233,356,203]:
+              - paragraph [ref=e793] [box=777,6233,324,23]: Ready-to-use APIs with instant setup
+              - paragraph [ref=e798] [box=777,6273,324,23]: Everything unified in one platform
+              - paragraph [ref=e803] [box=777,6312,324,23]: Event-driven workflows built in
+              - paragraph [ref=e808] [box=777,6351,324,46]: Real-time insights and AI-assisted diagnostics
+              - paragraph [ref=e813] [box=777,6413,324,23]: Security and scaling integrated by default
+      - generic [ref=e815] [box=113,6597,1200,1100]:
+        - generic [ref=e816] [box=113,6661,1200,156]:
+          - paragraph [ref=e825] [box=696,6707,52,17]: PRICING
+          - heading "Simple plans, built for every team" [level=2] [ref=e827] [box=388,6743,650,114]: Simple plans,built for every team
+        - generic [ref=e828] [box=113,6865,1200,704]:
+          - generic [ref=e831] [box=113,6865,1200,575]:
+            - generic [ref=e832] [box=113,6865,1200,54]:
+              - heading "MONTHLY" [level=5] [ref=e835] [cursor=pointer] [box=587,6883,56,18]
+              - generic [ref=e837] [cursor=pointer] [box=659,6880,40,24]
+              - generic [ref=e840] [cursor=pointer] [box=699,6871,155,42]:
+                - heading "YEARLY" [level=5] [ref=e842] [box=715,6883,48,18]
+                - heading "20% OFF" [level=5] [ref=e844] [box=770,6883,68,18]
+            - generic [ref=e846] [box=113,6923,1200,517]:
+              - generic [ref=e848] [box=113,6923,400,517]:
+                - generic [ref=e849] [box=145,6955,336,210]
+                - generic [ref=e873] [box=145,7189,336,219]
+              - generic [ref=e911] [box=513,6923,400,517]:
+                - generic [ref=e912] [box=545,6955,336,210]
+                - generic [ref=e939] [box=545,7189,336,219]
+              - generic [ref=e977] [box=913,6923,400,517]:
+                - generic [ref=e978] [box=945,6955,336,210]
+                - generic [ref=e1002] [box=945,7189,336,219]
+          - generic [ref=e1039] [box=113,7440,1200,129]:
+            - heading "Secure Payment Processing" [level=5] [ref=e1045] [box=188,7500,150,45]
+            - heading "Instant Access After Purchase" [level=5] [ref=e1051] [box=488,7500,150,45]
+            - heading "Cancel Anytime, Hassle-Free" [level=5] [ref=e1057] [box=788,7500,150,45]
+            - heading "Lifetime Product Updates" [level=5] [ref=e1063] [box=1088,7500,150,45]
+      - generic [ref=e1065] [box=113,7697,1200,921]:
+        - generic [ref=e1066] [box=113,7761,1200,99]:
+          - paragraph [ref=e1075] [box=678,7767,89,17]: TESTIMONIALS
+          - heading "Trusted by developers" [level=2] [ref=e1077] [box=388,7803,650,57]
+        - generic [ref=e1078] [box=113,7908,1200,423]:
+          - generic [ref=e1082] [box=137,7932,352,164]:
+            - paragraph [ref=e1091] [box=137,7957,299,70]: “Setup was fast and seamless — our entire workflow became instantly cleaner and more organized.”
+            - generic [ref=e1092] [box=137,8051,352,45]:
+              - figure [ref=e1093] [box=137,8051,45,45]
+              - generic [ref=e1095] [box=194,8054,295,38]:
+                - paragraph [ref=e1097] [box=194,8054,295,18]: SARAH LEWIS
+                - paragraph [ref=e1099] [box=194,8075,295,17]: BACKEND DEVELOPER
+          - generic [ref=e1103] [box=537,7932,352,164]:
+            - paragraph [ref=e1112] [box=537,7957,299,70]: “We replaced multiple internal tools with one platform and doubled our delivery speed with confidence.”
+            - generic [ref=e1113] [box=537,8051,352,45]:
+              - figure [ref=e1114] [box=537,8051,45,45]
+              - generic [ref=e1116] [box=594,8054,295,38]:
+                - paragraph [ref=e1118] [box=594,8054,295,18]: JAMES PARKER
+                - paragraph [ref=e1120] [box=594,8075,295,17]: PRODUCT ENGINEER
+          - generic [ref=e1124] [box=937,7932,352,164]:
+            - paragraph [ref=e1133] [box=937,7957,299,70]: “Real-time insights reveal issues early, helping us ship fixes much faster and more reliably.”
+            - generic [ref=e1134] [box=937,8051,352,45]:
+              - figure [ref=e1135] [box=937,8051,45,45]
+              - generic [ref=e1137] [box=994,8054,295,38]:
+                - paragraph [ref=e1139] [box=994,8054,295,18]: ANIKA REDDY
+                - paragraph [ref=e1141] [box=994,8075,295,17]: SOFTWARE DEVELOPER
+          - generic [ref=e1145] [box=137,8144,352,164]:
+            - paragraph [ref=e1154] [box=137,8169,299,70]: “Built-in automation saved us hours of scripting and eliminated manual workflows completely.”
+            - generic [ref=e1155] [box=137,8262,352,45]:
+              - figure [ref=e1156] [box=137,8262,45,45]
+              - generic [ref=e1158] [box=194,8266,295,38]:
+                - paragraph [ref=e1160] [box=194,8266,295,18]: DAVID KIM
+                - paragraph [ref=e1162] [box=194,8287,295,17]: TECH LEAD
+          - generic [ref=e1166] [box=537,8144,352,164]:
+            - paragraph [ref=e1175] [box=537,8169,299,70]: “Shared environments keep our team aligned effortlessly without conflicts or unnecessary friction.”
+            - generic [ref=e1176] [box=537,8262,352,45]:
+              - figure [ref=e1177] [box=537,8262,45,45]
+              - generic [ref=e1179] [box=594,8266,295,38]:
+                - paragraph [ref=e1181] [box=594,8266,295,18]: LAURA MARTINEZ
+                - paragraph [ref=e1183] [box=594,8287,295,17]: ENGINEERING MANAGER
+          - generic [ref=e1187] [box=937,8144,352,164]:
+            - paragraph [ref=e1196] [box=937,8169,299,70]: “The platform feels reliable and fast — we scale with less overhead and far greater stability.”
+            - generic [ref=e1197] [box=937,8262,352,45]:
+              - figure [ref=e1198] [box=937,8262,45,45]
+              - generic [ref=e1200] [box=994,8266,295,38]:
+                - paragraph [ref=e1202] [box=994,8266,295,18]: OMAR ALI
+                - paragraph [ref=e1204] [box=994,8287,295,17]: FULL-STACK DEVELOPER
+        - generic [ref=e1205] [box=113,8379,1200,110]:
+          - heading "TRUSTED BY TEAMS WORLDWIDE" [level=5] [ref=e1207] [box=443,8379,540,18]
+          - list [ref=e1210] [box=413,8409,600,48]:
+            - listitem [ref=e1211] [box=413,8416,817,35]
+            - listitem [ref=e1221] [box=1294,8416,817,35]
+            - listitem [ref=e1231] [box=2175,8416,817,35]
+      - generic [ref=e1243] [box=113,8617,1200,640]:
+        - generic [ref=e1244] [box=113,8617,600,640]:
+          - generic [ref=e1245] [box=113,8617,600,293]:
+            - paragraph [ref=e1254] [box=177,8656,30,17]: FAQS
+            - heading "Got questions? We’ve got answers." [level=2] [ref=e1256] [box=145,8695,536,114]: Got questions?We’ve got answers.
+            - paragraph [ref=e1258] [box=145,8826,320,52]: Here’s everything you need to know before getting started.
+          - generic [ref=e1261] [box=113,9079,600,178]:
+            - generic [ref=e1262] [box=145,9111,536,56]:
+              - paragraph [ref=e1264] [box=145,9111,536,26]: Still have questions?
+              - paragraph [ref=e1266] [box=145,9141,360,26]: Contact us and we’ll help you out.
+            - link "View all FAQs View all FAQs" [ref=e1268] [cursor=pointer] [box=145,9183,141,42]:
+              - /url: ./product/faqs#faqs
+              - generic [ref=e1269] [box=169,9195,93,18]:
+                - paragraph [ref=e1271] [box=169,9195,93,18]: View all FAQs
+                - paragraph [ref=e1273] [box=169,9213,93,18]: View all FAQs
+        - generic [ref=e1274] [box=713,8617,600,640]:
+          - generic [ref=e1279] [cursor=pointer] [box=737,8641,552,32]:
+            - heading "What is Codexa?" [level=3] [ref=e1282] [box=737,8645,497,25]
+            - paragraph [ref=e1287] [box=737,8712,552,46]: Codexa is a developer-first automation platform for building workflows, background jobs, and event-driven pipelines with clean, readable code.
+          - generic [ref=e1292] [cursor=pointer] [box=737,8721,552,32]:
+            - heading "Who is Codexa built for?" [level=3] [ref=e1295] [box=737,8725,497,25]
+            - paragraph [ref=e1300] [box=737,8792,552,46]: Codexa is designed for developers, technical teams, and startups who want to automate processes without complex infrastructure setup.
+          - generic [ref=e1305] [cursor=pointer] [box=737,8801,552,32]:
+            - heading "Do I need prior ML or AI experience?" [level=3] [ref=e1308] [box=737,8805,497,25]
+            - paragraph [ref=e1313] [box=737,8872,552,46]: No. Codexa includes optional AI-powered insights, but core workflows run on simple Python functions and API calls.
+          - generic [ref=e1318] [cursor=pointer] [box=737,8881,552,32]:
+            - heading "What types of workflows can I build?" [level=3] [ref=e1321] [box=737,8885,497,25]
+            - paragraph [ref=e1326] [box=737,8952,552,46]: Anything from scheduled batch jobs to file processing, webhook triggers, real-time data pipelines, or internal automation.
+          - generic [ref=e1331] [cursor=pointer] [box=737,8961,552,32]:
+            - heading "Is Codexa cloud-hosted or self-hosted?" [level=3] [ref=e1334] [box=737,8965,497,25]
+            - paragraph [ref=e1339] [box=737,9032,552,46]: Codexa provides both options. You can use our managed cloud or deploy the runtime inside your own infrastructure.
+          - generic [ref=e1344] [cursor=pointer] [box=737,9041,552,32]:
+            - heading "Does Codexa scale with my project?" [level=3] [ref=e1347] [box=737,9045,497,25]
+            - paragraph [ref=e1352] [box=737,9112,552,46]: Yes. Codexa automatically handles concurrency, retries, and workload scaling as your workloads grow.
+          - generic [ref=e1357] [cursor=pointer] [box=737,9121,552,32]:
+            - heading "Does Codexa replace my existing dev tools?" [level=3] [ref=e1360] [box=737,9125,497,25]
+            - paragraph [ref=e1365] [box=737,9192,552,70]: No. Codexa complements your existing stack — it doesn’t replace your codebase, APIs, or infrastructure. You simply automate the parts that slow you down.
+          - generic [ref=e1370] [cursor=pointer] [box=737,9201,552,32]:
+            - heading "Is Codexa suitable for both small and large teams?" [level=3] [ref=e1373] [box=737,9205,497,25]
+            - paragraph [ref=e1378] [box=737,9272,552,46]: Yes. Solo developers can automate daily tasks quickly, while larger teams benefit from shared workflows, permissions, and scalable execution.
+    - contentinfo [ref=e1381] [box=0,9385,1425,761]:
+      - generic [ref=e1382] [box=0,9385,1425,737]:
+        - generic [ref=e1386] [box=113,9471,1200,279]:
+          - generic [ref=e1387] [box=137,9495,1152,165]:
+            - paragraph [ref=e1396] [box=662,9495,176,22]: 12K+ teams trust Codexa
+            - heading "Automate more. Ship faster." [level=2] [ref=e1398] [box=313,9525,800,134]: Automate more.Ship faster.
+          - link "Explore the Template Explore the Template" [ref=e1400] [cursor=pointer] [box=603,9684,218,42]:
+            - /url: https://buy.polar.sh/polar_cl_lvmZA1kYEOINNnx4bkeyZxW1ajP5d6vUQusL108riZ7
+            - generic [ref=e1401] [box=627,9696,144,18]:
+              - paragraph [ref=e1403] [box=627,9696,144,18]: Explore the Template
+              - paragraph [ref=e1405] [box=627,9714,144,18]: Explore the Template
+        - generic [ref=e1414] [box=113,9835,1200,287]:
+          - generic [ref=e1415] [box=113,9835,1200,238]:
+            - generic [ref=e1416] [box=113,9835,470,238]:
+              - generic [ref=e1417] [box=137,9890,422,70]:
+                - heading "Stay in the loop" [level=3] [ref=e1419] [box=137,9890,320,26]
+                - paragraph [ref=e1421] [box=137,9924,320,36]: Get insights on automated workflows, AI features, and product updates.
+              - generic [ref=e1422] [box=137,9976,360,42]:
+                - textbox "Enter your email" [ref=e1424] [box=157,9987,215,20]
+                - button "Submit" [ref=e1426] [cursor=pointer] [box=398,9976,99,42]
+            - link [ref=e1432] [cursor=pointer] [box=681,9922,64,64]:
+              - /url: ./#home
+            - generic [ref=e1436] [box=842,9835,470,238]:
+              - generic [ref=e1437] [box=866,9883,125,142]:
+                - heading "Product" [level=4] [ref=e1439] [box=866,9883,69,26]
+                - generic [ref=e1440] [box=866,9925,125,100]
+              - generic [ref=e1469] [box=1015,9883,125,142]:
+                - heading "Company" [level=4] [ref=e1471] [box=1015,9883,84,26]
+                - generic [ref=e1472] [box=1015,9925,125,100]
+              - generic [ref=e1501] [box=1164,9883,125,142]:
+                - heading "Legal" [level=4] [ref=e1503] [box=1164,9883,48,26]
+                - generic [ref=e1504] [box=1164,9925,125,100]
+          - generic [ref=e1533] [box=113,10073,1200,49]:
+            - paragraph [ref=e1536] [box=137,10089,253,17]: ©2026 CODEXA. ALL RIGHTS RESERVED.
+            - link "CREATED BY KADIR CALIK Created by KADIR CALIK" [ref=e1538] [cursor=pointer] [box=1111,10090,178,16]:
+              - /url: https://x.com/kadircalik
+              - paragraph [ref=e1541] [box=1111,10090,164,17]: CREATED BY KADIR CALIK
+              - paragraph [ref=e1545] [box=1111,10107,164,17]: Created by KADIR CALIK
+    - link [ref=e1549] [cursor=pointer] [box=1265,797,140,39]:
+      - /url: https://buy.polar.sh/polar_cl_lvmZA1kYEOINNnx4bkeyZxW1ajP5d6vUQusL108riZ7
+      - generic [ref=e1553] [box=1300,808,84,17]:
+        - paragraph [ref=e1555] [box=1300,808,84,17]: Get Template
+        - heading "Get Template" [level=4] [ref=e1557] [box=1300,825,84,17]
+  - link [ref=e1558] [cursor=pointer] [box=1265,842,140,38]:
+    - /url: https://www.framer.com
+    - paragraph [ref=e1563] [box=1335,861,0,0]: Create a free website with Framer, the website builder loved by startups, designers and agencies.

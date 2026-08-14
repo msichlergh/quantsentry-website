@@ -1,0 +1,102 @@
+.accordion {
+  min-width: 0;
+  border-top: 1px solid rgb(255 255 255 / 8%);
+}
+
+.row {
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.row h3 {
+  margin: 0;
+}
+
+.row button {
+  display: flex;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 0;
+  color: #f5f6f6;
+  background: transparent;
+  font: inherit;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.plus {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-radius: 50%;
+  color: #00d7cc;
+  background: rgb(0 205 193 / 16%);
+}
+
+.plus::before,
+.plus::after {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  width: 12px;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}
+
+.plus::after {
+  transform: rotate(90deg);
+  transition: transform 240ms ease;
+}
+
+.row[data-open="true"] .plus::after {
+  transform: rotate(0deg);
+}
+
+.answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 240ms ease, opacity 240ms ease;
+}
+
+.answer p {
+  min-height: 0;
+  margin: 0;
+  padding: 0 72px 0 24px;
+  overflow: hidden;
+  color: #929496;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.row[data-open="true"] .answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.row[data-open="true"] .answer p {
+  padding-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .row button {
+    min-height: 64px;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .answer p {
+    padding-right: 52px;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

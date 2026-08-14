@@ -1,0 +1,153 @@
+.page {
+  background: #060708;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  height: 900px;
+  padding-top: 72px;
+  overflow: hidden;
+  place-items: center;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  background-image:
+    radial-gradient(circle at 50% 48%, rgb(255 255 255 / 2%), transparent 39%),
+    radial-gradient(circle, rgb(255 255 255 / 2%) 0.7px, transparent 0.8px);
+  background-size: auto, 4px 4px;
+}
+
+.backdropNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(255 255 255 / 2.1%);
+  font-size: 430px;
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: -0.1em;
+  transform: translate(-49%, -43%);
+  white-space: nowrap;
+}
+
+.copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-top: -4px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  min-height: 30px;
+  margin: 0 0 17px;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 9px;
+  border-radius: 999px;
+  color: #00d7cc;
+  background: rgb(0 205 193 / 14%);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+.eyebrow span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 5px rgb(0 215 204 / 12%);
+}
+
+.copy h1 {
+  margin: 0;
+  color: #f5f6f6;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.description {
+  max-width: 500px;
+  margin: 16px 0 0;
+  color: #929496;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.button {
+  display: inline-flex;
+  height: 44px;
+  margin-top: 16px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border-radius: 999px;
+  color: #08070e;
+  background: #f5f6f6;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #dffefa;
+}
+
+.button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.spacer {
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 844px;
+  }
+
+  .backdropNumber {
+    font-size: 216px;
+    transform: translate(-49%, -35%);
+  }
+
+  .copy {
+    width: 100%;
+    margin-top: -1px;
+    padding: 0 28px;
+  }
+
+  .eyebrow {
+    margin-bottom: 17px;
+  }
+
+  .copy h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  .description {
+    max-width: 319px;
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .button {
+    height: 44px;
+    margin-top: 16px;
+    padding-inline: 24px;
+  }
+}

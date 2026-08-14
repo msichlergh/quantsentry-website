@@ -1,0 +1,15 @@
+- generic [ref=f8e3] [box=420,126,600,415]:
+  - generic [ref=f8e6] [box=420,245,600,196]:
+    - heading "This site can’t be reached" [level=1] [ref=f8e7] [box=420,245,600,30]
+    - paragraph [ref=f8e8] [box=420,294,205,18]:
+      - strong [ref=f8e9] [box=420,294,67,18]: localhost
+      - text: refused to connect.
+    - generic [ref=f8e10] [box=420,330,600,72]:
+      - paragraph [ref=f8e11] [box=420,330,600,24]: "Try:"
+      - list [ref=f8e12] [box=420,354,600,48]:
+        - listitem [ref=f8e13] [box=460,354,560,24]: Checking the connection
+        - listitem [ref=f8e14] [box=460,378,560,24]
+    - generic [ref=f8e16] [box=420,417,600,24]: ERR_CONNECTION_REFUSED
+  - generic [ref=f8e17] [box=420,492,600,50]:
+    - button "Reload" [ref=f8e19] [cursor=pointer] [box=946,492,74,32]
+    - button "Details" [ref=f8e20] [cursor=pointer] [box=420,492,74,34]

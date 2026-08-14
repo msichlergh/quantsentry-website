@@ -1,0 +1,679 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "scrollHeight": 13498
+  },
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Everything you need to build with AI",
+      "box": {
+        "x": 28,
+        "y": 120,
+        "width": 319,
+        "height": 151.1953125
+      },
+      "fontSize": "48px",
+      "lineHeight": "50.4px"
+    },
+    {
+      "tag": "H2",
+      "text": "A unified platform built for scalable development",
+      "box": {
+        "x": 28,
+        "y": 957.8125,
+        "width": 319,
+        "height": 132
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H3",
+      "text": "Clean, powerful APIs",
+      "box": {
+        "x": 28,
+        "y": 1304.109375,
+        "width": 319,
+        "height": 23.3984375
+      },
+      "fontSize": "18px",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "AI-enhanced insights",
+      "box": {
+        "x": 28,
+        "y": 1482.359375,
+        "width": 319,
+        "height": 23.3984375
+      },
+      "fontSize": "18px",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Automation tools built in",
+      "box": {
+        "x": 28,
+        "y": 1682.359375,
+        "width": 319,
+        "height": 23.3984375
+      },
+      "fontSize": "18px",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Enterprise-level control",
+      "box": {
+        "x": 28,
+        "y": 1904.109375,
+        "width": 319,
+        "height": 23.3984375
+      },
+      "fontSize": "18px",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "H2",
+      "text": "Build real products with powerful developer tooling",
+      "box": {
+        "x": 28,
+        "y": 2183.0078125,
+        "width": 319,
+        "height": 176
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H3",
+      "text": "Build automation with clean code",
+      "box": {
+        "x": 28,
+        "y": 2693.0078125,
+        "width": 319,
+        "height": 74.796875
+      },
+      "fontSize": "34px",
+      "lineHeight": "37.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Track system metrics instantly",
+      "box": {
+        "x": 28,
+        "y": 3469.5546875,
+        "width": 319,
+        "height": 74.796875
+      },
+      "fontSize": "34px",
+      "lineHeight": "37.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Automate and stabilize your pipelines",
+      "box": {
+        "x": 28,
+        "y": 4214.6015625,
+        "width": 319,
+        "height": 112.1953125
+      },
+      "fontSize": "34px",
+      "lineHeight": "37.4px"
+    },
+    {
+      "tag": "H2",
+      "text": "From setup to automation in 3 simple steps",
+      "box": {
+        "x": 28,
+        "y": 4766.796875,
+        "width": 319,
+        "height": 132
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H2",
+      "text": "The decisions that keep Codexa reliable",
+      "box": {
+        "x": 28,
+        "y": 6681.8828125,
+        "width": 319,
+        "height": 132
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H3",
+      "text": "Production-first behavior, without compromises",
+      "box": {
+        "x": 28,
+        "y": 7140.8828125,
+        "width": 319,
+        "height": 67.203125
+      },
+      "fontSize": "28px",
+      "lineHeight": "33.6px"
+    },
+    {
+      "tag": "H2",
+      "text": "Your all-in-one platformfor workflows",
+      "box": {
+        "x": 28,
+        "y": 7542.5859375,
+        "width": 319,
+        "height": 132
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H2",
+      "text": "Simple plans,built for every team",
+      "box": {
+        "x": 28,
+        "y": 8397.3828125,
+        "width": 319,
+        "height": 132
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H3",
+      "text": "Starter",
+      "box": {
+        "x": 28,
+        "y": 8594.1796875,
+        "width": 319,
+        "height": 24
+      },
+      "fontSize": "20px",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "H3",
+      "text": "Pro",
+      "box": {
+        "x": 28,
+        "y": 9078.578125,
+        "width": 255.2578125,
+        "height": 24
+      },
+      "fontSize": "20px",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "H3",
+      "text": "Ultimate",
+      "box": {
+        "x": 28,
+        "y": 9562.9765625,
+        "width": 319,
+        "height": 24
+      },
+      "fontSize": "20px",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "H2",
+      "text": "Trusted by developers",
+      "box": {
+        "x": 28,
+        "y": 10397.375,
+        "width": 319,
+        "height": 88
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H2",
+      "text": "Got questions?We’ve got answers.",
+      "box": {
+        "x": 28,
+        "y": 11637.171875,
+        "width": 319,
+        "height": 132
+      },
+      "fontSize": "40px",
+      "lineHeight": "44px"
+    },
+    {
+      "tag": "H3",
+      "text": "What is Codexa?",
+      "box": {
+        "x": 28,
+        "y": 11866.765625,
+        "width": 271.1484375,
+        "height": 22.3984375
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Who is Codexa built for?",
+      "box": {
+        "x": 28,
+        "y": 11930.765625,
+        "width": 271.1484375,
+        "height": 22.3984375
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Do I need prior ML or AI experience?",
+      "box": {
+        "x": 28,
+        "y": 11994.765625,
+        "width": 271.1484375,
+        "height": 22.3984375
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "What types of workflows can I build?",
+      "box": {
+        "x": 28,
+        "y": 12058.765625,
+        "width": 271.1484375,
+        "height": 22.3984375
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Is Codexa cloud-hosted or self-hosted?",
+      "box": {
+        "x": 28,
+        "y": 12117.96875,
+        "width": 271.1484375,
+        "height": 44.796875
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Does Codexa scale with my project?",
+      "box": {
+        "x": 28,
+        "y": 12199.5625,
+        "width": 271.1484375,
+        "height": 22.3984375
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Does Codexa replace my existing dev tools?",
+      "box": {
+        "x": 28,
+        "y": 12258.765625,
+        "width": 271.1484375,
+        "height": 44.796875
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Is Codexa suitable for both small and large teams?",
+      "box": {
+        "x": 28,
+        "y": 12335.5625,
+        "width": 271.1484375,
+        "height": 44.796875
+      },
+      "fontSize": "16px",
+      "lineHeight": "22.4px"
+    },
+    {
+      "tag": "H2",
+      "text": "Automate more.Ship faster.",
+      "box": {
+        "x": 28,
+        "y": 12607.2578125,
+        "width": 319,
+        "height": 151.1953125
+      },
+      "fontSize": "48px",
+      "lineHeight": "50.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "Stay in the loop",
+      "box": {
+        "x": 28,
+        "y": 12958.359375,
+        "width": 319,
+        "height": 23.3984375
+      },
+      "fontSize": "18px",
+      "lineHeight": "23.4px"
+    }
+  ],
+  "controls": [
+    {
+      "tag": "NAV",
+      "text": "Codexa",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 72
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Codexa",
+      "box": {
+        "x": 28,
+        "y": 19.796875,
+        "width": 112.890625,
+        "height": 32.3984375
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Get started freeGet started free",
+      "box": {
+        "x": 109.3046875,
+        "y": 374.390625,
+        "width": 156.390625,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Get StartedGet Started",
+      "box": {
+        "x": 28,
+        "y": 7374.5859375,
+        "width": 127.34375,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "NAV",
+      "text": "",
+      "box": {
+        "x": 28,
+        "y": 7084.8828125,
+        "width": 44,
+        "height": 44
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "NAV",
+      "text": "",
+      "box": {
+        "x": 303,
+        "y": 7084.8828125,
+        "width": 44,
+        "height": 44
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Codexa",
+      "box": {
+        "x": 28,
+        "y": 7964.484375,
+        "width": 110.890625,
+        "height": 32.3984375
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Try StarterTry Starter",
+      "box": {
+        "x": 28,
+        "y": 8754.078125,
+        "width": 319,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Try ProTry Pro",
+      "box": {
+        "x": 28,
+        "y": 9238.4765625,
+        "width": 319,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Try UltimateTry Ultimate",
+      "box": {
+        "x": 28,
+        "y": 9722.875,
+        "width": 319,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Explore the TemplateExplore the Template",
+      "box": {
+        "x": 78.359375,
+        "y": 12782.453125,
+        "width": 218.28125,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Submit",
+      "box": {
+        "x": 248.25,
+        "y": 13041.7578125,
+        "width": 98.75,
+        "height": 42
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "box": {
+        "x": 155.5,
+        "y": 13311.15625,
+        "width": 64,
+        "height": 64
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "FeaturesFeatures",
+      "box": {
+        "x": 28,
+        "y": 13171.15625,
+        "width": 57.5625,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "PricingPricing",
+      "box": {
+        "x": 28,
+        "y": 13198.15625,
+        "width": 45.484375,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "ChangelogChangelog",
+      "box": {
+        "x": 28,
+        "y": 13225.15625,
+        "width": 71.5546875,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "FAQsFAQs",
+      "box": {
+        "x": 28,
+        "y": 13252.15625,
+        "width": 35.03125,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "AboutAbout",
+      "box": {
+        "x": 139.6640625,
+        "y": 13171.15625,
+        "width": 39.53125,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "BlogBlog",
+      "box": {
+        "x": 139.6640625,
+        "y": 13198.15625,
+        "width": 30.125,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "SupportSupport",
+      "box": {
+        "x": 139.6640625,
+        "y": 13225.15625,
+        "width": 52.9375,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "SalesSales",
+      "box": {
+        "x": 139.6640625,
+        "y": 13252.15625,
+        "width": 36.3515625,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "TermsTerms",
+      "box": {
+        "x": 251.3359375,
+        "y": 13171.15625,
+        "width": 39.7109375,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "PrivacyPrivacy",
+      "box": {
+        "x": 251.3359375,
+        "y": 13198.15625,
+        "width": 48.0078125,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "CookiesCookies",
+      "box": {
+        "x": 251.3359375,
+        "y": 13225.15625,
+        "width": 52.890625,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "404404",
+      "box": {
+        "x": 251.3359375,
+        "y": 13252.15625,
+        "width": 27.1953125,
+        "height": 19
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "CREATED BY KADIR CALIKCreated by KADIR CALIK",
+      "box": {
+        "x": 105.4765625,
+        "y": 13415.15625,
+        "width": 164.046875,
+        "height": 16
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Get TemplateGet Template",
+      "box": {
+        "x": 215,
+        "y": 741,
+        "width": 140,
+        "height": 39
+      },
+      "display": "flex"
+    },
+    {
+      "tag": "A",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "box": {
+        "x": 215,
+        "y": 786,
+        "width": 140,
+        "height": 38
+      },
+      "display": "block"
+    }
+  ]
+}
