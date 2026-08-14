@@ -1,0 +1,3145 @@
+{
+  "main": [
+    {
+      "i": 0,
+      "tag": "SECTION",
+      "id": "home",
+      "className": "framer-1e8dmd6",
+      "name": "Hero",
+      "text": "Everything you need to build with AI\n\nWrite workflow logic in code and let Codexa automate, schedule, and optimize everything.\n\nGet started free\n\nGet started free\n\nTRUSTED BY INDUSTRY LEADERS WORLDWIDE",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 1220.0546875
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-1koz7tp",
+          "name": "Container",
+          "text": "Everything you need to build with AI\n\nWrite workflow logic in code and let Codexa automate, schedule, and optimize everything.\n\nGet started free\n\nGet ",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 0,
+              "width": 1200,
+              "height": 1220.0546875
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "130px 32px 32px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "flex-start",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-6s6ekw",
+      "name": "Benefits",
+      "text": "THE SOLUTION\n\nA unified platform built for scalable development\n\nCodexa brings workflows, automation, API integration, and AI-driven insights into one cohesive system.\n\nClean, powerful APIs\n\nIntegrate your systems instantly with well-documented, deve",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 1220.0546875,
+          "width": 1425,
+          "height": 940.609375
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-10il3ro",
+          "name": "Container",
+          "text": "THE SOLUTION\n\nA unified platform built for scalable development\n\nCodexa brings workflows, automation, API integration, and AI-driven insights into one",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 1220.0546875,
+              "width": 1200,
+              "height": 940.609375
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-dw4yfi",
+      "name": "Features",
+      "text": "FEATURES\n\nBuild real products with powerful developer tooling\nWorkflow sync\n\nActive\n\nAutomation enabled\n\nActive\n\nError handling\n\nInactive\n\nAPI integration\n\nInactive\n\nRate limits\n\nInactive\n\nBuild automation with clean code\n\nDefine workflows, manage ex",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 2160.6640625,
+          "width": 1425,
+          "height": 1896.40625
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-padgpw",
+          "name": "Container",
+          "text": "FEATURES\n\nBuild real products with powerful developer tooling\nWorkflow sync\n\nActive\n\nAutomation enabled\n\nActive\n\nError handling\n\nInactive\n\nAPI integra",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 2160.6640625,
+              "width": 1200,
+              "height": 1896.40625
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "flex-start",
+            "justifyContent": "flex-start",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-iczw7e",
+      "name": "How it Works",
+      "text": "HOW IT WORKS\n\nFrom setup to automation in 3 simple steps\nINTEGRATING…\nSTEP 1\nConnect your existing tools\n\nWe integrate with your stack instantly, without complex setup.\n\nFlow engine\n\n84% in progress\n\nIntegration layer\n\nSynced recently\n\nAutomation sch",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 4057.0703125,
+          "width": 1425,
+          "height": 913.015625
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-1qjln6j",
+          "name": "Container",
+          "text": "HOW IT WORKS\n\nFrom setup to automation in 3 simple steps\nINTEGRATING…\nSTEP 1\nConnect your existing tools\n\nWe integrate with your stack instantly, with",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 4057.0703125,
+              "width": 1200,
+              "height": 913.015625
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-dvdpmv",
+      "name": "Feature Tab",
+      "text": "BEHIND THE SCENES\n\nThe decisions that keep Codexa reliable\nDeveloper Experience\nLayout Stability\nProduction Ready\n    }, 400);\n\n    return () => clearTimeout(timer);\n  }, []);\n\n  return (\n    <div>\n      {active ? \"Dev mode active\" : \"Initializing...",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 4970.0859375,
+          "width": 1425,
+          "height": 898.40625
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-1mzrxfs",
+          "name": "Container",
+          "text": "BEHIND THE SCENES\n\nThe decisions that keep Codexa reliable\nDeveloper Experience\nLayout Stability\nProduction Ready\n    }, 400);\n\n    return () => clear",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 4970.0859375,
+              "width": 1200,
+              "height": 898.40625
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-150d2zy",
+      "name": "Comparison",
+      "text": "WHY TEAMS CHOOSE US\n\nYour all-in-one platform\nfor workflows\n\nOther Tools\n\nSlow onboarding, manual configuration\n\nSeparate tools for automation, logs, monitoring\n\nLimited or no automation support\n\nBlind spots, delayed detection\n\nExtra cost, complex se",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 5868.4921875,
+          "width": 1425,
+          "height": 728.0234375
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-powh2q",
+          "name": "Container",
+          "text": "WHY TEAMS CHOOSE US\n\nYour all-in-one platform\nfor workflows\n\nOther Tools\n\nSlow onboarding, manual configuration\n\nSeparate tools for automation, logs, ",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 5868.4921875,
+              "width": 1200,
+              "height": 728.0234375
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-1dm47dj",
+      "name": "Pricing",
+      "text": "PRICING\n\nSimple plans,\nbuilt for every team\nMONTHLY\nYEARLY\n20% OFF\nStarter\n\nFor small teams exploring the platform and workflows.\n\n$35\n\n$35\n\n/month\n\nTry Starter\n\nTry Starter\n\nFull access to beginner modules\n\nCore API access\n\nWorkflow automation basic",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 6596.515625,
+          "width": 1425,
+          "height": 1100.2265625
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-rqh0zb",
+          "name": "Container",
+          "text": "PRICING\n\nSimple plans,\nbuilt for every team\nMONTHLY\nYEARLY\n20% OFF\nStarter\n\nFor small teams exploring the platform and workflows.\n\n$35\n\n$35\n\n/month\n\nT",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 6596.515625,
+              "width": 1200,
+              "height": 1100.2265625
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-4adi2g",
+      "name": "Testimonials",
+      "text": "TESTIMONIALS\n\nTrusted by developers\n\n“Setup was fast and seamless — our entire workflow became instantly cleaner and more organized.”\n\nSARAH LEWIS\n\nBACKEND DEVELOPER\n\n“We replaced multiple internal tools with one platform and doubled our delivery spe",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 7696.7421875,
+          "width": 1425,
+          "height": 920.625
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-1rgw2qp",
+          "name": "Container",
+          "text": "TESTIMONIALS\n\nTrusted by developers\n\n“Setup was fast and seamless — our entire workflow became instantly cleaner and more organized.”\n\nSARAH LEWIS\n\nBA",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 7696.7421875,
+              "width": 1200,
+              "height": 920.625
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "64px 0px 128px",
+            "margin": "0px",
+            "gap": "48px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "flex-start",
+            "justifyContent": "flex-start",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "SECTION",
+      "id": "",
+      "className": "framer-1n7sk84",
+      "name": "FAQs",
+      "text": "FAQS\n\nGot questions?\nWe’ve got answers.\n\nHere’s everything you need to know before getting started.\n\nStill have questions?\n\nContact us and we’ll help you out.\n\nView all FAQs\n\nView all FAQs\n\nWhat is Codexa?\n\nCodexa is a developer-first automation plat",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 8617.3671875,
+          "width": 1425,
+          "height": 824.40625
+        },
+        "display": "flex",
+        "position": "relative",
+        "padding": "0px 40px",
+        "margin": "0px",
+        "gap": "0px",
+        "gridTemplateColumns": "none",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-1dym321",
+          "name": "Container",
+          "text": "FAQS\n\nGot questions?\nWe’ve got answers.\n\nHere’s everything you need to know before getting started.\n\nStill have questions?\n\nContact us and we’ll help ",
+          "styles": {
+            "box": {
+              "x": 112.5,
+              "y": 8617.3671875,
+              "width": 1200,
+              "height": 824.40625
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "0px 0px 128px",
+            "margin": "0px",
+            "gap": "32px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "flex-start",
+            "justifyContent": "flex-start",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    }
+  ],
+  "body": [
+    {
+      "i": 0,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 1,
+      "tag": "DIV",
+      "id": "main",
+      "className": "",
+      "name": null,
+      "text": "Codexa\n\nFeatures\nPricing\nChangelog\nCompany\nFAQs\nContact\nContact\nGet Started\nGet Started\nJoin Codexa\nWe’re hiring\n\nHelp build modern, scalable products used by teams worldwide.\n\nCompany\nAbout Codexa\n\nOur story, values, and vision\n\nCareers\n\nOpen roles ",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 10202.5703125
+        },
+        "display": "block",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "STYLE",
+          "id": "",
+          "className": "",
+          "name": null,
+          "text": ":root body { background: var(--token-67e1a6d7-f4d6-4444-94d5-66470b354b37, rgb(240, 240, 240)); }",
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            },
+            "display": "none",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        },
+        {
+          "j": 1,
+          "tag": "DIV",
+          "id": "",
+          "className": "framer-LNttX framer-873hu6",
+          "name": null,
+          "text": "Codexa\n\nFeatures\nPricing\nChangelog\nCompany\nFAQs\nContact\nContact\nGet Started\nGet Started\nJoin Codexa\nWe’re hiring\n\nHelp build modern, scalable products",
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 0,
+              "width": 1425,
+              "height": 10202.5703125
+            },
+            "display": "flex",
+            "position": "relative",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "0px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "flex-start",
+            "background": "rgb(9, 9, 11) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        },
+        {
+          "j": 2,
+          "tag": "DIV",
+          "id": "template-overlay",
+          "className": "",
+          "name": null,
+          "text": "",
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 10202.5703125,
+              "width": 1425,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "(()=>{function u(){function n(t,e,i){let r=document.createElement(\"a\");r.href=t,r.target=i,r.rel=e,document.body.appendChild(r),r.click(),r.remove()}function o(t){if(this.dataset.hydrated){this.removeEventListener(\"click\",o);return}t.preventDefault()",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 3,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "!function(){var w=\"framer_variant\";function u(a,r){let e=r.indexOf(\"#\"),t=e===-1?r:r.substring(0,e),o=e===-1?\"\":r.substring(e),n=t.indexOf(\"?\"),h=n===-1?t:t.substring(0,n),d=n===-1?\"\":t.substring(n),s=new URLSearchParams(d),m=new URLSearchParams(a);f",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 4,
+      "tag": "DIV",
+      "id": "__framer-badge-container",
+      "className": "",
+      "name": null,
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 822,
+          "width": 1425,
+          "height": 78
+        },
+        "display": "flex",
+        "position": "fixed",
+        "padding": "20px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "flex-end",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "A",
+          "id": "",
+          "className": "framer-6jWyo framer-n0ccwk framer-v-n0ccwk framer-bmpgw8 __framer-badge",
+          "name": "Light",
+          "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+          "styles": {
+            "box": {
+              "x": 1265,
+              "y": 842,
+              "width": 140,
+              "height": 38
+            },
+            "display": "block",
+            "position": "relative",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "10px",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 238)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "var animator=(()=>{var L=(e,r,t)=>t>r?r:t<e?e:t;var U=()=>{};function _(e){let r;return()=>(r===void 0&&(r=e()),r)}var Q=e=>e;var D=e=>e*1e3,O=e=>e/1e3;var J=e=>Array.isArray(e)&&typeof e[0]==\"number\";var $=(e,r,t=10)=>{let o=\"\",s=Math.max(Math.round",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 6,
+      "tag": "SCRIPT",
+      "id": "__framer__appearAnimationsContent",
+      "className": "",
+      "name": null,
+      "text": "{\"xwg3uf\":{\"default\":null},\"18u36d1\":{\"default\":null},\"1w93q25\":{\"default\":null},\"18dvo4w\":{\"default\":null},\"1tin1tk\":{\"default\":null},\"151w4h8\":{\"default\":null},\"zsezct\":{\"default\":null,\"1hpd3n9\":null,\"1q5kqnz\":{\"initial\":{\"opacity\":0.001,\"rotate\":0",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 7,
+      "tag": "SCRIPT",
+      "id": "__framer__breakpoints",
+      "className": "",
+      "name": null,
+      "text": "[{\"hash\":\"15798cj\",\"mediaQuery\":\"(min-width: 1200px)\"},{\"hash\":\"1hpd3n9\",\"mediaQuery\":\"(min-width: 810px) and (max-width: 1199.98px)\"},{\"hash\":\"1q5kqnz\",\"mediaQuery\":\"(max-width: 809.98px)\"},{\"hash\":\"12y0iw1\",\"mediaQuery\":\"(max-width: 809.98px)\"},{\"h",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 8,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "(()=>{function c(i,o,s){if(window.__framer_disable_appear_effects_optimization__||typeof animator>\"u\")return;let e={detail:{bg:document.hidden}};requestAnimationFrame(()=>{let a=\"framer-appear-start\";performance.mark(a,e),animator.animateAppearEffect",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 9,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "typeof document<\"u\"&&(window.process={...window.process,env:{...window.process?.env,NODE_ENV:\"production\"}});",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 10,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 11,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 12,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 13,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 14,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 15,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 16,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 17,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 18,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 19,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 20,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 21,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 22,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 23,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 24,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 25,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 26,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 27,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 28,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 29,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 30,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 31,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 32,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 33,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 34,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 35,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 36,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 37,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 38,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 39,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 40,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 41,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 42,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 43,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 44,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 45,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 46,
+      "tag": "LINK",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 47,
+      "tag": "SCRIPT",
+      "id": "",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "static",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "visible"
+      },
+      "children": []
+    },
+    {
+      "i": 48,
+      "tag": "DIV",
+      "id": "svg-templates",
+      "className": "",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 900,
+          "width": 0,
+          "height": 0
+        },
+        "display": "block",
+        "position": "absolute",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "j": 0,
+          "tag": "svg",
+          "id": "svg9807748420",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 911,
+              "width": 0,
+              "height": 0
+            },
+            "display": "inline",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 1,
+          "tag": "svg",
+          "id": "svg1918940604_549",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 914,
+              "width": 4,
+              "height": 268
+            },
+            "display": "inline",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 2,
+          "tag": "svg",
+          "id": "svg1538465739_1046",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1196,
+              "width": 0,
+              "height": 0
+            },
+            "display": "inline",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "visible"
+          }
+        },
+        {
+          "j": 3,
+          "tag": "svg",
+          "id": "svg9139081093",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1210,
+              "width": 0,
+              "height": 0
+            },
+            "display": "inline",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 4,
+          "tag": "svg",
+          "id": "3164290856",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 5,
+          "tag": "svg",
+          "id": "1509944414",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 6,
+          "tag": "svg",
+          "id": "2047441354",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 7,
+          "tag": "svg",
+          "id": "2736393349",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 8,
+          "tag": "svg",
+          "id": "3556838003",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 9,
+          "tag": "svg",
+          "id": "1028000027",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 10,
+          "tag": "svg",
+          "id": "2577776947",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 11,
+          "tag": "svg",
+          "id": "2723406731",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 12,
+          "tag": "svg",
+          "id": "689952826",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 13,
+          "tag": "svg",
+          "id": "38925202",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 14,
+          "tag": "svg",
+          "id": "1337855821",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 15,
+          "tag": "svg",
+          "id": "4054627028",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 16,
+          "tag": "svg",
+          "id": "2465060457",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 17,
+          "tag": "svg",
+          "id": "1117752006",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 18,
+          "tag": "svg",
+          "id": "4228628475",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 19,
+          "tag": "svg",
+          "id": "132019778",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 20,
+          "tag": "svg",
+          "id": "1965699019",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 21,
+          "tag": "svg",
+          "id": "3163803808",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 22,
+          "tag": "svg",
+          "id": "2183609386",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 23,
+          "tag": "svg",
+          "id": "1839610128",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 24,
+          "tag": "svg",
+          "id": "562735719",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 25,
+          "tag": "svg",
+          "id": "1358249524",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 26,
+          "tag": "svg",
+          "id": "377716478",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 27,
+          "tag": "svg",
+          "id": "2934251554",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 28,
+          "tag": "svg",
+          "id": "3457411294",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 29,
+          "tag": "svg",
+          "id": "3411597865",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 30,
+          "tag": "svg",
+          "id": "735099669",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 31,
+          "tag": "svg",
+          "id": "4037716260",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 32,
+          "tag": "svg",
+          "id": "1723535281",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 33,
+          "tag": "svg",
+          "id": "988132234",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "j": 34,
+          "tag": "svg",
+          "id": "2051581056",
+          "className": "[object SVGAnimatedString]",
+          "name": null,
+          "styles": {
+            "box": {
+              "x": 0,
+              "y": 1213,
+              "width": 0,
+              "height": 0
+            },
+            "display": "block",
+            "position": "static",
+            "padding": "0px",
+            "margin": "0px",
+            "gap": "normal",
+            "gridTemplateColumns": "none",
+            "flexDirection": "row",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "border": "0px none rgb(0, 0, 0)",
+            "borderRadius": "0px",
+            "overflow": "hidden"
+          }
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "tag": "IFRAME",
+      "id": "__framer-editorbar",
+      "className": "status_hidden",
+      "name": null,
+      "text": "",
+      "styles": {
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "display": "none",
+        "position": "fixed",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "flexDirection": "row",
+        "alignItems": "normal",
+        "justifyContent": "normal",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "overflow": "clip"
+      },
+      "children": []
+    }
+  ]
+}

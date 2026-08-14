@@ -1,0 +1,15 @@
+.main {
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+  border-right: 1px solid rgb(255 255 255 / 7%);
+  border-left: 1px solid rgb(255 255 255 / 7%);
+  background: #060708;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    border-right: 0;
+    border-left: 0;
+  }
+}

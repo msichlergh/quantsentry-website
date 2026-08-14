@@ -1,0 +1,115 @@
+.groups {
+  min-height: 2400px;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.group {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 450px minmax(0, 1fr);
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.group:last-child {
+  border-bottom: 0;
+}
+
+.group > header {
+  padding: 34px 32px;
+  border-right: 1px solid rgb(255 255 255 / 8%);
+}
+
+.group h2 {
+  max-width: 360px;
+  margin: 0;
+  color: #f5f6f6;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+.group header p {
+  max-width: 325px;
+  margin: 16px 0 0;
+  color: #929496;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.groupAccordion {
+  min-width: 0;
+}
+
+.groupAccordion > div {
+  height: 100%;
+  border-top: 0;
+}
+
+.groupEight .groupAccordion article h3 button {
+  min-height: 75px;
+}
+
+.groupSix .groupAccordion article h3 button {
+  min-height: 100px;
+}
+
+@media (max-width: 900px) {
+  .groups {
+    min-height: 0;
+    padding: 0 28px 96px;
+  }
+
+  .group {
+    display: block;
+    height: auto;
+    padding: 48px 0 32px;
+  }
+
+  .group > header {
+    min-height: 148px;
+    padding: 0 0 28px;
+    border-right: 0;
+  }
+
+  .group h2 {
+    max-width: 319px;
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .group header p {
+    max-width: 319px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .groupEight .groupAccordion article h3 button,
+  .groupSix .groupAccordion article h3 button {
+    min-height: 72px;
+  }
+
+  .groupAccordion > div article h3 button {
+    padding-inline: 8px;
+  }
+
+  .groupAccordion > div article div p {
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 430px) {
+  .groups {
+    padding-inline: 14px;
+  }
+
+  .group {
+    padding-top: 48px;
+  }
+
+  .group > header {
+    min-height: 156px;
+  }
+}

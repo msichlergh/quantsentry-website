@@ -1,0 +1,269 @@
+.section {
+  min-height: 920.625px;
+  padding: 0 40px;
+  overflow: hidden;
+  color: #f5f6f6;
+  background: #060708;
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 0 128px;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.intro p {
+  margin: 0 0 15px;
+  color: #00d7c0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.content {
+  border-top: 1px solid #242728;
+  border-bottom: 1px solid #242728;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 352px));
+  grid-auto-rows: 164px;
+  gap: 48px;
+  justify-content: center;
+}
+
+.grid::before {
+  position: absolute;
+  top: 188px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: #242728;
+  content: "";
+}
+
+.card {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  padding: 23px 0 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:not(:nth-child(3n))::after {
+  position: absolute;
+  top: -1px;
+  right: -24px;
+  width: 1px;
+  height: calc(100% + 2px);
+  background: #242728;
+  content: "";
+}
+
+.stars {
+  height: 19px;
+  color: #00d9cd;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.card blockquote {
+  max-width: 330px;
+  margin: 5px 0 0;
+  color: #929496;
+  font-size: 15px;
+  line-height: 1.53;
+}
+
+.card footer {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  gap: 12px;
+}
+
+.card footer img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(0.9);
+}
+
+.card footer div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card cite,
+.card footer span {
+  overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: 0.035em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.card cite {
+  color: #eceeee;
+}
+
+.card footer span {
+  color: #777a7b;
+}
+
+.trustStrip {
+  display: flex;
+  height: 110px;
+  padding-top: 21px;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+  overflow: hidden;
+}
+
+.trustStrip > p {
+  margin: 0;
+  color: #777a7b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 0.055em;
+}
+
+.marquee {
+  width: 760px;
+  max-width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+}
+
+.logoSet {
+  display: flex;
+  padding-right: 34px;
+  align-items: center;
+  gap: 34px;
+}
+
+.logoSet img {
+  width: 66px;
+  height: 52px;
+  object-fit: contain;
+  opacity: 0.2;
+  filter: grayscale(1) brightness(0.85);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .marqueeTrack {
+    animation: trusted-marquee 22s linear infinite;
+  }
+}
+
+@keyframes trusted-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    min-height: 0;
+    padding: 0 28px;
+  }
+
+  .inner {
+    padding: 32px 0 80px;
+    gap: 24px;
+  }
+
+  .intro {
+    min-height: 130px;
+    justify-content: center;
+  }
+
+  .intro h2 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .grid::before,
+  .card:not(:nth-child(3n))::after {
+    display: none;
+  }
+
+  .card {
+    min-height: 207.25px;
+    padding: 24px 0;
+    border-bottom: 1px solid #242728;
+  }
+
+  .card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .card blockquote {
+    max-width: 470px;
+  }
+
+  .trustStrip {
+    height: 116.8px;
+    padding-top: 24px;
+  }
+
+  .marquee {
+    width: calc(100vw - 56px);
+  }
+}
