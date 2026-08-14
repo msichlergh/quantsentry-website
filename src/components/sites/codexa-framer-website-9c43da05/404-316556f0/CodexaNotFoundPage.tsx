@@ -23,7 +23,7 @@ export function CodexaNotFoundPage() {
               Sorry, the page you are looking for does not exist or has been
               moved.
             </p>
-            <Link className={styles.button} href="/codexa">
+            <Link className={styles.button} href="/">
               Back to home
               <ArrowRight aria-hidden="true" />
             </Link>

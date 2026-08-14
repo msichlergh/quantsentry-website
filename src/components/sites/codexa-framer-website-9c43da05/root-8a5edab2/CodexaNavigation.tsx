@@ -38,7 +38,7 @@ export function CodexaNavigation() {
   return (
     <header className={styles.shell}>
       <nav className={styles.inner} aria-label="Main navigation">
-        <Link className={styles.brand} href="/codexa" aria-label="Codexa home">
+        <Link className={styles.brand} href="/" aria-label="Codexa home">
           <CodexaLogo />
         </Link>
 

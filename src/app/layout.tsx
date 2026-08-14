@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Nav } from "@/components/site/nav";
-import { Footer } from "@/components/site/footer";
 import "./globals.css";
+import "./codexa/codexa.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,12 +15,13 @@ const geistMono = Geist_Mono({
   weight: ["400", "500"],
 });
 
-// Display face. Cabinet Grotesk (Fontshare, free licence) is the reference
-// choice — drop the woff2 files into public/fonts and switch to next/font/local
-// to enable it. Until then --font-heading falls back to Geist.
 export const metadata: Metadata = {
-  title: "QuantSentry",
-  description: "QuantSentry — marketing site",
+  title: "Codexa – Premium Developer Automation Template",
+  description:
+    "Write workflow logic in code and let Codexa automate, schedule, and optimize everything.",
+  icons: {
+    icon: "/sites/codexa-framer-website-9c43da05/root-8a5edab2/images/codexa-mark.png",
+  },
 };
 
 export default function RootLayout({
@@ -35,9 +35,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <Nav />
         <main className="flex-1">{children}</main>
-        <Footer />
       </body>
     </html>
   );
