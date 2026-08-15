@@ -1,0 +1,86 @@
+.eyebrow {
+  display: inline-flex;
+  min-height: 26px;
+  margin: 0 0 12px;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  color: var(--codexa-accent);
+  background: rgb(0 195 201 / 13%);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.eyebrow > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 5px rgb(0 195 201 / 12%);
+}
+
+.button {
+  display: inline-flex;
+  width: 179px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+  border-radius: 999px;
+  color: var(--codexa-bg);
+  background: var(--codexa-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color var(--codexa-motion-standard) ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #bdbdbd;
+}
+
+.button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.buttonTrack {
+  display: grid;
+  height: 18px;
+  overflow: hidden;
+}
+
+.buttonTrack > span {
+  display: block;
+  height: 18px;
+  grid-area: 1 / 1;
+  transition: transform var(--codexa-motion-standard) ease;
+}
+
+.buttonTrack > span:last-child {
+  transform: translateY(100%);
+}
+
+.button:hover .buttonTrack > span:first-child,
+.button:focus-visible .buttonTrack > span:first-child {
+  transform: translateY(-100%);
+}
+
+.button:hover .buttonTrack > span:last-child,
+.button:focus-visible .buttonTrack > span:last-child {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .buttonTrack > span {
+    transition: none;
+  }
+}

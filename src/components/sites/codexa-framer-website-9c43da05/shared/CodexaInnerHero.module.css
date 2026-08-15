@@ -2,7 +2,7 @@
   position: relative;
   height: 414.609px;
   overflow: hidden;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
   background: #060708;
 }
 
@@ -48,7 +48,7 @@
   align-items: center;
   gap: 8px;
   border-radius: 999px;
-  color: #00d7cc;
+  color: var(--codexa-accent-bright);
   background: rgb(0 205 193 / 13%);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 12px;
@@ -68,7 +68,7 @@
 .copy h1 {
   max-width: 720px;
   margin: 0;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   font-size: 52px;
   font-weight: 500;
   line-height: 1.1;
@@ -79,7 +79,7 @@
 .description {
   max-width: 560px;
   margin: 16px 0 0;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 18px;
   line-height: 1.45;
 }

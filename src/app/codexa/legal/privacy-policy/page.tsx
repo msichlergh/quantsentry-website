@@ -4,6 +4,7 @@ import {
   CodexaLegalPage,
   type CodexaLegalSection,
 } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaLegalPage";
+import { CodexaSiteFrame } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaSiteFrame";
 
 export const metadata: Metadata = {
   title: "Codexa – Privacy Policy",
@@ -97,13 +98,15 @@ const sections: CodexaLegalSection[] = [
 
 export default function CodexaPrivacyPage() {
   return (
-    <CodexaLegalPage
-      title="Privacy Policy"
-      intro={
-        <p>Codexa respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website or use our services.</p>
-      }
-      sections={sections}
-      variant="privacy"
-    />
+    <CodexaSiteFrame>
+      <CodexaLegalPage
+        title="Privacy Policy"
+        intro={
+          <p>Codexa respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website or use our services.</p>
+        }
+        sections={sections}
+        variant="privacy"
+      />
+    </CodexaSiteFrame>
   );
 }

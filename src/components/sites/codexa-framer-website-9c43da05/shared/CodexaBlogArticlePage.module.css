@@ -5,7 +5,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: 54px 24px 48px;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
   text-align: left;
 }
 
@@ -14,7 +14,7 @@
 .cardBody > p,
 .share > p {
   margin: 0;
-  color: #00c3c9;
+  color: var(--codexa-accent);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 11px;
   line-height: 16px;
@@ -35,7 +35,7 @@
 .excerpt {
   max-width: 650px;
   margin: 0;
-  color: #969696;
+  color: var(--codexa-muted);
   font-size: 15px;
   line-height: 23px;
 }
@@ -50,7 +50,7 @@
   position: relative;
   aspect-ratio: 12 / 5;
   overflow: hidden;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .heroImage img,
@@ -61,12 +61,12 @@
 .articleGrid {
   display: grid;
   grid-template-columns: minmax(0, 2.25fr) minmax(260px, 1fr);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .content {
   padding: 72px 24px 112px;
-  border-right: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
 }
 
 .content section + section {
@@ -101,12 +101,12 @@
 }
 
 .content li::marker {
-  color: #00c3c9;
+  color: var(--codexa-accent);
 }
 
 .content blockquote {
   margin: 24px 0;
-  border-left: 1px solid #00c3c9;
+  border-left: 1px solid var(--codexa-accent);
   padding: 4px 0 4px 24px;
 }
 
@@ -131,7 +131,7 @@
   align-items: center;
   gap: 14px;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .author img {
@@ -140,7 +140,7 @@
 
 .author p {
   margin: 0 0 4px;
-  color: #fff;
+  color: var(--codexa-text);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 11px;
   letter-spacing: .08em;
@@ -216,10 +216,10 @@
 
 .card {
   overflow: hidden;
-  border: 1px solid rgb(255 255 255 / 8%);
+  border: 1px solid var(--codexa-line);
   border-radius: 10px;
   background: #0e0e10;
-  color: #fff;
+  color: var(--codexa-text);
   text-decoration: none;
 }
 
@@ -227,7 +227,7 @@
   position: relative;
   aspect-ratio: 1.85;
   overflow: hidden;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .cardImage img {
@@ -308,7 +308,7 @@
 
   .sidebar {
     padding: 28px 8px;
-    border-top: 1px solid rgb(255 255 255 / 8%);
+    border-top: 1px solid var(--codexa-line);
   }
 
   .moreArticles {

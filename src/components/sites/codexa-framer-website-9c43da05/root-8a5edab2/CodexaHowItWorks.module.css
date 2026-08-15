@@ -2,8 +2,8 @@
   min-height: 913.016px;
   padding: 0 40px;
   overflow: hidden;
-  color: #f5f6f6;
-  background: var(--codexa-bg, #09090b);
+  color: var(--codexa-heading);
+  background: var(--codexa-bg, var(--codexa-bg));
 }
 
 .inner {
@@ -55,8 +55,8 @@
   position: absolute;
   z-index: 2;
   inset: 0;
-  border-top: 1px solid #262626;
-  border-bottom: 1px solid #262626;
+  border-top: 1px solid var(--codexa-line-strong);
+  border-bottom: 1px solid var(--codexa-line-strong);
   content: "";
   pointer-events: none;
 }
@@ -76,7 +76,7 @@
   right: 0;
   bottom: 0;
   width: 1px;
-  background: #262626;
+  background: var(--codexa-line-strong);
   content: "";
 }
 
@@ -121,7 +121,7 @@
 .caption p {
   max-width: 332px;
   margin: 0;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 1.53;
 }
@@ -279,7 +279,7 @@
   padding: 11px 13px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #292b2c;
+  border: 1px solid var(--codexa-control-border);
   border-radius: 13px;
   background: #090a0b;
 }

@@ -14,7 +14,7 @@
   bottom: 0;
   left: max(40px, calc((100% - 1200px) / 2));
   height: 1px;
-  background: #262626;
+  background: var(--codexa-line-strong);
   content: "";
   pointer-events: none;
 }
@@ -73,7 +73,7 @@
 .copy h1 {
   max-width: 600px;
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 64px;
   font-weight: 500;
   letter-spacing: -2.56px;
@@ -83,7 +83,7 @@
 .copy p {
   max-width: 450px;
   margin: 0;
-  color: #969696;
+  color: var(--codexa-muted);
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -99,7 +99,7 @@
   justify-content: center;
   overflow: hidden;
   border-radius: 50px;
-  background: #fff;
+  background: var(--codexa-text);
   color: #08070e;
   font-size: 15px;
   font-weight: 500;
@@ -136,7 +136,7 @@
 }
 
 .button:focus-visible {
-  outline: 2px solid #00c3c9;
+  outline: 2px solid var(--codexa-accent);
   outline-offset: 3px;
 }
 
@@ -150,7 +150,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  background: #09090b;
+  background: var(--codexa-bg);
   transform: perspective(1200px);
   box-shadow:
     rgb(255 255 255 / 12%) 0 1px 2px 0 inset,
@@ -198,7 +198,7 @@
   opacity: 0.3;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    #fff 0%,
+    var(--codexa-text) 0%,
     rgb(255 255 255 / 40%) 100%
   );
   filter: blur(7px);
@@ -210,7 +210,7 @@
   height: 2px;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    #fff 0%,
+    var(--codexa-text) 0%,
     rgb(255 255 255 / 0%) 100%
   );
 }
@@ -254,7 +254,7 @@
   padding: 1px;
   overflow: hidden;
   border-radius: 11px;
-  background: #0f0f11;
+  background: var(--codexa-surface);
 }
 
 .lowerGlow {
@@ -270,7 +270,7 @@
   width: 53.86%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: #00c3c9;
+  background: var(--codexa-accent);
   filter: blur(clamp(55px, 9vw, 100px));
   opacity: 0.7;
 }

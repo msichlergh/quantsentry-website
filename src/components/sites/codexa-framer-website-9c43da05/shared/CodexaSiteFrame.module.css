@@ -1,9 +1,18 @@
 .main {
-  width: min(1200px, calc(100% - 80px));
+  width: min(
+    var(--codexa-content-width),
+    calc(100% - (var(--codexa-page-gutter) * 2))
+  );
   margin: 0 auto;
-  border-right: 1px solid #262626;
-  border-left: 1px solid #262626;
-  background: #09090b;
+  border-right: 1px solid var(--codexa-line-strong);
+  border-left: 1px solid var(--codexa-line-strong);
+  background: var(--codexa-bg);
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  background: var(--codexa-bg);
 }
 
 @media (max-width: 768px) {
@@ -11,6 +20,6 @@
     width: 100%;
     border-right: 0;
     border-left: 0;
-    background: #09090b;
+    background: var(--codexa-bg);
   }
 }

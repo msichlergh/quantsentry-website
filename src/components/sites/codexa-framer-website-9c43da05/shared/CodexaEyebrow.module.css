@@ -1,0 +1,49 @@
+.eyebrow {
+  display: inline-flex;
+  height: 30px;
+  margin: 0;
+  padding: 6px 12px 6px 8px;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 24px;
+  color: var(--codexa-accent);
+  background: rgb(0 195 201 / 15%);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.dot {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  border-radius: 50%;
+  background: rgb(0 195 201 / 10%);
+}
+
+.dot::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 7px currentColor;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 900px) {
+  .eyebrow {
+    height: 26px;
+    padding: 4px 10px 4px 6px;
+    font-size: 11px;
+    line-height: 15.4px;
+  }
+}

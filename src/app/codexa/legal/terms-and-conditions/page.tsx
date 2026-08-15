@@ -4,6 +4,7 @@ import {
   CodexaLegalPage,
   type CodexaLegalSection,
 } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaLegalPage";
+import { CodexaSiteFrame } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaSiteFrame";
 
 export const metadata: Metadata = {
   title: "Codexa – Terms and Conditions",
@@ -99,15 +100,17 @@ const sections: CodexaLegalSection[] = [
 
 export default function CodexaTermsPage() {
   return (
-    <CodexaLegalPage
-      title="Terms and Conditions"
-      intro={
-        <p>
-          By accessing or using the <strong>Codexa</strong> website and services, you agree to these Terms and Conditions. Please read them carefully before using the platform.
-        </p>
-      }
-      sections={sections}
-      variant="terms"
-    />
+    <CodexaSiteFrame>
+      <CodexaLegalPage
+        title="Terms and Conditions"
+        intro={
+          <p>
+            By accessing or using the <strong>Codexa</strong> website and services, you agree to these Terms and Conditions. Please read them carefully before using the platform.
+          </p>
+        }
+        sections={sections}
+        variant="terms"
+      />
+    </CodexaSiteFrame>
   );
 }

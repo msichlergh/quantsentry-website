@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 0 40px 128px;
   background: var(--codexa-bg, #08070e);
-  color: var(--codexa-text, #fff);
+  color: var(--codexa-text, var(--codexa-text));
 }
 
 .section::before {
@@ -14,7 +14,7 @@
   right: 0;
   left: 0;
   height: 1px;
-  background: #262626;
+  background: var(--codexa-line-strong);
   content: "";
   pointer-events: none;
 }
@@ -48,7 +48,7 @@
   border-radius: 999px;
   padding: 4px 9px;
   background: rgb(0 195 201 / 14%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 10px;
   line-height: 13px;
@@ -67,7 +67,7 @@
 .intro h2 {
   max-width: 520px;
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 52px;
   font-weight: 500;
   line-height: 1.1;
@@ -78,7 +78,7 @@
 .intro > p:last-child {
   max-width: 330px;
   margin: 18px 0 0;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font-size: 18px;
   line-height: 26px;
 }
@@ -93,7 +93,7 @@
 
 .support h3 {
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -101,7 +101,7 @@
 
 .support p {
   margin: 2px 0 16px;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font-size: 18px;
   line-height: 25px;
 }
@@ -114,7 +114,7 @@
 
 .accordion {
   min-width: 0;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid var(--codexa-line-strong);
 }
 
 .faqRow {
@@ -139,7 +139,7 @@
   border: 0;
   padding: 0 24px;
   background: transparent;
-  color: #fff;
+  color: var(--codexa-text);
   font: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -160,7 +160,7 @@
   flex: 0 0 32px;
   border-radius: 50%;
   background: rgb(0 195 201 / 16%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
   transition: background 180ms ease;
 }
 
@@ -196,7 +196,7 @@
   margin: 0;
   overflow: hidden;
   padding: 0 72px 0 24px;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font-size: 15px;
   line-height: 23px;
   transition: padding-bottom 300ms ease;

@@ -5,7 +5,7 @@
   justify-content: center;
   padding-inline: 40px;
   background: var(--codexa-bg, #08070e);
-  color: var(--codexa-text, #fff);
+  color: var(--codexa-text, var(--codexa-text));
 }
 
 .inner {
@@ -33,7 +33,7 @@
   border-radius: 999px;
   padding: 4px 9px;
   background: rgb(0 195 201 / 14%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 10px;
   line-height: 13px;
@@ -52,7 +52,7 @@
 .intro h2 {
   max-width: 650px;
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 52px;
   font-weight: 500;
   line-height: 1.1;
@@ -103,7 +103,7 @@
 
 .copyInner h3 {
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 44px;
   font-weight: 500;
   line-height: 1.1;
@@ -114,7 +114,7 @@
 .copyInner p {
   max-width: 440px;
   margin: 16px 0 0;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font-size: 15px;
   line-height: 23px;
 }
@@ -132,7 +132,7 @@
   min-height: 23px;
   align-items: flex-start;
   gap: 9px;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font-size: 15px;
   line-height: 23px;
 }
@@ -147,7 +147,7 @@
   margin-top: 3px;
   border-radius: 50%;
   background: rgb(0 195 201 / 18%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
   font-size: 10px;
   font-weight: 700;
   line-height: 1;
@@ -168,10 +168,10 @@
   height: 54px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid rgb(255 255 255 / 8%);
+  border: 1px solid var(--codexa-line);
   border-radius: 10px;
   padding-inline: 16px;
-  background: var(--codexa-surface, #0f0f11);
+  background: var(--codexa-surface, var(--codexa-surface));
   color: #d4d4d8;
   font-size: 15px;
   line-height: 20px;
@@ -246,7 +246,7 @@
 }
 
 .statusDot.active {
-  background: var(--codexa-accent, #00c3c9);
+  background: var(--codexa-accent, var(--codexa-accent));
   box-shadow: 0 0 8px rgb(0 195 201 / 75%);
 }
 
@@ -272,7 +272,7 @@
 }
 
 .releaseLabels span:first-child {
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
 }
 
 .releaseGuides {
@@ -331,7 +331,7 @@
   left: 12px;
   width: 187px;
   background: rgb(0 119 123 / 75%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
 }
 
 .retries {
@@ -397,7 +397,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--codexa-accent, #00c3c9);
+  background: var(--codexa-accent, var(--codexa-accent));
   content: "";
 }
 
@@ -405,7 +405,7 @@
   position: absolute;
   inset: 6px;
   border-radius: 50%;
-  background: var(--codexa-accent, #00c3c9);
+  background: var(--codexa-accent, var(--codexa-accent));
   content: "";
   opacity: 0;
   animation: featureMetricPulse 1.6s ease-out infinite;
@@ -451,7 +451,7 @@
   border-radius: 3px;
   padding: 2px 5px;
   background: rgb(0 195 201 / 13%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 11px;
 }
@@ -498,7 +498,7 @@
 .bar {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgb(255 255 255 / 8%);
+  border: 1px solid var(--codexa-line);
   border-radius: 11px;
   background: rgb(15 15 17 / 35%);
 }
@@ -558,7 +558,7 @@
 
 .throughputVisual:hover .barDot,
 .throughputVisual:focus-within .barDot {
-  background: var(--codexa-accent, #00c3c9);
+  background: var(--codexa-accent, var(--codexa-accent));
   box-shadow: 0 0 0 4px rgb(0 195 201 / 13%), 0 0 8px rgb(0 195 201 / 45%);
   transform: scale(1.15);
 }

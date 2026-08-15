@@ -2,8 +2,8 @@
   min-height: 728.023px;
   padding: 0 40px;
   overflow: hidden;
-  color: #f5f6f6;
-  background: var(--codexa-bg, #09090b);
+  color: var(--codexa-heading);
+  background: var(--codexa-bg, var(--codexa-bg));
 }
 
 .inner {
@@ -31,7 +31,7 @@
   align-items: center;
   gap: 9px;
   border-radius: 999px;
-  color: #00d7cc;
+  color: var(--codexa-accent-bright);
   background: rgb(0 205 193 / 13%);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", monospace;
@@ -63,8 +63,8 @@
   min-height: 332px;
   grid-template-columns:
     minmax(0, 1fr) minmax(0, 420px) minmax(0, 420px) minmax(0, 1fr);
-  border-top: 1px solid #262626;
-  border-bottom: 1px solid #262626;
+  border-top: 1px solid var(--codexa-line-strong);
+  border-bottom: 1px solid var(--codexa-line-strong);
 }
 
 .column {
@@ -75,14 +75,14 @@
 
 .column:first-child {
   grid-column: 2;
-  border-left: 1px solid #262626;
+  border-left: 1px solid var(--codexa-line-strong);
 }
 
 .codexaColumn {
   grid-column: 3;
-  border-right: 1px solid #262626;
-  border-left: 1px solid #262626;
-  background: #0f0f11;
+  border-right: 1px solid var(--codexa-line-strong);
+  border-left: 1px solid var(--codexa-line-strong);
+  background: var(--codexa-surface);
 }
 
 .column h3 {
@@ -104,7 +104,7 @@
 .logo svg {
   width: 25px;
   height: 25px;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
 }
 
 .logo > span {
@@ -185,7 +185,7 @@
   .panel {
     max-width: 520px;
     grid-template-columns: 1fr;
-    border: 1px solid #262626;
+    border: 1px solid var(--codexa-line-strong);
   }
 
   .column {

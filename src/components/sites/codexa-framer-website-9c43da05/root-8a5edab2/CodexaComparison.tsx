@@ -1,5 +1,6 @@
 import { Check, X } from "lucide-react";
 
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
 import styles from "./CodexaComparison.module.css";
 
 const otherTools = [
@@ -69,10 +70,7 @@ export function CodexaComparison() {
     <section className={styles.section} aria-labelledby="codexa-comparison-title">
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <p className="codexa-eyebrow-pill">
-            <span aria-hidden="true" />
-            WHY TEAMS CHOOSE US
-          </p>
+          <CodexaEyebrow>WHY TEAMS CHOOSE US</CodexaEyebrow>
           <h2 id="codexa-comparison-title">
             Your all-in-one platform for workflows
           </h2>

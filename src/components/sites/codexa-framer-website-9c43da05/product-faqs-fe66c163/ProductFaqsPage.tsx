@@ -1,7 +1,6 @@
 import type { CodexaAccordionItem } from "../shared/CodexaAccordion";
 import { CodexaAccordion } from "../shared/CodexaAccordion";
 import { CodexaInnerHero } from "../shared/CodexaInnerHero";
-import { CodexaSiteFrame } from "../shared/CodexaSiteFrame";
 
 import styles from "./ProductFaqsPage.module.css";
 
@@ -69,7 +68,7 @@ const groups: readonly {
 
 export function ProductFaqsPage() {
   return (
-    <CodexaSiteFrame>
+    <>
       <CodexaInnerHero
         compact
         eyebrow="FAQs"
@@ -93,6 +92,6 @@ export function ProductFaqsPage() {
           </article>
         ))}
       </section>
-    </CodexaSiteFrame>
+    </>
   );
 }

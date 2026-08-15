@@ -3,6 +3,8 @@
 import { File, House, Search } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
+import { CodexaButton } from "../shared/CodexaButton";
+import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
 import styles from "./ProductFeaturesPage.module.css";
 
 const tabs = ["Workflow", "Triggers", "Action"] as const;
@@ -55,13 +57,7 @@ export function ProductFeaturesHero() {
           Write workflow logic in code and let Codexa automate,<br />
           schedule, and optimize everything.
         </p>
-        <a className="codexa-button" href="/codexa/company/sales">
-          <span className="codexa-button__track" aria-hidden="true">
-            <span>Get started free</span>
-            <span>Get started free</span>
-          </span>
-          <span className={styles.srOnly}>Get started free</span>
-        </a>
+        <CodexaButton href={CODEXA_ROUTES.sales}>Get started free</CodexaButton>
       </div>
 
       <div className={styles.editorShell}>

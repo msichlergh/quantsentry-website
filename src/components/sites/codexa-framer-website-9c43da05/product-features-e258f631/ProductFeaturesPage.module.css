@@ -2,8 +2,8 @@
   position: relative;
   height: 1050px;
   overflow: hidden;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
-  background: #09090b;
+  border-bottom: 1px solid var(--codexa-line);
+  background: var(--codexa-bg);
 }
 
 .heroGrid {
@@ -45,7 +45,7 @@
 .heroCopy h1 {
   max-width: 800px;
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 64px;
   font-weight: 500;
   line-height: 1.05;
@@ -54,7 +54,7 @@
 
 .heroCopy > p {
   margin: 16px 0 0;
-  color: #969696;
+  color: var(--codexa-muted);
   font-size: 18px;
   line-height: 26px;
 }
@@ -106,8 +106,8 @@
   align-items: center;
   flex-direction: column;
   gap: 19px;
-  border-right: 1px solid rgb(255 255 255 / 8%);
-  color: #929496;
+  border-right: 1px solid var(--codexa-line);
+  color: var(--codexa-muted-soft);
 }
 
 .editorRail svg {
@@ -121,7 +121,7 @@
   padding: 25px 20px;
   flex-direction: column;
   gap: 10px;
-  border-right: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
   color: #d4d4d8;
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 16px;
@@ -135,7 +135,7 @@
 }
 
 .activeFile {
-  color: #00c3c9;
+  color: var(--codexa-accent);
 }
 
 .editorPane {
@@ -157,7 +157,7 @@
   border: 0;
   padding: 0;
   background: transparent;
-  color: #969696;
+  color: var(--codexa-muted);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 16px;
   line-height: 20px;
@@ -171,7 +171,7 @@
   bottom: 13px;
   left: 0;
   height: 1px;
-  background: #00c3c9;
+  background: var(--codexa-accent);
   content: "";
   opacity: 0;
   transform: scaleX(.5);
@@ -221,7 +221,7 @@
 }
 
 .codeAccent {
-  color: #00c3c9;
+  color: var(--codexa-accent);
 }
 
 .codeComment {
@@ -261,16 +261,16 @@
   min-height: 1628px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(542px, 1fr));
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .featureGrid > * {
   min-width: 0;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .featureGrid > :nth-child(odd) {
-  border-right: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
 }
 
 .featureGrid > :nth-last-child(-n + 2) {
@@ -292,7 +292,7 @@
 .featureGrid > .secondCopy {
   grid-row: 2;
   grid-column: 1;
-  border-right: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
 }
 
 .copyCell {
@@ -306,7 +306,7 @@
 .copyCell h2 {
   max-width: 455px;
   margin: 0 0 20px;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   font-size: 40px;
   font-weight: 500;
   line-height: 1.04;
@@ -317,7 +317,7 @@
 .copyCell p {
   max-width: 465px;
   margin: 0 0 16px;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 23px;
 }
@@ -357,7 +357,7 @@
   box-shadow: 0 0 8px currentColor;
 }
 
-.active { color: #00d7cc; }
+.active { color: var(--codexa-accent-bright); }
 .inactive { color: #616265; }
 
 .monitoringVisual {
@@ -376,7 +376,7 @@
   font-size: 10px;
 }
 
-.releaseLabels span:first-child { color: #00c3c9; }
+.releaseLabels span:first-child { color: var(--codexa-accent); }
 
 .releaseFlow {
   position: absolute;
@@ -397,7 +397,7 @@
   background: #383a3e;
 }
 
-.releaseNode:first-child { left: 0; background: #00c3c9; }
+.releaseNode:first-child { left: 0; background: var(--codexa-accent); }
 .releaseNode:nth-child(2) { left: 50%; }
 .releaseNode:last-child { right: 0; }
 
@@ -419,7 +419,7 @@
   font-size: 10px;
 }
 
-.releaseCards span:first-child { top: 28px; left: 22px; color: #00c3c9; border-color: rgb(0 195 201 / 26%); background: rgb(0 195 201 / 12%); }
+.releaseCards span:first-child { top: 28px; left: 22px; color: var(--codexa-accent); border-color: rgb(0 195 201 / 26%); background: rgb(0 195 201 / 12%); }
 .releaseCards span:nth-child(2) { top: 0; right: 0; }
 .releaseCards span:nth-child(3) { top: 88px; left: 130px; }
 .releaseCards span:last-child { right: 12px; bottom: 24px; }
@@ -444,13 +444,13 @@
   height: 8px;
   margin-right: 12px;
   border-radius: 50%;
-  background: #00d7cc;
-  box-shadow: 0 0 12px #00d7cc;
+  background: var(--codexa-accent-bright);
+  box-shadow: 0 0 12px var(--codexa-accent-bright);
 }
 
 .throughputValue span {
   margin-left: 8px;
-  color: #00d7cc;
+  color: var(--codexa-accent-bright);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 11px;
   letter-spacing: 0;
@@ -504,8 +504,8 @@
 .capabilities {
   min-height: 940.609px;
   padding: 128px 0;
-  border-top: 1px solid rgb(255 255 255 / 8%);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-top: 1px solid var(--codexa-line);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .capabilityHeader {
@@ -524,7 +524,7 @@
   align-items: center;
   gap: 8px;
   border-radius: 999px;
-  color: #00d7cc;
+  color: var(--codexa-accent-bright);
   background: rgb(0 205 193 / 13%);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 11px;
@@ -543,7 +543,7 @@
 
 .capabilityHeader h2 {
   margin: 0;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   font-size: 52px;
   font-weight: 500;
   line-height: 1.05;
@@ -553,7 +553,7 @@
 .capabilityHeader > p:last-child {
   max-width: 560px;
   margin: 18px 0 0;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 23px;
 }
@@ -561,15 +561,15 @@
 .capabilityGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid rgb(255 255 255 / 8%);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-top: 1px solid var(--codexa-line);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .capabilityGrid article {
   min-height: 188px;
   padding: 28px 24px;
-  border-right: 1px solid rgb(255 255 255 / 8%);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .capabilityGrid article:nth-child(3n) { border-right: 0; }
@@ -587,7 +587,7 @@
 
 .capabilityGrid h3 {
   margin: 30px 0 6px;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -596,7 +596,7 @@
 .capabilityGrid p {
   max-width: 270px;
   margin: 0;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 13px;
   line-height: 19px;
 }
@@ -635,7 +635,7 @@
 
   .featureGrid > * {
     border-right: 0;
-    border-bottom: 1px solid rgb(255 255 255 / 8%);
+    border-bottom: 1px solid var(--codexa-line);
   }
 
   .featureCell {
@@ -697,7 +697,7 @@
     min-height: 190px;
     padding: 28px;
     border-right: 0;
-    border-bottom: 1px solid rgb(255 255 255 / 8%);
+    border-bottom: 1px solid var(--codexa-line);
   }
 
   .capabilityGrid article:last-child { border-bottom: 0; }

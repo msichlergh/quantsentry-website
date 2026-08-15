@@ -1,13 +1,13 @@
 .groups {
   min-height: 2400px;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .group {
   display: grid;
   height: 600px;
   grid-template-columns: 450px minmax(0, 1fr);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .group:last-child {
@@ -16,13 +16,13 @@
 
 .group > header {
   padding: 34px 32px;
-  border-right: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
 }
 
 .group h2 {
   max-width: 360px;
   margin: 0;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   font-size: 40px;
   font-weight: 500;
   line-height: 1.04;
@@ -33,7 +33,7 @@
 .group header p {
   max-width: 325px;
   margin: 16px 0 0;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 23px;
 }

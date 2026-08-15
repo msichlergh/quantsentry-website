@@ -3,6 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
 
+import { CodexaButton } from "../shared/CodexaButton";
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
+import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
 import styles from "./CodexaFeatureTabs.module.css";
 
 const tabs = [
@@ -212,10 +215,9 @@ export function CodexaFeatureTabs() {
     <section className={styles.section} ref={sectionRef}>
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
-            <span aria-hidden="true" />
+          <CodexaEyebrow className={styles.eyebrow}>
             Behind the scenes
-          </p>
+          </CodexaEyebrow>
           <h2>The decisions that keep Codexa reliable</h2>
         </header>
 
@@ -275,13 +277,7 @@ export function CodexaFeatureTabs() {
             <div className={styles.copy} key={`copy-${activeIndex}`}>
               <h3>{activeTab.title}</h3>
               <p>{activeTab.description}</p>
-              <a className="codexa-button" href="/codexa/company/sales">
-                <span className="codexa-button__track" aria-hidden="true">
-                  <span>Get Started</span>
-                  <span>Get Started</span>
-                </span>
-                <span className={styles.srOnly}>Get Started</span>
-              </a>
+              <CodexaButton href={CODEXA_ROUTES.sales}>Get Started</CodexaButton>
             </div>
           </div>
         </div>

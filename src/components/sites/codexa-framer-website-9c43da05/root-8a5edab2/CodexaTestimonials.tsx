@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
 import styles from "./CodexaTestimonials.module.css";
 
 const imageRoot =
@@ -109,10 +110,7 @@ export function CodexaTestimonials() {
     <section className={styles.section} aria-labelledby="codexa-testimonials-title">
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <p className="codexa-eyebrow-pill">
-            <span aria-hidden="true" />
-            TESTIMONIALS
-          </p>
+          <CodexaEyebrow>TESTIMONIALS</CodexaEyebrow>
           <h2 id="codexa-testimonials-title">Trusted by developers</h2>
         </header>
 

@@ -1,46 +1,13 @@
-"use client";
-
 import { ArrowRight, Zap } from "lucide-react";
 import Image from "next/image";
-import type { FormEvent } from "react";
+import Link from "next/link";
+
+import { CodexaDemoForm } from "../shared/CodexaDemoForm";
+import { codexaFooterGroups } from "../shared/codexaSiteConfig";
 
 import styles from "./CodexaFooter.module.css";
 
-const footerGroups = [
-  {
-    title: "Product",
-    links: ["Features", "Pricing", "Changelog", "FAQs"],
-  },
-  {
-    title: "Company",
-    links: ["About", "Blog", "Support", "Sales"],
-  },
-  {
-    title: "Legal",
-    links: ["Terms", "Privacy", "Cookies", "404"],
-  },
-] as const;
-
-const linkTargets: Record<string, string> = {
-  Features: "/codexa/product/features",
-  Pricing: "/codexa/product/pricing",
-  Changelog: "/codexa/product/changelog",
-  FAQs: "/codexa/product/faqs",
-  About: "/codexa/company/about",
-  Blog: "/codexa/company/blog",
-  Support: "/codexa/company/support",
-  Sales: "/codexa/company/sales",
-  Terms: "/codexa/legal/terms-and-conditions",
-  Privacy: "/codexa/legal/privacy-policy",
-  Cookies: "/codexa/legal/cookie-policy",
-  "404": "/codexa/404",
-};
-
 export function CodexaFooter() {
-  function preventDemoSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-  }
-
   return (
     <footer className={styles.footer}>
       <div className={styles.cta}>
@@ -79,7 +46,7 @@ export function CodexaFooter() {
             Get insights on automated workflows, AI features, and product
             updates.
           </p>
-          <form onSubmit={preventDemoSubmit}>
+          <CodexaDemoForm>
             <label className={styles.srOnly} htmlFor="codexa-footer-email">
               Email address
             </label>
@@ -92,7 +59,7 @@ export function CodexaFooter() {
               Submit
               <ArrowRight aria-hidden="true" />
             </button>
-          </form>
+          </CodexaDemoForm>
         </div>
 
         <a className={styles.mark} href="#home" aria-label="Back to top">
@@ -105,19 +72,19 @@ export function CodexaFooter() {
         </a>
 
         <nav className={styles.links} aria-label="Footer navigation">
-          {footerGroups.map((group) => (
+          {codexaFooterGroups.map((group) => (
             <div key={group.title}>
               <h3>{group.title}</h3>
               <ul>
                 {group.links.map((link) => (
-                  <li key={link}>
-                    <a href={linkTargets[link]}>
+                  <li key={link.label}>
+                    <Link href={link.href}>
                       <span className={styles.linkTrack} aria-hidden="true">
-                        <span>{link}</span>
-                        <span>{link}</span>
+                        <span>{link.label}</span>
+                        <span>{link.label}</span>
                       </span>
-                      <span className={styles.srOnly}>{link}</span>
-                    </a>
+                      <span className={styles.srOnly}>{link.label}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>

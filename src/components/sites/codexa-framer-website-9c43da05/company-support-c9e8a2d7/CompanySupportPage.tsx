@@ -1,15 +1,12 @@
-"use client";
-
 import Link from "next/link";
-import type { FormEvent } from "react";
+
+import { CodexaDemoForm } from "../shared/CodexaDemoForm";
+import { CodexaFormField } from "../shared/CodexaFormField";
+import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
 
 import styles from "./CompanySupportPage.module.css";
 
 export function CompanySupportPage() {
-  function preventDemoSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-  }
-
   return (
     <section
       className={styles.contactSection}
@@ -33,64 +30,60 @@ export function CompanySupportPage() {
               <br />
               You can ask for a demo directly.
             </p>
-            <Link href="/codexa/company/sales">Contact sales</Link>
+            <Link href={CODEXA_ROUTES.sales}>Contact sales</Link>
           </div>
         </div>
 
-        <form className={styles.form} onSubmit={preventDemoSubmit}>
-          <label className={styles.field}>
-            <span>Full name</span>
-            <input
-              name="fullName"
-              placeholder="Jane Smith"
-              required
-              type="text"
-            />
-          </label>
-          <label className={styles.field}>
-            <span>Email</span>
-            <input
-              name="email"
-              placeholder="jane@framer.com"
-              required
-              type="email"
-            />
-          </label>
-          <label className={styles.field}>
-            <span>Phone number</span>
-            <input
-              name="phone"
-              placeholder="Your phone number"
-              required
-              type="tel"
-            />
-          </label>
-          <label className={styles.field}>
-            <span>Reason for contact</span>
-            <input
-              name="reason"
-              placeholder="Please specify"
-              required
-              type="text"
-            />
-          </label>
-          <label className={styles.field}>
-            <span>How can we help you?</span>
-            <textarea
-              name="message"
-              placeholder="Write your message here"
-              required
-            />
-          </label>
+        <CodexaDemoForm className={styles.form}>
+          <CodexaFormField
+            compactMobile
+            label="Full name"
+            name="fullName"
+            placeholder="Jane Smith"
+            required
+            type="text"
+          />
+          <CodexaFormField
+            compactMobile
+            label="Email"
+            name="email"
+            placeholder="jane@framer.com"
+            required
+            type="email"
+          />
+          <CodexaFormField
+            compactMobile
+            label="Phone number"
+            name="phone"
+            placeholder="Your phone number"
+            required
+            type="tel"
+          />
+          <CodexaFormField
+            compactMobile
+            label="Reason for contact"
+            name="reason"
+            placeholder="Please specify"
+            required
+            type="text"
+          />
+          <CodexaFormField
+            label="How can we help you?"
+            large
+            multiline
+            name="message"
+            placeholder="Write your message here"
+            required
+          />
           <label className={styles.consent}>
             <input name="privacy" type="checkbox" />
             <span>
-              I agree the <Link href="/codexa/legal/privacy-policy">privacy policy</Link>.
+              I agree the <Link href={CODEXA_ROUTES.privacy}>privacy policy</Link>.
             </span>
           </label>
           <button type="submit">Get in touch</button>
           <p className={styles.demoNote}>Demo only — submissions are not sent.</p>
-        </form>
+        </CodexaDemoForm>
       </div>
     </section>
   );
