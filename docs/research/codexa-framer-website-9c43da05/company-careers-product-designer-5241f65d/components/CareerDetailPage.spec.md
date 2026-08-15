@@ -30,7 +30,7 @@
 ## Content and variants
 
 - Render the exact metadata, title, summary, paragraphs, and bullets from `shared/codexaCareerData.ts`.
-- Product Manager must render its six sections twice because that duplication is visibly present on the live source at desktop and mobile.
+- Product Manager must render its six content sections twice because that duplication is visibly present on the live source at desktop and mobile. The second pass repeats the Overview paragraphs without repeating the `Overview` heading, then repeats the remaining five headings normally.
 - Preserve source paragraph breaks and list order.
 - Apply link target: `/codexa/company/support`.
 
@@ -43,4 +43,3 @@
 ## Verification
 
 - Verify all six generated routes, unknown slug 404 behavior, metadata, 1440/768/390 layouts, Product Manager duplicate source behavior, button hover/focus, and full production build.
-

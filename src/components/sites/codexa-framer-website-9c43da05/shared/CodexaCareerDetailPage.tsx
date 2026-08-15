@@ -36,7 +36,13 @@ export function CodexaCareerDetailPage({
 
   return (
     <main className={styles.page}>
-      <header className={styles.hero}>
+      <header
+        className={`${styles.hero} ${
+          opening.compactDesktopHero ? styles.compactDesktopHero : ""
+        } ${
+          opening.tallMobileHero ? styles.tallMobileHero : ""
+        }`}
+      >
         <p className={styles.metadata}>
           <span>{opening.location}</span>
           <span aria-hidden="true">-</span>
@@ -51,10 +57,16 @@ export function CodexaCareerDetailPage({
           {sectionPasses.map((pass) =>
             opening.sections.map((section, sectionIndex) => (
               <section
-                className={styles.section}
+                className={`${styles.section} ${
+                  pass > 0 && sectionIndex === 0
+                    ? styles.repeatedOverview
+                    : ""
+                }`}
                 key={`${pass}-${section.heading}-${sectionIndex}`}
               >
-                <h2>{section.heading}</h2>
+                {pass === 0 || sectionIndex > 0 ? (
+                  <h2>{section.heading}</h2>
+                ) : null}
                 {section.paragraphs?.map((paragraph, paragraphIndex) => (
                   <p key={`${paragraphIndex}-${paragraph}`}>
                     {renderWithEmphasis(paragraph, opening.emphasis)}

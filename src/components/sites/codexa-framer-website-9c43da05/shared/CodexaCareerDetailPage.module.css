@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.compactDesktopHero {
+  height: 179px;
+}
+
 .metadata {
   display: flex;
   margin: 0;
@@ -74,6 +78,10 @@
   margin-top: 40px;
 }
 
+.section + .repeatedOverview {
+  margin-top: 0;
+}
+
 .section h2 {
   margin: 0;
   color: #fff;
@@ -93,11 +101,13 @@
 
 .section p {
   margin: 20px 0 0;
+  white-space: pre-line;
 }
 
 .section ul {
   margin: 32px 0 0;
   padding-left: 18px;
+  list-style: disc;
 }
 
 .section li {
@@ -105,6 +115,7 @@
 }
 
 .section li::marker {
+  color: #969696;
   font-size: 0.55em;
 }
 
@@ -186,6 +197,10 @@
     border-left: 1px solid #262626;
   }
 
+  .compactDesktopHero {
+    height: 184px;
+  }
+
   .hero h1 {
     font-size: 40px;
     line-height: 44px;
@@ -206,6 +221,21 @@
   .section li {
     font-size: 15px;
     line-height: 21.75px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero h1 {
+    max-width: 303px;
+  }
+
+  .tallMobileHero {
+    height: 228px;
+  }
+
+  .summary,
+  .content {
+    max-width: 303px;
   }
 }
 

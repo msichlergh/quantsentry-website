@@ -1,9 +1,11 @@
 "use client";
 
 import { useLayoutEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export function CodexaMotion() {
   const markerRef = useRef<HTMLSpanElement>(null);
+  const pathname = usePathname();
 
   useLayoutEffect(() => {
     const root = markerRef.current?.closest<HTMLElement>(".codexa-page");
@@ -80,7 +82,7 @@ export function CodexaMotion() {
       automatedCards.forEach((card) => card.classList.remove("is-automated"));
       root.classList.remove("codexa-motion-ready");
     };
-  }, []);
+  }, [pathname]);
 
   return <span ref={markerRef} className="codexa-motion-anchor" aria-hidden="true" />;
 }

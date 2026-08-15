@@ -347,3 +347,32 @@ final result: passed
 - No remaining P0, P1, or P2 issues in the requested regions.
 
 final result: passed
+
+## Careers landing and career-detail route parity
+
+**Scope and source evidence**
+
+- Live source: `https://codexa.framer.website/company/careers` and the six career-detail URLs listed in the source sitemap.
+- Added local routes: `/codexa/company/careers` plus Product Designer, Backend Engineer, Product Manager, DevOps Engineer, QA Engineer, and Data Analyst detail routes.
+- Source and local captures are stored per route under `docs/design-references/codexa-framer-website-9c43da05/company-careers-*` at `1440 x 900` and `390 x 844`.
+- Settled landing comparison: `.context/careers-landing-desktop-settled-comparison.png`; representative detail comparisons: `.context/product-manager-mobile-comparison.png` and `.context/backend-mobile-comparison.png`.
+
+**Visual and responsive verification**
+
+- Landing page source/local document heights are `3588/3589px` desktop and `4733/4736px` mobile, with matching 1200px frame, hero grid and teal glow, section boundaries, culture cards, job rows, CTA, and footer.
+- Product Manager source/local document heights are `3417/3419px` desktop and `4687/4691px` mobile. Heading positions differ by at most one CSS pixel through both source content passes.
+- The Backend Engineer mobile-only two-line title and 228px hero are preserved; the remaining detail pages use the shared 184px mobile hero.
+- All detail pages preserve source hard line breaks, typography, list markers, article rules, mobile 303px content measure, button styling, and responsive wrapping without horizontal overflow.
+- Product Manager intentionally repeats its source article content while omitting the second `Overview` heading, matching the live page rather than normalizing the source anomaly.
+
+**Behavior and route checks**
+
+- Opening cards reveal from the source offscreen state to `opacity: 1` and `translateY(0)` on viewport entry.
+- Button hover changes from white to `rgb(189, 189, 189)` and swaps the two label tracks by 18px; career-card links target the correct local detail routes.
+- `See Open Positions` targets `#openings`; the mobile menu changes `aria-expanded` from `false` to `true` and exposes the complete navigation.
+- Route-change motion registration now follows the active pathname, so newly rendered Codexa pages retain reveal and marquee behavior during client-side navigation.
+- All 23 URLs from the live sitemap return HTTP 200 under `/codexa`; an unknown career slug returns HTTP 404; `/` returns HTTP 200 and continues to serve Codexa as the default site.
+- Browser verification finished with zero application console errors. The only remaining browser warning is development-only Next.js preload/HMR noise.
+- Repository validation: `npm run check` and `git diff --check` pass.
+
+final result: passed

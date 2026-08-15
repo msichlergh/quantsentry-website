@@ -12,7 +12,9 @@ export type CodexaCareerOpening = {
   summary: string;
   sections: readonly CodexaCareerSection[];
   emphasis: readonly string[];
+  compactDesktopHero?: boolean;
   repeatSections?: boolean;
+  tallMobileHero?: boolean;
 };
 
 export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
@@ -28,7 +30,7 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "Overview",
         paragraphs: [
-          "We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows.",
+          "We’re looking for a Product Designer to shape how users experience Codexa.\nYou’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows.",
           "If you enjoy simplifying systems, crafting clean UI, and thinking in scalable design systems, you’ll feel right at home.",
         ],
       },
@@ -66,13 +68,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "About Codexa",
         paragraphs: [
-          "Codexa is a modern platform focused on building scalable, high-quality digital products. We combine clean design, strong systems, and thoughtful execution to help teams move faster without sacrificing quality.",
+          "Codexa is a modern platform focused on building scalable, high-quality digital products.\nWe combine clean design, strong systems, and thoughtful execution to help teams move faster without sacrificing quality.",
         ],
       },
       {
         heading: "How to Apply",
         paragraphs: [
-          "Send us your portfolio, CV, or Dribbble / Behance profile, along with a short introduction. We’d love to see how you think and design.",
+          "Send us your portfolio, CV, or Dribbble / Behance profile, along with a short introduction.\nWe’d love to see how you think and design.",
         ],
       },
     ],
@@ -84,12 +86,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
     title: "Backend Engineer",
     summary:
       "Build scalable, secure, and high-performance backend systems for Codexa.",
+    tallMobileHero: true,
     emphasis: ["Backend Engineer", "CV", "GitHub profile"],
     sections: [
       {
         heading: "Overview",
         paragraphs: [
-          "We’re looking for a Backend Engineer to power the core infrastructure behind Codexa. You’ll work closely with frontend and product teams to design reliable APIs, handle complex data flows, and ensure platform stability at scale.",
+          "We’re looking for a Backend Engineer to power the core infrastructure behind Codexa.\nYou’ll work closely with frontend and product teams to design reliable APIs, handle complex data flows, and ensure platform stability at scale.",
           "If you enjoy building solid systems that quietly do their job really well, this role is for you.",
         ],
       },
@@ -127,13 +130,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "About Codexa",
         paragraphs: [
-          "Codexa is a modern platform built to support fast-moving product teams. We focus on performance, clarity, and scalable systems that grow with our users.",
+          "Codexa is a modern platform built to support fast-moving product teams.\nWe focus on performance, clarity, and scalable systems that grow with our users.",
         ],
       },
       {
         heading: "How to Apply",
         paragraphs: [
-          "Send us your CV, GitHub profile, or relevant project links, along with a short introduction. We’re excited to learn how you build.",
+          "Send us your CV, GitHub profile, or relevant project links, along with a short introduction.\nWe’re excited to learn how you build.",
         ],
       },
     ],
@@ -144,13 +147,14 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
     schedule: "FULL TIME",
     title: "Product Manager",
     summary: "Own product direction and help shape the future of Codexa.",
+    compactDesktopHero: true,
     emphasis: ["Product Manager", "CV or LinkedIn profile"],
     repeatSections: true,
     sections: [
       {
         heading: "Overview",
         paragraphs: [
-          "We’re looking for a Product Manager to guide the direction of Codexa. You’ll work at the intersection of design, engineering, and business to define priorities, ship impactful features, and ensure we’re building the right things.",
+          "We’re looking for a Product Manager to guide the direction of Codexa.\nYou’ll work at the intersection of design, engineering, and business to define priorities, ship impactful features, and ensure we’re building the right things.",
           "If you enjoy turning strategy into clear execution, this role is for you.",
         ],
       },
@@ -186,13 +190,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "About Codexa",
         paragraphs: [
-          "Codexa helps teams design and build scalable digital products with clarity and speed. We focus on strong systems, clean execution, and thoughtful product decisions.",
+          "Codexa helps teams design and build scalable digital products with clarity and speed.\nWe focus on strong systems, clean execution, and thoughtful product decisions.",
         ],
       },
       {
         heading: "How to Apply",
         paragraphs: [
-          "Send us your CV or LinkedIn profile, along with a short introduction. We’d love to hear how you approach product thinking.",
+          "Send us your CV or LinkedIn profile, along with a short introduction.\nWe’d love to hear how you approach product thinking.",
         ],
       },
     ],
@@ -209,7 +213,7 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "Overview",
         paragraphs: [
-          "We’re looking for a DevOps Engineer to keep Codexa fast, secure, and reliable. You’ll be responsible for infrastructure, deployment pipelines, and system stability across environments.",
+          "We’re looking for a DevOps Engineer to keep Codexa fast, secure, and reliable.\nYou’ll be responsible for infrastructure, deployment pipelines, and system stability across environments.",
           "If you enjoy automation, scalability, and clean infrastructure, you’ll fit right in.",
         ],
       },
@@ -246,13 +250,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "About Codexa",
         paragraphs: [
-          "Codexa is built on strong systems and scalable infrastructure. We focus on reliability, performance, and clean execution across the platform.",
+          "Codexa is built on strong systems and scalable infrastructure.\nWe focus on reliability, performance, and clean execution across the platform.",
         ],
       },
       {
         heading: "How to Apply",
         paragraphs: [
-          "Send us your CV or LinkedIn profile, along with a short introduction. We’d love to hear how you keep systems running smoothly.",
+          "Send us your CV or LinkedIn profile, along with a short introduction.\nWe’d love to hear how you keep systems running smoothly.",
         ],
       },
     ],
@@ -269,7 +273,7 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "Overview",
         paragraphs: [
-          "We’re looking for a QA Engineer to maintain the quality and reliability of Codexa. You’ll work closely with product and engineering teams to identify issues early and ensure every release meets our standards.",
+          "We’re looking for a QA Engineer to maintain the quality and reliability of Codexa.\nYou’ll work closely with product and engineering teams to identify issues early and ensure every release meets our standards.",
           "If you have an eye for detail and enjoy improving product quality, this role is for you.",
         ],
       },
@@ -306,13 +310,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "About Codexa",
         paragraphs: [
-          "Codexa focuses on building reliable, scalable products without unnecessary complexity. Quality is a core part of how we build and ship.",
+          "Codexa focuses on building reliable, scalable products without unnecessary complexity.\nQuality is a core part of how we build and ship.",
         ],
       },
       {
         heading: "How to Apply",
         paragraphs: [
-          "Send us your CV or LinkedIn profile, along with a short introduction. We’d love to see how you think about quality.",
+          "Send us your CV or LinkedIn profile, along with a short introduction.\nWe’d love to see how you think about quality.",
         ],
       },
     ],
@@ -329,7 +333,7 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "Overview",
         paragraphs: [
-          "We’re looking for a Data Analyst to help Codexa make smarter, data-driven decisions. You’ll work with product, growth, and engineering teams to analyze usage patterns, uncover insights, and support strategic planning.",
+          "We’re looking for a Data Analyst to help Codexa make smarter, data-driven decisions.\nYou’ll work with product, growth, and engineering teams to analyze usage patterns, uncover insights, and support strategic planning.",
           "If you enjoy turning raw data into meaningful stories, this role is for you.",
         ],
       },
@@ -365,13 +369,13 @@ export const codexaCareerOpenings: readonly CodexaCareerOpening[] = [
       {
         heading: "About Codexa",
         paragraphs: [
-          "Codexa helps teams build better products through clarity, structure, and insight. Data plays a key role in how we prioritize and improve the platform.",
+          "Codexa helps teams build better products through clarity, structure, and insight.\nData plays a key role in how we prioritize and improve the platform.",
         ],
       },
       {
         heading: "How to Apply",
         paragraphs: [
-          "Send us your CV or LinkedIn profile, along with a short introduction. We’d love to see how you think with data.",
+          "Send us your CV or LinkedIn profile, along with a short introduction.\nWe’d love to see how you think with data.",
         ],
       },
     ],
