@@ -67,7 +67,7 @@ export function CompanyBlogPage() {
       <section className={styles.blogArea} aria-label="Latest articles">
         <Link
           className={styles.featured}
-          href={`/codexa/company/blog/${featured.slug}`}
+          href={`/company/blog/${featured.slug}`}
         >
           <div className={styles.featuredImage}>
             <Image
@@ -104,7 +104,7 @@ export function CompanyBlogPage() {
           {posts.map((post) => (
             <Link
               className={styles.card}
-              href={`/codexa/company/blog/${post.slug}`}
+              href={`/company/blog/${post.slug}`}
               key={post.slug}
             >
               <div className={styles.cardImage}>

@@ -15,10 +15,14 @@ type TextareaFieldProps = {
 } & TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export function CodexaFormField(props: InputFieldProps | TextareaFieldProps) {
-  const { label, multiline } = props;
-
-  if (multiline) {
-    const { large = false, ...textareaProps } = props;
+  if (props.multiline) {
+    const {
+      label,
+      multiline: _multiline,
+      large = false,
+      ...textareaProps
+    } = props;
+    void _multiline;
 
     return (
       <label className={styles.field}>
@@ -33,7 +37,13 @@ export function CodexaFormField(props: InputFieldProps | TextareaFieldProps) {
     );
   }
 
-  const { compactMobile = false, ...inputProps } = props;
+  const {
+    label,
+    multiline: _multiline,
+    compactMobile = false,
+    ...inputProps
+  } = props;
+  void _multiline;
 
   return (
     <label className={styles.field}>

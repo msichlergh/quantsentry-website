@@ -6,9 +6,11 @@ future changes predictable.
 
 ## Route ownership
 
-Every `src/app/codexa/**/page.tsx` route owns exactly one
-`CodexaSiteFrame`. Page components render page content only and must not mount
-navigation, motion setup, the footer, or another site frame.
+Every `src/app/codexa/**/page.tsx` implementation route owns exactly one
+`CodexaSiteFrame`. Public Codexa URLs are rooted at `/`; the internal
+`/codexa` namespace is hidden by rewrites and permanently redirects legacy
+links to their clean canonical paths. Page components render page content only
+and must not mount navigation, motion setup, the footer, or another site frame.
 
 - Use `variant="home"` only for the Codexa landing page. It provides the
   continuous 1200px side rails used by the home design.

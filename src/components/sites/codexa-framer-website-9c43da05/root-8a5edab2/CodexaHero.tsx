@@ -45,7 +45,7 @@ export function CodexaHero() {
 
           <a
             className={styles.button}
-            href="/codexa/company/sales"
+            href="/company/sales"
           >
             <span className={styles.buttonTrack}>
               <span>Get started free</span>
