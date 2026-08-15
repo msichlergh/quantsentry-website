@@ -11,7 +11,11 @@ export function CompanySupportPage() {
   }
 
   return (
-    <section className={styles.contactSection} aria-labelledby="support-title">
+    <section
+      className={styles.contactSection}
+      id="support"
+      aria-labelledby="support-title"
+    >
       <div className={styles.shell}>
         <div className={styles.intro}>
           <div>
@@ -36,23 +40,47 @@ export function CompanySupportPage() {
         <form className={styles.form} onSubmit={preventDemoSubmit}>
           <label className={styles.field}>
             <span>Full name</span>
-            <input name="fullName" placeholder="Jane Smith" type="text" />
+            <input
+              name="fullName"
+              placeholder="Jane Smith"
+              required
+              type="text"
+            />
           </label>
           <label className={styles.field}>
             <span>Email</span>
-            <input name="email" placeholder="jane@framer.com" type="email" />
+            <input
+              name="email"
+              placeholder="jane@framer.com"
+              required
+              type="email"
+            />
           </label>
           <label className={styles.field}>
             <span>Phone number</span>
-            <input name="phone" placeholder="Your phone number" type="tel" />
+            <input
+              name="phone"
+              placeholder="Your phone number"
+              required
+              type="tel"
+            />
           </label>
           <label className={styles.field}>
             <span>Reason for contact</span>
-            <input name="reason" placeholder="Please specify" type="text" />
+            <input
+              name="reason"
+              placeholder="Please specify"
+              required
+              type="text"
+            />
           </label>
           <label className={styles.field}>
             <span>How can we help you?</span>
-            <textarea name="message" placeholder="Write your message here" />
+            <textarea
+              name="message"
+              placeholder="Write your message here"
+              required
+            />
           </label>
           <label className={styles.consent}>
             <input name="privacy" type="checkbox" />

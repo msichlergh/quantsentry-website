@@ -14,7 +14,7 @@ export function CodexaSiteFrame({
   showFooter?: boolean;
 }) {
   return (
-    <div className="codexa-page">
+    <div className="codexa-page" id="home">
       <CodexaMotion />
       <CodexaNavigation />
       <div className={styles.main}>{children}</div>
