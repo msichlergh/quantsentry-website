@@ -2,6 +2,7 @@
   height: 843.82px;
   overflow: hidden;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
+  background: #09090b;
 }
 
 .pricingArea > section {
@@ -14,7 +15,7 @@
   max-width: none;
   height: 843.82px;
   gap: 0;
-  padding: 64px 0 80px;
+  padding: 16.203px 0 80px;
 }
 
 .pricingArea > section > div > header {
@@ -23,7 +24,7 @@
 
 .comparison {
   min-height: 1100.453px;
-  padding: 128px 0;
+  padding: 0 0 128px;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
 }
 
@@ -38,7 +39,8 @@
   width: 100%;
   min-width: 720px;
   color: #929496;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 23.2px;
 }
 
 .tableHeader,
@@ -48,7 +50,7 @@
 }
 
 .tableHeader {
-  height: 75px;
+  height: 73.203px;
   border-top: 1px solid rgb(255 255 255 / 8%);
   border-bottom: 1px solid rgb(255 255 255 / 8%);
 }
@@ -71,11 +73,12 @@
 
 .tableHeader span {
   color: #f5f6f6;
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 25.2px;
 }
 
 .tableRow {
-  min-height: 53px;
+  min-height: 55.203px;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
 }
 
@@ -113,7 +116,7 @@
 
 .customPlan {
   display: flex;
-  min-height: 128px;
+  min-height: 126.406px;
   padding: 26px 24px;
   align-items: center;
   justify-content: space-between;
@@ -123,9 +126,9 @@
 .customPlan h2 {
   margin: 0;
   color: #f5f6f6;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 .customPlan p {

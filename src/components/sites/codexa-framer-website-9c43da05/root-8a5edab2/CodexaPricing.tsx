@@ -107,15 +107,19 @@ export function CodexaPricing() {
   return (
     <section id="pricing" className={styles.section}>
       <div className={styles.container}>
-        <header className={styles.header}>
-          <p className={styles.eyebrow}>
+        <header className={`${styles.header} codexa-reveal`}>
+          <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
             <span aria-hidden="true" />
             Pricing
           </p>
-          <h2>Simple plans, built for every team</h2>
+          <h2>
+            Simple plans,
+            <br />
+            built for every team
+          </h2>
         </header>
 
-        <div className={styles.pricingBody}>
+        <div className={`${styles.pricingBody} codexa-reveal codexa-reveal--delay-1`}>
           <div className={styles.billingToggle} aria-label="Billing period">
             <button
               className={!yearly ? styles.activeBilling : undefined}
@@ -173,7 +177,10 @@ export function CodexaPricing() {
                       className={`${styles.cta} ${plan.featured ? styles.featuredCta : ""}`}
                       href="/codexa/company/sales"
                     >
-                      <span>{plan.cta}</span>
+                      <span className={styles.ctaLabel}>
+                        <span>{plan.cta}</span>
+                        <span aria-hidden="true">{plan.cta}</span>
+                      </span>
                       <ArrowIcon />
                     </a>
                   </div>

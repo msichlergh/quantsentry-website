@@ -3,7 +3,7 @@
   padding: 0 40px;
   overflow: hidden;
   color: #f5f6f6;
-  background: #060708;
+  background: var(--codexa-bg, #09090b);
 }
 
 .inner {
@@ -46,46 +46,59 @@
   position: relative;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, minmax(0, 352px));
-  gap: 48px;
+  grid-template-columns: repeat(3, minmax(0, 400px));
+  gap: 0;
   justify-content: center;
-  border-top: 1px solid #242728;
-  border-bottom: 1px solid #242728;
+}
+
+.grid::before {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  content: "";
+  pointer-events: none;
 }
 
 .card {
   position: relative;
   display: flex;
   min-width: 0;
+  padding: 24px;
   flex-direction: column;
+  gap: 24px;
 }
 
 .card:not(:last-child)::after {
   position: absolute;
   top: 0;
-  right: -24px;
+  right: 0;
   bottom: 0;
   width: 1px;
-  background: #242728;
+  background: #262626;
   content: "";
 }
 
 .visual {
   position: relative;
-  height: 378px;
+  height: 336px;
   overflow: hidden;
   background: #060708;
 }
 
 .caption {
-  min-height: 137px;
-  padding: 4px 0 23px;
+  display: flex;
+  min-height: 108.609px;
+  padding: 0;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .stepLabel {
   display: inline-flex;
   margin-bottom: 11px;
-  padding: 2px 6px;
+  padding: 0 6px;
   border-radius: 2px;
   color: #00ddd0;
   background: rgb(0 208 193 / 15%);
@@ -141,11 +154,15 @@
 }
 
 .toolRail {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
-  width: 100%;
+  width: 468px;
   align-items: center;
-  justify-content: space-between;
+  gap: 12px;
+  transform: translate(-50%, -50%);
+  transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .tool,
@@ -162,6 +179,21 @@
   font-size: 36px;
   font-weight: 700;
   box-shadow: 0 0 28px rgb(0 0 0 / 75%);
+  transition:
+    width 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    height 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    color 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    font-size 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.tool img,
+.mutedTool img {
+  width: 62%;
+  height: 62%;
+  object-fit: contain;
+  opacity: 0.75;
 }
 
 .mutedTool {
@@ -185,13 +217,50 @@
 
 .integrationLabel {
   position: absolute;
-  bottom: 16px;
+  top: 122px;
   color: #00cabe;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", monospace;
   font-size: 10px;
   letter-spacing: 0.08em;
-  opacity: 0.55;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card:hover .toolRail,
+.card:global(.is-automated) .toolRail {
+  transform: translate(calc(-50% + 72px), -50%);
+}
+
+.card:hover .primaryTool,
+.card:global(.is-automated) .primaryTool {
+  width: 62px;
+  height: 62px;
+  border-color: #1c1f20;
+  color: #898b8c;
+  font-size: 36px;
+  box-shadow: 0 0 28px rgb(0 0 0 / 75%);
+}
+
+.card:hover .previousPrimaryTool,
+.card:global(.is-automated) .previousPrimaryTool {
+  width: 80px;
+  height: 80px;
+  border-color: #303334;
+  color: #c5c7c7;
+  font-size: 49px;
+  box-shadow:
+    0 0 0 11px rgb(15 17 18 / 82%),
+    0 0 35px rgb(0 0 0 / 95%);
+}
+
+.card:hover .integrationLabel,
+.card:global(.is-automated) .integrationLabel {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .statusVisual {
@@ -239,11 +308,49 @@
   color: #00d8ca;
   background: rgb(0 216 202 / 14%);
   font-size: 12px;
+  transition:
+    color 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .statusCheckActive {
   color: #071112;
   background: #00d6ca;
+}
+
+.workflowCursor,
+.analyticsCursor {
+  position: absolute;
+  z-index: 2;
+  width: 17px;
+  height: 17px;
+  overflow: visible;
+  pointer-events: none;
+  transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.workflowCursor {
+  top: 118px;
+  left: 232px;
+}
+
+.card:hover .workflowCursor,
+.card:global(.is-automated) .workflowCursor {
+  transform: translate(-15px, -79px);
+}
+
+.card:hover .statusRow:first-child .statusCheck,
+.card:global(.is-automated) .statusRow:first-child .statusCheck {
+  color: #071112;
+  background: #00d6ca;
+  box-shadow: 0 0 0 7px rgb(0 214 202 / 9%);
+}
+
+.card:hover .statusRow:nth-child(2) .statusCheck,
+.card:global(.is-automated) .statusRow:nth-child(2) .statusCheck {
+  color: #00d8ca;
+  background: rgb(0 216 202 / 14%);
 }
 
 .analyticsVisual {
@@ -267,6 +374,7 @@
   border-radius: 50%;
   background: #00c8bd;
   box-shadow: 0 0 0 8px rgb(0 200 189 / 10%);
+  animation: metric-pulse 2.5s ease-out infinite;
 }
 
 .metric strong {
@@ -293,7 +401,7 @@
   height: 220px;
 }
 
-.chart svg {
+.chartGraphic {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -314,73 +422,58 @@
 
 .chartPulse {
   position: absolute;
-  top: 68px;
-  left: 47%;
+  top: 36px;
+  left: 33.5%;
   width: 7px;
   height: 7px;
   border: 1px solid #00d7ca;
   border-radius: 50%;
   background: #060708;
   opacity: 0;
+  transition: opacity 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .chartReading {
   position: absolute;
   top: 38px;
-  left: 38%;
-  padding: 4px 7px;
-  border: 1px solid #273334;
-  border-radius: 4px;
-  color: #aeb2b2;
-  background: #0a0c0d;
+  left: 33.5%;
+  padding-left: 17px;
+  color: #00cabe;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", monospace;
-  font-size: 9px;
+  font-size: 10px;
+  line-height: 12px;
   opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .orbitMiddle {
-    animation: orbit-breathe 3.6s ease-in-out infinite;
-  }
-
-  .toolRail {
-    animation: tools-drift 5s ease-in-out infinite;
-  }
-
-  .statusRow:nth-child(2) .statusCheck {
-    animation: status-ping 2.8s ease-in-out infinite;
-  }
-
-  .chartPulse,
-  .chartReading {
-    animation: chart-readout 4.8s ease-in-out infinite;
-  }
+.analyticsCursor {
+  top: 86px;
+  left: 44%;
 }
 
-@keyframes orbit-breathe {
-  50% {
-    border-color: #292d2e;
-    transform: scale(1.025);
-  }
+.card:hover .analyticsCursor,
+.card:global(.is-automated) .analyticsCursor {
+  transform: translate(-18px, -29px);
 }
 
-@keyframes tools-drift {
-  50% {
-    transform: translateX(4px);
-  }
+.card:hover .chartPulse,
+.card:hover .chartReading,
+.card:global(.is-automated) .chartPulse,
+.card:global(.is-automated) .chartReading {
+  opacity: 1;
 }
 
-@keyframes status-ping {
-  50% {
-    box-shadow: 0 0 0 7px rgb(0 214 202 / 9%);
+@keyframes metric-pulse {
+  0%,
+  45% {
+    box-shadow: 0 0 0 0 rgb(0 200 189 / 22%);
   }
-}
 
-@keyframes chart-readout {
-  38%,
-  68% {
-    opacity: 1;
+  80%,
+  100% {
+    box-shadow: 0 0 0 10px rgb(0 200 189 / 0%);
   }
 }
 
@@ -414,6 +507,7 @@
 
   .card {
     width: 100%;
+    padding: 0;
   }
 
   .card:not(:last-child)::after {
@@ -437,6 +531,10 @@
   .toolRail {
     max-width: 420px;
     margin: 0 auto;
+  }
+
+  .workflowCursor {
+    left: min(68%, 288px);
   }
 }
 
@@ -462,5 +560,19 @@
   .primaryTool {
     width: 70px;
     height: 70px;
+  }
+
+  .card:hover .primaryTool,
+  .card:global(.is-automated) .primaryTool {
+    width: 53px;
+    height: 53px;
+    font-size: 30px;
+  }
+
+  .card:hover .previousPrimaryTool,
+  .card:global(.is-automated) .previousPrimaryTool {
+    width: 70px;
+    height: 70px;
+    font-size: 42px;
   }
 }

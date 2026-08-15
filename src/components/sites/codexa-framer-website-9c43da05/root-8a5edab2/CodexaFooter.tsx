@@ -1,6 +1,7 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
+import Image from "next/image";
 import type { FormEvent } from "react";
 
 import styles from "./CodexaFooter.module.css";
@@ -35,23 +36,6 @@ const linkTargets: Record<string, string> = {
   "404": "/codexa/404",
 };
 
-function CodexaLogo({ className }: { className?: string }) {
-  return (
-    <svg
-      aria-label="Codexa"
-      className={className}
-      role="img"
-      viewBox="0 0 64 64"
-    >
-      <circle cx="32" cy="32" r="31" fill="currentColor" />
-      <path
-        d="M7 36.6h21.5L15.2 50.8a27 27 0 0 0 18 7.2c13.5 0 24.7-9.9 26.8-22.7H39.1l12.8-13.6A26.9 26.9 0 0 0 33.2 14C19.8 14 8.8 23.7 7 36.6Z"
-        fill="#09090b"
-      />
-    </svg>
-  );
-}
-
 export function CodexaFooter() {
   function preventDemoSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -62,23 +46,33 @@ export function CodexaFooter() {
       <div className={styles.cta}>
         <div className={styles.ctaGrid} aria-hidden="true" />
         <div className={styles.ctaGlow} aria-hidden="true" />
-        <div className={styles.ctaInner}>
+        <div className={styles.ctaWhiteGlowWide} aria-hidden="true" />
+        <div className={styles.ctaWhiteGlowTight} aria-hidden="true" />
+        <div className={styles.ctaWhiteRule} aria-hidden="true" />
+        <div className={`${styles.ctaInner} codexa-reveal`}>
           <p className={styles.trustLine}>
             <span aria-label="5 out of 5 stars">★★★★★</span>
             12K+ teams trust Codexa
           </p>
-          <h2>Automate more. Ship faster.</h2>
+          <h2>
+            Automate more.
+            <br />
+            Ship faster.
+          </h2>
           <a
             className={styles.ctaButton}
             href="https://buy.polar.sh/polar_cl_lvmZA1kYEOINNnx4bkeyZxW1ajP5d6vUQusL108riZ7"
           >
-            Explore the Template
+            <span className={styles.buttonLabel}>
+              <span>Explore the Template</span>
+              <span aria-hidden="true">Explore the Template</span>
+            </span>
             <ArrowRight aria-hidden="true" />
           </a>
         </div>
       </div>
 
-      <div className={styles.lower}>
+      <div className={`${styles.lower} codexa-reveal`}>
         <div className={styles.newsletter}>
           <h3>Stay in the loop</h3>
           <p>
@@ -101,9 +95,14 @@ export function CodexaFooter() {
           </form>
         </div>
 
-        <div className={styles.mark}>
-          <CodexaLogo />
-        </div>
+        <a className={styles.mark} href="#home" aria-label="Back to top">
+          <Image
+            src="/sites/codexa-framer-website-9c43da05/root-8a5edab2/images/codexa-mark.png"
+            width={64}
+            height={64}
+            alt=""
+          />
+        </a>
 
         <nav className={styles.links} aria-label="Footer navigation">
           {footerGroups.map((group) => (
@@ -112,7 +111,13 @@ export function CodexaFooter() {
               <ul>
                 {group.links.map((link) => (
                   <li key={link}>
-                    <a href={linkTargets[link]}>{link}</a>
+                    <a href={linkTargets[link]}>
+                      <span className={styles.linkTrack} aria-hidden="true">
+                        <span>{link}</span>
+                        <span>{link}</span>
+                      </span>
+                      <span className={styles.srOnly}>{link}</span>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -125,6 +130,7 @@ export function CodexaFooter() {
         <p>©2026 CODEXA. ALL RIGHTS RESERVED.</p>
         <p>
           CREATED BY <a href="https://x.com/kadircalik">KADIR CALIK</a>
+          <Zap aria-hidden="true" className={styles.creditIcon} />
         </p>
       </div>
     </footer>

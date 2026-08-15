@@ -69,7 +69,7 @@ export function CodexaFaqs() {
       <div className={styles.frame}>
         <div className={styles.left}>
           <header className={`${styles.intro} codexa-reveal`}>
-            <p className={styles.eyebrow}>
+            <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
               <span aria-hidden="true" />
               FAQs
             </p>
@@ -77,11 +77,11 @@ export function CodexaFaqs() {
             <p>Here’s everything you need to know before getting started.</p>
           </header>
 
-          <aside className={styles.support}>
+          <aside className={`${styles.support} codexa-reveal codexa-reveal--delay-1`}>
             <h3>Still have questions?</h3>
             <p>Contact us and we’ll help you out.</p>
             <a
-              className="codexa-button"
+              className="codexa-button codexa-button--dark"
               href="/codexa/product/faqs"
             >
               <span className="codexa-button__track" aria-hidden="true">
@@ -93,7 +93,7 @@ export function CodexaFaqs() {
           </aside>
         </div>
 
-        <div className={styles.accordion}>
+        <div className={`${styles.accordion} codexa-reveal codexa-reveal--delay-1`}>
           {faqs.map((faq, index) => {
             const isOpen = openItems.has(index);
             const answerId = `codexa-faq-answer-${index}`;

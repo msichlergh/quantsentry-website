@@ -1,0 +1,4817 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "scrollHeight": 4733
+  },
+  "named": [
+    {
+      "tag": "nav",
+      "name": "Phone - Close",
+      "text": "Codexa",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 72
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "Codexa",
+      "box": {
+        "x": 12,
+        "y": 0,
+        "width": 351,
+        "height": 72
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "20px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Left",
+      "text": "Codexa",
+      "box": {
+        "x": 28,
+        "y": 16,
+        "width": 319,
+        "height": 40
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "main",
+      "name": "Main",
+      "text": "CAREERS Careers at Codexa At Codexa, we’re building tools that empower businesses to work smarter, stay organized, and grow faster. Join a team building scalable, thoughtful digital products. At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity. We believe great products ",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 3711
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "Hero",
+      "text": "CAREERS Careers at Codexa At Codexa, we’re building tools that empower businesses to work smarter, stay organized, and grow faster.",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 345
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "CAREERS Careers at Codexa At Codexa, we’re building tools that empower businesses to work smarter, stay organized, and grow faster.",
+      "box": {
+        "x": 12,
+        "y": 0,
+        "width": 351,
+        "height": 345
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "32px",
+        "padding": "120px 0px 64px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Heading",
+      "text": "CAREERS Careers at Codexa At Codexa, we’re building tools that empower businesses to work smarter, stay organized, and grow faster.",
+      "box": {
+        "x": 12,
+        "y": 120,
+        "width": 351,
+        "height": 161
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Pattern",
+      "text": "",
+      "box": {
+        "x": 11,
+        "y": 1,
+        "width": 353,
+        "height": 345
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Light",
+      "text": "",
+      "box": {
+        "x": 147,
+        "y": 147,
+        "width": 316,
+        "height": 398
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Lime",
+      "text": "",
+      "box": {
+        "x": 155,
+        "y": 325,
+        "width": 300,
+        "height": 36
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "Join team section",
+      "text": "Join a team building scalable, thoughtful digital products. At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity. We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team memb",
+      "box": {
+        "x": 0,
+        "y": 345,
+        "width": 375,
+        "height": 576
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "Join a team building scalable, thoughtful digital products. At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity. We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team memb",
+      "box": {
+        "x": 12,
+        "y": 345,
+        "width": 351,
+        "height": 576
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 0px 80px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Intro",
+      "text": "Join a team building scalable, thoughtful digital products. At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity. We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team memb",
+      "box": {
+        "x": 12,
+        "y": 345,
+        "width": 351,
+        "height": 496
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Left",
+      "text": "Join a team building scalable, thoughtful digital products.",
+      "box": {
+        "x": 12,
+        "y": 345,
+        "width": 351,
+        "height": 160
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "32px 16px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Right",
+      "text": "At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity. We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team member helps shape what we build next. See Open Positions See Op",
+      "box": {
+        "x": 12,
+        "y": 505,
+        "width": 351,
+        "height": 336
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "0px 16px 32px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Subtitle",
+      "text": "At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity. We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team member helps shape what we build next.",
+      "box": {
+        "x": 28,
+        "y": 505,
+        "width": 287,
+        "height": 238
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "See Open Positions See Open Positions",
+      "box": {
+        "x": 28,
+        "y": 767,
+        "width": 207,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "Capabilities",
+      "text": "OUR CULTURE A team built on trust, ownership, and continuous improvement. Ownership mindset Everyone takes responsibility for what they build. Clear communication We value clarity, feedback, and open conversations. Craft over speed Quality and long-term thinking guide our decisions. Build together We collaborate closely across roles and disciplines. Learn continuously Growth comes from curiosity a",
+      "box": {
+        "x": 0,
+        "y": 921,
+        "width": 375,
+        "height": 1162
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "OUR CULTURE A team built on trust, ownership, and continuous improvement. Ownership mindset Everyone takes responsibility for what they build. Clear communication We value clarity, feedback, and open conversations. Craft over speed Quality and long-term thinking guide our decisions. Build together We collaborate closely across roles and disciplines. Learn continuously Growth comes from curiosity a",
+      "box": {
+        "x": 12,
+        "y": 921,
+        "width": 351,
+        "height": 1162
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "48px",
+        "padding": "64px 0px 80px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Heading",
+      "text": "OUR CULTURE A team built on trust, ownership, and continuous improvement.",
+      "box": {
+        "x": 12,
+        "y": 985,
+        "width": 351,
+        "height": 250
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Benefit Cards",
+      "text": "Ownership mindset Everyone takes responsibility for what they build. Clear communication We value clarity, feedback, and open conversations. Craft over speed Quality and long-term thinking guide our decisions. Build together We collaborate closely across roles and disciplines. Learn continuously Growth comes from curiosity and constant learning. Real-world impact Our work solves real problems for ",
+      "box": {
+        "x": 12,
+        "y": 1283,
+        "width": 351,
+        "height": 720
+      },
+      "styles": {
+        "display": "grid",
+        "flexDirection": "row",
+        "gridTemplateColumns": "175.5px 175.5px",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Mobile",
+      "text": "Ownership mindset Everyone takes responsibility for what they build.",
+      "box": {
+        "x": 12,
+        "y": 1283,
+        "width": 176,
+        "height": 240
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Mobile",
+      "text": "Clear communication We value clarity, feedback, and open conversations.",
+      "box": {
+        "x": 188,
+        "y": 1283,
+        "width": 176,
+        "height": 240
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Mobile",
+      "text": "Craft over speed Quality and long-term thinking guide our decisions.",
+      "box": {
+        "x": 12,
+        "y": 1523,
+        "width": 176,
+        "height": 240
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Mobile",
+      "text": "Build together We collaborate closely across roles and disciplines.",
+      "box": {
+        "x": 188,
+        "y": 1523,
+        "width": 176,
+        "height": 240
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Mobile",
+      "text": "Learn continuously Growth comes from curiosity and constant learning.",
+      "box": {
+        "x": 12,
+        "y": 1763,
+        "width": 176,
+        "height": 240
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Mobile",
+      "text": "Real-world impact Our work solves real problems for real teams.",
+      "box": {
+        "x": 188,
+        "y": 1763,
+        "width": 176,
+        "height": 240
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "Openings",
+      "text": "CURRENT OPENINGS Explore opportunities and join our team Open roles across design, engineering, and product teams. REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform. Apply now Apply now REMOTE - FULL TIME Backend Engineer Build scalable, secure, and high-performance backend systems for Codexa. Apply now Apply now REMOTE - FULL TIME ",
+      "box": {
+        "x": 0,
+        "y": 2083,
+        "width": 375,
+        "height": 1629
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "CURRENT OPENINGS Explore opportunities and join our team Open roles across design, engineering, and product teams. REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform. Apply now Apply now REMOTE - FULL TIME Backend Engineer Build scalable, secure, and high-performance backend systems for Codexa. Apply now Apply now REMOTE - FULL TIME ",
+      "box": {
+        "x": 12,
+        "y": 2083,
+        "width": 351,
+        "height": 1629
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Heading",
+      "text": "CURRENT OPENINGS Explore opportunities and join our team Open roles across design, engineering, and product teams.",
+      "box": {
+        "x": 12,
+        "y": 2083,
+        "width": 351,
+        "height": 295
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Headline",
+      "text": "CURRENT OPENINGS Explore opportunities and join our team Open roles across design, engineering, and product teams.",
+      "box": {
+        "x": 12,
+        "y": 2083,
+        "width": 351,
+        "height": 295
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "32px 24px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Phone",
+      "text": "REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform. Apply now Apply now",
+      "box": {
+        "x": 12,
+        "y": 2438,
+        "width": 351,
+        "height": 222
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Card Title",
+      "text": "REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform.",
+      "box": {
+        "x": 28,
+        "y": 2462,
+        "width": 319,
+        "height": 108
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Apply",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 2594,
+        "width": 319,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Phone",
+      "text": "REMOTE - FULL TIME Backend Engineer Build scalable, secure, and high-performance backend systems for Codexa. Apply now Apply now",
+      "box": {
+        "x": 12,
+        "y": 2660,
+        "width": 351,
+        "height": 222
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Card Title",
+      "text": "REMOTE - FULL TIME Backend Engineer Build scalable, secure, and high-performance backend systems for Codexa.",
+      "box": {
+        "x": 28,
+        "y": 2684,
+        "width": 319,
+        "height": 108
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Apply",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 2816,
+        "width": 319,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Phone",
+      "text": "REMOTE - FULL TIME Product Manager Own product direction and help shape the future of Codexa. Apply now Apply now",
+      "box": {
+        "x": 12,
+        "y": 2882,
+        "width": 351,
+        "height": 222
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Card Title",
+      "text": "REMOTE - FULL TIME Product Manager Own product direction and help shape the future of Codexa.",
+      "box": {
+        "x": 28,
+        "y": 2906,
+        "width": 319,
+        "height": 108
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Apply",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3039,
+        "width": 319,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Phone",
+      "text": "REMOTE - HALF TIME DevOps Engineer Build and maintain reliable infrastructure that powers Codexa at scale. Apply now Apply now",
+      "box": {
+        "x": 12,
+        "y": 3105,
+        "width": 351,
+        "height": 222
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Card Title",
+      "text": "REMOTE - HALF TIME DevOps Engineer Build and maintain reliable infrastructure that powers Codexa at scale.",
+      "box": {
+        "x": 28,
+        "y": 3129,
+        "width": 319,
+        "height": 108
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Apply",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3261,
+        "width": 319,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Phone",
+      "text": "REMOTE - FULL TIME QA Engineer Ensure Codexa delivers a reliable, polished, and bug-free product experience. Apply now Apply now",
+      "box": {
+        "x": 12,
+        "y": 3327,
+        "width": 351,
+        "height": 222
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Card Title",
+      "text": "REMOTE - FULL TIME QA Engineer Ensure Codexa delivers a reliable, polished, and bug-free product experience.",
+      "box": {
+        "x": 28,
+        "y": 3351,
+        "width": 319,
+        "height": 108
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Apply",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3483,
+        "width": 319,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Phone",
+      "text": "ONSITE - FULL TIME Data Analyst Turn product and customer data into clear insights that drive Codexa forward. Apply now Apply now",
+      "box": {
+        "x": 12,
+        "y": 3549,
+        "width": 351,
+        "height": 222
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Card Title",
+      "text": "ONSITE - FULL TIME Data Analyst Turn product and customer data into clear insights that drive Codexa forward.",
+      "box": {
+        "x": 28,
+        "y": 3573,
+        "width": 319,
+        "height": 108
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Apply",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3705,
+        "width": 319,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "footer",
+      "name": "Phone",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404 ©2026 CODEXA. ALL RIGHT",
+      "box": {
+        "x": 0,
+        "y": 3711,
+        "width": 375,
+        "height": 1022
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Footer",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404 ©2026 CODEXA. ALL RIGHT",
+      "box": {
+        "x": 0,
+        "y": 3711,
+        "width": 375,
+        "height": 998
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "CTA",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 3711,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 3711,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "40px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Content",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 3711,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Pattern",
+      "text": "",
+      "box": {
+        "x": 12,
+        "y": 3711,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Headline",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 3797,
+        "width": 351,
+        "height": 278
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Title + Sub",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster.",
+      "box": {
+        "x": 28,
+        "y": 3813,
+        "width": 319,
+        "height": 180
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Explore the Template Explore the Template",
+      "box": {
+        "x": 78,
+        "y": 4018,
+        "width": 218,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Light",
+      "text": "",
+      "box": {
+        "x": 21,
+        "y": 3963,
+        "width": 333,
+        "height": 398
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Lime",
+      "text": "",
+      "box": {
+        "x": 29,
+        "y": 4141,
+        "width": 317,
+        "height": 36
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404 ©2026 CODEXA. ALL RIGHTS RESERVED. CREATED BY KADIR CALIK Created by KADIR CALIK",
+      "box": {
+        "x": 12,
+        "y": 4161,
+        "width": 351,
+        "height": 548
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Top",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404",
+      "box": {
+        "x": 12,
+        "y": 4161,
+        "width": 351,
+        "height": 473
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Info",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit",
+      "box": {
+        "x": 12,
+        "y": 4161,
+        "width": 351,
+        "height": 189
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "32px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Title + Sub",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates.",
+      "box": {
+        "x": 28,
+        "y": 4193,
+        "width": 319,
+        "height": 67
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Info",
+      "text": "",
+      "box": {
+        "x": 12,
+        "y": 4522,
+        "width": 351,
+        "height": 112
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Navigation",
+      "text": "Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404",
+      "box": {
+        "x": 12,
+        "y": 4351,
+        "width": 351,
+        "height": 171
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Bottom",
+      "text": "©2026 CODEXA. ALL RIGHTS RESERVED. CREATED BY KADIR CALIK Created by KADIR CALIK",
+      "box": {
+        "x": 12,
+        "y": 4634,
+        "width": 351,
+        "height": 75
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    }
+  ],
+  "semantic": [
+    {
+      "tag": "a",
+      "name": "L",
+      "text": "Codexa",
+      "box": {
+        "x": 28,
+        "y": 20,
+        "width": 113,
+        "height": 32
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Codexa",
+      "box": {
+        "x": 62,
+        "y": 20,
+        "width": 79,
+        "height": 32
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "24px",
+        "lineHeight": "32.4px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "CAREERS",
+      "box": {
+        "x": 58,
+        "y": 146,
+        "width": 48,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h1",
+      "name": null,
+      "text": "Careers at Codexa",
+      "box": {
+        "x": 28,
+        "y": 158,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "40px",
+        "lineHeight": "44px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "At Codexa, we’re building tools that empower businesses to work smarter, stay organized, and grow faster.",
+      "box": {
+        "x": 28,
+        "y": 214,
+        "width": 319,
+        "height": 67
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "16px",
+        "lineHeight": "22.4px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "Join a team building scalable, thoughtful digital products.",
+      "box": {
+        "x": 28,
+        "y": 377,
+        "width": 319,
+        "height": 112
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "34px",
+        "lineHeight": "37.4px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity.",
+      "box": {
+        "x": 28,
+        "y": 505,
+        "width": 287,
+        "height": 109
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team member helps shape what we build next.",
+      "box": {
+        "x": 28,
+        "y": 634,
+        "width": 287,
+        "height": 109
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "20px 0px 0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "See Open Positions See Open Positions",
+      "box": {
+        "x": 28,
+        "y": 767,
+        "width": 207,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "See Open Positions",
+      "box": {
+        "x": 52,
+        "y": 779,
+        "width": 133,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "See Open Positions",
+      "box": {
+        "x": 52,
+        "y": 797,
+        "width": 133,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "OUR CULTURE",
+      "box": {
+        "x": 60,
+        "y": 1048,
+        "width": 75,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "A team built on trust, ownership, and continuous improvement.",
+      "box": {
+        "x": 28,
+        "y": 1043,
+        "width": 319,
+        "height": 176
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "40px",
+        "lineHeight": "44px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Ownership mindset",
+      "box": {
+        "x": 28,
+        "y": 1389,
+        "width": 144,
+        "height": 47
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Everyone takes responsibility for what they build.",
+      "box": {
+        "x": 28,
+        "y": 1442,
+        "width": 144,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Clear communication",
+      "box": {
+        "x": 204,
+        "y": 1389,
+        "width": 144,
+        "height": 47
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "We value clarity, feedback, and open conversations.",
+      "box": {
+        "x": 204,
+        "y": 1442,
+        "width": 144,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Craft over speed",
+      "box": {
+        "x": 28,
+        "y": 1652,
+        "width": 144,
+        "height": 23
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Quality and long-term thinking guide our decisions.",
+      "box": {
+        "x": 28,
+        "y": 1682,
+        "width": 144,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Build together",
+      "box": {
+        "x": 204,
+        "y": 1652,
+        "width": 144,
+        "height": 23
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "We collaborate closely across roles and disciplines.",
+      "box": {
+        "x": 204,
+        "y": 1682,
+        "width": 144,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Learn continuously",
+      "box": {
+        "x": 28,
+        "y": 1869,
+        "width": 144,
+        "height": 47
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Growth comes from curiosity and constant learning.",
+      "box": {
+        "x": 28,
+        "y": 1922,
+        "width": 144,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Real-world impact",
+      "box": {
+        "x": 204,
+        "y": 1869,
+        "width": 144,
+        "height": 47
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Our work solves real problems for real teams.",
+      "box": {
+        "x": 204,
+        "y": 1922,
+        "width": 144,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "CURRENT OPENINGS",
+      "box": {
+        "x": 68,
+        "y": 2162,
+        "width": 109,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "Explore opportunities and join our team",
+      "box": {
+        "x": 36,
+        "y": 2161,
+        "width": 303,
+        "height": 132
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "40px",
+        "lineHeight": "44px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Open roles across design, engineering, and product teams.",
+      "box": {
+        "x": 36,
+        "y": 2309,
+        "width": 320,
+        "height": 45
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "16px",
+        "lineHeight": "22.4px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "REMOTE",
+      "box": {
+        "x": 28,
+        "y": 2462,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FULL TIME",
+      "box": {
+        "x": 107,
+        "y": 2462,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Product Designer",
+      "box": {
+        "x": 28,
+        "y": 2490,
+        "width": 319,
+        "height": 24
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Design clear, elegant, and scalable product experiences for the Codexa platform.",
+      "box": {
+        "x": 28,
+        "y": 2526,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 2594,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 2606,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 2624,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "REMOTE",
+      "box": {
+        "x": 28,
+        "y": 2684,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FULL TIME",
+      "box": {
+        "x": 107,
+        "y": 2684,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Backend Engineer",
+      "box": {
+        "x": 28,
+        "y": 2713,
+        "width": 319,
+        "height": 24
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Build scalable, secure, and high-performance backend systems for Codexa.",
+      "box": {
+        "x": 28,
+        "y": 2749,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 2816,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 2828,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 2846,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "REMOTE",
+      "box": {
+        "x": 28,
+        "y": 2906,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FULL TIME",
+      "box": {
+        "x": 107,
+        "y": 2906,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Product Manager",
+      "box": {
+        "x": 28,
+        "y": 2935,
+        "width": 319,
+        "height": 24
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Own product direction and help shape the future of Codexa.",
+      "box": {
+        "x": 28,
+        "y": 2971,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3039,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3051,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3069,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "REMOTE",
+      "box": {
+        "x": 28,
+        "y": 3129,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "HALF TIME",
+      "box": {
+        "x": 107,
+        "y": 3129,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "DevOps Engineer",
+      "box": {
+        "x": 28,
+        "y": 3157,
+        "width": 319,
+        "height": 24
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Build and maintain reliable infrastructure that powers Codexa at scale.",
+      "box": {
+        "x": 28,
+        "y": 3193,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3261,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3273,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3291,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "REMOTE",
+      "box": {
+        "x": 28,
+        "y": 3351,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FULL TIME",
+      "box": {
+        "x": 107,
+        "y": 3351,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "QA Engineer",
+      "box": {
+        "x": 28,
+        "y": 3380,
+        "width": 319,
+        "height": 24
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Ensure Codexa delivers a reliable, polished, and bug-free product experience.",
+      "box": {
+        "x": 28,
+        "y": 3416,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3483,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3495,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3513,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "ONSITE",
+      "box": {
+        "x": 28,
+        "y": 3573,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FULL TIME",
+      "box": {
+        "x": 107,
+        "y": 3573,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Data Analyst",
+      "box": {
+        "x": 28,
+        "y": 3602,
+        "width": 319,
+        "height": 24
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Turn product and customer data into clear insights that drive Codexa forward.",
+      "box": {
+        "x": 28,
+        "y": 3638,
+        "width": 319,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 28,
+        "y": 3705,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3717,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 52,
+        "y": 3735,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "12K+ teams trust Codexa",
+      "box": {
+        "x": 142,
+        "y": 3813,
+        "width": 165,
+        "height": 21
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "Automate more. Ship faster.",
+      "box": {
+        "x": 28,
+        "y": 3842,
+        "width": 319,
+        "height": 151
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "48px",
+        "lineHeight": "50.4px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Explore the Template Explore the Template",
+      "box": {
+        "x": 78,
+        "y": 4018,
+        "width": 218,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Explore the Template",
+      "box": {
+        "x": 102,
+        "y": 4030,
+        "width": 144,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Explore the Template",
+      "box": {
+        "x": 102,
+        "y": 4048,
+        "width": 144,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Stay in the loop",
+      "box": {
+        "x": 28,
+        "y": 4193,
+        "width": 319,
+        "height": 23
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Get insights on automated workflows, AI features, and product updates.",
+      "box": {
+        "x": 28,
+        "y": 4225,
+        "width": 319,
+        "height": 36
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Submit",
+      "box": {
+        "x": 264,
+        "y": 4289,
+        "width": 49,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Only Icon",
+      "text": "",
+      "box": {
+        "x": 156,
+        "y": 4546,
+        "width": 64,
+        "height": 64
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Features Features",
+      "box": {
+        "x": 28,
+        "y": 4406,
+        "width": 58,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Features",
+      "box": {
+        "x": 28,
+        "y": 4406,
+        "width": 58,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Pricing Pricing",
+      "box": {
+        "x": 28,
+        "y": 4433,
+        "width": 45,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Pricing",
+      "box": {
+        "x": 28,
+        "y": 4433,
+        "width": 45,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Changelog Changelog",
+      "box": {
+        "x": 28,
+        "y": 4460,
+        "width": 72,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Changelog",
+      "box": {
+        "x": 28,
+        "y": 4460,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "FAQs FAQs",
+      "box": {
+        "x": 28,
+        "y": 4487,
+        "width": 35,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FAQs",
+      "box": {
+        "x": 28,
+        "y": 4487,
+        "width": 35,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "About About",
+      "box": {
+        "x": 140,
+        "y": 4406,
+        "width": 40,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "About",
+      "box": {
+        "x": 140,
+        "y": 4406,
+        "width": 40,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Blog Blog",
+      "box": {
+        "x": 140,
+        "y": 4433,
+        "width": 30,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Blog",
+      "box": {
+        "x": 140,
+        "y": 4433,
+        "width": 30,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Support Support",
+      "box": {
+        "x": 140,
+        "y": 4460,
+        "width": 53,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Support",
+      "box": {
+        "x": 140,
+        "y": 4460,
+        "width": 53,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Sales Sales",
+      "box": {
+        "x": 140,
+        "y": 4487,
+        "width": 36,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Sales",
+      "box": {
+        "x": 140,
+        "y": 4487,
+        "width": 36,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Terms Terms",
+      "box": {
+        "x": 251,
+        "y": 4406,
+        "width": 40,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Terms",
+      "box": {
+        "x": 251,
+        "y": 4406,
+        "width": 40,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Privacy Privacy",
+      "box": {
+        "x": 251,
+        "y": 4433,
+        "width": 48,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Privacy",
+      "box": {
+        "x": 251,
+        "y": 4433,
+        "width": 48,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Cookies Cookies",
+      "box": {
+        "x": 251,
+        "y": 4460,
+        "width": 53,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Cookies",
+      "box": {
+        "x": 251,
+        "y": 4460,
+        "width": 53,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Desktop",
+      "text": "404 404",
+      "box": {
+        "x": 251,
+        "y": 4487,
+        "width": 27,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "404",
+      "box": {
+        "x": 251,
+        "y": 4487,
+        "width": 27,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "©2026 CODEXA. ALL RIGHTS RESERVED.",
+      "box": {
+        "x": 72,
+        "y": 4678,
+        "width": 232,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "CREATED BY KADIR CALIK Created by KADIR CALIK",
+      "box": {
+        "x": 105,
+        "y": 4650,
+        "width": 164,
+        "height": 16
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "CREATED BY KADIR CALIK",
+      "box": {
+        "x": 105,
+        "y": 4650,
+        "width": 150,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Created by KADIR CALIK",
+      "box": {
+        "x": 105,
+        "y": 4666,
+        "width": 150,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mac (Desktop)",
+      "text": "Get Template Get Template",
+      "box": {
+        "x": 215,
+        "y": 753,
+        "width": 140,
+        "height": 39
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "6px",
+        "padding": "11px 22px 11px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Get Template",
+      "box": {
+        "x": 250,
+        "y": 764,
+        "width": 84,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "14px",
+        "lineHeight": "16.8px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Light",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "box": {
+        "x": 215,
+        "y": 796,
+        "width": 140,
+        "height": 38
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "box": {
+        "x": 285,
+        "y": 815,
+        "width": 0,
+        "height": 0
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    }
+  ]
+}

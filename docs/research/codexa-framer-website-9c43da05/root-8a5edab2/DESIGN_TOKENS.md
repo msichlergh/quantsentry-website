@@ -1,7 +1,8 @@
 # Codexa Design Tokens
 
-- Page background: `rgb(8, 7, 14)` / `#08070e`
+- Page background: `rgb(9, 9, 11)` / `#09090b`
 - Navigation/footer background: `rgb(9, 9, 11)` / `#09090b`
+- Desktop page-frame gutter rules: `1px solid rgb(255 255 255 / 6%)`; omitted on mobile.
 - Raised surface: `rgb(15, 15, 17)` / `#0f0f11`
 - Strong surface: `rgb(24, 24, 27)` / `#18181b`
 - Primary text: `rgb(255, 255, 255)`

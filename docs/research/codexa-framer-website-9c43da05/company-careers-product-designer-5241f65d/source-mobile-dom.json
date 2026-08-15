@@ -1,0 +1,3251 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "scrollHeight": 3164
+  },
+  "named": [
+    {
+      "tag": "nav",
+      "name": "Phone - Close",
+      "text": "Codexa",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 72
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "Codexa",
+      "box": {
+        "x": 12,
+        "y": 0,
+        "width": 351,
+        "height": 72
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "20px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Left",
+      "text": "Codexa",
+      "box": {
+        "x": 28,
+        "y": 16,
+        "width": 319,
+        "height": 40
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "main",
+      "name": "Main",
+      "text": "REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform. Overview We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows. If you enjoy simplifying systems, crafting clean UI, and thinking in scala",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 2142
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "Hero",
+      "text": "REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform. Overview We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows. If you enjoy simplifying systems, crafting clean UI, and thinking in scala",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 2142
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform. Overview We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows. If you enjoy simplifying systems, crafting clean UI, and thinking in scala",
+      "box": {
+        "x": 12,
+        "y": 0,
+        "width": 351,
+        "height": 2142
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "100px 0px 0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Kicker + Title + Sub",
+      "text": "REMOTE - FULL TIME Product Designer Design clear, elegant, and scalable product experiences for the Codexa platform.",
+      "box": {
+        "x": 12,
+        "y": 100,
+        "width": 351,
+        "height": 184
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Heading / H1",
+      "text": "Product Designer",
+      "box": {
+        "x": 36,
+        "y": 157,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "Overview We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows. If you enjoy simplifying systems, crafting clean UI, and thinking in scalable design systems, you’ll feel right at home. What You’ll Do Design end-to-end product experiences from concept to l",
+      "box": {
+        "x": 12,
+        "y": 284,
+        "width": 351,
+        "height": 1858
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px 24px 80px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Content",
+      "text": "Overview We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows. If you enjoy simplifying systems, crafting clean UI, and thinking in scalable design systems, you’ll feel right at home. What You’ll Do Design end-to-end product experiences from concept to l",
+      "box": {
+        "x": 36,
+        "y": 308,
+        "width": 303,
+        "height": 1688
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "footer",
+      "name": "Phone",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404 ©2026 CODEXA. ALL RIGHT",
+      "box": {
+        "x": 0,
+        "y": 2142,
+        "width": 375,
+        "height": 1022
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Footer",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404 ©2026 CODEXA. ALL RIGHT",
+      "box": {
+        "x": 0,
+        "y": 2142,
+        "width": 375,
+        "height": 998
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "section",
+      "name": "CTA",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 2142,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 2142,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "40px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Content",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 2142,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Pattern",
+      "text": "",
+      "box": {
+        "x": 12,
+        "y": 2142,
+        "width": 351,
+        "height": 450
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Headline",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster. Explore the Template Explore the Template",
+      "box": {
+        "x": 12,
+        "y": 2228,
+        "width": 351,
+        "height": 278
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Title + Sub",
+      "text": "12K+ teams trust Codexa Automate more. Ship faster.",
+      "box": {
+        "x": 28,
+        "y": 2244,
+        "width": 319,
+        "height": 180
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Explore the Template Explore the Template",
+      "box": {
+        "x": 78,
+        "y": 2449,
+        "width": 218,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Light",
+      "text": "",
+      "box": {
+        "x": 21,
+        "y": 2394,
+        "width": 333,
+        "height": 398
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Lime",
+      "text": "",
+      "box": {
+        "x": 29,
+        "y": 2572,
+        "width": 317,
+        "height": 36
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Container",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404 ©2026 CODEXA. ALL RIGHTS RESERVED. CREATED BY KADIR CALIK Created by KADIR CALIK",
+      "box": {
+        "x": 12,
+        "y": 2592,
+        "width": 351,
+        "height": 548
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Top",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404",
+      "box": {
+        "x": 12,
+        "y": 2592,
+        "width": 351,
+        "height": 473
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Info",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates. Submit",
+      "box": {
+        "x": 12,
+        "y": 2592,
+        "width": 351,
+        "height": 189
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "32px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Title + Sub",
+      "text": "Stay in the loop Get insights on automated workflows, AI features, and product updates.",
+      "box": {
+        "x": 28,
+        "y": 2624,
+        "width": 319,
+        "height": 67
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Info",
+      "text": "",
+      "box": {
+        "x": 12,
+        "y": 2953,
+        "width": 351,
+        "height": 112
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "24px",
+        "padding": "24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Navigation",
+      "text": "Product Features Features Pricing Pricing Changelog Changelog FAQs FAQs Company About About Blog Blog Support Support Sales Sales Legal Terms Terms Privacy Privacy Cookies Cookies 404 404",
+      "box": {
+        "x": 12,
+        "y": 2782,
+        "width": 351,
+        "height": 171
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "div",
+      "name": "Bottom",
+      "text": "©2026 CODEXA. ALL RIGHTS RESERVED. CREATED BY KADIR CALIK Created by KADIR CALIK",
+      "box": {
+        "x": 12,
+        "y": 3065,
+        "width": 351,
+        "height": 75
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "12px",
+        "padding": "16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    }
+  ],
+  "semantic": [
+    {
+      "tag": "a",
+      "name": "L",
+      "text": "Codexa",
+      "box": {
+        "x": 28,
+        "y": 20,
+        "width": 113,
+        "height": 32
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Codexa",
+      "box": {
+        "x": 62,
+        "y": 20,
+        "width": 79,
+        "height": 32
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "24px",
+        "lineHeight": "32.4px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "REMOTE",
+      "box": {
+        "x": 109,
+        "y": 124,
+        "width": 56,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FULL TIME",
+      "box": {
+        "x": 188,
+        "y": 124,
+        "width": 78,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "16.8px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "h1",
+      "name": null,
+      "text": "Product Designer",
+      "box": {
+        "x": 36,
+        "y": 157,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "40px",
+        "lineHeight": "44px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Design clear, elegant, and scalable product experiences for the Codexa platform.",
+      "box": {
+        "x": 36,
+        "y": 217,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "Overview",
+      "box": {
+        "x": 36,
+        "y": 308,
+        "width": 303,
+        "height": 35
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "32px",
+        "lineHeight": "35.2px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "We’re looking for a Product Designer to shape how users experience Codexa. You’ll work closely with product managers and engineers to design intuitive, user-centered interfaces for complex workflows.",
+      "box": {
+        "x": 36,
+        "y": 364,
+        "width": 303,
+        "height": 109
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "20px 0px 0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "If you enjoy simplifying systems, crafting clean UI, and thinking in scalable design systems, you’ll feel right at home.",
+      "box": {
+        "x": 36,
+        "y": 492,
+        "width": 303,
+        "height": 65
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "20px 0px 0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "What You’ll Do",
+      "box": {
+        "x": 36,
+        "y": 598,
+        "width": 303,
+        "height": 35
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "40px 0px 0px",
+        "fontSize": "32px",
+        "lineHeight": "35.2px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Design end-to-end product experiences from concept to launch",
+      "box": {
+        "x": 36,
+        "y": 665,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Design end-to-end product experiences from concept to launch",
+      "box": {
+        "x": 56,
+        "y": 665,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Create wireframes, flows, and high-fidelity UI designs",
+      "box": {
+        "x": 36,
+        "y": 708,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Create wireframes, flows, and high-fidelity UI designs",
+      "box": {
+        "x": 56,
+        "y": 708,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Collaborate with engineers to ensure designs are implemented accurately",
+      "box": {
+        "x": 36,
+        "y": 752,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Collaborate with engineers to ensure designs are implemented accurately",
+      "box": {
+        "x": 56,
+        "y": 752,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Contribute to and evolve Codexa’s design system",
+      "box": {
+        "x": 36,
+        "y": 795,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Contribute to and evolve Codexa’s design system",
+      "box": {
+        "x": 56,
+        "y": 795,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Improve usability through thoughtful layout, spacing, and interaction design",
+      "box": {
+        "x": 36,
+        "y": 839,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Improve usability through thoughtful layout, spacing, and interaction design",
+      "box": {
+        "x": 56,
+        "y": 839,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Validate ideas through feedback, iteration, and testing",
+      "box": {
+        "x": 36,
+        "y": 882,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Validate ideas through feedback, iteration, and testing",
+      "box": {
+        "x": 56,
+        "y": 882,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "What We’re Looking For",
+      "box": {
+        "x": 36,
+        "y": 966,
+        "width": 303,
+        "height": 70
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "40px 0px 0px",
+        "fontSize": "32px",
+        "lineHeight": "35.2px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "3+ years of experience in product or UI/UX design",
+      "box": {
+        "x": 36,
+        "y": 1068,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "3+ years of experience in product or UI/UX design",
+      "box": {
+        "x": 56,
+        "y": 1068,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Strong portfolio showcasing SaaS or dashboard-style products",
+      "box": {
+        "x": 36,
+        "y": 1112,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Strong portfolio showcasing SaaS or dashboard-style products",
+      "box": {
+        "x": 56,
+        "y": 1112,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Proficiency with Figma and modern design workflows",
+      "box": {
+        "x": 36,
+        "y": 1155,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Proficiency with Figma and modern design workflows",
+      "box": {
+        "x": 56,
+        "y": 1155,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Solid understanding of UX principles and design systems",
+      "box": {
+        "x": 36,
+        "y": 1199,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Solid understanding of UX principles and design systems",
+      "box": {
+        "x": 56,
+        "y": 1199,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Ability to think both visually and strategically",
+      "box": {
+        "x": 36,
+        "y": 1242,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Ability to think both visually and strategically",
+      "box": {
+        "x": 56,
+        "y": 1242,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Clear communication and collaboration skills",
+      "box": {
+        "x": 36,
+        "y": 1286,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Clear communication and collaboration skills",
+      "box": {
+        "x": 56,
+        "y": 1286,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "Nice to Have",
+      "box": {
+        "x": 36,
+        "y": 1369,
+        "width": 303,
+        "height": 35
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "40px 0px 0px",
+        "fontSize": "32px",
+        "lineHeight": "35.2px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Experience designing developer tools or B2B products",
+      "box": {
+        "x": 36,
+        "y": 1436,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Experience designing developer tools or B2B products",
+      "box": {
+        "x": 56,
+        "y": 1436,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Familiarity with accessibility standards",
+      "box": {
+        "x": 36,
+        "y": 1480,
+        "width": 303,
+        "height": 22
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Familiarity with accessibility standards",
+      "box": {
+        "x": 56,
+        "y": 1480,
+        "width": 283,
+        "height": 22
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Basic understanding of frontend development",
+      "box": {
+        "x": 36,
+        "y": 1502,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Basic understanding of frontend development",
+      "box": {
+        "x": 56,
+        "y": 1502,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "li",
+      "name": null,
+      "text": "Experience working with design systems at scale",
+      "box": {
+        "x": 36,
+        "y": 1545,
+        "width": 303,
+        "height": 44
+      },
+      "styles": {
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px 0px 0px 19.89px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Experience working with design systems at scale",
+      "box": {
+        "x": 56,
+        "y": 1545,
+        "width": 283,
+        "height": 44
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "About Codexa",
+      "box": {
+        "x": 36,
+        "y": 1629,
+        "width": 303,
+        "height": 35
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "40px 0px 0px",
+        "fontSize": "32px",
+        "lineHeight": "35.2px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Codexa is a modern platform focused on building scalable, high-quality digital products. We combine clean design, strong systems, and thoughtful execution to help teams move faster without sacrificing quality.",
+      "box": {
+        "x": 36,
+        "y": 1684,
+        "width": 303,
+        "height": 131
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "20px 0px 0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "How to Apply",
+      "box": {
+        "x": 36,
+        "y": 1854,
+        "width": 303,
+        "height": 35
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "40px 0px 0px",
+        "fontSize": "32px",
+        "lineHeight": "35.2px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Send us your portfolio, CV, or Dribbble / Behance profile, along with a short introduction. We’d love to see how you think and design.",
+      "box": {
+        "x": 36,
+        "y": 1909,
+        "width": 303,
+        "height": 87
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "20px 0px 0px",
+        "fontSize": "15px",
+        "lineHeight": "21.75px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Apply now Apply now",
+      "box": {
+        "x": 36,
+        "y": 2020,
+        "width": 146,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 60,
+        "y": 2032,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Apply now",
+      "box": {
+        "x": 60,
+        "y": 2050,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "12K+ teams trust Codexa",
+      "box": {
+        "x": 142,
+        "y": 2244,
+        "width": 165,
+        "height": 21
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "21px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "h2",
+      "name": null,
+      "text": "Automate more. Ship faster.",
+      "box": {
+        "x": 28,
+        "y": 2273,
+        "width": 319,
+        "height": 151
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "48px",
+        "lineHeight": "50.4px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Default",
+      "text": "Explore the Template Explore the Template",
+      "box": {
+        "x": 78,
+        "y": 2449,
+        "width": 218,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "12px 24px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Explore the Template",
+      "box": {
+        "x": 102,
+        "y": 2461,
+        "width": 144,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Explore the Template",
+      "box": {
+        "x": 102,
+        "y": 2479,
+        "width": 144,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderLeft": "0px none rgb(0, 0, 0)",
+        "borderRight": "0px none rgb(0, 0, 0)",
+        "borderBottom": "0px none rgb(0, 0, 0)"
+      }
+    },
+    {
+      "tag": "h3",
+      "name": null,
+      "text": "Stay in the loop",
+      "box": {
+        "x": 28,
+        "y": 2624,
+        "width": 319,
+        "height": 23
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "18px",
+        "lineHeight": "23.4px",
+        "fontWeight": "400",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Get insights on automated workflows, AI features, and product updates.",
+      "box": {
+        "x": 28,
+        "y": 2656,
+        "width": 319,
+        "height": 36
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Submit",
+      "box": {
+        "x": 264,
+        "y": 2720,
+        "width": 49,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Only Icon",
+      "text": "",
+      "box": {
+        "x": 156,
+        "y": 2977,
+        "width": 64,
+        "height": 64
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "8px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Features Features",
+      "box": {
+        "x": 28,
+        "y": 2837,
+        "width": 58,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Features",
+      "box": {
+        "x": 28,
+        "y": 2837,
+        "width": 58,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Pricing Pricing",
+      "box": {
+        "x": 28,
+        "y": 2864,
+        "width": 45,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Pricing",
+      "box": {
+        "x": 28,
+        "y": 2864,
+        "width": 45,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Changelog Changelog",
+      "box": {
+        "x": 28,
+        "y": 2891,
+        "width": 72,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Changelog",
+      "box": {
+        "x": 28,
+        "y": 2891,
+        "width": 72,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "FAQs FAQs",
+      "box": {
+        "x": 28,
+        "y": 2918,
+        "width": 35,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "FAQs",
+      "box": {
+        "x": 28,
+        "y": 2918,
+        "width": 35,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "About About",
+      "box": {
+        "x": 140,
+        "y": 2837,
+        "width": 40,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "About",
+      "box": {
+        "x": 140,
+        "y": 2837,
+        "width": 40,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Blog Blog",
+      "box": {
+        "x": 140,
+        "y": 2864,
+        "width": 30,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Blog",
+      "box": {
+        "x": 140,
+        "y": 2864,
+        "width": 30,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Support Support",
+      "box": {
+        "x": 140,
+        "y": 2891,
+        "width": 53,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Support",
+      "box": {
+        "x": 140,
+        "y": 2891,
+        "width": 53,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Sales Sales",
+      "box": {
+        "x": 140,
+        "y": 2918,
+        "width": 36,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Sales",
+      "box": {
+        "x": 140,
+        "y": 2918,
+        "width": 36,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Terms Terms",
+      "box": {
+        "x": 251,
+        "y": 2837,
+        "width": 40,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Terms",
+      "box": {
+        "x": 251,
+        "y": 2837,
+        "width": 40,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Privacy Privacy",
+      "box": {
+        "x": 251,
+        "y": 2864,
+        "width": 48,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Privacy",
+      "box": {
+        "x": 251,
+        "y": 2864,
+        "width": 48,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "Cookies Cookies",
+      "box": {
+        "x": 251,
+        "y": 2891,
+        "width": 53,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Cookies",
+      "box": {
+        "x": 251,
+        "y": 2891,
+        "width": 53,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Desktop",
+      "text": "404 404",
+      "box": {
+        "x": 251,
+        "y": 2918,
+        "width": 27,
+        "height": 19
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "404",
+      "box": {
+        "x": 251,
+        "y": 2918,
+        "width": 27,
+        "height": 18
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "15px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "©2026 CODEXA. ALL RIGHTS RESERVED.",
+      "box": {
+        "x": 72,
+        "y": 3109,
+        "width": 232,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mobile",
+      "text": "CREATED BY KADIR CALIK Created by KADIR CALIK",
+      "box": {
+        "x": 105,
+        "y": 3081,
+        "width": 164,
+        "height": 16
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none",
+        "gap": "0px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "CREATED BY KADIR CALIK",
+      "box": {
+        "x": 105,
+        "y": 3081,
+        "width": 150,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(150, 150, 150)",
+        "border": "0px none rgb(150, 150, 150)",
+        "borderLeft": "0px none rgb(150, 150, 150)",
+        "borderRight": "0px none rgb(150, 150, 150)",
+        "borderBottom": "0px none rgb(150, 150, 150)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Created by KADIR CALIK",
+      "box": {
+        "x": 105,
+        "y": 3097,
+        "width": 150,
+        "height": 15
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "11px",
+        "lineHeight": "15.4px",
+        "fontWeight": "400",
+        "color": "rgb(0, 195, 201)",
+        "border": "0px none rgb(0, 195, 201)",
+        "borderLeft": "0px none rgb(0, 195, 201)",
+        "borderRight": "0px none rgb(0, 195, 201)",
+        "borderBottom": "0px none rgb(0, 195, 201)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Mac (Desktop)",
+      "text": "Get Template Get Template",
+      "box": {
+        "x": 215,
+        "y": 753,
+        "width": 140,
+        "height": 39
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "6px",
+        "padding": "11px 22px 11px 16px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Get Template",
+      "box": {
+        "x": 250,
+        "y": 764,
+        "width": 84,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "14px",
+        "lineHeight": "16.8px",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderLeft": "0px none rgb(255, 255, 255)",
+        "borderRight": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "a",
+      "name": "Light",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "box": {
+        "x": 215,
+        "y": 796,
+        "width": 140,
+        "height": 38
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "10px",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    },
+    {
+      "tag": "p",
+      "name": null,
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "box": {
+        "x": 285,
+        "y": 815,
+        "width": 0,
+        "height": 0
+      },
+      "styles": {
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "fontSize": "12px",
+        "lineHeight": "normal",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "border": "0px none rgb(0, 0, 238)",
+        "borderLeft": "0px none rgb(0, 0, 238)",
+        "borderRight": "0px none rgb(0, 0, 238)",
+        "borderBottom": "0px none rgb(0, 0, 238)"
+      }
+    }
+  ]
+}

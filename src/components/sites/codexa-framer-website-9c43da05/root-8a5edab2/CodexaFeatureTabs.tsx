@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
 
 import styles from "./CodexaFeatureTabs.module.css";
@@ -26,76 +26,62 @@ const tabs = [
   },
 ] as const;
 
-function CodeSnippet({ index }: { index: number }) {
-  if (index === 1) {
-    return (
-      <pre className={styles.code}>
-        <code>
-          <span className={styles.keyword}>type</span>{" "}
-          <span className={styles.type}>PanelProps</span> = {"{"}
-          {"\n  "}title: <span className={styles.type}>string</span>;
-          {"\n  "}items: <span className={styles.type}>readonly Item[]</span>;
-          {"\n"}{"}"};
-          {"\n\n"}
-          <span className={styles.keyword}>export function</span>{" "}
-          <span className={styles.function}>StablePanel</span>({"{"} title, items {"}"}: PanelProps) {"{"}
-          {"\n  "}<span className={styles.keyword}>return</span> (
-          {"\n    "}&lt;section className=<span className={styles.string}>&quot;panel&quot;</span>&gt;
-          {"\n      "}&lt;h2&gt;{"{"}title{"}"}&lt;/h2&gt;
-          {"\n      "}&lt;div className=<span className={styles.string}>&quot;content&quot;</span>&gt;
-          {"\n        "}{"{"}items.map(renderItem){"}"}
-          {"\n      "}&lt;/div&gt;
-          {"\n    "}&lt;/section&gt;
-          {"\n  "});
-          {"\n"}{"}"}
-        </code>
-      </pre>
-    );
-  }
+const codeSnippets = [
+  `import { useEffect, useState } from "react";
 
-  if (index === 2) {
-    return (
-      <pre className={styles.code}>
-        <code>
-          <span className={styles.keyword}>import</span> {"{"} cache {"}"}{" "}
-          <span className={styles.keyword}>from</span>{" "}
-          <span className={styles.string}>&quot;react&quot;</span>;
-          {"\n\n"}
-          <span className={styles.keyword}>const</span>{" "}
-          <span className={styles.function}>getRelease</span> = cache(
-          {"\n  "}<span className={styles.keyword}>async</span> (id: <span className={styles.type}>string</span>) ={">"} api.release(id)
-          {"\n"});
-          {"\n\n"}
-          <span className={styles.keyword}>export async function</span>{" "}
-          <span className={styles.function}>Dashboard</span>({"{"} id {"}"}) {"{"}
-          {"\n  "}<span className={styles.keyword}>const</span> release = <span className={styles.keyword}>await</span> getRelease(id);
-          {"\n\n  "}<span className={styles.keyword}>return</span> &lt;Release data={"{"}release{"}"} /&gt;;
-          {"\n"}{"}"}
-        </code>
-      </pre>
-    );
+export function FeatureFlag() {
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setEnabled(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!enabled) return null;
+
+  return <div>Feature enabled</div>;
+}`,
+  `type Item = {
+  id: number;
+  title: string;
+};
+
+export function ItemList({ items }: { items: Item[] }) {
+  if (!items.length) {
+    return <span>No items found</span>;
   }
 
   return (
-    <pre className={styles.code}>
-      <code>
-        <span className={styles.keyword}>import</span> {"{"} useEffect, useState {"}"}{" "}
-        <span className={styles.keyword}>from</span>{" "}
-        <span className={styles.string}>&quot;react&quot;</span>;
-        {"\n\n"}
-        <span className={styles.keyword}>export function</span>{" "}
-        <span className={styles.function}>DeveloperIndicator</span>() {"{"}
-        {"\n  "}<span className={styles.keyword}>const</span> [active, setActive] = useState(<span className={styles.literal}>false</span>);
-        {"\n\n  "}useEffect(() ={">"} {"{"}
-        {"\n    "}<span className={styles.keyword}>const</span> stop = runtime.subscribe(setActive);
-        {"\n    "}<span className={styles.keyword}>return</span> stop;
-        {"\n  "}{"}"}, []);
-        {"\n\n  "}<span className={styles.keyword}>return</span> &lt;Status active={"{"}active{"}"} /&gt;;
-        {"\n"}{"}"}
-      </code>
-    </pre>
+    <ul>
+      {items.map((item) => (
+        <li key={item.id}>{item.title}</li>
+      ))}
+    </ul>
   );
-}
+}`,
+  `import { useEffect, useState } from "react";
+
+export function DevModeIndicator() {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActive(true);
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div>
+      {active ? "Dev mode active" : "Initializing..."}
+    </div>
+  );
+}`,
+] as const;
 
 function Arrow({ direction }: { direction: "previous" | "next" }) {
   return (
@@ -107,8 +93,91 @@ function Arrow({ direction }: { direction: "previous" | "next" }) {
 
 export function CodexaFeatureTabs() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hasEnteredView, setHasEnteredView] = useState(false);
+  const [typedCode, setTypedCode] = useState({ tabIndex: -1, code: "" });
+  const sectionRef = useRef<HTMLElement | null>(null);
   const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const codeViewportRef = useRef<HTMLDivElement | null>(null);
   const activeTab = tabs[activeIndex];
+  const displayedCode = typedCode.tabIndex === activeIndex ? typedCode.code : "";
+
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    if (!section) {
+      return;
+    }
+
+    if (typeof IntersectionObserver === "undefined") {
+      const fallbackId = globalThis.setTimeout(() => setHasEnteredView(true), 0);
+      return () => globalThis.clearTimeout(fallbackId);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) {
+          return;
+        }
+
+        setHasEnteredView(true);
+        observer.disconnect();
+      },
+      {
+        rootMargin: "0px 0px -12% 0px",
+        threshold: 0.08,
+      },
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!hasEnteredView) {
+      return;
+    }
+
+    const snippet = codeSnippets[activeIndex];
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (reducedMotion) {
+      const reducedMotionId = window.setTimeout(() => {
+        setTypedCode({ tabIndex: activeIndex, code: snippet });
+      }, 0);
+      return () => window.clearTimeout(reducedMotionId);
+    }
+
+    let characterIndex = 0;
+    let intervalId: ReturnType<typeof setInterval> | undefined;
+    const startId = window.setTimeout(() => {
+      intervalId = setInterval(() => {
+        characterIndex += 1;
+        setTypedCode({
+          tabIndex: activeIndex,
+          code: snippet.slice(0, characterIndex),
+        });
+
+        if (characterIndex >= snippet.length && intervalId) {
+          clearInterval(intervalId);
+        }
+      }, 30);
+    }, 90);
+
+    return () => {
+      window.clearTimeout(startId);
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [activeIndex, hasEnteredView]);
+
+  useEffect(() => {
+    const viewport = codeViewportRef.current;
+    if (viewport) {
+      viewport.scrollTop = viewport.scrollHeight;
+    }
+  }, [displayedCode]);
 
   function move(direction: -1 | 1) {
     setActiveIndex((current) => (current + direction + tabs.length) % tabs.length);
@@ -140,17 +209,17 @@ export function CodexaFeatureTabs() {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={sectionRef}>
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <p className={styles.eyebrow}>
+          <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
             <span aria-hidden="true" />
             Behind the scenes
           </p>
           <h2>The decisions that keep Codexa reliable</h2>
         </header>
 
-        <div className={styles.experience}>
+        <div className={`${styles.experience} codexa-reveal codexa-reveal--delay-1`}>
           <div className={styles.tabBar} role="tablist" aria-label="Reliability features">
             {tabs.map((tab, index) => (
               <button
@@ -181,7 +250,9 @@ export function CodexaFeatureTabs() {
             >
               <Arrow direction="previous" />
             </button>
-            <span>{activeTab.label}</span>
+            <span>
+              {activeIndex + 1}/{tabs.length}
+            </span>
             <button aria-label="Next feature" onClick={() => move(1)} type="button">
               <Arrow direction="next" />
             </button>
@@ -193,8 +264,12 @@ export function CodexaFeatureTabs() {
             id="codexa-feature-panel"
             role="tabpanel"
           >
-            <figure className={styles.codeFigure} key={`code-${activeIndex}`}>
-              <CodeSnippet index={activeIndex} />
+            <figure className={styles.codeFigure}>
+              <div className={styles.codeViewport} ref={codeViewportRef}>
+                <pre className={styles.code}>
+                  <code>{displayedCode}</code>
+                </pre>
+              </div>
             </figure>
 
             <div className={styles.copy} key={`copy-${activeIndex}`}>

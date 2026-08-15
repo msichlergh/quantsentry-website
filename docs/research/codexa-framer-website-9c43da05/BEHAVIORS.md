@@ -3,6 +3,7 @@
 - Navigation logo returns to `/codexa`; Product and Company menus expose local cloned routes.
 - Mobile navigation opens a full-width local route menu.
 - Product feature tabs change the active illustration and copy.
+- The Product Features hero editor switches between Workflow, Triggers, and Action code panels while preserving its dimensions and active-tab underline.
 - Pricing billing controls switch monthly/yearly values without navigation.
 - FAQ items expand independently and remain keyboard operable.
 - Support and sales forms accept input locally and do not submit to the source site.

@@ -62,20 +62,20 @@ function FeatureCopy({ feature }: { feature: (typeof features)[number] }) {
 
 function WorkflowVisual() {
   const statuses = [
-    ["Workflow sync", "Active"],
-    ["Automation enabled", "Active"],
-    ["Error handling", "Inactive"],
-    ["API integration", "Inactive"],
-    ["Rate limits", "Inactive"],
+    ["Workflow sync", "Active", "Active"],
+    ["Automation enabled", "Active", "Active"],
+    ["Error handling", "Inactive", "Inactive"],
+    ["API integration", "Inactive", "Active"],
+    ["Rate limits", "Inactive", "Active"],
   ] as const;
 
   return (
     <div className={`${styles.visualPanel} ${styles.workflowVisual}`}>
       <div className={styles.statusList}>
-        {statuses.map(([label, status]) => (
+        {statuses.map(([label, status, hoverStatus]) => (
           <div className={styles.statusRow} key={label}>
             <span>{label}</span>
-            <span className={styles.statusValue}>
+            <span className={`${styles.statusValue} ${styles.defaultStatus}`}>
               <span
                 className={`${styles.statusDot} ${
                   status === "Active" ? styles.active : ""
@@ -83,6 +83,15 @@ function WorkflowVisual() {
                 aria-hidden="true"
               />
               {status}
+            </span>
+            <span className={`${styles.statusValue} ${styles.hoverStatus}`}>
+              <span
+                className={`${styles.statusDot} ${
+                  hoverStatus === "Active" ? styles.active : ""
+                }`}
+                aria-hidden="true"
+              />
+              {hoverStatus}
             </span>
           </div>
         ))}
@@ -141,8 +150,14 @@ function ThroughputVisual() {
       <div className={styles.throughputCard}>
         <div className={styles.metricLine}>
           <span className={styles.metricDot} aria-hidden="true" />
-          <strong>248</strong>
-          <span className={styles.change}>+14%</span>
+          <span className={styles.metricValue}>
+            <strong>248</strong>
+            <strong>280</strong>
+          </span>
+          <span className={styles.change}>
+            <span>+14%</span>
+            <span>+22%</span>
+          </span>
         </div>
         <span className={styles.metricLabel}>System throughput</span>
         <div className={styles.bars}>
@@ -164,7 +179,7 @@ export function CodexaFeatures() {
     <section className={styles.section} id="features">
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <p className={styles.eyebrow}>
+          <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
             <span aria-hidden="true" />
             Features
           </p>

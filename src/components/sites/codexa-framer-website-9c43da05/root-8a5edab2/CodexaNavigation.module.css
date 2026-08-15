@@ -6,8 +6,8 @@
   width: 100%;
   height: 72px;
   padding-inline: 40px;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
-  background: rgb(9 9 11 / 88%);
+  border-bottom: 1px solid #262626;
+  background: #09090b;
   backdrop-filter: blur(10px);
 }
 
@@ -21,7 +21,7 @@
   gap: 12px;
   margin-inline: auto;
   padding-inline: 24px;
-  border-inline: 1px solid rgb(255 255 255 / 8%);
+  border-inline: 1px solid #262626;
 }
 
 .brand {
@@ -42,6 +42,13 @@
 .brand :global(.codexa-logo) img {
   width: 24px;
   height: 24px;
+  transform-origin: center;
+  transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.brand:hover :global(.codexa-logo) img,
+.brand:focus-visible :global(.codexa-logo) img {
+  transform: rotate(180deg) scale(0.95);
 }
 
 .links {
@@ -70,6 +77,14 @@
   color: #fff;
 }
 
+.linkOpen {
+  margin: -6px;
+  border-radius: 50px;
+  padding: 6px 6px 6px 11px;
+  background: #1e1e20;
+  color: #fff;
+}
+
 .chevron {
   width: 10px;
   height: 10px;
@@ -78,6 +93,11 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.2;
+  transition: transform 180ms ease;
+}
+
+.linkOpen .chevron {
+  transform: rotate(180deg);
 }
 
 .actions {
@@ -116,18 +136,29 @@
 
 .actionTrack {
   display: grid;
-  transform: translateY(9px);
-  transition: transform 240ms ease;
+  height: 18px;
+  overflow: hidden;
 }
 
 .actionTrack > span {
   display: block;
+  grid-area: 1 / 1;
   height: 18px;
+  transition: transform 240ms ease;
 }
 
-.action:hover .actionTrack,
-.action:focus-visible .actionTrack {
-  transform: translateY(-9px);
+.actionTrack > span:last-child {
+  transform: translateY(100%);
+}
+
+.action:hover .actionTrack > span:first-child,
+.action:focus-visible .actionTrack > span:first-child {
+  transform: translateY(-100%);
+}
+
+.action:hover .actionTrack > span:last-child,
+.action:focus-visible .actionTrack > span:last-child {
+  transform: translateY(0);
 }
 
 .srOnly {
@@ -147,6 +178,179 @@
   display: none;
 }
 
+.companyMenu {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #262626;
+  background: #09090b;
+  animation: company-menu-in 180ms ease both;
+}
+
+.companyMenuInner {
+  display: flex;
+  width: min(1200px, calc(100% - 80px));
+  height: 362px;
+  margin-inline: auto;
+  padding: 24px 24px 48px;
+  gap: 48px;
+  border-right: 1px solid #262626;
+  border-left: 1px solid #262626;
+}
+
+.hiringColumn {
+  display: flex;
+  min-width: 0;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuHeading {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.hiringCard {
+  position: relative;
+  display: flex;
+  height: 252px;
+  overflow: hidden;
+  border-radius: 8px;
+  align-items: flex-end;
+}
+
+.hiringCard::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 42%, rgb(0 0 0 / 58%));
+  content: "";
+}
+
+.hiringCard img {
+  object-fit: cover;
+}
+
+.hiringCopy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hiringCopy strong {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.hiringCopy > span {
+  max-width: 270px;
+  color: #969696;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.companyMenuGroups {
+  display: flex;
+  min-width: 0;
+  flex: 2.5 0 0;
+  gap: 24px;
+}
+
+.companyMenuGroup {
+  display: flex;
+  min-width: 0;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.companyMenuLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyMenuLink {
+  display: flex;
+  min-width: 0;
+  height: 63px;
+  padding: 12px 8px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 180ms ease;
+}
+
+.companyMenuLink:hover,
+.companyMenuLink:focus-visible {
+  background: #0f0f11;
+}
+
+.companyMenuIcon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  background: #0f0f11;
+  color: #969696;
+  place-items: center;
+}
+
+.companyMenuIcon svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.35;
+}
+
+.companyMenuLink > span:last-child {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.companyMenuLink strong {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.companyMenuLink small {
+  overflow: hidden;
+  color: #969696;
+  font-size: 15px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes company-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 900px) {
   .shell {
     padding-inline: 0;
@@ -158,7 +362,8 @@
   }
 
   .links,
-  .actions {
+  .actions,
+  .companyMenu {
     display: none;
   }
 
@@ -171,25 +376,29 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     border: 0;
     background: transparent;
     cursor: pointer;
   }
 
   .menuButton span {
-    width: 17px;
-    height: 1px;
-    background: #d7d7d9;
-    transition: transform 180ms ease;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: opacity 180ms ease, transform 180ms ease;
   }
 
   .menuButton[aria-expanded="true"] span:first-child {
-    transform: translateY(3px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menuButton[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
   }
 
   .menuButton[aria-expanded="true"] span:last-child {
-    transform: translateY(-3px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   }
 
   .mobileMenu {
@@ -247,7 +456,14 @@
 
 @media (prefers-reduced-motion: reduce) {
   .link,
-  .actionTrack {
+  .actionTrack > span,
+  .brand :global(.codexa-logo) img,
+  .chevron,
+  .companyMenuLink {
     transition-duration: 0.01ms;
+  }
+
+  .companyMenu {
+    animation-duration: 0.01ms;
   }
 }

@@ -1,7 +1,7 @@
 import { CodexaFaqs } from "../root-8a5edab2/CodexaFaqs";
 import { CodexaFeatureTabs } from "../root-8a5edab2/CodexaFeatureTabs";
-import { CodexaInnerHero } from "../shared/CodexaInnerHero";
 import { CodexaSiteFrame } from "../shared/CodexaSiteFrame";
+import { ProductFeaturesHero } from "./ProductFeaturesHero";
 
 import styles from "./ProductFeaturesPage.module.css";
 
@@ -127,11 +127,7 @@ function ThroughputVisual() {
 export function ProductFeaturesPage() {
   return (
     <CodexaSiteFrame>
-      <CodexaInnerHero
-        eyebrow="Features"
-        title="Everything you need to automate with confidence"
-        description="Codexa gives you clean workflows, real-time visibility, and developer-first tools — all in one place."
-      />
+      <ProductFeaturesHero />
 
       <section className={styles.featureGrid} aria-label="Codexa features">
         <div className={styles.featureCell}><WorkflowVisual /></div>

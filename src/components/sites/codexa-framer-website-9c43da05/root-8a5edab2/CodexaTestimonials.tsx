@@ -50,10 +50,13 @@ const testimonials = [
   },
 ] as const;
 
-const trustLogos = Array.from(
-  { length: 7 },
-  (_, index) => `${imageRoot}/trusted-logo-0${index + 1}.png`,
-);
+const trustLogos = [
+  { src: `${imageRoot}/testimonial-logo-01.png`, width: 124, height: 16 },
+  { src: `${imageRoot}/testimonial-logo-02.png`, width: 146, height: 18 },
+  { src: `${imageRoot}/testimonial-logo-03.png`, width: 83, height: 20 },
+  { src: `${imageRoot}/testimonial-logo-04.png`, width: 95, height: 26 },
+  { src: `${imageRoot}/testimonial-logo-05.png`, width: 113, height: 24 },
+] as const;
 
 function TestimonialCard({
   testimonial,
@@ -90,10 +93,10 @@ function LogoSet({ duplicate = false }: { duplicate?: boolean }) {
     <div className={styles.logoSet} aria-hidden={duplicate || undefined}>
       {trustLogos.map((logo, index) => (
         <Image
-          key={logo}
-          src={logo}
-          width={96}
-          height={96}
+          key={logo.src}
+          src={logo.src}
+          width={logo.width}
+          height={logo.height}
           alt={duplicate ? "" : `Trusted team ${index + 1}`}
         />
       ))}
@@ -105,12 +108,15 @@ export function CodexaTestimonials() {
   return (
     <section className={styles.section} aria-labelledby="codexa-testimonials-title">
       <div className={styles.inner}>
-        <header className={styles.intro}>
-          <p>TESTIMONIALS</p>
+        <header className={`${styles.intro} codexa-reveal`}>
+          <p className="codexa-eyebrow-pill">
+            <span aria-hidden="true" />
+            TESTIMONIALS
+          </p>
           <h2 id="codexa-testimonials-title">Trusted by developers</h2>
         </header>
 
-        <div className={styles.content}>
+        <div className={`${styles.content} codexa-reveal codexa-reveal--delay-1`}>
           <div className={styles.grid}>
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.name} testimonial={testimonial} />
@@ -120,7 +126,7 @@ export function CodexaTestimonials() {
           <div className={styles.trustStrip}>
             <p>TRUSTED BY TEAMS WORLDWIDE</p>
             <div className={styles.marquee}>
-              <div className={styles.marqueeTrack}>
+              <div className={styles.marqueeTrack} data-codexa-marquee>
                 <LogoSet />
                 <LogoSet duplicate />
               </div>
