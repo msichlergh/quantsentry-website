@@ -5,13 +5,11 @@ import { CodexaComparison } from "@/components/sites/codexa-framer-website-9c43d
 import { CodexaFaqs } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaFaqs";
 import { CodexaFeatures } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaFeatures";
 import { CodexaFeatureTabs } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaFeatureTabs";
-import { CodexaFooter } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaFooter";
 import { CodexaHero } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaHero";
 import { CodexaHowItWorks } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaHowItWorks";
-import { CodexaNavigation } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaNavigation";
-import { CodexaMotion } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaMotion";
 import { CodexaPricing } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaPricing";
 import { CodexaTestimonials } from "@/components/sites/codexa-framer-website-9c43da05/root-8a5edab2/CodexaTestimonials";
+import { CodexaSiteFrame } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaSiteFrame";
 
 export const metadata: Metadata = {
   title: "Codexa – Premium Developer Automation Template",
@@ -21,21 +19,16 @@ export const metadata: Metadata = {
 
 export default function CodexaPage() {
   return (
-    <div className="codexa-page">
-      <CodexaMotion />
-      <CodexaNavigation />
-      <div className="codexa-home-main">
-        <CodexaHero />
-        <CodexaBenefits />
-        <CodexaFeatures />
-        <CodexaHowItWorks />
-        <CodexaFeatureTabs />
-        <CodexaComparison />
-        <CodexaPricing />
-        <CodexaTestimonials />
-        <CodexaFaqs />
-      </div>
-      <CodexaFooter />
-    </div>
+    <CodexaSiteFrame variant="home">
+      <CodexaHero />
+      <CodexaBenefits />
+      <CodexaFeatures />
+      <CodexaHowItWorks />
+      <CodexaFeatureTabs />
+      <CodexaComparison />
+      <CodexaPricing />
+      <CodexaTestimonials />
+      <CodexaFaqs />
+    </CodexaSiteFrame>
   );
 }

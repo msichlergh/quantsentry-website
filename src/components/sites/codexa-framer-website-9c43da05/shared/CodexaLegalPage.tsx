@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 
-import { CodexaSiteFrame } from "./CodexaSiteFrame";
 import styles from "./CodexaLegalPage.module.css";
 
 export type CodexaLegalSection = {
@@ -22,8 +21,7 @@ export function CodexaLegalPage({
   variant: LegalPageVariant;
 }) {
   return (
-    <CodexaSiteFrame>
-      <article className={`${styles.page} ${styles[variant]}`}>
+    <article className={`${styles.page} ${styles[variant]}`}>
         <header className={styles.header}>
           <h1>{title}</h1>
           <p>Last Updated: October 2025</p>
@@ -42,7 +40,6 @@ export function CodexaLegalPage({
             </div>
           </div>
         </div>
-      </article>
-    </CodexaSiteFrame>
+    </article>
   );
 }

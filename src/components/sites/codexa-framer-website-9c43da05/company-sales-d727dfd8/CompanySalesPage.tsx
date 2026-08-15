@@ -1,8 +1,9 @@
-"use client";
-
 import { Check } from "lucide-react";
 import Link from "next/link";
-import type { FormEvent } from "react";
+
+import { CodexaDemoForm } from "../shared/CodexaDemoForm";
+import { CodexaFormField } from "../shared/CodexaFormField";
+import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
 
 import styles from "./CompanySalesPage.module.css";
 
@@ -22,12 +23,12 @@ const improvements = [
 ] as const;
 
 export function CompanySalesPage() {
-  function preventDemoSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-  }
-
   return (
-    <section className={styles.contactSection} aria-labelledby="sales-title">
+    <section
+      className={styles.contactSection}
+      id="sales"
+      aria-labelledby="sales-title"
+    >
       <div className={styles.shell}>
         <div className={styles.intro}>
           <div>
@@ -50,45 +51,23 @@ export function CompanySalesPage() {
             <p>
               Need help with onboarding, product questions, or technical issues?
             </p>
-            <Link href="/codexa/company/support">Contact support</Link>
+            <Link href={CODEXA_ROUTES.support}>Contact support</Link>
           </div>
         </div>
 
-        <form className={styles.form} onSubmit={preventDemoSubmit}>
+        <CodexaDemoForm className={styles.form}>
           <div className={styles.twoFields}>
-            <label className={styles.field}>
-              <span>First name</span>
-              <input name="firstName" placeholder="Jane" type="text" />
-            </label>
-            <label className={styles.field}>
-              <span>Last name</span>
-              <input name="lastName" placeholder="Smith" type="text" />
-            </label>
+            <CodexaFormField label="First name" name="firstName" placeholder="Jane" type="text" />
+            <CodexaFormField label="Last name" name="lastName" placeholder="Smith" type="text" />
           </div>
 
-          <label className={styles.field}>
-            <span>Work email</span>
-            <input name="email" placeholder="jane@framer.com" type="email" />
-          </label>
+          <CodexaFormField label="Work email" name="email" placeholder="jane@framer.com" type="email" />
 
-          <label className={styles.field}>
-            <span>Phone number</span>
-            <input name="phone" placeholder="Your phone number" type="tel" />
-          </label>
+          <CodexaFormField label="Phone number" name="phone" placeholder="Your phone number" type="tel" />
 
           <div className={styles.twoFields}>
-            <label className={styles.field}>
-              <span>Company name</span>
-              <input name="company" placeholder="Your company name" type="text" />
-            </label>
-            <label className={styles.field}>
-              <span>Role</span>
-              <input
-                name="role"
-                placeholder="What’s your role in the team?"
-                type="text"
-              />
-            </label>
+            <CodexaFormField label="Company name" name="company" placeholder="Your company name" type="text" />
+            <CodexaFormField label="Role" name="role" placeholder="What’s your role in the team?" type="text" />
           </div>
 
           <fieldset className={styles.improvements}>
@@ -103,24 +82,23 @@ export function CompanySalesPage() {
             </div>
           </fieldset>
 
-          <label className={styles.field}>
-            <span>Message</span>
-            <textarea
-              name="message"
-              placeholder="How can we help? Share details about your current setup."
-            />
-          </label>
+          <CodexaFormField
+            label="Message"
+            multiline
+            name="message"
+            placeholder="How can we help? Share details about your current setup."
+          />
 
           <label className={styles.consent}>
             <input name="privacy" type="checkbox" />
             <span>
-              I agree the <Link href="/codexa/legal/privacy-policy">privacy policy</Link>.
+              I agree the <Link href={CODEXA_ROUTES.privacy}>privacy policy</Link>.
             </span>
           </label>
 
           <button type="submit">Submit</button>
           <p className={styles.demoNote}>Demo only — submissions are not sent.</p>
-        </form>
+        </CodexaDemoForm>
       </div>
     </section>
   );

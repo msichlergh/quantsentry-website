@@ -2,6 +2,7 @@
 
 import { useState, type SVGProps } from "react";
 
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
 import { ArrowIcon, CheckIcon } from "../shared/icons";
 import type { CodexaPlan } from "./types";
 
@@ -108,10 +109,7 @@ export function CodexaPricing() {
     <section id="pricing" className={styles.section}>
       <div className={styles.container}>
         <header className={`${styles.header} codexa-reveal`}>
-          <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
-            <span aria-hidden="true" />
-            Pricing
-          </p>
+          <CodexaEyebrow className={styles.eyebrow}>Pricing</CodexaEyebrow>
           <h2>
             Simple plans,
             <br />

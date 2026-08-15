@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  height: 42px;
+  padding-inline: 24px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 0;
+  border-radius: 50px;
+  color: #08070e;
+  background: var(--codexa-text);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dark {
+  border: 1px solid var(--codexa-line);
+  color: var(--codexa-text);
+  background: var(--codexa-surface);
+}
+
+.track {
+  display: grid;
+  height: 18px;
+  overflow: hidden;
+}
+
+.track > span {
+  display: block;
+  height: 18px;
+  grid-area: 1 / 1;
+  transition: transform var(--codexa-motion-standard) ease;
+}
+
+.track > span:last-child {
+  transform: translateY(100%);
+}
+
+.button:hover .track > span:first-child,
+.button:focus-visible .track > span:first-child {
+  transform: translateY(-100%);
+}
+
+.button:hover .track > span:last-child,
+.button:focus-visible .track > span:last-child {
+  transform: translateY(0);
+}

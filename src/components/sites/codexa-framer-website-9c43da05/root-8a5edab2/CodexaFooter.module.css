@@ -3,16 +3,16 @@
   min-height: 760.797px;
   padding: 0 40px 24px;
   overflow: hidden;
-  color: #f5f6f6;
-  background: #09090b;
+  color: var(--codexa-heading);
+  background: var(--codexa-bg);
 }
 
 .footer::after {
   position: absolute;
   z-index: 5;
   inset: 0 max(40px, calc((100% - 1200px) / 2));
-  border-right: 1px solid #262626;
-  border-left: 1px solid #262626;
+  border-right: 1px solid var(--codexa-line-strong);
+  border-left: 1px solid var(--codexa-line-strong);
   content: "";
   pointer-events: none;
 }
@@ -41,7 +41,7 @@
   left: 12%;
   width: 76%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #fff 50%, transparent);
+  background: linear-gradient(90deg, transparent, var(--codexa-text) 50%, transparent);
   content: "";
 }
 
@@ -282,7 +282,7 @@
 .newsletter input,
 .newsletter button {
   height: 42px;
-  border: 1px solid #292b2c;
+  border: 1px solid var(--codexa-control-border);
   border-radius: 8px;
   font: inherit;
 }
@@ -309,7 +309,7 @@
   padding: 0 13px;
   align-items: center;
   justify-content: space-between;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   background: #19191d;
   font-size: 14px;
   cursor: pointer;
@@ -370,7 +370,7 @@
   display: inline-grid;
   height: 18px;
   overflow: hidden;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 18px;
   text-decoration: none;
@@ -389,7 +389,7 @@
 }
 
 .linkTrack > span:last-child {
-  color: #fff;
+  color: var(--codexa-text);
   transform: translateY(100%);
 }
 
@@ -409,7 +409,7 @@
   padding: 0 24px;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #262626;
+  border-top: 1px solid var(--codexa-line-strong);
 }
 
 .bottomBar p,

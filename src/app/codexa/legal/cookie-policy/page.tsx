@@ -4,6 +4,7 @@ import {
   CodexaLegalPage,
   type CodexaLegalSection,
 } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaLegalPage";
+import { CodexaSiteFrame } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaSiteFrame";
 
 export const metadata: Metadata = {
   title: "Codexa – Cookie Policy",
@@ -69,13 +70,15 @@ const sections: CodexaLegalSection[] = [
 
 export default function CodexaCookiesPage() {
   return (
-    <CodexaLegalPage
-      title="Cookie Policy"
-      intro={
-        <p>This Cookie Policy explains how <strong>Codexa</strong> uses cookies and similar technologies when you visit our website or interact with our platform.</p>
-      }
-      sections={sections}
-      variant="cookies"
-    />
+    <CodexaSiteFrame>
+      <CodexaLegalPage
+        title="Cookie Policy"
+        intro={
+          <p>This Cookie Policy explains how <strong>Codexa</strong> uses cookies and similar technologies when you visit our website or interact with our platform.</p>
+        }
+        sections={sections}
+        variant="cookies"
+      />
+    </CodexaSiteFrame>
   );
 }

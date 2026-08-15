@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { CodexaBlogArticlePage } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaBlogArticlePage";
+import { CodexaSiteFrame } from "@/components/sites/codexa-framer-website-9c43da05/shared/CodexaSiteFrame";
 import {
   codexaBlogArticles,
   getCodexaBlogArticle,
@@ -37,5 +38,9 @@ export default async function CodexaBlogArticleRoute({ params }: PageProps) {
     notFound();
   }
 
-  return <CodexaBlogArticlePage article={article} />;
+  return (
+    <CodexaSiteFrame>
+      <CodexaBlogArticlePage article={article} />
+    </CodexaSiteFrame>
+  );
 }

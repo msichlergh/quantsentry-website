@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 
+import { CodexaButton } from "../shared/CodexaButton";
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
+import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
 import styles from "./CodexaFaqs.module.css";
 
 const faqs = [
@@ -69,10 +72,7 @@ export function CodexaFaqs() {
       <div className={styles.frame}>
         <div className={styles.left}>
           <header className={`${styles.intro} codexa-reveal`}>
-            <p className={`${styles.eyebrow} codexa-eyebrow-pill`}>
-              <span aria-hidden="true" />
-              FAQs
-            </p>
+            <CodexaEyebrow className={styles.eyebrow}>FAQs</CodexaEyebrow>
             <h2>Got questions? We’ve got answers.</h2>
             <p>Here’s everything you need to know before getting started.</p>
           </header>
@@ -80,16 +80,9 @@ export function CodexaFaqs() {
           <aside className={`${styles.support} codexa-reveal codexa-reveal--delay-1`}>
             <h3>Still have questions?</h3>
             <p>Contact us and we’ll help you out.</p>
-            <a
-              className="codexa-button codexa-button--dark"
-              href="/codexa/product/faqs"
-            >
-              <span className="codexa-button__track" aria-hidden="true">
-                <span>View all FAQs</span>
-                <span>View all FAQs</span>
-              </span>
-              <span className={styles.srOnly}>View all FAQs</span>
-            </a>
+            <CodexaButton href={CODEXA_ROUTES.faqs} variant="dark">
+              View all FAQs
+            </CodexaButton>
           </aside>
         </div>
 

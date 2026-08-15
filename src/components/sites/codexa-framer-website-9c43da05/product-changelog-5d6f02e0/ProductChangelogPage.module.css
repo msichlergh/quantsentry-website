@@ -1,13 +1,13 @@
 .changelog {
   min-height: 2759.328px;
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .update {
   display: grid;
   min-height: 689.832px;
   grid-template-columns: 480px minmax(0, 1fr);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid var(--codexa-line);
 }
 
 .update:last-child {
@@ -16,7 +16,7 @@
 
 .metadata {
   padding: 32px 24px;
-  border-right: 1px solid rgb(255 255 255 / 8%);
+  border-right: 1px solid var(--codexa-line);
 }
 
 .version {
@@ -24,7 +24,7 @@
   margin: 0 0 12px;
   padding: 3px 7px;
   border-radius: 4px;
-  color: #00d7cc;
+  color: var(--codexa-accent-bright);
   background: rgb(0 205 193 / 15%);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 12px;
@@ -34,7 +34,7 @@
 .metadata h2 {
   max-width: 365px;
   margin: 0;
-  color: #f5f6f6;
+  color: var(--codexa-heading);
   font-size: 26px;
   font-weight: 400;
   line-height: 1.15;
@@ -44,7 +44,7 @@
 .subtitle {
   max-width: 310px;
   margin: 9px 0 18px;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 22px;
 }
@@ -63,8 +63,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #00d7cc;
-  box-shadow: 0 0 9px #00d7cc;
+  background: var(--codexa-accent-bright);
+  box-shadow: 0 0 9px var(--codexa-accent-bright);
 }
 
 .details {
@@ -97,7 +97,7 @@
   z-index: 1;
   padding: 5px 9px;
   border-radius: 4px;
-  color: #00d7cc;
+  color: var(--codexa-accent-bright);
   background: rgb(0 205 193 / 16%);
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 12px;
@@ -107,7 +107,7 @@
 
 .overview {
   margin: 0 0 18px;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 14px;
   line-height: 21px;
 }
@@ -127,7 +127,7 @@
 .changeList ul {
   margin: 2px 0 0;
   padding-left: 18px;
-  color: #929496;
+  color: var(--codexa-muted-soft);
   font-size: 13px;
   line-height: 19px;
 }

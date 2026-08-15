@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import type { CodexaBlogArticle } from "./codexaBlogData";
 import { codexaBlogArticles } from "./codexaBlogData";
-import { CodexaSiteFrame } from "./CodexaSiteFrame";
 import styles from "./CodexaBlogArticlePage.module.css";
 
 export function CodexaBlogArticlePage({
@@ -16,7 +15,7 @@ export function CodexaBlogArticlePage({
     .slice(0, 3);
 
   return (
-    <CodexaSiteFrame>
+    <>
       <article>
         <header className={styles.header}>
           <p className={styles.category}>{article.category}</p>
@@ -141,6 +140,6 @@ export function CodexaBlogArticlePage({
           Load More
         </Link>
       </section>
-    </CodexaSiteFrame>
+    </>
   );
 }

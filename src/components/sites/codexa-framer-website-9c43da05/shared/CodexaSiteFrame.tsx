@@ -8,16 +8,22 @@ import styles from "./CodexaSiteFrame.module.css";
 
 export function CodexaSiteFrame({
   children,
+  variant = "constrained",
   showFooter = true,
 }: {
   children: ReactNode;
+  variant?: "constrained" | "home";
   showFooter?: boolean;
 }) {
   return (
     <div className="codexa-page" id="home">
       <CodexaMotion />
       <CodexaNavigation />
-      <div className={styles.main}>{children}</div>
+      <div
+        className={variant === "home" ? `${styles.home} codexa-home-main` : styles.main}
+      >
+        {children}
+      </div>
       {showFooter ? <CodexaFooter /> : null}
     </div>
   );

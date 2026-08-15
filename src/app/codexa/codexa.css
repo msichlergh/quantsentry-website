@@ -23,9 +23,23 @@ html:has(.codexa-page)::-webkit-scrollbar {
   --codexa-surface: #0f0f11;
   --codexa-surface-strong: #18181b;
   --codexa-text: #fff;
+  --codexa-heading: #f5f6f6;
   --codexa-muted: #969696;
+  --codexa-muted-soft: #929496;
+  --codexa-placeholder: #686a6c;
   --codexa-accent: #00c3c9;
+  --codexa-accent-bright: #00d7cc;
   --codexa-line: rgb(255 255 255 / 8%);
+  --codexa-line-strong: #262626;
+  --codexa-control-border: #292b2c;
+  --codexa-focus-border: rgb(0 215 204 / 55%);
+  --codexa-content-width: 1200px;
+  --codexa-page-gutter: 40px;
+  --codexa-page-gutter-mobile: 12px;
+  --codexa-nav-height: 72px;
+  --codexa-control-radius: 8px;
+  --codexa-motion-fast: 160ms;
+  --codexa-motion-standard: 240ms;
   min-width: 0;
   overflow: clip;
   background: var(--codexa-bg);
@@ -40,7 +54,7 @@ html:has(.codexa-page)::-webkit-scrollbar {
 }
 
 .codexa-page section[id] {
-  scroll-margin-top: 72px;
+  scroll-margin-top: var(--codexa-nav-height);
 }
 
 .codexa-home-main {
@@ -53,187 +67,22 @@ html:has(.codexa-page)::-webkit-scrollbar {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: min(1200px, calc(100% - 80px));
-  border-right: 1px solid #262626;
-  border-left: 1px solid #262626;
+  width: min(
+    var(--codexa-content-width),
+    calc(100% - (var(--codexa-page-gutter) * 2))
+  );
+  border-right: 1px solid var(--codexa-line-strong);
+  border-left: 1px solid var(--codexa-line-strong);
   content: "";
   pointer-events: none;
   transform: translateX(-50%);
-}
-
-.codexa-page .codexa-eyebrow-pill {
-  display: inline-flex;
-  height: 30px;
-  align-items: center;
-  gap: 6px;
-  border: 0;
-  border-radius: 24px;
-  padding: 6px 12px 6px 8px;
-  background: rgb(0 195 201 / 15%);
-  color: var(--codexa-accent);
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16.8px;
-  letter-spacing: .02em;
-  text-transform: uppercase;
-}
-
-.codexa-page .codexa-eyebrow-pill::before {
-  display: none;
-}
-
-.codexa-page .codexa-eyebrow-pill > span {
-  position: relative;
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
-  border-radius: 50%;
-  background: rgb(0 195 201 / 10%);
-  box-shadow: none;
-}
-
-.codexa-page .codexa-eyebrow-pill > span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 0 7px currentColor;
-  content: "";
-  transform: translate(-50%, -50%);
-}
-
-.codexa-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding-inline: 40px;
-}
-
-.codexa-container {
-  position: relative;
-  width: min(1200px, 100%);
-  margin-inline: auto;
-  padding-block: 64px 128px;
-}
-
-.codexa-section-head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
-}
-
-.codexa-eyebrow {
-  margin: 0;
-  color: var(--codexa-accent);
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 12px;
-  line-height: 17px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
-.codexa-display,
-.codexa-section-title,
-.codexa-feature-title {
-  margin: 0;
-  color: var(--codexa-text);
-  font-weight: 500;
-  letter-spacing: -.035em;
-  text-wrap: balance;
-}
-
-.codexa-display {
-  font-size: 64px;
-  line-height: 1.05;
-}
-
-.codexa-section-title {
-  max-width: 650px;
-  font-size: 52px;
-  line-height: 1.1;
-}
-
-.codexa-feature-title {
-  font-size: 44px;
-  line-height: 1.1;
-}
-
-.codexa-copy {
-  margin: 0;
-  color: var(--codexa-muted);
-  font-size: 15px;
-  line-height: 1.55;
-}
-
-.codexa-button {
-  position: relative;
-  display: inline-flex;
-  height: 42px;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border: 0;
-  border-radius: 50px;
-  padding-inline: 24px;
-  background: #fff;
-  color: #08070e;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 18px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.codexa-button--dark {
-  border: 1px solid var(--codexa-line);
-  background: var(--codexa-surface);
-  color: #fff;
-}
-
-.codexa-button__track {
-  display: grid;
-  height: 18px;
-  overflow: hidden;
-}
-
-.codexa-button__track > span {
-  display: block;
-  grid-area: 1 / 1;
-  height: 18px;
-  transition: transform 240ms ease;
-}
-
-.codexa-button__track > span:last-child {
-  transform: translateY(100%);
-}
-
-.codexa-button:hover .codexa-button__track > span:first-child,
-.codexa-button:focus-visible .codexa-button__track > span:first-child {
-  transform: translateY(-100%);
-}
-
-.codexa-button:hover .codexa-button__track > span:last-child,
-.codexa-button:focus-visible .codexa-button__track > span:last-child {
-  transform: translateY(0);
-}
-
-.codexa-card {
-  border: 1px solid var(--codexa-line);
-  border-radius: 12px;
-  background: var(--codexa-surface);
 }
 
 .codexa-logo {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 24px;
   line-height: 32px;
   text-decoration: none;
@@ -241,38 +90,6 @@ html:has(.codexa-page)::-webkit-scrollbar {
 
 .codexa-logo img {
   border-radius: 50%;
-}
-
-.codexa-check-list {
-  display: grid;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.codexa-check-list li {
-  display: flex;
-  gap: 10px;
-  color: var(--codexa-muted);
-  font-size: 15px;
-  line-height: 23px;
-}
-
-.codexa-check-list svg {
-  width: 14px;
-  flex: 0 0 14px;
-  color: var(--codexa-accent);
-  margin-top: 4px;
-}
-
-.codexa-glow {
-  position: absolute;
-  inset-inline: 10%;
-  height: 220px;
-  background: radial-gradient(ellipse, rgb(0 195 201 / 32%), rgb(0 195 201 / 0%) 70%);
-  filter: blur(10px);
-  pointer-events: none;
 }
 
 .codexa-marquee {
@@ -329,39 +146,10 @@ html:has(.codexa-page)::-webkit-scrollbar {
 }
 
 @media (max-width: 900px) {
-  .codexa-page .codexa-eyebrow-pill {
-    height: 26px;
-    padding: 4px 10px 4px 6px;
-    font-size: 11px;
-    line-height: 15.4px;
-  }
-
   .codexa-home-main::after {
     display: none;
   }
 
-  .codexa-section {
-    padding-inline: 28px;
-  }
-
-  .codexa-container {
-    padding-block: 64px 96px;
-  }
-
-  .codexa-display {
-    font-size: 48px;
-    line-height: 1.05;
-  }
-
-  .codexa-section-title {
-    font-size: 40px;
-    line-height: 1.1;
-  }
-
-  .codexa-feature-title {
-    font-size: 34px;
-    line-height: 1.1;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

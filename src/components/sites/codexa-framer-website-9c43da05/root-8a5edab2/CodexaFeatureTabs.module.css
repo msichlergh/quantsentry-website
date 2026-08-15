@@ -5,7 +5,7 @@
   justify-content: center;
   padding-inline: 40px;
   background: var(--codexa-bg, #08070e);
-  color: var(--codexa-text, #fff);
+  color: var(--codexa-text, var(--codexa-text));
 }
 
 .inner {
@@ -33,7 +33,7 @@
   border-radius: 999px;
   padding: 4px 9px;
   background: rgb(0 195 201 / 14%);
-  color: var(--codexa-accent, #00c3c9);
+  color: var(--codexa-accent, var(--codexa-accent));
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 10px;
   line-height: 13px;
@@ -52,7 +52,7 @@
 .intro h2 {
   max-width: 650px;
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 52px;
   font-weight: 500;
   line-height: 1.1;
@@ -80,7 +80,7 @@
   border-radius: 7px;
   padding: 0 13px;
   background: transparent;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font: inherit;
   font-size: 15px;
   font-weight: 400;
@@ -92,13 +92,13 @@
 .tab:hover,
 .tab:focus-visible {
   border-color: rgb(255 255 255 / 20%);
-  color: #fff;
+  color: var(--codexa-text);
 }
 
 .tab[aria-selected="true"] {
-  border-color: #fff;
-  background: #fff;
-  color: #09090b;
+  border-color: var(--codexa-text);
+  background: var(--codexa-text);
+  color: var(--codexa-bg);
 }
 
 .mobileControls {
@@ -123,7 +123,7 @@
   overflow: hidden;
   border: 1px solid rgb(255 255 255 / 7%);
   border-radius: 12px;
-  background: #09090b;
+  background: var(--codexa-bg);
   box-shadow: inset 0 36px rgb(255 255 255 / 1.5%);
   animation: contentSwap 350ms ease both;
 }
@@ -181,7 +181,7 @@
 
 .copy h3 {
   margin: 0;
-  color: #fff;
+  color: var(--codexa-text);
   font-size: 32px;
   font-weight: 500;
   line-height: 1.2;
@@ -191,7 +191,7 @@
 
 .copy p {
   margin: 16px 0 24px;
-  color: var(--codexa-muted, #969696);
+  color: var(--codexa-muted, var(--codexa-muted));
   font-size: 15px;
   line-height: 23px;
 }
@@ -275,7 +275,7 @@
     border: 1px solid rgb(255 255 255 / 10%);
     border-radius: 50%;
     background: #18181b;
-    color: #fff;
+    color: var(--codexa-text);
     cursor: pointer;
   }
 
@@ -296,7 +296,7 @@
 
   .mobileControls span {
     overflow: hidden;
-    color: #fff;
+    color: var(--codexa-text);
     font-size: 15px;
     line-height: 18px;
     text-align: center;

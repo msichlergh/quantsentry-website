@@ -1,7 +1,6 @@
 import { CodexaFaqs } from "../root-8a5edab2/CodexaFaqs";
 import { CodexaPricing } from "../root-8a5edab2/CodexaPricing";
 import { CodexaInnerHero } from "../shared/CodexaInnerHero";
-import { CodexaSiteFrame } from "../shared/CodexaSiteFrame";
 import { ArrowIcon, CheckIcon } from "../shared/icons";
 
 import styles from "./ProductPricingPage.module.css";
@@ -40,7 +39,7 @@ function ComparisonValueCell({ value }: { value: ComparisonValue }) {
 
 export function ProductPricingPage() {
   return (
-    <CodexaSiteFrame>
+    <>
       <CodexaInnerHero
         eyebrow="Pricing"
         title="Simple plans, built for every team"
@@ -83,6 +82,6 @@ export function ProductPricingPage() {
       </section>
 
       <CodexaFaqs />
-    </CodexaSiteFrame>
+    </>
   );
 }

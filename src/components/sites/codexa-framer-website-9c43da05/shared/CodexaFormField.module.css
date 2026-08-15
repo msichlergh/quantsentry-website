@@ -1,0 +1,60 @@
+.field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.label {
+  color: var(--codexa-muted-soft);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.control {
+  width: 100%;
+  border: 1px solid var(--codexa-control-border);
+  border-radius: var(--codexa-control-radius);
+  color: var(--codexa-heading);
+  outline: none;
+  background: var(--codexa-bg);
+  font: inherit;
+  font-size: 15px;
+  transition: border-color var(--codexa-motion-fast) ease;
+}
+
+.control::placeholder {
+  color: var(--codexa-placeholder);
+}
+
+.control:focus {
+  border-color: var(--codexa-focus-border);
+}
+
+.input {
+  height: 43px;
+  padding: 0 18px;
+}
+
+.textarea {
+  height: 112px;
+  padding: 15px 18px;
+  resize: vertical;
+}
+
+.textareaLarge {
+  height: 118px;
+}
+
+@media (max-width: 768px) {
+  .compactMobile {
+    height: 42px;
+  }
+
+  .textareaLarge {
+    height: 112px;
+  }
+}
