@@ -85,7 +85,7 @@ export function CodexaCareerDetailPage({
             )),
           )}
 
-          <Link className={styles.applyButton} href="/codexa/company/support">
+          <Link className={styles.applyButton} href="/company/support">
             <span className={styles.buttonLabel}>
               <span>Apply now</span>
               <span aria-hidden="true">Apply now</span>

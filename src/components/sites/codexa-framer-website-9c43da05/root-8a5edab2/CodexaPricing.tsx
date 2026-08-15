@@ -173,7 +173,7 @@ export function CodexaPricing() {
                     </p>
                     <a
                       className={`${styles.cta} ${plan.featured ? styles.featuredCta : ""}`}
-                      href="/codexa/company/sales"
+                      href="/company/sales"
                     >
                       <span className={styles.ctaLabel}>
                         <span>{plan.cta}</span>

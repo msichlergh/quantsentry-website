@@ -72,7 +72,7 @@ export function ProductPricingPage() {
                 <h2>Need a custom plan?</h2>
                 <p>We can tailor limits, workflows, and infrastructure to match your team&apos;s requirements.</p>
               </div>
-              <a href="/codexa/company/sales">
+              <a href="/company/sales">
                 Contact Sales
                 <ArrowIcon />
               </a>

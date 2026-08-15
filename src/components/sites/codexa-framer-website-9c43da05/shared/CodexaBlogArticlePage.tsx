@@ -116,7 +116,7 @@ export function CodexaBlogArticlePage({
           {relatedArticles.map((related) => (
             <Link
               className={styles.card}
-              href={`/codexa/company/blog/${related.slug}`}
+              href={`/company/blog/${related.slug}`}
               key={related.slug}
             >
               <div className={styles.cardImage}>
@@ -136,7 +136,7 @@ export function CodexaBlogArticlePage({
             </Link>
           ))}
         </div>
-        <Link className={styles.loadMore} href="/codexa/company/blog">
+        <Link className={styles.loadMore} href="/company/blog">
           Load More
         </Link>
       </section>

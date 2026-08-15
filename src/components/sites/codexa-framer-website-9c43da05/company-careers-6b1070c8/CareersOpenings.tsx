@@ -28,7 +28,7 @@ export function CareersOpenings() {
             </div>
             <Link
               className={`${uiStyles.button} ${styles.button}`}
-              href={`/codexa/company/careers/${opening.slug}`}
+              href={`/company/careers/${opening.slug}`}
             >
               <CareersButtonLabel>Apply now</CareersButtonLabel>
               <ArrowRight aria-hidden="true" />
