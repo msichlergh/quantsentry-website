@@ -8,6 +8,10 @@ export function CodexaMotion() {
   const pathname = usePathname();
 
   useLayoutEffect(() => {
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+
     const root = markerRef.current?.closest<HTMLElement>(".codexa-page");
 
     if (!root) {

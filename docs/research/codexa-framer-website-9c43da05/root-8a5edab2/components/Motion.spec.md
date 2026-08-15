@@ -8,6 +8,11 @@
 - Stagger a section's primary content by `100ms`; use `180ms` only for a third related group.
 - Never hide server-rendered content when JavaScript is unavailable.
 
+## Route transitions
+
+- Every client-side transition to a different Codexa pathname starts at the top of the new page.
+- Preserve native hash navigation so same-page links such as `#openings` still reach their intended section.
+
 ## Control feedback
 
 - Pill labels slide vertically in `240ms` and remain clipped to one text line.

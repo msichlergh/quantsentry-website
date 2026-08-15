@@ -370,6 +370,7 @@ final result: passed
 - Opening cards reveal from the source offscreen state to `opacity: 1` and `translateY(0)` on viewport entry.
 - Button hover changes from white to `rgb(189, 189, 189)` and swaps the two label tracks by 18px; career-card links target the correct local detail routes.
 - `See Open Positions` targets `#openings`; the mobile menu changes `aria-expanded` from `false` to `true` and exposes the complete navigation.
+- A client-side transition initiated at `scrollY 2154` lands on the new career page at `scrollY 0`; same-page `#openings` navigation remains intact.
 - Route-change motion registration now follows the active pathname, so newly rendered Codexa pages retain reveal and marquee behavior during client-side navigation.
 - All 23 URLs from the live sitemap return HTTP 200 under `/codexa`; an unknown career slug returns HTTP 404; `/` returns HTTP 200 and continues to serve Codexa as the default site.
 - Browser verification finished with zero application console errors. The only remaining browser warning is development-only Next.js preload/HMR noise.
