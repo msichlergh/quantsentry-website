@@ -1,23 +1,24 @@
 .contactSection {
   height: 1007.016px;
-  padding-top: 88px;
+  padding: 160px 0 128px;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
 }
 
 .shell {
   display: grid;
-  height: 708px;
+  height: 719.016px;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid rgb(255 255 255 / 8%);
-  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  box-shadow:
+    inset 0 1px rgb(255 255 255 / 8%),
+    inset 0 -1px rgb(255 255 255 / 8%);
 }
 
 .intro {
   display: flex;
-  padding: 26px 24px;
+  padding: 24px;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 34px;
+  gap: 32px;
 }
 
 .intro h1 {
@@ -67,9 +68,9 @@
 
 .form {
   display: flex;
-  padding: 26px 24px 22px;
+  padding: 24px;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   border-left: 1px solid rgb(255 255 255 / 8%);
   background: #0f0f11;
 }
@@ -133,10 +134,39 @@
 }
 
 .consent input {
+  display: grid;
   width: 19px;
   height: 19px;
   margin: 0;
-  accent-color: #00d7cc;
+  appearance: none;
+  border: 1px solid #292b2c;
+  border-radius: 5px;
+  background: #09090b;
+  cursor: pointer;
+  place-content: center;
+}
+
+.consent input::before {
+  width: 9px;
+  height: 5px;
+  border-bottom: 2px solid #00d7cc;
+  border-left: 2px solid #00d7cc;
+  content: "";
+  transform: rotate(-45deg) scale(0);
+  transition: transform 120ms ease;
+}
+
+.consent input:checked {
+  background: #0f0f11;
+}
+
+.consent input:checked::before {
+  transform: rotate(-45deg) scale(1);
+}
+
+.consent input:focus-visible {
+  outline: 2px solid rgb(0 215 204 / 55%);
+  outline-offset: 2px;
 }
 
 .consent a {
@@ -170,9 +200,13 @@
 
 @media (max-width: 768px) {
   .contactSection {
+    width: calc(100% - 24px);
     height: auto;
-    min-height: 1090px;
-    padding: 40px 0 76px;
+    min-height: 1164px;
+    margin-inline: 12px;
+    padding: 120px 0 80px;
+    border-right: 1px solid rgb(255 255 255 / 8%);
+    border-left: 1px solid rgb(255 255 255 / 8%);
   }
 
   .shell {
@@ -182,9 +216,9 @@
   }
 
   .intro {
-    min-height: 309px;
-    padding: 20px 28px 28px;
-    gap: 31px;
+    min-height: 328px;
+    padding: 16px 16px 32px;
+    gap: 30px;
   }
 
   .intro h1 {
@@ -203,9 +237,9 @@
   }
 
   .form {
-    min-height: 593px;
-    padding: 17px 16px 18px;
-    gap: 15px;
+    min-height: 633px;
+    padding: 16px;
+    gap: 16px;
     border-top: 1px solid rgb(255 255 255 / 8%);
     border-left: 0;
   }

@@ -47,7 +47,7 @@ const companyMenuGroups = [
       {
         label: "Careers",
         description: "Open roles and opportunities at Codexa",
-        href: "/codexa/company/about#careers",
+        href: "/codexa/company/careers",
         icon: UsersRound,
       },
       {
@@ -198,7 +198,7 @@ export function CodexaNavigation() {
           <div className={styles.companyMenuInner}>
             <Link
               className={styles.hiringColumn}
-              href="/codexa/company/about#careers"
+              href="/codexa/company/careers"
             >
               <span className={styles.menuHeading}>Join Codexa</span>
               <span className={styles.hiringCard}>
