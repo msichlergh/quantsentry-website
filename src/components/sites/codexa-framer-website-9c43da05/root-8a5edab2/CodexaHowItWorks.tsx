@@ -1,4 +1,14 @@
+import Image from "next/image";
+
 import styles from "./CodexaHowItWorks.module.css";
+
+const assetRoot =
+  "/sites/codexa-framer-website-9c43da05/root-8a5edab2/images";
+
+const integrationLogos = Array.from(
+  { length: 7 },
+  (_, index) => `${assetRoot}/trusted-logo-0${index + 1}.png`,
+);
 
 const statusRows = [
   ["Flow engine", "84% in progress"],
@@ -8,6 +18,25 @@ const statusRows = [
   ["System health", "No issues detected"],
 ] as const;
 
+function CursorIcon({ className }: { className: string }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      viewBox="0 0 16.861 16.861"
+    >
+      <path
+        d="M2.134.234C1.947.166 1.756.098 1.595.056 1.443.016 1.148-.049.832.06.47.186.186.47.06.832c-.109.316-.044.611-.004.763.042.161.11.352.178.539l4.774 13.3c.084.233.164.457.243.63.067.146.22.465.551.645.362.197.799.203 1.166.015.336-.171.497-.486.567-.63.084-.171.171-.392.26-.624l2.149-5.526 5.526-2.149c.232-.089.453-.176.624-.259.144-.071.459-.232.63-.568.188-.367.182-.804-.015-1.166-.18-.331-.499-.484-.645-.551-.173-.079-.397-.159-.63-.243Z"
+        fill="#0f0f11"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+}
+
 function IntegrationVisual() {
   return (
     <div className={`${styles.visual} ${styles.integrationVisual}`}>
@@ -15,11 +44,16 @@ function IntegrationVisual() {
       <div className={`${styles.orbit} ${styles.orbitMiddle}`} />
       <div className={`${styles.orbit} ${styles.orbitInner}`} />
       <div className={styles.toolRail} aria-hidden="true">
-        <span className={styles.mutedTool}>Z</span>
-        <span className={styles.tool}>✣</span>
-        <span className={`${styles.tool} ${styles.primaryTool}`}>◉</span>
-        <span className={styles.tool}>S</span>
-        <span className={styles.mutedTool}>N</span>
+        {integrationLogos.map((src, index) => (
+          <span
+            className={`${index === 2 || index === 4 ? styles.tool : styles.mutedTool} ${
+              index === 2 ? styles.previousPrimaryTool : ""
+            } ${index === 3 ? styles.primaryTool : ""}`}
+            key={src}
+          >
+            <Image src={src} alt="" width={96} height={96} />
+          </span>
+        ))}
       </div>
       <span className={styles.integrationLabel}>INTEGRATING…</span>
     </div>
@@ -47,6 +81,7 @@ function StatusVisual() {
           </div>
         ))}
       </div>
+      <CursorIcon className={styles.workflowCursor} />
     </div>
   );
 }
@@ -62,6 +97,7 @@ function AnalyticsVisual() {
       <div className={styles.chart}>
         <svg
           aria-hidden="true"
+          className={styles.chartGraphic}
           viewBox="0 0 352 190"
           preserveAspectRatio="none"
         >
@@ -82,6 +118,7 @@ function AnalyticsVisual() {
         </svg>
         <span className={styles.chartPulse} />
         <span className={styles.chartReading}>128 runs/min</span>
+        <CursorIcon className={styles.analyticsCursor} />
       </div>
     </div>
   );
@@ -96,7 +133,7 @@ type StepCardProps = {
 
 function StepCard({ step, title, description, visual }: StepCardProps) {
   return (
-    <article className={styles.card}>
+    <article className={styles.card} data-codexa-auto-motion>
       {visual}
       <div className={styles.caption}>
         <span className={styles.stepLabel}>{step}</span>
@@ -111,14 +148,17 @@ export function CodexaHowItWorks() {
   return (
     <section className={styles.section} aria-labelledby="codexa-how-title">
       <div className={styles.inner}>
-        <header className={styles.intro}>
-          <p>HOW IT WORKS</p>
+        <header className={`${styles.intro} codexa-reveal`}>
+          <p className="codexa-eyebrow-pill">
+            <span aria-hidden="true" />
+            HOW IT WORKS
+          </p>
           <h2 id="codexa-how-title">
             From setup to automation in 3 simple steps
           </h2>
         </header>
 
-        <div className={styles.grid}>
+        <div className={`${styles.grid} codexa-reveal codexa-reveal--delay-1`}>
           <StepCard
             step="STEP 1"
             title="Connect your existing tools"

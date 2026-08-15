@@ -57,12 +57,12 @@
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.035em;
-  text-wrap: balance;
 }
 
 .experience {
   height: 502px;
-  border: 1px solid rgb(255 255 255 / 6%);
+  border-top: 1px solid rgb(255 255 255 / 6%);
+  border-bottom: 1px solid rgb(255 255 255 / 6%);
 }
 
 .tabBar {
@@ -70,15 +70,15 @@
   height: 68px;
   align-items: center;
   justify-content: center;
-  gap: 36px;
+  gap: 12px;
   border-bottom: 1px solid rgb(255 255 255 / 6%);
 }
 
 .tab {
-  position: relative;
-  height: 68px;
-  border: 0;
-  padding: 0;
+  height: 38px;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 7px;
+  padding: 0 13px;
   background: transparent;
   color: var(--codexa-muted, #969696);
   font: inherit;
@@ -86,31 +86,19 @@
   font-weight: 400;
   line-height: 18px;
   cursor: pointer;
-  transition: color 180ms ease;
-}
-
-.tab::after {
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-  left: 0;
-  height: 2px;
-  background: var(--codexa-accent, #00c3c9);
-  content: "";
-  opacity: 0;
-  transform: scaleX(0.35);
-  transition: opacity 180ms ease, transform 180ms ease;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .tab:hover,
-.tab:focus-visible,
-.tab[aria-selected="true"] {
+.tab:focus-visible {
+  border-color: rgb(255 255 255 / 20%);
   color: #fff;
 }
 
-.tab[aria-selected="true"]::after {
-  opacity: 1;
-  transform: scaleX(1);
+.tab[aria-selected="true"] {
+  border-color: #fff;
+  background: #fff;
+  color: #09090b;
 }
 
 .mobileControls {
@@ -121,74 +109,73 @@
   position: relative;
   display: flex;
   height: 434px;
-  align-items: center;
+  align-items: stretch;
   overflow: visible;
 }
 
 .codeFigure {
   position: absolute;
   top: 32px;
-  left: -118px;
+  left: 32px;
   width: 643px;
   height: 370px;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgb(255 255 255 / 7%);
   border-radius: 12px;
-  background:
-    linear-gradient(90deg, transparent 43px, rgb(255 255 255 / 5%) 44px, transparent 45px),
-    var(--codexa-surface, #0f0f11);
-  box-shadow: 0 24px 60px rgb(0 0 0 / 26%);
+  background: #09090b;
+  box-shadow: inset 0 36px rgb(255 255 255 / 1.5%);
   animation: contentSwap 350ms ease both;
 }
 
 .codeFigure::before {
   position: absolute;
-  top: 20px;
+  z-index: 2;
+  top: 16px;
   left: 20px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: rgb(0 195 201 / 75%);
-  box-shadow: 14px 0 #3f3f46, 28px 0 #27272a;
+  background: #66666a;
+  box-shadow: 14px 0 #66666a, 28px 0 #66666a;
   content: "";
+}
+
+.codeFigure::after {
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgb(255 255 255 / 5%);
+  content: "";
+}
+
+.codeViewport {
+  position: absolute;
+  inset: 36px 0 0;
+  overflow: hidden;
 }
 
 .code {
   margin: 0;
-  padding: 64px 34px 32px 66px;
+  padding: 18px 32px 24px;
   color: #85858d;
   font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   white-space: pre-wrap;
 }
 
-.keyword,
-.literal {
-  color: var(--codexa-accent, #00c3c9);
-}
-
-.type {
-  color: #80d9dc;
-}
-
-.function {
-  color: #e4e4e7;
-}
-
-.string {
-  color: #66aeb0;
-}
-
 .copy {
   display: flex;
-  width: 429px;
-  min-height: 280px;
+  width: 493px;
+  min-height: 434px;
   flex-direction: column;
   align-items: flex-start;
   margin-left: auto;
-  padding-right: 32px;
+  padding: 32px;
   animation: contentSwap 350ms ease both;
 }
 
@@ -240,8 +227,8 @@
   }
 
   .inner {
-    gap: 64px;
-    padding-block: 32px 40px;
+    gap: 24px;
+    padding-block: 32px 80px;
   }
 
   .intro {
@@ -255,7 +242,15 @@
   }
 
   .experience {
-    height: 594.7px;
+    display: grid;
+    width: calc(100% + 32px);
+    height: 573px;
+    grid-template-rows: 219px 44px 254px;
+    row-gap: 12px;
+    margin-inline: -16px;
+    border: 0;
+    padding: 16px;
+    box-shadow: inset 0 1px rgb(255 255 255 / 6%), inset 0 -1px rgb(255 255 255 / 6%);
   }
 
   .tabBar {
@@ -268,8 +263,7 @@
     grid-template-columns: 44px minmax(0, 1fr) 44px;
     align-items: center;
     gap: 12px;
-    border-bottom: 1px solid rgb(255 255 255 / 6%);
-    padding-inline: 12px;
+    grid-row: 2;
   }
 
   .mobileControls button {
@@ -279,8 +273,8 @@
     align-items: center;
     justify-content: center;
     border: 1px solid rgb(255 255 255 / 10%);
-    border-radius: 8px;
-    background: var(--codexa-surface, #0f0f11);
+    border-radius: 50%;
+    background: #18181b;
     color: #fff;
     cursor: pointer;
   }
@@ -311,56 +305,68 @@
   }
 
   .panel {
-    display: grid;
-    height: 550px;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: 240px 310px;
+    display: contents;
   }
 
   .codeFigure {
     position: relative;
     top: auto;
     left: auto;
-    width: calc(100% - 64px);
-    height: 216px;
-    margin: 12px 32px;
+    width: 100%;
+    height: 219px;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .codeFigure::after {
+    top: 31px;
+  }
+
+  .codeViewport {
+    inset: 32px 0 0;
   }
 
   .copy {
     width: 100%;
-    min-height: 310px;
-    justify-content: center;
+    min-height: 254px;
+    grid-row: 3;
+    justify-content: flex-start;
     margin-left: 0;
-    border-top: 1px solid rgb(255 255 255 / 6%);
-    padding: 48px 32px;
+    padding: 0;
   }
 }
 
 @media (max-width: 480px) {
   .intro h2 {
-    max-width: 319px;
+    max-width: 100%;
   }
 
   .codeFigure {
-    width: calc(100% - 24px);
-    height: 216px;
-    margin: 12px;
+    width: 100%;
+    height: 219px;
+    margin: 0;
   }
 
   .code {
-    padding: 56px 18px 24px 44px;
-    font-size: 11px;
+    padding: 18px;
+    font-size: 12px;
     line-height: 20px;
   }
 
   .copy {
-    min-height: 310px;
-    padding: 28px 20px;
+    min-height: 254px;
+    padding: 0;
   }
 
   .copy h3 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
+    letter-spacing: -0.04em;
+  }
+
+  .copy p {
+    margin: 12px 0 24px;
+    line-height: 21.75px;
   }
 }
 

@@ -59,7 +59,6 @@
   font-weight: 500;
   letter-spacing: -2.08px;
   line-height: 1.1;
-  text-wrap: balance;
 }
 
 .pricingBody {
@@ -226,21 +225,22 @@
   justify-content: center;
   gap: 14px;
   margin-top: 11px;
+  overflow: hidden;
   border: 1px solid rgb(255 255 255 / 10%);
   border-radius: 50px;
-  background: #0c0c0e;
+  background: #0f0f11;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
   text-decoration: none;
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition: background-color 240ms ease, border-color 240ms ease;
 }
 
 .cta:hover,
 .cta:focus-visible {
   border-color: rgb(255 255 255 / 28%);
-  transform: translateY(-1px);
+  background: #1e1e20;
 }
 
 .cta:focus-visible {
@@ -253,10 +253,42 @@
   height: 16px;
 }
 
+.ctaLabel {
+  display: grid;
+  height: 18px;
+  overflow: hidden;
+}
+
+.ctaLabel > span {
+  display: block;
+  grid-area: 1 / 1;
+  height: 18px;
+  transition: transform 240ms ease;
+}
+
+.ctaLabel > span:last-child {
+  transform: translateY(100%);
+}
+
+.cta:hover .ctaLabel > span:first-child,
+.cta:focus-visible .ctaLabel > span:first-child {
+  transform: translateY(-100%);
+}
+
+.cta:hover .ctaLabel > span:last-child,
+.cta:focus-visible .ctaLabel > span:last-child {
+  transform: translateY(0);
+}
+
 .featuredCta {
   border-color: #fff;
   background: #fff;
   color: #08070e;
+}
+
+.featuredCta:hover,
+.featuredCta:focus-visible {
+  background: #bdbdbd;
 }
 
 .featureList {
@@ -446,7 +478,8 @@
 
   .billingToggle button,
   .switch > span,
-  .cta {
+  .cta,
+  .ctaLabel > span {
     transition-duration: 0.01ms;
   }
 }

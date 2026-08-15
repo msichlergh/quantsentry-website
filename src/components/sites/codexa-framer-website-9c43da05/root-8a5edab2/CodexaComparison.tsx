@@ -68,8 +68,8 @@ export function CodexaComparison() {
   return (
     <section className={styles.section} aria-labelledby="codexa-comparison-title">
       <div className={styles.inner}>
-        <header className={styles.intro}>
-          <p>
+        <header className={`${styles.intro} codexa-reveal`}>
+          <p className="codexa-eyebrow-pill">
             <span aria-hidden="true" />
             WHY TEAMS CHOOSE US
           </p>
@@ -78,7 +78,7 @@ export function CodexaComparison() {
           </h2>
         </header>
 
-        <div className={styles.panel}>
+        <div className={`${styles.panel} codexa-reveal codexa-reveal--delay-1`}>
           <ComparisonColumn title="Other Tools" items={otherTools} />
           <ComparisonColumn
             title={<CodexaLogo />}

@@ -1,9 +1,9 @@
 .main {
   width: min(1200px, calc(100% - 80px));
   margin: 0 auto;
-  border-right: 1px solid rgb(255 255 255 / 7%);
-  border-left: 1px solid rgb(255 255 255 / 7%);
-  background: #060708;
+  border-right: 1px solid #262626;
+  border-left: 1px solid #262626;
+  background: #09090b;
 }
 
 @media (max-width: 768px) {
@@ -11,5 +11,6 @@
     width: 100%;
     border-right: 0;
     border-left: 0;
+    background: #09090b;
   }
 }

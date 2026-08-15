@@ -1,0 +1,62 @@
+[
+  {
+    "index": 2,
+    "box": {
+      "x": 137,
+      "y": 1181,
+      "width": 36,
+      "height": 36
+    },
+    "outerHTML": "<svg class=\"framer-uPtLp framer-1i9bval\" role=\"presentation\" viewBox=\"0 0 24 24\" style=\"--1ww558a: 1; --4rxgx6: var(--token-ad8867e5-6b13-467c-ae97-4038e8d2fbe8, rgb(255, 255, 255)); opacity: 1;\"><use href=\"#2577776947\"></use></svg>"
+  },
+  {
+    "index": 3,
+    "box": {
+      "x": 537,
+      "y": 1181,
+      "width": 36,
+      "height": 36
+    },
+    "outerHTML": "<svg class=\"framer-rixgd framer-1i9bval\" role=\"presentation\" viewBox=\"0 0 24 24\" style=\"--1ww558a: 1; --4rxgx6: var(--token-ad8867e5-6b13-467c-ae97-4038e8d2fbe8, rgb(255, 255, 255)); opacity: 1;\"><use href=\"#2723406731\"></use></svg>"
+  },
+  {
+    "index": 4,
+    "box": {
+      "x": 937,
+      "y": 1181,
+      "width": 36,
+      "height": 36
+    },
+    "outerHTML": "<svg class=\"framer-mSHW6 framer-1i9bval\" role=\"presentation\" viewBox=\"0 0 24 24\" style=\"--1ww558a: 1; --4rxgx6: var(--token-ad8867e5-6b13-467c-ae97-4038e8d2fbe8, rgb(255, 255, 255)); opacity: 1;\"><use href=\"#689952826\"></use></svg>"
+  },
+  {
+    "index": 5,
+    "box": {
+      "x": 137,
+      "y": 1421,
+      "width": 36,
+      "height": 36
+    },
+    "outerHTML": "<svg class=\"framer-sqFc0 framer-1i9bval\" role=\"presentation\" viewBox=\"0 0 24 24\" style=\"--1ww558a: 1; --4rxgx6: var(--token-ad8867e5-6b13-467c-ae97-4038e8d2fbe8, rgb(255, 255, 255)); opacity: 1;\"><use href=\"#38925202\"></use></svg>"
+  },
+  {
+    "index": 6,
+    "box": {
+      "x": 537,
+      "y": 1421,
+      "width": 36,
+      "height": 36
+    },
+    "outerHTML": "<svg class=\"framer-qcYld framer-1i9bval\" role=\"presentation\" viewBox=\"0 0 24 24\" style=\"--1ww558a: 1; --4rxgx6: var(--token-ad8867e5-6b13-467c-ae97-4038e8d2fbe8, rgb(255, 255, 255)); opacity: 1;\"><use href=\"#1337855821\"></use></svg>"
+  },
+  {
+    "index": 7,
+    "box": {
+      "x": 937,
+      "y": 1421,
+      "width": 36,
+      "height": 36
+    },
+    "outerHTML": "<svg class=\"framer-YkatT framer-1i9bval\" role=\"presentation\" viewBox=\"0 0 24 24\" style=\"--1ww558a: 1; --4rxgx6: var(--token-ad8867e5-6b13-467c-ae97-4038e8d2fbe8, rgb(255, 255, 255)); opacity: 1;\"><use href=\"#3556838003\"></use></svg>"
+  }
+]

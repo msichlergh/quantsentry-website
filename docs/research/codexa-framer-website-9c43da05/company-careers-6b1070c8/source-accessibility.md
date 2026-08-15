@@ -1,0 +1,122 @@
+- generic [active] [ref=f48e1] [box=0,0,1425,3588]:
+  - generic [ref=f48e3] [box=0,0,1425,3588]:
+    - navigation [ref=f48e6] [box=0,0,1425,72]:
+      - generic [ref=f48e7] [box=113,0,1200,72]:
+        - link "Codexa" [ref=f48e15] [cursor=pointer] [box=137,20,113,32]:
+          - /url: ../#home
+          - paragraph [ref=f48e20] [box=171,20,79,32]: Codexa
+        - generic [ref=f48e515] [box=515,21,396,30]:
+          - link "Features" [ref=f48e517] [cursor=pointer] [box=515,21,80,30]:
+            - /url: ../product/features
+            - heading "Features" [level=4] [ref=f48e519] [box=526,27,58,18]
+          - link "Pricing" [ref=f48e521] [cursor=pointer] [box=594,21,67,30]:
+            - /url: ../product/pricing
+            - heading "Pricing" [level=4] [ref=f48e523] [box=605,27,45,18]
+          - link "Changelog" [ref=f48e525] [cursor=pointer] [box=662,21,94,30]:
+            - /url: ../product/changelog
+            - heading "Changelog" [level=4] [ref=f48e527] [box=673,27,72,18]
+          - heading "Company" [level=4] [ref=f48e531] [cursor=pointer] [box=766,27,63,18]
+          - link "FAQs" [ref=f48e534] [cursor=pointer] [box=853,21,57,30]:
+            - /url: ../product/faqs
+            - heading "FAQs" [level=4] [ref=f48e536] [box=864,27,35,18]
+        - generic [ref=f48e537] [box=922,18,366,36]:
+          - link "Contact Contact" [ref=f48e539] [cursor=pointer] [box=1090,18,81,36]:
+            - /url: ./support#support
+            - generic [ref=f48e540] [box=1103,27,55,18]
+          - link "Get Started Get Started" [ref=f48e546] [cursor=pointer] [box=1183,18,105,36]:
+            - /url: ./sales#sales
+            - generic [ref=f48e547] [box=1196,27,79,18]
+    - main [ref=f48e22] [box=0,0,1425,2827]:
+      - generic [ref=f48e25] [box=113,130,1200,190]:
+        - paragraph [ref=f48e558] [box=169,137,52,17]: CAREERS
+        - heading "Careers at Codexa" [level=1] [ref=f48e36] [box=137,172,650,57]
+        - paragraph [ref=f48e38] [box=137,241,450,78]: At Codexa, we’re building tools that empower businesses to work smarter, stay organized, and grow faster.
+      - generic [ref=f48e49] [box=113,384,1200,320]:
+        - generic [ref=f48e50] [box=113,384,600,320]:
+          - heading "Join a team building scalable, thoughtful digital products." [level=2] [ref=f48e52] [box=145,416,536,145]
+          - link "See Open Positions See Open Positions" [ref=f48e560] [cursor=pointer] [box=145,630,207,42]:
+            - /url: ./careers#openings
+            - generic [ref=f48e561] [box=169,642,133,18]
+        - generic [ref=f48e54] [box=745,416,482,182]:
+          - paragraph [ref=f48e55] [box=745,416,482,70]: At Codexa, we build tools that help teams move faster, work smarter, and stay focused. Our platform is designed for clarity, performance, and scale — without unnecessary complexity.
+          - paragraph [ref=f48e56] [box=745,505,482,93]: We believe great products are created by people who care about quality, ownership, and continuous improvement. Every contribution matters, and every team member helps shape what we build next.
+      - generic [ref=f48e67] [box=113,832,1200,934]:
+        - generic [ref=f48e68] [box=113,896,1200,214]:
+          - paragraph [ref=f48e77] [box=682,902,82,17]: OUR CULTURE
+          - heading "A team built on trust, ownership, and continuous improvement." [level=2] [ref=f48e80] [box=388,938,650,172]
+        - generic [ref=f48e81] [box=113,1157,1200,480]:
+          - generic [ref=f48e570] [box=137,1295,352,78]:
+            - heading "Ownership mindset" [level=3] [ref=f48e572] [box=137,1295,352,26]
+            - paragraph [ref=f48e574] [box=137,1327,317,46]: Everyone takes responsibility for what they build.
+          - generic [ref=f48e578] [box=537,1295,352,78]:
+            - heading "Clear communication" [level=3] [ref=f48e580] [box=537,1295,352,26]
+            - paragraph [ref=f48e582] [box=537,1327,317,46]: We value clarity, feedback, and open conversations.
+          - generic [ref=f48e586] [box=937,1295,352,78]:
+            - heading "Craft over speed" [level=3] [ref=f48e588] [box=937,1295,352,26]
+            - paragraph [ref=f48e590] [box=937,1327,317,46]: Quality and long-term thinking guide our decisions.
+          - generic [ref=f48e594] [box=137,1535,352,78]:
+            - heading "Build together" [level=3] [ref=f48e596] [box=137,1535,352,26]
+            - paragraph [ref=f48e598] [box=137,1567,317,46]: We collaborate closely across roles and disciplines.
+          - generic [ref=f48e602] [box=537,1535,352,78]:
+            - heading "Learn continuously" [level=3] [ref=f48e604] [box=537,1535,352,26]
+            - paragraph [ref=f48e606] [box=537,1567,317,46]: Growth comes from curiosity and constant learning.
+          - generic [ref=f48e610] [box=937,1535,352,78]:
+            - heading "Real-world impact" [level=3] [ref=f48e612] [box=937,1535,352,26]
+            - paragraph [ref=f48e614] [box=937,1567,317,46]: Our work solves real problems for real teams.
+      - generic [ref=f48e143] [box=113,1765,1200,1062]:
+        - generic [ref=f48e145] [box=113,1765,600,277]:
+          - paragraph [ref=f48e154] [box=169,1796,119,17]: CURRENT OPENINGS
+          - heading "Explore opportunities and join our team" [level=2] [ref=f48e156] [box=137,1835,540,114]
+          - paragraph [ref=f48e158] [box=137,1966,320,52]: Open roles across design, engineering, and product teams.
+        - generic [ref=f48e159] [box=713,1765,600,1062]:
+          - generic [ref=f48e615] [box=713,1765,600,189]:
+            - generic [ref=f48e616] [box=737,1789,301,141]
+            - link "Apply now Apply now" [ref=f48e633] [cursor=pointer] [box=1110,1838,179,42]:
+              - /url: ./careers/product-designer
+          - generic [ref=f48e640] [box=713,1954,600,189]:
+            - generic [ref=f48e641] [box=737,1978,301,141]
+            - link "Apply now Apply now" [ref=f48e658] [cursor=pointer] [box=1110,2027,179,42]:
+              - /url: ./careers/product-designer
+          - generic [ref=f48e665] [box=713,2142,600,165]:
+            - generic [ref=f48e666] [box=737,2166,301,117]
+            - link "Apply now Apply now" [ref=f48e683] [cursor=pointer] [box=1110,2204,179,42]:
+              - /url: ./careers/product-designer
+          - generic [ref=f48e690] [box=713,2308,600,165]:
+            - generic [ref=f48e691] [box=737,2332,301,117]
+            - link "Apply now Apply now" [ref=f48e708] [cursor=pointer] [box=1110,2369,179,42]:
+              - /url: ./careers/product-designer
+          - generic [ref=f48e715] [box=713,2473,600,189]:
+            - generic [ref=f48e716] [box=737,2497,301,141]
+            - link "Apply now Apply now" [ref=f48e733] [cursor=pointer] [box=1110,2546,179,42]:
+              - /url: ./careers/product-designer
+          - generic [ref=f48e740] [box=713,2662,600,165]:
+            - generic [ref=f48e741] [box=737,2686,301,117]
+            - link "Apply now Apply now" [ref=f48e758] [cursor=pointer] [box=1110,2723,179,42]:
+              - /url: ./careers/product-designer
+    - contentinfo [ref=f48e324] [box=0,2827,1425,761]:
+      - generic [ref=f48e325] [box=0,2827,1425,737]:
+        - generic [ref=f48e329] [box=113,2913,1200,279]:
+          - generic [ref=f48e330] [box=137,2937,1152,165]:
+            - paragraph [ref=f48e339] [box=662,2937,176,22]: 12K+ teams trust Codexa
+            - heading "Automate more. Ship faster." [level=2] [ref=f48e341] [box=313,2967,800,134]: Automate more.Ship faster.
+          - link "Explore the Template Explore the Template" [ref=f48e343] [cursor=pointer] [box=603,3126,218,42]:
+            - /url: https://buy.polar.sh/polar_cl_lvmZA1kYEOINNnx4bkeyZxW1ajP5d6vUQusL108riZ7
+            - generic [ref=f48e344] [box=627,3138,144,18]
+        - generic [ref=f48e357] [box=113,3277,1200,287]:
+          - generic [ref=f48e358] [box=113,3277,1200,238]:
+            - generic [ref=f48e359] [box=113,3277,470,238]
+            - link [ref=f48e375] [cursor=pointer] [box=681,3364,64,64]:
+              - /url: ../#home
+            - generic [ref=f48e379] [box=842,3277,470,238]
+          - generic [ref=f48e476] [box=113,3515,1200,49]:
+            - paragraph [ref=f48e479] [box=137,3531,253,17]: ©2026 CODEXA. ALL RIGHTS RESERVED.
+            - link "CREATED BY KADIR CALIK Created by KADIR CALIK" [ref=f48e481] [cursor=pointer] [box=1111,3532,178,16]:
+              - /url: https://x.com/kadircalik
+    - link "Get Template Get Template" [ref=f48e492] [cursor=pointer] [box=1265,897,140,39]:
+      - /url: https://buy.polar.sh/polar_cl_lvmZA1kYEOINNnx4bkeyZxW1ajP5d6vUQusL108riZ7
+      - generic [ref=f48e496] [box=1300,908,84,17]:
+        - paragraph [ref=f48e498] [box=1300,908,84,17]: Get Template
+        - heading "Get Template" [level=4] [ref=f48e500] [box=1300,925,84,17]
+  - link [ref=f48e765] [cursor=pointer] [box=1265,942,140,38]:
+    - /url: https://www.framer.com
+    - paragraph [ref=f48e501] [box=1335,961,0,0]: Create a free website with Framer, the website builder loved by startups, designers and agencies.

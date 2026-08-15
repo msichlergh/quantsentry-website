@@ -5,15 +5,20 @@ body:has(.codexa-page) > footer {
 
 body:has(.codexa-page),
 body:has(.codexa-page) > main {
-  background: #08070e;
+  background: #09090b;
 }
 
 html:has(.codexa-page) {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html:has(.codexa-page)::-webkit-scrollbar {
+  display: none;
 }
 
 .codexa-page {
-  --codexa-bg: #08070e;
+  --codexa-bg: #09090b;
   --codexa-shell: #09090b;
   --codexa-surface: #0f0f11;
   --codexa-surface-strong: #18181b;
@@ -36,6 +41,69 @@ html:has(.codexa-page) {
 
 .codexa-page section[id] {
   scroll-margin-top: 72px;
+}
+
+.codexa-home-main {
+  position: relative;
+}
+
+.codexa-home-main::after {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: min(1200px, calc(100% - 80px));
+  border-right: 1px solid #262626;
+  border-left: 1px solid #262626;
+  content: "";
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.codexa-page .codexa-eyebrow-pill {
+  display: inline-flex;
+  height: 30px;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 24px;
+  padding: 6px 12px 6px 8px;
+  background: rgb(0 195 201 / 15%);
+  color: var(--codexa-accent);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.codexa-page .codexa-eyebrow-pill::before {
+  display: none;
+}
+
+.codexa-page .codexa-eyebrow-pill > span {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  border-radius: 50%;
+  background: rgb(0 195 201 / 10%);
+  box-shadow: none;
+}
+
+.codexa-page .codexa-eyebrow-pill > span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 7px currentColor;
+  content: "";
+  transform: translate(-50%, -50%);
 }
 
 .codexa-section {
@@ -130,19 +198,29 @@ html:has(.codexa-page) {
 
 .codexa-button__track {
   display: grid;
-  gap: 0;
-  transform: translateY(9px);
-  transition: transform 240ms ease;
+  height: 18px;
+  overflow: hidden;
 }
 
 .codexa-button__track > span {
   display: block;
+  grid-area: 1 / 1;
   height: 18px;
+  transition: transform 240ms ease;
 }
 
-.codexa-button:hover .codexa-button__track,
-.codexa-button:focus-visible .codexa-button__track {
-  transform: translateY(-9px);
+.codexa-button__track > span:last-child {
+  transform: translateY(100%);
+}
+
+.codexa-button:hover .codexa-button__track > span:first-child,
+.codexa-button:focus-visible .codexa-button__track > span:first-child {
+  transform: translateY(-100%);
+}
+
+.codexa-button:hover .codexa-button__track > span:last-child,
+.codexa-button:focus-visible .codexa-button__track > span:last-child {
+  transform: translateY(0);
 }
 
 .codexa-card {
@@ -210,20 +288,58 @@ html:has(.codexa-page) {
   animation: codexa-marquee 28s linear infinite;
 }
 
+.codexa-motion-anchor {
+  display: none;
+}
+
 .codexa-reveal {
-  animation: codexa-reveal 500ms cubic-bezier(.2,.8,.2,1) both;
+  transition:
+    opacity 700ms cubic-bezier(.2, .8, .2, 1),
+    transform 700ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.codexa-reveal--delay-1 {
+  transition-delay: 100ms;
+}
+
+.codexa-reveal--delay-2 {
+  transition-delay: 180ms;
+}
+
+.codexa-motion-ready .codexa-reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.codexa-motion-ready .codexa-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-codexa-marquee] {
+  animation-play-state: paused !important;
+}
+
+[data-codexa-marquee].is-running {
+  animation-play-state: running !important;
 }
 
 @keyframes codexa-marquee {
   to { transform: translateX(-50%); }
 }
 
-@keyframes codexa-reveal {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 @media (max-width: 900px) {
+  .codexa-page .codexa-eyebrow-pill {
+    height: 26px;
+    padding: 4px 10px 4px 6px;
+    font-size: 11px;
+    line-height: 15.4px;
+  }
+
+  .codexa-home-main::after {
+    display: none;
+  }
+
   .codexa-section {
     padding-inline: 28px;
   }
@@ -256,5 +372,15 @@ html:has(.codexa-page) {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
+  }
+
+  .codexa-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [data-codexa-marquee] {
+    animation: none !important;
+    transform: none !important;
   }
 }
