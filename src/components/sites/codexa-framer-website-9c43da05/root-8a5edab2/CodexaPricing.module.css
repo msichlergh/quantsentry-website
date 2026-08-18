@@ -55,7 +55,9 @@
 
 .billingToggle button {
   border: 0;
-  padding: 0;
+  /* Vertical padding only: the row is already 54px and centres its children, so
+     this grows the touch target from 18px to 42px without moving anything. */
+  padding: 12px 0;
   background: transparent;
   color: #858589;
   font: inherit;
@@ -83,6 +85,14 @@
   margin-inline: 8px 0;
   border-radius: 5px;
   background: #303033;
+}
+
+/* Transparent overlay that lifts the 40x24 switch to a 48x42 touch target
+   without changing how it looks. */
+.billingToggle .switch::after {
+  position: absolute;
+  inset: -9px -4px;
+  content: "";
 }
 
 .switch > span {

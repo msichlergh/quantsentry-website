@@ -90,6 +90,9 @@
   gap: 10px;
   color: var(--codexa-muted-soft);
   font-size: 15px;
+  /* The label is the checkbox's activation area; keep it at the 24px
+     minimum target size. */
+  min-height: 24px;
 }
 
 .consent input {

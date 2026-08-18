@@ -322,12 +322,9 @@
     padding: 8px 8px 11px;
   }
 
+  /* The grid drops to two columns here, so the cards are ~180px wide and the
+     base 11px/9px type fits. Shrinking further made the names unreadable. */
   .person h3 {
     margin-top: 9px;
-    font-size: 9px;
-  }
-
-  .person p {
-    font-size: 7px;
   }
 }

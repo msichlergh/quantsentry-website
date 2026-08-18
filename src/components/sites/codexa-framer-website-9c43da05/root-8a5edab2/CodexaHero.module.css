@@ -419,7 +419,7 @@
 
   .trustRow {
     width: 100%;
-    height: 137px;
+    min-height: 137px;
     flex: 0 0 auto;
     align-items: center;
     flex-direction: column;
@@ -430,6 +430,10 @@
 
   .trustRow > p {
     width: 220px;
+    /* The base rule sets `flex: 0 0 160px` for the desktop row. Once this
+       becomes a column that basis is a HEIGHT, which overflows the row and
+       leaves no space for the logo strip below. */
+    flex: 0 0 auto;
     margin: 0;
     color: #77777a;
     font-family: var(--font-geist-mono), ui-monospace, monospace;
@@ -443,6 +447,8 @@
   .marquee {
     width: 100%;
     height: 55px;
+    /* never let the logo strip be the thing flexbox shrinks away */
+    flex: 0 0 55px;
     overflow: hidden;
     opacity: 0.5;
     mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);

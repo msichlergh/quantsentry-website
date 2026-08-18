@@ -155,6 +155,9 @@
   display: flex;
   width: 468px;
   align-items: center;
+  /* The tools are smaller than 468px at mobile sizes; without this they pack to
+     the left and the strip reads as off-centre inside its frame. */
+  justify-content: center;
   gap: 12px;
   transform: translate(-50%, -50%);
   transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -523,9 +526,12 @@
     padding: 4px 0 12px;
   }
 
+  /* The rail is absolutely positioned and centred with translate(-50%), so
+     `margin: 0 auto` does nothing and capping the width just leaves the logos
+     packed to the left — the strip renders visibly off-centre, with a sliver of
+     the last logo showing. Keep the desktop width so the bleed stays even. */
   .toolRail {
-    max-width: 420px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .workflowCursor {

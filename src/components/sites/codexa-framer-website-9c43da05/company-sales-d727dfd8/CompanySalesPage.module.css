@@ -155,6 +155,9 @@
   color: var(--codexa-muted-soft);
   font-size: 15px;
   line-height: 1.35;
+  /* The label is the checkbox's activation area; keep it at the 24px
+     minimum target size. */
+  min-height: 24px;
 }
 
 .improvements input,

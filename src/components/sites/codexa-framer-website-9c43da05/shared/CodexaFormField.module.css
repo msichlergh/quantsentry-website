@@ -57,4 +57,10 @@
   .textareaLarge {
     height: 112px;
   }
+
+  /* iOS Safari zooms the whole page when a focused field is under 16px, and
+     does not zoom back out. 16px is the smallest size that avoids it. */
+  .control {
+    font-size: 16px;
+  }
 }

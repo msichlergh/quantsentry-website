@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { CodexaLogo } from "../shared/CodexaLogo";
 import {
@@ -47,6 +47,16 @@ function AnimatedLabel({ children }: { children: string }) {
 export function CodexaNavigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [companyMenuOpen, setCompanyMenuOpen] = useState(false);
+
+  // Stop the page behind the mobile menu from scrolling while it is open.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [menuOpen]);
 
   return (
     <header
