@@ -1,5 +1,8 @@
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
+
 import styles from "./CareersUi.module.css";
 
+/** The careers pages use the standard site eyebrow with their own spacing. */
 export function CareersEyebrow({
   children,
   className,
@@ -8,10 +11,9 @@ export function CareersEyebrow({
   className?: string;
 }) {
   return (
-    <p className={`${styles.eyebrow} ${className ?? ""}`}>
-      <span aria-hidden="true" />
+    <CodexaEyebrow className={`${styles.eyebrow} ${className ?? ""}`}>
       {children}
-    </p>
+    </CodexaEyebrow>
   );
 }
 

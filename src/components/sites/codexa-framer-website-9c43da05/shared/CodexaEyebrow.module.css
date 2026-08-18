@@ -17,21 +17,23 @@
   text-transform: uppercase;
 }
 
+/* Ring and core sizes measured from the source pill on codexa.framer.website:
+   18px ring at 15% accent, 8px solid core. */
 .dot {
   position: relative;
   width: 18px;
   height: 18px;
   flex: 0 0 18px;
   border-radius: 50%;
-  background: rgb(0 195 201 / 10%);
+  background: rgb(0 195 201 / 15%);
 }
 
 .dot::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: currentColor;
   box-shadow: 0 0 7px currentColor;

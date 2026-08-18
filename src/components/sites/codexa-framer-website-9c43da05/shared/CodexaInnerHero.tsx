@@ -1,3 +1,5 @@
+import { CodexaEyebrow } from "./CodexaEyebrow";
+
 import styles from "./CodexaInnerHero.module.css";
 
 export function CodexaInnerHero({
@@ -16,10 +18,7 @@ export function CodexaInnerHero({
       <div className={styles.grid} aria-hidden="true" />
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.copy}>
-        <p className={styles.eyebrow}>
-          <span aria-hidden="true" />
-          {eyebrow}
-        </p>
+        <CodexaEyebrow className={styles.eyebrow}>{eyebrow}</CodexaEyebrow>
         <h1>{title}</h1>
         <p className={styles.description}>{description}</p>
       </div>

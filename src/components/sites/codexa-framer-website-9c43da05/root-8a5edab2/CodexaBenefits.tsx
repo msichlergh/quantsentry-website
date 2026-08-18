@@ -65,7 +65,7 @@ export function CodexaBenefits() {
     <section className={styles.section} aria-labelledby="codexa-benefits-title">
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <CodexaEyebrow className={styles.eyebrow}>THE SOLUTION</CodexaEyebrow>
+          <CodexaEyebrow>THE SOLUTION</CodexaEyebrow>
           <h2 id="codexa-benefits-title">
             A unified platform built for scalable development
           </h2>

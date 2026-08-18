@@ -14,28 +14,9 @@
   text-align: center;
 }
 
+/* Layout only — appearance comes from the shared CodexaEyebrow. */
 .eyebrow {
-  display: inline-flex;
   margin: 0 0 18px;
-  padding: 5px 10px;
-  align-items: center;
-  gap: 8px;
-  border-radius: 999px;
-  color: var(--codexa-accent-bright);
-  background: rgb(0 205 193 / 13%);
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.eyebrow span {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 0 8px currentColor;
 }
 
 .capabilityHeader h2 {

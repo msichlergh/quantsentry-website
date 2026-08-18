@@ -72,7 +72,7 @@ export function CodexaFeatures() {
     <section className={styles.section} id="features">
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <CodexaEyebrow className={styles.eyebrow}>Features</CodexaEyebrow>
+          <CodexaEyebrow>Features</CodexaEyebrow>
           <h2>Build real products with powerful developer tooling</h2>
         </header>
 

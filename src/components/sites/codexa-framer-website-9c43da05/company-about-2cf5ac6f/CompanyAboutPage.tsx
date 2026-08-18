@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Activity, ShieldCheck, Sparkles, Workflow } from "lucide-react";
 
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
 import { CodexaInnerHero } from "../shared/CodexaInnerHero";
 import { CodexaLogo } from "../shared/CodexaLogo";
 
@@ -103,10 +104,7 @@ export function CompanyAboutPage() {
 
       <section className={styles.team} aria-labelledby="team-title">
         <div className={styles.teamHeading}>
-          <p className={styles.eyebrow}>
-            <span aria-hidden="true" />
-            Our team
-          </p>
+          <CodexaEyebrow className={styles.eyebrow}>Our team</CodexaEyebrow>
           <h2 id="team-title">Meet the people behind</h2>
           <p>
             A small, focused team building tools that help modern engineering

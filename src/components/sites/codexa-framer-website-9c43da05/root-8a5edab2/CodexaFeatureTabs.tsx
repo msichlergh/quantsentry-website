@@ -215,9 +215,7 @@ export function CodexaFeatureTabs() {
     <section className={styles.section} ref={sectionRef}>
       <div className={styles.inner}>
         <header className={`${styles.intro} codexa-reveal`}>
-          <CodexaEyebrow className={styles.eyebrow}>
-            Behind the scenes
-          </CodexaEyebrow>
+          <CodexaEyebrow>Behind the scenes</CodexaEyebrow>
           <h2>The decisions that keep Codexa reliable</h2>
         </header>
 

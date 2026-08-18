@@ -25,32 +25,6 @@
   text-align: center;
 }
 
-.eyebrow {
-  display: inline-flex;
-  height: 30px;
-  align-items: center;
-  gap: 9px;
-  margin: 0;
-  border: 1px solid rgb(0 195 201 / 14%);
-  border-radius: 999px;
-  padding-inline: 10px;
-  background: rgb(0 195 201 / 9%);
-  color: var(--codexa-accent);
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 12px;
-  line-height: 17px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.eyebrow > span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--codexa-accent);
-  box-shadow: 0 0 0 6px rgb(0 195 201 / 12%);
-}
-
 .header h2 {
   max-width: 650px;
   margin: 0;
