@@ -108,14 +108,14 @@ export function CodexaNavigation() {
             className={`${styles.action} ${styles.secondary}`}
             href={CODEXA_ROUTES.support}
           >
-            <span className={styles.srOnly}>Contact</span>
+            <span className="codexa-sr-only">Contact</span>
             <AnimatedLabel>Contact</AnimatedLabel>
           </Link>
           <Link
             className={`${styles.action} ${styles.primary}`}
             href={CODEXA_ROUTES.sales}
           >
-            <span className={styles.srOnly}>Get Started</span>
+            <span className="codexa-sr-only">Get Started</span>
             <AnimatedLabel>Get Started</AnimatedLabel>
           </Link>
         </div>

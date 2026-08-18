@@ -5,7 +5,7 @@ import { useState, type ReactNode } from "react";
 
 import { CodexaButton } from "../shared/CodexaButton";
 import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
-import styles from "./ProductFeaturesPage.module.css";
+import styles from "./ProductFeaturesHero.module.css";
 
 const tabs = ["Workflow", "Triggers", "Action"] as const;
 type EditorTab = (typeof tabs)[number];

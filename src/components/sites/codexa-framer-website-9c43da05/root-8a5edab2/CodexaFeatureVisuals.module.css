@@ -1,0 +1,473 @@
+.statusList {
+  position: relative;
+  width: 360px;
+  height: 302px;
+}
+
+.statusRow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--codexa-line);
+  border-radius: 10px;
+  padding-inline: 16px;
+  background: var(--codexa-surface, var(--codexa-surface));
+  color: #d4d4d8;
+  font-size: 15px;
+  line-height: 20px;
+  transition: transform 600ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.statusRow:nth-child(2) {
+  transform: translateY(62px);
+}
+
+.statusRow:nth-child(3) {
+  transform: translateY(124px);
+}
+
+.statusRow:nth-child(4) {
+  transform: translateY(186px);
+}
+
+.statusRow:nth-child(5) {
+  transform: translateY(248px);
+}
+
+.workflowVisual:hover .statusRow:nth-child(3),
+.workflowVisual:focus-within .statusRow:nth-child(3) {
+  transform: translateY(248px);
+}
+
+.workflowVisual:hover .statusRow:nth-child(4),
+.workflowVisual:focus-within .statusRow:nth-child(4) {
+  transform: translateY(124px);
+}
+
+.workflowVisual:hover .statusRow:nth-child(5),
+.workflowVisual:focus-within .statusRow:nth-child(5) {
+  transform: translateY(186px);
+}
+
+.statusValue {
+  position: absolute;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #74747b;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  transition: opacity 240ms ease;
+}
+
+.hoverStatus {
+  opacity: 0;
+}
+
+.workflowVisual:hover .defaultStatus,
+.workflowVisual:focus-within .defaultStatus {
+  opacity: 0;
+}
+
+.workflowVisual:hover .hoverStatus,
+.workflowVisual:focus-within .hoverStatus {
+  opacity: 1;
+}
+
+.statusDot,
+.barDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #303035;
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 4%);
+}
+
+.statusDot.active {
+  background: var(--codexa-accent, var(--codexa-accent));
+  box-shadow: 0 0 8px rgb(0 195 201 / 75%);
+}
+
+.releaseBoard {
+  position: relative;
+  width: 360px;
+  height: 300px;
+}
+
+.releaseLabels {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  color: #55555b;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.releaseLabels span:first-child {
+  color: var(--codexa-accent, var(--codexa-accent));
+}
+
+.releaseGuides {
+  position: absolute;
+  inset: 30px 12px 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.releaseGuides span {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(rgb(255 255 255 / 7%), transparent);
+}
+
+.releaseGuides span::before {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #343439;
+  content: "";
+}
+
+.releaseGuides span:first-child::before {
+  background: rgb(0 195 201 / 65%);
+}
+
+.releaseCard {
+  position: absolute;
+  z-index: 2;
+  height: 38px;
+  border: 1px solid rgb(255 255 255 / 3%);
+  border-radius: 9px;
+  padding: 11px 14px;
+  background: #111114;
+  color: #55555b;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 15px;
+  white-space: nowrap;
+  transition: transform 600ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.releaseBento {
+  top: 69px;
+  right: 30px;
+  width: 143px;
+}
+
+.performance {
+  top: 127px;
+  left: 12px;
+  width: 187px;
+  background: rgb(0 119 123 / 75%);
+  color: var(--codexa-accent, var(--codexa-accent));
+}
+
+.retries {
+  top: 185px;
+  right: 52px;
+  width: 168px;
+}
+
+.dashboard {
+  top: 243px;
+  right: 1px;
+  width: 174px;
+}
+
+.cursor {
+  position: absolute;
+  right: 76px;
+  bottom: -16px;
+  width: 17px;
+  height: 21px;
+  fill: #141416;
+  stroke: #d4d4d8;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+  transform-origin: center;
+  transition: transform 600ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.releaseVisual:hover .performance,
+.releaseVisual:focus-within .performance {
+  transform: translateX(80px);
+}
+
+.releaseVisual:hover .cursor,
+.releaseVisual:focus-within .cursor {
+  transform: scale(.8);
+}
+
+.throughputCard {
+  width: 336px;
+}
+
+.metricLine {
+  display: flex;
+  height: 53px;
+  align-items: center;
+  gap: 8px;
+}
+
+.metricDot {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  border-radius: 50%;
+  background: rgb(0 195 201 / 15%);
+}
+
+.metricDot::after {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--codexa-accent, var(--codexa-accent));
+  content: "";
+}
+
+.metricDot::before {
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: var(--codexa-accent, var(--codexa-accent));
+  content: "";
+  opacity: 0;
+  animation: featureMetricPulse 1.6s ease-out infinite;
+}
+
+.metricValue {
+  position: relative;
+  display: inline-grid;
+  height: 53px;
+  align-items: center;
+}
+
+.metricValue strong {
+  grid-area: 1 / 1;
+  color: #d4d4d8;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: -0.03em;
+  transition: opacity 240ms ease, transform 350ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.metricValue strong:last-child {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.throughputVisual:hover .metricValue strong:first-child,
+.throughputVisual:focus-within .metricValue strong:first-child {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.throughputVisual:hover .metricValue strong:last-child,
+.throughputVisual:focus-within .metricValue strong:last-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.change {
+  display: inline-grid;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 2px 5px;
+  background: rgb(0 195 201 / 13%);
+  color: var(--codexa-accent, var(--codexa-accent));
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.change span {
+  grid-area: 1 / 1;
+  transition: opacity 240ms ease, transform 350ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.change span:last-child {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.throughputVisual:hover .change span:first-child,
+.throughputVisual:focus-within .change span:first-child {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.throughputVisual:hover .change span:last-child,
+.throughputVisual:focus-within .change span:last-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.metricLabel {
+  display: block;
+  margin-top: 6px;
+  color: #66666c;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.bars {
+  display: grid;
+  height: 230px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.bar {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--codexa-line);
+  border-radius: 11px;
+  background: rgb(15 15 17 / 35%);
+}
+
+.barDot {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: calc(50% - 5px);
+  background: #77777d;
+  box-shadow: 0 0 7px rgb(255 255 255 / 20%);
+  transition: background-color 350ms ease, box-shadow 350ms ease, transform 350ms ease;
+}
+
+.barFill {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 48%;
+  border-top: 1px solid rgb(255 255 255 / 7%);
+  background: linear-gradient(180deg, rgb(15 15 17 / 80%), rgb(9 9 11 / 20%));
+  transition: height 700ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.bar:nth-child(2) .barFill {
+  height: 37%;
+}
+
+.bar:nth-child(3) .barFill {
+  height: 28%;
+}
+
+.bar:nth-child(4) .barFill {
+  height: 62%;
+}
+
+.throughputVisual:hover .bar:nth-child(1) .barFill,
+.throughputVisual:focus-within .bar:nth-child(1) .barFill {
+  height: 76%;
+}
+
+.throughputVisual:hover .bar:nth-child(2) .barFill,
+.throughputVisual:focus-within .bar:nth-child(2) .barFill {
+  height: 66%;
+}
+
+.throughputVisual:hover .bar:nth-child(3) .barFill,
+.throughputVisual:focus-within .bar:nth-child(3) .barFill {
+  height: 72%;
+}
+
+.throughputVisual:hover .bar:nth-child(4) .barFill,
+.throughputVisual:focus-within .bar:nth-child(4) .barFill {
+  height: 32%;
+}
+
+.throughputVisual:hover .barDot,
+.throughputVisual:focus-within .barDot {
+  background: var(--codexa-accent, var(--codexa-accent));
+  box-shadow: 0 0 0 4px rgb(0 195 201 / 13%), 0 0 8px rgb(0 195 201 / 45%);
+  transform: scale(1.15);
+}
+
+.barLabel {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  bottom: 10px;
+  left: 8px;
+  color: #505056;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .statusList,
+  .releaseBoard,
+  .throughputCard {
+    width: min(280px, calc(100% - 32px));
+  }
+
+  .releaseBoard {
+    height: 280px;
+  }
+
+  .releaseCard {
+    transform: scale(0.86);
+    transform-origin: left center;
+  }
+
+  .releaseBento {
+    right: -9px;
+  }
+
+  .retries {
+    right: 4px;
+  }
+
+  .dashboard {
+    right: -24px;
+  }
+
+  .bars {
+    gap: 7px;
+  }
+
+  .barLabel {
+    right: 3px;
+    left: 3px;
+    font-size: 8px;
+  }
+}
+
+@keyframes featureMetricPulse {
+  0% {
+    opacity: .5;
+    transform: scale(1);
+  }
+
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}

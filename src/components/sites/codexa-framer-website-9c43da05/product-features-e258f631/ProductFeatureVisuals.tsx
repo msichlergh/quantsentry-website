@@ -1,17 +1,16 @@
-import styles from "./ProductFeaturesPage.module.css";
+import {
+  codexaReleaseColumns,
+  codexaThroughputMetric,
+  codexaThroughputStages,
+  codexaWorkflowRows,
+} from "../shared/codexaVisualData";
 
-const workflowStates = [
-  ["Workflow sync", true],
-  ["Automation enabled", true],
-  ["Error handling", false],
-  ["API integration", false],
-  ["Rate limits", false],
-] as const;
+import styles from "./ProductFeatureVisuals.module.css";
 
 export function WorkflowVisual() {
   return (
     <div className={styles.workflowVisual} aria-label="Workflow status dashboard illustration">
-      {workflowStates.map(([label, active]) => (
+      {codexaWorkflowRows.map(({ label, active }) => (
         <div className={styles.workflowRow} key={label}>
           <span>{label}</span>
           <span className={active ? styles.active : styles.inactive}>
@@ -28,7 +27,9 @@ export function MonitoringVisual() {
   return (
     <div className={styles.monitoringVisual} aria-label="Workflow release monitoring illustration">
       <div className={styles.releaseLabels}>
-        <span>PLANNED</span><span>TESTING</span><span>RELEASED</span>
+        {codexaReleaseColumns.map((column) => (
+          <span key={column}>{column}</span>
+        ))}
       </div>
       <div className={styles.releaseFlow}>
         <span className={styles.releaseNode} />
@@ -46,15 +47,17 @@ export function MonitoringVisual() {
 }
 
 export function ThroughputVisual() {
+  const { label, value, change } = codexaThroughputMetric;
+
   return (
     <div className={styles.throughputVisual} aria-label="System throughput illustration">
-      <div className={styles.throughputValue}><i aria-hidden="true" />248 <span>+14%</span></div>
-      <p>System throughput</p>
+      <div className={styles.throughputValue}><i aria-hidden="true" />{value} <span>{change}</span></div>
+      <p>{label}</p>
       <div className={styles.bars}>
-        {["Ingest", "Process", "Execute", "Recover"].map((label, index) => (
-          <div className={styles.bar} data-index={index} key={label}>
+        {codexaThroughputStages.map((stage, index) => (
+          <div className={styles.bar} data-index={index} key={stage}>
             <i aria-hidden="true" />
-            <span>{label}</span>
+            <span>{stage}</span>
           </div>
         ))}
       </div>

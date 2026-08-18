@@ -1,27 +1,31 @@
-import styles from "./CodexaFeatures.module.css";
+import {
+  codexaReleaseColumns,
+  codexaThroughputMetric,
+  codexaThroughputStages,
+  codexaWorkflowRows,
+} from "../shared/codexaVisualData";
+
+// `visualPanel` is the row-level frame the feature section lays out
+// (`.reverse .visualPanel`), so it stays in the section's own stylesheet.
+import section from "./CodexaFeatures.module.css";
+import styles from "./CodexaFeatureVisuals.module.css";
+
+const statusLabel = (active: boolean) => (active ? "Active" : "Inactive");
 
 export function WorkflowVisual() {
-  const statuses = [
-    ["Workflow sync", "Active", "Active"],
-    ["Automation enabled", "Active", "Active"],
-    ["Error handling", "Inactive", "Inactive"],
-    ["API integration", "Inactive", "Active"],
-    ["Rate limits", "Inactive", "Active"],
-  ] as const;
-
   return (
-    <div className={`${styles.visualPanel} ${styles.workflowVisual}`}>
+    <div className={`${section.visualPanel} ${styles.workflowVisual}`}>
       <div className={styles.statusList}>
-        {statuses.map(([label, status, hoverStatus]) => (
+        {codexaWorkflowRows.map(({ label, active, hover }) => (
           <div className={styles.statusRow} key={label}>
             <span>{label}</span>
             <span className={`${styles.statusValue} ${styles.defaultStatus}`}>
-              <span className={`${styles.statusDot} ${status === "Active" ? styles.active : ""}`} aria-hidden="true" />
-              {status}
+              <span className={`${styles.statusDot} ${active ? styles.active : ""}`} aria-hidden="true" />
+              {statusLabel(active)}
             </span>
             <span className={`${styles.statusValue} ${styles.hoverStatus}`}>
-              <span className={`${styles.statusDot} ${hoverStatus === "Active" ? styles.active : ""}`} aria-hidden="true" />
-              {hoverStatus}
+              <span className={`${styles.statusDot} ${hover ? styles.active : ""}`} aria-hidden="true" />
+              {statusLabel(hover)}
             </span>
           </div>
         ))}
@@ -40,10 +44,12 @@ function Cursor() {
 
 export function ReleaseVisual() {
   return (
-    <div className={`${styles.visualPanel} ${styles.releaseVisual}`}>
+    <div className={`${section.visualPanel} ${styles.releaseVisual}`}>
       <div className={styles.releaseBoard}>
         <div className={styles.releaseLabels}>
-          <span>PLANNED</span><span>TESTING</span><span>RELEASED</span>
+          {codexaReleaseColumns.map((column) => (
+            <span key={column}>{column}</span>
+          ))}
         </div>
         <div className={styles.releaseGuides} aria-hidden="true">
           <span /><span /><span /><span /><span />
@@ -58,19 +64,19 @@ export function ReleaseVisual() {
 }
 
 export function ThroughputVisual() {
-  const stages = ["Ingest", "Process", "Execute", "Recover"] as const;
+  const { label, value, hoverValue, change, hoverChange } = codexaThroughputMetric;
 
   return (
-    <div className={`${styles.visualPanel} ${styles.throughputVisual}`}>
+    <div className={`${section.visualPanel} ${styles.throughputVisual}`}>
       <div className={styles.throughputCard}>
         <div className={styles.metricLine}>
           <span className={styles.metricDot} aria-hidden="true" />
-          <span className={styles.metricValue}><strong>248</strong><strong>280</strong></span>
-          <span className={styles.change}><span>+14%</span><span>+22%</span></span>
+          <span className={styles.metricValue}><strong>{value}</strong><strong>{hoverValue}</strong></span>
+          <span className={styles.change}><span>{change}</span><span>{hoverChange}</span></span>
         </div>
-        <span className={styles.metricLabel}>System throughput</span>
+        <span className={styles.metricLabel}>{label}</span>
         <div className={styles.bars}>
-          {stages.map((stage) => (
+          {codexaThroughputStages.map((stage) => (
             <div className={styles.bar} key={stage}>
               <span className={styles.barDot} aria-hidden="true" />
               <span className={styles.barFill} aria-hidden="true" />

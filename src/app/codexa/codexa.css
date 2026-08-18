@@ -1,19 +1,9 @@
-body:has(.codexa-page) > header,
-body:has(.codexa-page) > footer {
-  display: none;
-}
-
-body:has(.codexa-page),
-body:has(.codexa-page) > main {
-  background: #09090b;
-}
-
-html:has(.codexa-page) {
+html {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
-html:has(.codexa-page)::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 
@@ -76,6 +66,19 @@ html:has(.codexa-page)::-webkit-scrollbar {
   content: "";
   pointer-events: none;
   transform: translateX(-50%);
+}
+
+/* Visually hidden, still announced by screen readers. */
+.codexa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .codexa-logo {
