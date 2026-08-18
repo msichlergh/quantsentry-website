@@ -24,28 +24,9 @@
   text-align: center;
 }
 
+/* Layout only — appearance comes from the shared CodexaEyebrow. */
 .intro > p {
-  display: inline-flex;
   margin: 0 0 15px;
-  padding: 6px 11px 6px 9px;
-  align-items: center;
-  gap: 9px;
-  border-radius: 999px;
-  color: var(--codexa-accent-bright);
-  background: rgb(0 205 193 / 13%);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", monospace;
-  font-size: 12px;
-  line-height: 1.4;
-  letter-spacing: 0.035em;
-}
-
-.intro > p > span {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #00cfc5;
-  box-shadow: 0 0 0 6px rgb(0 207 197 / 13%);
 }
 
 .intro h2 {

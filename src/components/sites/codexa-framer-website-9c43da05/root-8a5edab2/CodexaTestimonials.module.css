@@ -24,14 +24,9 @@
   text-align: center;
 }
 
+/* Layout only — appearance comes from the shared CodexaEyebrow. */
 .intro p {
   margin: 0;
-  color: #00d7c0;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", monospace;
-  font-size: 12px;
-  line-height: 1.4;
-  letter-spacing: 0.1em;
 }
 
 .intro h2 {

@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
+
 import styles from "./CodexaNotFoundPage.module.css";
 
 export function CodexaNotFoundPage() {
@@ -11,10 +13,7 @@ export function CodexaNotFoundPage() {
             404
           </div>
           <div className={styles.copy}>
-            <p className={styles.eyebrow}>
-              <span aria-hidden="true" />
-              404 ERROR
-            </p>
+            <CodexaEyebrow className={styles.eyebrow}>404 ERROR</CodexaEyebrow>
             <h1>Page not found</h1>
             <p className={styles.description}>
               Sorry, the page you are looking for does not exist or has been

@@ -109,7 +109,7 @@ export function CodexaPricing() {
     <section id="pricing" className={styles.section}>
       <div className={styles.container}>
         <header className={`${styles.header} codexa-reveal`}>
-          <CodexaEyebrow className={styles.eyebrow}>Pricing</CodexaEyebrow>
+          <CodexaEyebrow>Pricing</CodexaEyebrow>
           <h2>
             Simple plans,
             <br />

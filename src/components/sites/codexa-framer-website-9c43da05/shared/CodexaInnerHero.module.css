@@ -40,29 +40,9 @@
   align-items: flex-start;
 }
 
+/* Layout only — appearance comes from the shared CodexaEyebrow. */
 .eyebrow {
-  display: inline-flex;
-  min-height: 26px;
   margin: 0 0 12px;
-  padding: 5px 10px;
-  align-items: center;
-  gap: 8px;
-  border-radius: 999px;
-  color: var(--codexa-accent-bright);
-  background: rgb(0 205 193 / 13%);
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-}
-
-.eyebrow span {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 0 0 5px rgb(0 215 204 / 12%);
 }
 
 .copy h1 {

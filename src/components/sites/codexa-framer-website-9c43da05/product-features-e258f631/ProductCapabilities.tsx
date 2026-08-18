@@ -1,3 +1,5 @@
+import { CodexaEyebrow } from "../shared/CodexaEyebrow";
+
 import styles from "./ProductCapabilities.module.css";
 
 const capabilities = [
@@ -22,7 +24,7 @@ export function ProductCapabilities() {
   return (
     <section className={styles.capabilities}>
       <header className={styles.capabilityHeader}>
-        <p className={styles.eyebrow}><span aria-hidden="true" />Benefits</p>
+        <CodexaEyebrow className={styles.eyebrow}>Benefits</CodexaEyebrow>
         <h2>Build with clarity.<br />Scale with confidence.</h2>
         <p>Codexa gives teams the tools to automate workflows, ship faster, and operate with complete visibility.</p>
       </header>
