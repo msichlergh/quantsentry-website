@@ -1,4 +1,4 @@
-import styles from "./ProductFeaturesPage.module.css";
+import styles from "./ProductCapabilities.module.css";
 
 const capabilities = [
   { icon: "layers", title: "Unified developer workflow", description: "Bring tasks, triggers, APIs, and monitoring into one clean system." },

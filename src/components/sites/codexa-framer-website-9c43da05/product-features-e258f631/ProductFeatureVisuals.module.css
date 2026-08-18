@@ -1,0 +1,200 @@
+.workflowVisual {
+  display: grid;
+  width: 310px;
+  gap: 10px;
+}
+
+.workflowRow {
+  display: flex;
+  height: 45px;
+  padding: 0 14px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(255 255 255 / 9%);
+  border-radius: 9px;
+  color: #b4b5b6;
+  background: #0d0e10;
+  font-size: 13px;
+}
+
+.workflowRow > span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.workflowRow i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.active { color: var(--codexa-accent-bright); }
+
+.inactive { color: #616265; }
+
+.monitoringVisual {
+  position: relative;
+  width: 430px;
+  height: 330px;
+  color: #77797c;
+}
+
+.releaseLabels {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px 0;
+  color: #54565a;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+}
+
+.releaseLabels span:first-child { color: var(--codexa-accent); }
+
+.releaseFlow {
+  position: absolute;
+  top: 49px;
+  right: 27px;
+  left: 27px;
+  height: 1px;
+  background: rgb(255 255 255 / 9%);
+}
+
+.releaseNode {
+  position: absolute;
+  top: -4px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #15171a;
+  border-radius: 50%;
+  background: #383a3e;
+}
+
+.releaseNode:first-child { left: 0; background: var(--codexa-accent); }
+
+.releaseNode:nth-child(2) { left: 50%; }
+
+.releaseNode:last-child { right: 0; }
+
+.releaseCards {
+  position: absolute;
+  inset: 90px 20px 10px;
+}
+
+.releaseCards span {
+  position: absolute;
+  display: grid;
+  height: 38px;
+  padding: 0 14px;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 7px;
+  background: #0d0e10;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+}
+
+.releaseCards span:first-child { top: 28px; left: 22px; color: var(--codexa-accent); border-color: rgb(0 195 201 / 26%); background: rgb(0 195 201 / 12%); }
+
+.releaseCards span:nth-child(2) { top: 0; right: 0; }
+
+.releaseCards span:nth-child(3) { top: 88px; left: 130px; }
+
+.releaseCards span:last-child { right: 12px; bottom: 24px; }
+
+.throughputVisual {
+  width: 410px;
+  height: 360px;
+  padding: 20px;
+}
+
+.throughputValue {
+  display: flex;
+  align-items: center;
+  color: #a8aaad;
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: -.04em;
+}
+
+.throughputValue i {
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: var(--codexa-accent-bright);
+  box-shadow: 0 0 12px var(--codexa-accent-bright);
+}
+
+.throughputValue span {
+  margin-left: 8px;
+  color: var(--codexa-accent-bright);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.throughputVisual > p {
+  margin: 4px 0 18px 20px;
+  color: #77797c;
+  font-size: 13px;
+}
+
+.bars {
+  display: grid;
+  height: 220px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.bar {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: center;
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 9px 9px 0 0;
+  background: #0b0c0e;
+}
+
+.bar i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 56%;
+  background: linear-gradient(180deg, rgb(0 195 201 / 4%), transparent);
+}
+
+.bar[data-index="1"] i { height: 72%; }
+
+.bar[data-index="2"] i { height: 62%; }
+
+.bar[data-index="3"] i { height: 84%; }
+
+.bar span {
+  z-index: 1;
+  padding-bottom: 12px;
+  color: #4c4e52;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 10px;
+}
+
+@media (max-width: 900px) {
+  .workflowVisual { width: min(319px, calc(100% - 56px)); }
+
+  .monitoringVisual { width: min(319px, calc(100% - 40px)); }
+
+  .throughputVisual { width: min(335px, calc(100% - 24px)); padding-inline: 8px; }
+}
+
+@media (max-width: 430px) {
+  .workflowRow { height: 42px; font-size: 12px; }
+
+  .throughputVisual { transform: scale(.9); }
+}

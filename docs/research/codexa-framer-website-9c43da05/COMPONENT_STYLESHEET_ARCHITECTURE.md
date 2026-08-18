@@ -31,8 +31,14 @@ The `shared/` directory contains code that has genuine cross-page ownership:
   patterns and their styles.
 - `CodexaDemoForm` is the smallest client boundary required by the static demo
   forms.
-- Shared content data, such as changelog entries and career openings, remains
-  separate from its renderer.
+- Shared content data, such as changelog entries, career openings, and the
+  feature-illustration copy in `codexaVisualData`, remains separate from its
+  renderer.
+
+The homepage and `/product/features` render visually different illustrations
+from the same underlying copy. Share the *data* between them; do not merge the
+renderers behind a variant flag, as their markup and animation genuinely differ
+in the source design.
 
 Do not move a section-specific visual into `shared/` merely because it looks
 similar. Promote it only when two or more pages use the same semantics and
@@ -59,13 +65,18 @@ opaque image assets.
 
 ## Styling layers
 
-Styles have three layers and should not cross responsibilities:
+Styles have four layers and should not cross responsibilities:
 
-1. `src/app/codexa/codexa.css` contains Codexa-scoped tokens, global reset
-   boundaries, shared motion hooks, the home rails, logo, and marquee behavior.
-2. Shared primitive CSS modules contain the complete state styling for a
+1. `src/app/globals.css` is deliberately minimal. It wires Tailwind's
+   `--font-*` and `--color-background`/`--color-foreground` theme variables for
+   the handful of layout utilities the root layout uses. The site itself is not
+   styled with Tailwind — do not grow this file.
+2. `src/app/codexa/codexa.css` contains Codexa-scoped tokens, global reset
+   boundaries, shared motion hooks, the home rails, logo, marquee behavior, and
+   the `.codexa-sr-only` visually-hidden utility.
+3. Shared primitive CSS modules contain the complete state styling for a
    reusable control or pattern.
-3. Section CSS modules contain layout, typography exceptions, diagrams,
+4. Section CSS modules contain layout, typography exceptions, diagrams,
    responsive behavior, and section-specific animation.
 
 All general colors, borders, widths, gutters, radii, and common motion timings
@@ -74,8 +85,40 @@ are reserved for intentionally unique illustration details or opacity variants
 that are not semantic site tokens.
 
 Do not add unscoped global selectors. Codexa global rules must begin with
-`.codexa-page`, `.codexa-*`, or use the existing `:has(.codexa-page)` shell
-boundary.
+`.codexa-page` or `.codexa-*`. Every route renders `CodexaSiteFrame`, so `html`
+and `body` rules need no `:has()` guard.
+
+### One stylesheet per component
+
+A CSS module is owned by exactly one component file and named after it. When a
+module grows past roughly 400 lines, check whether its consumers already use
+disjoint class sets — if they do, that is a real seam and the module should be
+split to match. `product-features-e258f631` and the homepage feature section are
+the reference: each `*.tsx` has a `*.module.css` of the same name.
+
+The one sanctioned exception is a class that belongs to the *parent's* layout
+but is applied by the child, such as `visualPanel` in `CodexaFeatures.module.css`
+(selected by `.reverse .visualPanel`). Import the parent module under a second
+name rather than duplicating the rule.
+
+Size alone is not a reason to split. `CodexaHowItWorks.module.css` is large and
+must stay whole: its three illustrations are animated entirely by the parent
+card's state (`.card:hover .workflowCursor`, `.card:global(.is-automated)
+.chartPulse`, and nine more like them). A descendant selector cannot span two
+CSS modules, so splitting it would break the hover choreography. Always check
+for cross-cutting selectors before splitting, not just line count.
+
+### Breakpoints
+
+The responsive scale is `900px` (navigation and wide-layout collapse), `768px`
+(tablet/mobile stacking) and `430px` (phone). Three source-measured exceptions
+exist and are intentional: `650px` in the hero, `480px` in the homepage
+features/tabs/FAQ sections, and `390px` in the comparison table. Do not add a
+new breakpoint without a measured reason; do not "tidy" the existing exceptions
+into the standard scale, as that changes rendering on real phone widths.
+
+Note that a `max-width:` *declaration* constraining a text column is not a
+breakpoint. Only `@media` queries are.
 
 ## Server and client boundaries
 

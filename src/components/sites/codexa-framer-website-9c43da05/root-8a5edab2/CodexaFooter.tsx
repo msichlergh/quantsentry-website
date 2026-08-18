@@ -47,7 +47,7 @@ export function CodexaFooter() {
             updates.
           </p>
           <CodexaDemoForm>
-            <label className={styles.srOnly} htmlFor="codexa-footer-email">
+            <label className="codexa-sr-only" htmlFor="codexa-footer-email">
               Email address
             </label>
             <input
@@ -83,7 +83,7 @@ export function CodexaFooter() {
                         <span>{link.label}</span>
                         <span>{link.label}</span>
                       </span>
-                      <span className={styles.srOnly}>{link.label}</span>
+                      <span className="codexa-sr-only">{link.label}</span>
                     </Link>
                   </li>
                 ))}

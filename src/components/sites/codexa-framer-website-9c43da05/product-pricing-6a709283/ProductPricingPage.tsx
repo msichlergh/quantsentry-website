@@ -1,5 +1,8 @@
+import Link from "next/link";
+
 import { CodexaFaqs } from "../root-8a5edab2/CodexaFaqs";
 import { CodexaPricing } from "../root-8a5edab2/CodexaPricing";
+import { CODEXA_ROUTES } from "../shared/codexaSiteConfig";
 import { CodexaInnerHero } from "../shared/CodexaInnerHero";
 import { ArrowIcon, CheckIcon } from "../shared/icons";
 
@@ -29,7 +32,7 @@ function ComparisonValueCell({ value }: { value: ComparisonValue }) {
     return (
       <span className={`${styles.status} ${value ? styles.included : styles.excluded}`}>
         {value ? <CheckIcon /> : <span aria-hidden="true">×</span>}
-        <span className={styles.srOnly}>{value ? "Included" : "Not included"}</span>
+        <span className="codexa-sr-only">{value ? "Included" : "Not included"}</span>
       </span>
     );
   }
@@ -72,10 +75,10 @@ export function ProductPricingPage() {
                 <h2>Need a custom plan?</h2>
                 <p>We can tailor limits, workflows, and infrastructure to match your team&apos;s requirements.</p>
               </div>
-              <a href="/company/sales">
+              <Link href={CODEXA_ROUTES.sales}>
                 Contact Sales
                 <ArrowIcon />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
