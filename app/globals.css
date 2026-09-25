@@ -2725,6 +2725,22 @@ footer .brand { font-size: 26.93px; }
   pointer-events: none;
 }
 .home-data-pattern.is-dark { opacity: .23; }
+/* Static fallback for the animated signal field — rendered when WebGL is
+   unavailable (hardware acceleration off) or the visitor prefers reduced
+   motion. Mirrors the square-pixel field with a faded dot grid. To use a
+   raster poster instead, set `background-image: url(...)` here. */
+.home-data-pattern.is-static::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#d2e4e1 1px, transparent 1.6px);
+  background-size: 6px 6px;
+  -webkit-mask-image: radial-gradient(120% 110% at 50% 42%, #000 34%, transparent 82%);
+  mask-image: radial-gradient(120% 110% at 50% 42%, #000 34%, transparent 82%);
+}
+.home-data-pattern.is-dark.is-static::before {
+  background-image: radial-gradient(#153332 1.1px, transparent 1.7px);
+}
 .home-work-modes-heading { position: relative; isolation: isolate; display: grid; justify-items: center; text-align: center; }
 .home-work-modes-heading > *,
 .home-work-copy > * { position: relative; z-index: 1; }
