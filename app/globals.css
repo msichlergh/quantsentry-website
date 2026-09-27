@@ -5079,8 +5079,8 @@ html { scroll-padding-top: 92px; }
 .calc-field input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; margin-top: -8px; border: 2px solid var(--cy); border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(21, 32, 33, .18); transition: box-shadow .16s ease; }
 .calc-field input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border: 2px solid var(--cy); border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(21, 32, 33, .18); }
 .calc-field input[type="range"]:focus-visible { outline: none; }
-/* Expected cost savings: three stances instead of a dial, each showing the
-   percentage it works out to at the current payout ratio. */
+/* Expected cost savings: three stances instead of a dial. The selected
+   percentage is shown once, beside the field label. */
 .calc-scenario { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; margin-top: 10px; padding: 3px; border: 1px solid var(--hair); border-radius: 11px; background: var(--panel); }
 .calc-scenario button { appearance: none; display: flex; align-items: center; justify-content: center; min-height: 36px; padding: 0 6px; border: 0; border-radius: 9px; color: var(--ink3); background: transparent; font: inherit; font-size: 13.5px; font-weight: 500; cursor: pointer; transition: color .16s ease, background-color .16s ease; }
 .calc-scenario button:hover { color: var(--ink); }
