@@ -5038,7 +5038,7 @@ html { scroll-padding-top: 92px; }
 .calc-chart-panel { grid-area: chart; }
 .calc-inputs > div { display: grid; gap: 24px; padding: 26px 26px 28px; }
 .calc-field-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.calc-field label { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 16px; font-weight: 500; }
+.calc-field-label { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 16px; font-weight: 500; }
 /* Smaller version of the plan-card icon tile on /pricing. */
 .calc-field-icon { display: grid; flex: none; width: 30px; height: 30px; place-items: center; border: 1px solid rgba(8, 124, 122, .24); border-radius: 9px; color: #087c7a; background: #e8f4f2; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72); }
 .calc-field output { color: var(--cy); font-family: 'IBM Plex Mono', monospace; font-size: 16px; white-space: nowrap; }
@@ -5063,9 +5063,18 @@ html { scroll-padding-top: 92px; }
 .calc-field input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; margin-top: -8px; border: 2px solid var(--cy); border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(21, 32, 33, .18); transition: box-shadow .16s ease; }
 .calc-field input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border: 2px solid var(--cy); border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(21, 32, 33, .18); }
 .calc-field input[type="range"]:focus-visible { outline: none; }
-.calc-reset { appearance: none; min-height: 32px; margin-top: 2px; padding: 0; border: 0; color: var(--cy); background: none; font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; }
-.calc-reset:hover { text-decoration: underline; text-underline-offset: 3px; }
-.calc-reset:focus-visible { outline: 2px solid var(--cy); outline-offset: 2px; border-radius: 4px; }
+/* Expected cost savings: three stances instead of a dial, each showing the
+   percentage it works out to at the current payout ratio. */
+.calc-scenario { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; margin-top: 10px; padding: 3px; border: 1px solid var(--hair); border-radius: 11px; background: var(--panel); }
+.calc-scenario button { appearance: none; display: flex; align-items: center; justify-content: center; min-height: 36px; padding: 0 6px; border: 0; border-radius: 9px; color: var(--ink3); background: transparent; font: inherit; font-size: 13.5px; font-weight: 500; cursor: pointer; transition: color .16s ease, background-color .16s ease; }
+.calc-scenario button:hover { color: var(--ink); }
+.calc-scenario button[aria-pressed="true"] { color: #fff; background: var(--cy); }
+.calc-scenario button:focus-visible { outline: 2px solid var(--cy); outline-offset: 2px; }
+/* "Pessimistic" needs a touch less room on the narrowest phones. */
+@media (max-width: 360px) {
+  .calc-scenario { gap: 3px; padding: 3px; }
+  .calc-scenario button { padding: 0 4px; font-size: 12.5px; }
+}
 .calc-field input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgba(8, 124, 122, .22); }
 .calc-field input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px rgba(8, 124, 122, .22); }
 

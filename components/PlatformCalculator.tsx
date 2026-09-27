@@ -17,7 +17,6 @@ import {
   useState,
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
-  type ReactNode,
 } from "react";
 
 import { billedPrice, count, euros, platformPrice } from "@/lib/pricing";
@@ -34,25 +33,39 @@ type Inputs = {
   revenue: number;
   fee: number;
   payoutRatio: number;
-  savings: number;
 };
 
 // Higher payout ratios usually leave more abuse to recover, so the suggested
 // savings rise with the ratio: 5% at a 20% payout ratio and 15% at 35%, two
-// points for every three, kept within the slider's 5–40% range.
+// points for every three, kept within a 5–40% range.
 const suggestedSavings = (payoutRatio: number) =>
   Math.min(40, Math.max(5, Math.round(5 + ((payoutRatio - 20) * 2) / 3)));
 
-const DEFAULTS: Inputs = { revenue: 100000, fee: 125, payoutRatio: 35, savings: suggestedSavings(35) };
+// What a firm expects to save is a judgement, not a dial: the visitor picks a
+// stance and each one scales with their payout ratio.
+const SCENARIOS = [
+  { key: "pessimistic", label: "Pessimistic", factor: 0.6 },
+  { key: "realistic", label: "Realistic", factor: 1 },
+  { key: "optimistic", label: "Optimistic", factor: 1.4 },
+] as const;
+
+type Scenario = (typeof SCENARIOS)[number]["key"];
+
+const scenarioSavings = (payoutRatio: number, scenario: Scenario) => {
+  const { factor } = SCENARIOS.find((option) => option.key === scenario) ?? SCENARIOS[1];
+  return Math.min(40, Math.max(3, Math.round(suggestedSavings(payoutRatio) * factor)));
+};
+
+const DEFAULTS: Inputs = { revenue: 100000, fee: 125, payoutRatio: 35 };
 
 // Monthly figures for the visitor's inputs. Accounts rarely stay active beyond
 // a month, so each active account is one challenge sold that month: revenue
 // over the average fee gives the active accounts Platform is priced on.
-function figures(inputs: Inputs, annual: boolean) {
+function figures(inputs: Inputs, savings: number, annual: boolean) {
   const accounts = Math.max(1, Math.round(inputs.revenue / inputs.fee));
   const payouts = (inputs.revenue * inputs.payoutRatio) / 100;
   // Whole euros, so the rows shown always add up to the net shown beneath them.
-  const saved = Math.round((payouts * inputs.savings) / 100);
+  const saved = Math.round((payouts * savings) / 100);
   const cost = Math.round(billedPrice(platformPrice(accounts), annual));
   return { accounts, payouts, saved, cost, net: saved - cost };
 }
@@ -70,35 +83,26 @@ const eurosAndCents = new Intl.NumberFormat("en-GB", {
   maximumFractionDigits: 2,
 });
 
-function Slider({
-  icon: SliderIcon,
+// Label, tooltip and current value: shared by the sliders and the stance picker.
+function FieldHead({
+  icon: FieldIcon,
   label,
   hint,
-  value,
-  min,
-  max,
-  step,
-  format,
-  onChange,
-  children,
+  display,
+  controlId,
+  labelId,
+  tipId,
 }: {
-  children?: ReactNode;
   icon: Icon;
   label: string;
   hint: string;
-  value: number;
-  min: number;
-  max: number;
-  step: number;
-  format: (value: number) => string;
-  onChange: (value: number) => void;
+  display: string;
+  controlId?: string;
+  labelId?: string;
+  tipId: string;
 }) {
-  const id = useId();
-  const tipId = `${id}-tip`;
   const [tipOpen, setTipOpen] = useState(false);
   const nameRef = useRef<HTMLDivElement>(null);
-  // The filled part of the track, drawn by the stylesheet from this variable.
-  const fill = { "--fill": `${((value - min) / (max - min)) * 100}%` } as CSSProperties;
 
   // Hover and keyboard focus show the tooltip from the stylesheet; a tap opens
   // it, and a press anywhere else closes it again (touch buttons don't blur).
@@ -111,35 +115,125 @@ function Slider({
     return () => document.removeEventListener("pointerdown", onPointerDown);
   }, [tipOpen]);
 
+  const name = (
+    <>
+      <span className="calc-field-icon" aria-hidden="true">
+        <FieldIcon size={16} />
+      </span>
+      {label}
+    </>
+  );
+
+  return (
+    <div className="calc-field-head">
+      <div className="calc-field-name" ref={nameRef}>
+        {controlId ? (
+          <label className="calc-field-label" htmlFor={controlId}>
+            {name}
+          </label>
+        ) : (
+          <span className="calc-field-label" id={labelId}>
+            {name}
+          </span>
+        )}
+        <button
+          aria-describedby={tipId}
+          aria-expanded={tipOpen}
+          aria-label={`About ${label}`}
+          className="calc-tip-trigger"
+          onClick={() => setTipOpen((open) => !open)}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") setTipOpen(false);
+          }}
+          type="button"
+        >
+          <Info aria-hidden="true" size={15} />
+        </button>
+        <span className={`calc-tip${tipOpen ? " is-open" : ""}`} id={tipId} role="tooltip">
+          {hint}
+        </span>
+      </div>
+      <output htmlFor={controlId}>{display}</output>
+    </div>
+  );
+}
+
+// Expected cost savings as three stances instead of a slider.
+function ScenarioField({
+  payoutRatio,
+  scenario,
+  onChange,
+}: {
+  payoutRatio: number;
+  scenario: Scenario;
+  onChange: (next: Scenario) => void;
+}) {
+  const id = useId();
+  const labelId = `${id}-label`;
+  const tipId = `${id}-tip`;
+
   return (
     <div className="calc-field">
-      <div className="calc-field-head">
-        <div className="calc-field-name" ref={nameRef}>
-          <label htmlFor={id}>
-            <span className="calc-field-icon" aria-hidden="true">
-              <SliderIcon size={16} />
-            </span>
-            {label}
-          </label>
+      <FieldHead
+        display={percent(scenarioSavings(payoutRatio, scenario))}
+        hint="From trading abuse, payout fraud and fraud prevention, as a share of payout costs. All three stances scale with your payout ratio."
+        icon={ShieldCheck}
+        label="Expected Cost Savings"
+        labelId={labelId}
+        tipId={tipId}
+      />
+      <div aria-describedby={tipId} aria-labelledby={labelId} className="calc-scenario" role="group">
+        {SCENARIOS.map((option) => (
           <button
-            aria-describedby={tipId}
-            aria-expanded={tipOpen}
-            aria-label={`About ${label}`}
-            className="calc-tip-trigger"
-            onClick={() => setTipOpen((open) => !open)}
-            onKeyDown={(event) => {
-              if (event.key === "Escape") setTipOpen(false);
-            }}
+            aria-pressed={option.key === scenario}
+            key={option.key}
+            onClick={() => onChange(option.key)}
             type="button"
           >
-            <Info aria-hidden="true" size={15} />
+            {option.label}
           </button>
-          <span className={`calc-tip${tipOpen ? " is-open" : ""}`} id={tipId} role="tooltip">
-            {hint}
-          </span>
-        </div>
-        <output htmlFor={id}>{format(value)}</output>
+        ))}
       </div>
+    </div>
+  );
+}
+
+function Slider({
+  icon: SliderIcon,
+  label,
+  hint,
+  value,
+  min,
+  max,
+  step,
+  format,
+  onChange,
+}: {
+  icon: Icon;
+  label: string;
+  hint: string;
+  value: number;
+  min: number;
+  max: number;
+  step: number;
+  format: (value: number) => string;
+  onChange: (value: number) => void;
+}) {
+  const id = useId();
+  const tipId = `${id}-tip`;
+  // The filled part of the track, drawn by the stylesheet from this variable.
+  const fill = { "--fill": `${((value - min) / (max - min)) * 100}%` } as CSSProperties;
+
+  return (
+    <div className="calc-field">
+      <FieldHead
+        controlId={id}
+        display={format(value)}
+        hint={hint}
+        icon={SliderIcon}
+        label={label}
+        tipId={tipId}
+      />
       <input
         aria-describedby={tipId}
         aria-valuetext={format(value)}
@@ -152,7 +246,6 @@ function Slider({
         type="range"
         value={value}
       />
-      {children}
     </div>
   );
 }
@@ -326,26 +419,11 @@ function SavingsTimeline({ now, annual }: { now: Figures; annual: boolean }) {
 export function PlatformCalculator() {
   const [inputs, setInputs] = useState<Inputs>(DEFAULTS);
   const [annual, setAnnual] = useState(true);
-  // Savings follow the payout ratio until the visitor sets them by hand.
-  const [savingsLinked, setSavingsLinked] = useState(true);
+  const [scenario, setScenario] = useState<Scenario>("realistic");
 
   const set = (key: keyof Inputs) => (value: number) => setInputs((current) => ({ ...current, [key]: value }));
-  const setPayoutRatio = (payoutRatio: number) =>
-    setInputs((current) => ({
-      ...current,
-      payoutRatio,
-      savings: savingsLinked ? suggestedSavings(payoutRatio) : current.savings,
-    }));
-  const setSavings = (savings: number) => {
-    setSavingsLinked(false);
-    set("savings")(savings);
-  };
-  const resetSavings = () => {
-    setSavingsLinked(true);
-    setInputs((current) => ({ ...current, savings: suggestedSavings(current.payoutRatio) }));
-  };
-
-  const now = figures(inputs, annual);
+  const savings = scenarioSavings(inputs.payoutRatio, scenario);
+  const now = figures(inputs, savings, annual);
   const payback = paybackMonths(now, annual);
 
   return (
@@ -399,27 +477,11 @@ export function PlatformCalculator() {
                   label="Payout Ratio"
                   max={60}
                   min={15}
-                  onChange={setPayoutRatio}
+                  onChange={set("payoutRatio")}
                   step={1}
                   value={inputs.payoutRatio}
                 />
-                <Slider
-                  format={percent}
-                  hint="From trading abuse, payout fraud and fraud prevention, as a share of payout costs. It follows your payout ratio until you set it yourself."
-                  icon={ShieldCheck}
-                  label="Expected Cost Savings"
-                  max={40}
-                  min={5}
-                  onChange={setSavings}
-                  step={1}
-                  value={inputs.savings}
-                >
-                  {savingsLinked ? null : (
-                    <button className="calc-reset" onClick={resetSavings} type="button">
-                      Reset to Suggested ({percent(suggestedSavings(inputs.payoutRatio))})
-                    </button>
-                  )}
-                </Slider>
+                <ScenarioField onChange={setScenario} payoutRatio={inputs.payoutRatio} scenario={scenario} />
               </div>
             </div>
 
@@ -445,7 +507,7 @@ export function PlatformCalculator() {
                   <div>
                     <dt>
                       <ShieldCheck aria-hidden="true" size={17} />
-                      Cost Savings at {percent(inputs.savings)}
+                      Cost Savings at {percent(savings)}
                     </dt>
                     <dd>+{euros.format(now.saved)}/mo</dd>
                   </div>
@@ -475,11 +537,11 @@ export function PlatformCalculator() {
                 <p className={`calc-margin${now.net < 0 ? " is-negative" : ""}`}>
                   {now.net >= 0 ? (
                     <>
-                      Adds <strong>{percent((now.net / inputs.revenue) * 100)}</strong> of revenue to your margin.
+                      Increases your profit margin by <strong>{percent((now.net / inputs.revenue) * 100)}</strong>.
                     </>
                   ) : (
                     <>
-                      Costs <strong>{percent((-now.net / inputs.revenue) * 100)}</strong> of revenue at these inputs.
+                      Reduces your profit margin by <strong>{percent((-now.net / inputs.revenue) * 100)}</strong>.
                     </>
                   )}
                 </p>
