@@ -3722,14 +3722,16 @@ footer .brand { font-size: 26.93px; }
   .home-capabilities-heading { grid-template-columns: 1fr; gap: 18px; }
   .home-capabilities-heading .lede { justify-self: start; }
   .home-capability-explorer { margin-top: 30px; }
-  .home-capability-card { min-height: 0; padding: 22px; }
+  /* Phones stack the copy above the preview: side by side leaves a ~190px
+     text column, which wraps every two or three words. */
+  .home-capability-card { min-height: 0; grid-template-columns: 1fr; gap: 20px; padding: 22px; }
+  .home-capability-card h3 { font-size: 20px; }
+  .home-capability-card p { max-width: none; }
+  .home-capability-card-link { margin-top: 18px; padding-top: 0; }
 }
 
 @media (max-width: 420px) {
-  .home-capability-card { min-height: 0; grid-template-columns: 1fr; gap: 20px; padding: 20px 18px; }
-  .home-capability-card h3 { font-size: 20px; }
-  .home-capability-card-link { margin-top: 18px; padding-top: 0; }
-  .home-capability-card-preview { min-height: 145px; }
+  .home-capability-card { padding: 20px 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
