@@ -2886,7 +2886,7 @@ footer .brand { font-size: 26.93px; }
 .home-work-answer dl > div:last-child { border-bottom: 0; }
 .home-work-answer dd { color: var(--cy); font-weight: 500; white-space: nowrap; }
 .home-work-answer dd small { margin-left: 10px; color: var(--ink4); font-weight: 400; }
-.home-work-chat-actions { display: flex; flex-wrap: nowrap; gap: 6px; padding-left: 0; }
+.home-work-chat-actions { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 0; }
 .home-work-chat-actions button { appearance: none; display: inline-flex; align-items: center; gap: 5px; min-height: 36px; padding: 0 10px; border: 1px solid rgba(8, 124, 122, .18); border-radius: 9px; color: var(--cy); background: rgba(8, 124, 122, .055); font: inherit; font-size: 11px; font-weight: 500; white-space: nowrap; cursor: pointer; }
 .home-work-chat-actions button:hover { border-color: rgba(8, 124, 122, .35); background: rgba(8, 124, 122, .09); }
 
@@ -2958,18 +2958,14 @@ footer .brand { font-size: 26.93px; }
   .home-work-tabs button { min-height: 44px; padding-inline: 9px; font-size: 12px; }
   .home-work-content-card { margin-top: 28px; padding: 20px; border-radius: 22px; }
   .home-work-title-icon { width: 48px; height: 48px; }
-  .home-work-copy h3 { font-size: 28px; }
+  /* Nowrap forces a 474px text column inside a ~394px card on phones. */
+  .home-work-copy h3 { font-size: 28px; white-space: normal; }
   .home-work-feature-grid { grid-template-columns: 1fr; }
   .home-work-demo { padding: 18px; border-radius: 16px; }
   .home-work-task-row { grid-template-columns: 32px minmax(0, 1fr) auto; }
   .home-work-task-meta { grid-column: 2 / 4; justify-content: flex-start; flex-wrap: wrap; }
   .home-work-chat-actions { padding-left: 0; }
   .home-work-answer dl > div { align-items: flex-start; flex-direction: column; gap: 3px; }
-}
-
-@media (max-width: 420px) {
-  .home-work-copy h3 { white-space: normal; }
-  .home-work-chat-actions { flex-wrap: wrap; }
 }
 
 /* Homepage Argus missions */
@@ -4055,7 +4051,8 @@ footer .brand { font-size: 26.93px; }
 
   /* Product capability chips read as one row instead of a ragged 2/1 stack. */
   .company-group-product { padding-inline: 16px; }
-  .company-group-tags { flex-wrap: nowrap; gap: 6px; }
+  /* Nowrap needs 342px, more than a 320px screen has, so the card overflowed. */
+  .company-group-tags { flex-wrap: wrap; gap: 6px; }
   .company-group-tags span { padding: 6px 7px; font-size: 10.5px; letter-spacing: .03em; white-space: nowrap; }
   .author-linkedin { min-width: 44px; min-height: 44px; }
 }
