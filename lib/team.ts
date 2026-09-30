@@ -54,13 +54,6 @@ export const executiveTeamGroups = [
         linkedIn: "https://www.linkedin.com/in/stasysbrilis/?skipRedirect=true",
       },
       {
-        name: "Rawad Jaber",
-        role: "Chief Financial Officer",
-        bio: "Directs finance, legal, and operational scaling across the group.",
-        image: "/images/team/Rawad-Jaber.webp",
-        linkedIn: "https://www.linkedin.com/in/rawad-jaber/",
-      },
-      {
         name: "Akash Thakrar",
         role: "Corporate Development",
         bio: "Leads mergers, acquisitions, and strategic corporate development.",
