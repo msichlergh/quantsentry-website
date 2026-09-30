@@ -61,13 +61,6 @@ export const executiveTeamGroups = [
         linkedIn: "https://www.linkedin.com/in/akashthakrar/",
       },
       {
-        name: "Marcel Rauscher",
-        role: "Chief Sales Officer",
-        bio: "Heads global sales and operator partnerships.",
-        image: "/images/team/Marcel-Rauscher.webp",
-        linkedIn: "https://www.linkedin.com/in/marcel-rauscher/",
-      },
-      {
         name: "Sam Bradbury",
         role: "VP of Business Development",
         bio: "Develops new business across QTG’s operator network.",
