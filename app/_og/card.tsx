@@ -1,6 +1,6 @@
 import { BRAND, clamp } from "../_seo/site";
 
-import { OG_SIZE, brandMarkSrc } from "./assets";
+import { OG_SIZE, brandMarkSrc, pixelFieldSrc } from "./assets";
 
 /**
  * The one social-card layout, shared by every `opengraph-image` and
@@ -63,6 +63,15 @@ export function OgCard({ eyebrow, title, subtitle, meta }: OgCardProps) {
             "radial-gradient(circle, rgba(72,199,195,0.20) 0%, rgba(72,199,195,0.06) 45%, rgba(8,10,11,0) 70%)",
         }}
       />
+      {/* The hero's pixel field. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        alt=""
+        src={pixelFieldSrc}
+        width={OG_SIZE.width}
+        height={OG_SIZE.height}
+        style={{ position: "absolute", top: 0, left: 0 }}
+      />
       {/* Teal hairline along the top edge. */}
       <div
         style={{
@@ -91,17 +100,21 @@ export function OgCard({ eyebrow, title, subtitle, meta }: OgCardProps) {
               next/image cannot be used inside an ImageResponse. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img alt="" src={brandMarkSrc} width={46} height={46} />
+          {/* `.brand-wordmark`: DM Sans, Quant 450 / Sentry 550. The two faces
+              are registered as 400/500 because satori matches on the declared
+              weight, not the instance the file was pinned at. */}
           <div
             style={{
               display: "flex",
               marginLeft: 12,
+              fontFamily: "DM Sans",
               fontSize: 34,
-              color: BRAND.ink,
+              color: "#f4f8f7",
               letterSpacing: "-0.02em",
             }}
           >
             <span style={{ fontWeight: 400 }}>Quant</span>
-            <span style={{ fontWeight: 600 }}>Sentry</span>
+            <span style={{ fontWeight: 500 }}>Sentry</span>
           </div>
         </div>
 
@@ -120,7 +133,7 @@ export function OgCard({ eyebrow, title, subtitle, meta }: OgCardProps) {
               style={{
                 marginLeft: 10,
                 fontSize: 21,
-                fontWeight: 600,
+                fontWeight: 500,
                 color: BRAND.ink2,
                 letterSpacing: "0.01em",
               }}
@@ -132,10 +145,10 @@ export function OgCard({ eyebrow, title, subtitle, meta }: OgCardProps) {
           <div
             style={{
               fontSize: headlineSize,
-              fontWeight: 600,
+              fontWeight: 500,
               lineHeight: 1.1,
               color: BRAND.ink,
-              letterSpacing: "-0.035em",
+              letterSpacing: "-0.03em",
             }}
           >
             {headline}

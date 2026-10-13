@@ -62,7 +62,7 @@ export const BRAND = {
   bg: "#080a0b",
   panel: "#101416",
   hair: "#272e30",
-  ink: "#f4f8f7",
+  ink: "#f7fbfa",
   ink2: "#d4dada",
   ink3: "#99a3a4",
   ink4: "#747f80",
