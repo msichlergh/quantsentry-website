@@ -359,7 +359,7 @@ export function PricingPlans() {
               </summary>
               <div className="pricing-explainer-body">
                 <p>
-                  An account is active in a month if it is funded and places at least one trade. Dormant accounts cost you
+                  An account is active in a month if it places at least one trade, whether it is in evaluation or funded. Dormant accounts cost you
                   nothing.
                 </p>
                 <p>
