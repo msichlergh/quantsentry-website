@@ -61,6 +61,7 @@ export async function generateMetadata({ params }: InsightPageProps): Promise<Me
       title: seoTitle(article.slug, article.title),
       description: article.summary,
       path: `/insights/${article.slug}`,
+      ...(article.canonicalUrl ? { canonical: article.canonicalUrl } : {}),
       type: "article",
       publishedTime: article.publishedAt,
       ...(articleAuthor ? { authors: [articleAuthor.name] } : {}),
@@ -177,7 +178,7 @@ function ArticlePage({ slug }: { slug: string }) {
             category: article.category,
             publishedAt: article.publishedAt,
             readTime: article.readTime,
-            sourceUrl: article.sourceUrl,
+            ...(article.sourceUrl ? { sourceUrl: article.sourceUrl } : {}),
             author,
           }),
           personNode(author),
@@ -233,6 +234,24 @@ function ArticlePage({ slug }: { slug: string }) {
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
+                  {section.list ? (
+                    <ul className="article-list">
+                      {section.list.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {section.quote ? (
+                    <figure className="article-quote">
+                      <blockquote>
+                        <p>{section.quote.text}</p>
+                      </blockquote>
+                      <figcaption>
+                        <strong>{section.quote.name}</strong>
+                        <span>{section.quote.role}</span>
+                      </figcaption>
+                    </figure>
+                  ) : null}
                 </section>
               ))}
 
@@ -241,10 +260,12 @@ function ArticlePage({ slug }: { slug: string }) {
                 <p>{article.takeaway}</p>
               </aside>
 
-              <p className="article-source">
-                This QuantSentry edition is adapted from an article first published by Quant
-                Technology Group. <a href={article.sourceUrl}>Read the original article</a>.
-              </p>
+              {article.sourceUrl ? (
+                <p className="article-source">
+                  This QuantSentry edition is adapted from an article first published by Quant
+                  Technology Group. <a href={article.sourceUrl}>Read the original article</a>.
+                </p>
+              ) : null}
 
               <footer className="article-author-card">
                 <div className="article-author-card-image">

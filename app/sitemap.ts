@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { insightArticles, insightAuthors } from "@/lib/insights";
+import { insightArticles, insightAuthors, type InsightArticle } from "@/lib/insights";
 import { pages, type PageSlug } from "@/lib/pages";
 
 import { absoluteUrl } from "./_seo/site";
@@ -77,7 +77,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // An article another site owns (`canonicalUrl`) is not a canonical URL here.
   const articles: MetadataRoute.Sitemap = insightArticles
+    .filter((article) => !(article as InsightArticle).canonicalUrl)
     .toSorted((left, right) => right.publishedAt.localeCompare(left.publishedAt))
     .map((article) => ({
       url: absoluteUrl(`/insights/${article.slug}`),

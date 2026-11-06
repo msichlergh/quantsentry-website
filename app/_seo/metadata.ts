@@ -17,6 +17,11 @@ type BuildMetadataInput = {
   description: string;
   /** Route path, e.g. `/pricing`. Query strings are stripped. */
   path: string;
+  /**
+   * Absolute canonical URL, for the rare page another site owns. Defaults to
+   * this route's own path.
+   */
+  canonical?: string;
   /** `website` for everything except an article body. */
   type?: "website" | "article" | "profile";
   /** ISO date, articles only. */
@@ -44,13 +49,14 @@ export function buildMetadata({
   title,
   description,
   path,
+  canonical: canonicalOverride,
   type = "website",
   publishedTime,
   authors,
   robots,
 }: BuildMetadataInput): Metadata {
   const resolvedTitle = clampTitle(title);
-  const canonical = canonicalPath(path);
+  const canonical = canonicalOverride ?? canonicalPath(path);
 
   return {
     title: { absolute: resolvedTitle },
