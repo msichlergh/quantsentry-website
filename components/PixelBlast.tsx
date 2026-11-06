@@ -1,8 +1,25 @@
 "use client";
 
-import { Effect, EffectComposer, EffectPass, RenderPass } from 'postprocessing';
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
+import type { Effect, EffectComposer } from 'postprocessing';
+import React, { useEffect, useRef, useState } from 'react';
+import type * as THREE from 'three';
+
+// three + postprocessing are ~145 KB gzipped. Importing them statically put
+// them in the eager bundle of every route that can render a PixelBlast — which
+// is every /[slug] page via HeroPixelBlast — even before a canvas exists. A
+// dynamic import() inside the effect moves them to an async chunk fetched only
+// when a field actually mounts. Cached at module level: the homepage mounts
+// several instances and only the first one waits.
+type Libs = { THREE: typeof import('three'); PP: typeof import('postprocessing') };
+let loadedLibs: Libs | null = null;
+let libsPromise: Promise<Libs> | null = null;
+const loadLibs = (): Promise<Libs> => {
+  libsPromise ??= Promise.all([import('three'), import('postprocessing')]).then(([THREE, PP]) => {
+    loadedLibs = { THREE, PP };
+    return loadedLibs;
+  });
+  return libsPromise;
+};
 
 type PixelBlastVariant = 'square' | 'circle' | 'triangle' | 'diamond';
 
@@ -55,7 +72,7 @@ type PixelBlastProps = {
   noiseAmount?: number;
 };
 
-const createTouchTexture = (): TouchTexture => {
+const createTouchTexture = (THREE: Libs['THREE']): TouchTexture => {
   const size = 64;
   const canvas = document.createElement('canvas');
   canvas.width = size;
@@ -141,7 +158,11 @@ const createTouchTexture = (): TouchTexture => {
   };
 };
 
-const createLiquidEffect = (texture: THREE.Texture, opts?: { strength?: number; freq?: number }) => {
+const createLiquidEffect = (
+  { THREE, PP }: Libs,
+  texture: THREE.Texture,
+  opts?: { strength?: number; freq?: number }
+) => {
   const fragment = `
     uniform sampler2D uTexture;
     uniform float uStrength;
@@ -161,7 +182,7 @@ const createLiquidEffect = (texture: THREE.Texture, opts?: { strength?: number; 
       uv += vec2(vx, vy) * amt;
     }
     `;
-  return new Effect('LiquidEffect', fragment, {
+  return new PP.Effect('LiquidEffect', fragment, {
     uniforms: new Map<string, THREE.Uniform>([
       ['uTexture', new THREE.Uniform(texture)],
       ['uStrength', new THREE.Uniform(opts?.strength ?? 0.025)],
@@ -380,6 +401,44 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
   const containerRef = useRef<HTMLDivElement | null>(null);
   const visibilityRef = useRef({ visible: true });
   const speedRef = useRef(speed);
+  const [libs, setLibs] = useState<Libs | null>(loadedLibs);
+
+  useEffect(() => {
+    if (libs) return;
+    let cancelled = false;
+    loadLibs().then(
+      loaded => {
+        if (!cancelled) setLibs(loaded);
+      },
+      () => {
+        // Chunk failed to load (offline, deploy skew): leave the area empty,
+        // exactly as a WebGL failure would.
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [libs]);
+
+  // Pause the render loop while the canvas is off-screen. `autoPauseOffscreen`
+  // existed but nothing ever wrote `visibilityRef`, so every instance on the
+  // page rendered every frame. The margin resumes it just before it scrolls in.
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || !autoPauseOffscreen || typeof IntersectionObserver === 'undefined') return;
+    const visibility = visibilityRef.current;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        visibility.visible = entry.isIntersecting;
+      },
+      { rootMargin: '200px 0px' }
+    );
+    io.observe(container);
+    return () => {
+      io.disconnect();
+      visibility.visible = true;
+    };
+  }, [autoPauseOffscreen]);
 
   const threeRef = useRef<{
     renderer: THREE.WebGLRenderer;
@@ -416,7 +475,9 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
   const prevConfigRef = useRef<ReinitConfig | null>(null);
   useEffect(() => {
     const container = containerRef.current;
-    if (!container) return;
+    if (!container || !libs) return;
+    const { THREE } = libs;
+    const { EffectComposer, EffectPass, RenderPass } = libs.PP;
     speedRef.current = speed;
     const needsReinitKeys: (keyof ReinitConfig)[] = ['antialias', 'liquid', 'noiseAmount'];
     const cfg: ReinitConfig = { antialias, liquid, noiseAmount };
@@ -517,11 +578,11 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
       let touch: ReturnType<typeof createTouchTexture> | undefined;
       let liquidEffect: Effect | undefined;
       if (liquid) {
-        touch = createTouchTexture();
+        touch = createTouchTexture(THREE);
         touch.radiusScale = liquidRadius;
         composer = new EffectComposer(renderer);
         const renderPass = new RenderPass(scene, camera);
-        liquidEffect = createLiquidEffect(touch.texture, {
+        liquidEffect = createLiquidEffect(libs, touch.texture, {
           strength: liquidStrength,
           freq: liquidWobbleSpeed
         });
@@ -535,7 +596,7 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
           composer = new EffectComposer(renderer);
           composer.addPass(new RenderPass(scene, camera));
         }
-        const noiseEffect = new Effect(
+        const noiseEffect = new libs.PP.Effect(
           'NoiseEffect',
           `uniform float uTime; uniform float uAmount; float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7))) * 43758.5453);} void mainUv(inout vec2 uv){} void mainImage(const in vec4 inputColor,const in vec2 uv,out vec4 outputColor){ float n=hash(floor(uv*vec2(1920.0,1080.0))+floor(uTime*60.0)); float g=(n-0.5)*uAmount; outputColor=inputColor+vec4(vec3(g),0.0);} `,
           {
@@ -673,6 +734,7 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
       threeRef.current = null;
     };
   }, [
+    libs,
     antialias,
     liquid,
     noiseAmount,

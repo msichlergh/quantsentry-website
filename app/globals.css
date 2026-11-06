@@ -2197,7 +2197,10 @@ footer .brand { font-size: 26.93px; }
   gap: 18px;
   overflow-x: auto;
   padding: 1px 1px 4px;
-  scroll-behavior: smooth;
+  /* No `scroll-behavior: smooth` here. Combined with mandatory snap it makes
+     Chrome run a programmatic smooth scroll on first layout, which stops LCP
+     recording for the whole page (Lighthouse: NO_LCP, score 0). The arrow
+     buttons already pass `behavior: "smooth"` to scrollBy, so nothing changes. */
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
