@@ -116,7 +116,7 @@ export type BlogPostingInput = {
   category: string;
   publishedAt: string;
   readTime: string;
-  sourceUrl: string;
+  sourceUrl?: string;
   author: PersonInput;
 };
 
@@ -143,8 +143,8 @@ export function blogPostingNode(article: BlogPostingInput): JsonLdNode {
     // reference. Repeating it costs nothing and removes the ambiguity.
     author: { "@id": personId(article.author.slug), name: article.author.name },
     publisher: { "@id": ORGANIZATION_ID, name: SITE_NAME },
-    // The page itself states each edition is adapted from a QTG original.
-    isBasedOn: article.sourceUrl,
+    // Only adapted editions name a source, and the page says so in the text.
+    ...(article.sourceUrl ? { isBasedOn: article.sourceUrl } : {}),
     ...(timeRequired ? { timeRequired } : {}),
   };
 }
