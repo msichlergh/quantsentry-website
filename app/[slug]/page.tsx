@@ -6,7 +6,6 @@ import { pages, type PageSlug } from "@/lib/pages";
 
 import { JsonLd, breadcrumbNode, softwareApplicationNode, type Crumb } from "../_seo/jsonld";
 import { buildMetadata } from "../_seo/metadata";
-import { BRAND_SUFFIX } from "../_seo/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -32,9 +31,9 @@ function isPageSlug(slug: string): slug is PageSlug {
   return slug in pages && !OWN_ROUTES.has(slug);
 }
 
-/** "Argus AI | QuantSentry" -> "Argus AI", for breadcrumb labels. */
+/** Short page name for breadcrumbs; the SEO title is too long for one. */
 function pageLabel(slug: PageSlug): string {
-  return pages[slug].title.replace(BRAND_SUFFIX, "").trim();
+  return pages[slug].label;
 }
 
 export function generateStaticParams() {

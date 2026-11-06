@@ -7,6 +7,11 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink2);font-family:'General Sans',system-ui,sans-serif;
   font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;line-height:1.6}
 a{color:inherit;text-decoration:none}
+/* Links inside running copy. Bare <a> inherits the text colour, which made
+   in-sentence links invisible; these stay in the sentence's colour but carry a
+   quiet underline that turns accent on hover and focus. */
+.inline-link{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);transition:color .15s,text-decoration-color .15s}
+.inline-link:hover,.inline-link:focus-visible{color:var(--cy);text-decoration-color:currentColor}
 :focus-visible{outline:2px solid var(--cy);outline-offset:3px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
 .mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.15em;text-transform:uppercase}
@@ -4168,11 +4173,11 @@ html { scroll-padding-top: 92px; }
   .home-always-input-bar > a { min-height: 44px; font-size: 12.5px; }
 
   /* Standalone text links inside content panels and cards. */
-  .page-content-html .panel a:not(.btn):not(.brand),
+  .page-content-html .panel a:not(.btn):not(.brand):not(.inline-link),
   .home-work-text-link,
   .insight-card-footer a { position: relative; display: inline-block; }
   .insight-card-footer a.insight-card-author { display: inline-flex; }
-  .page-content-html .panel a:not(.btn):not(.brand)::after,
+  .page-content-html .panel a:not(.btn):not(.brand):not(.inline-link)::after,
   .home-work-text-link::after,
   .insight-card-footer a::after {
     content: "";
@@ -4833,12 +4838,12 @@ html { scroll-padding-top: 92px; }
      static HTML pages and missed every React-rendered one (/industries,
      /platform, the homepage panels). Cover both, plus standalone links that
      close a lede rather than sitting in a panel. */
-  .page-content .panel a:not(.btn):not(.brand),
-  .page-content .lede > a,
-  .page-content-html .lede > a { position: relative; display: inline-block; max-width: 100%; }
-  .page-content .panel a:not(.btn):not(.brand)::after,
-  .page-content .lede > a::after,
-  .page-content-html .lede > a::after { content: ""; position: absolute; inset: -14px -10px; }
+  .page-content .panel a:not(.btn):not(.brand):not(.inline-link),
+  .page-content .lede > a:not(.inline-link),
+  .page-content-html .lede > a:not(.inline-link) { position: relative; display: inline-block; max-width: 100%; }
+  .page-content .panel a:not(.btn):not(.brand):not(.inline-link)::after,
+  .page-content .lede > a:not(.inline-link)::after,
+  .page-content-html .lede > a:not(.inline-link)::after { content: ""; position: absolute; inset: -14px -10px; }
 }
 
 /* ==========================================================================

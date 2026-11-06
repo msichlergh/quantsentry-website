@@ -131,6 +131,7 @@ export function HomeOverviewHero({ variant = "hero" }: HomeOverviewHeroProps) {
   const isLightDashboard = variant !== "hero";
   const isJourney = variant === "light-journey";
   const headingId = isJourney ? "home-light-journey-title" : "home-light-dashboard-title";
+  const HeroHeading = isLightDashboard ? "p" : "h1";
   const journeyStageRef = useRef<"connect" | "teams" | "argus">("connect");
   const sectionRef = useRef<HTMLElement>(null);
   const storyStageRef = useRef<HTMLDivElement>(null);
@@ -721,14 +722,18 @@ export function HomeOverviewHero({ variant = "hero" }: HomeOverviewHeroProps) {
                 </em>
               </span>
             </div>
-            <h1>
+            {/* The light variants render this block too, but CSS hides it
+                (`.home-dashboard-light-section .home-scroll-stage`). Only the
+                real hero may emit an <h1>, or the homepage ships two. */}
+            <HeroHeading>
               <span className="home-hero-question">From Disconnected Data</span>
               <br />
               <em className="c home-hero-answer">To Profitable Action.</em>
-            </h1>
+            </HeroHeading>
             <p className="lede">
-              Bring your data together. Argus AI finds risks and opportunities, answers questions,
-              and recommends what to do next.
+              QuantSentry is risk and data intelligence software for prop firms. It brings your
+              trading, payment and customer data together, and Argus AI finds risks and
+              opportunities, answers questions and recommends what to do next.
             </p>
             <div className="row home-hero-actions">
               <a className="btn solid" href="/demo">

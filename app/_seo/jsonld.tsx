@@ -1,3 +1,5 @@
+import { INCLUDED, NETWORK_PRICE, PLATFORM_BASE } from "@/lib/pricing";
+
 import { SITE_NAME, absoluteUrl } from "./site";
 
 /**
@@ -7,11 +9,10 @@ import { SITE_NAME, absoluteUrl } from "./site";
  * visible on the rendered page. Nothing here is invented. In particular:
  *
  *   - No `aggregateRating` — the site publishes no ratings.
- *   - No `offers` / `price` on the pricing page — pricing is quote-based
- *     ("We would rather quote you properly than publish a table"). Declaring
- *     an Offer without a real price, or inventing one, is structured-data
- *     spam. The cost is that the page is not eligible for the software-app
- *     rich result; that is the correct trade.
+ *   - `offers` comes straight from `lib/pricing.ts`, the same constants the
+ *     pricing page renders, so the schema cannot quote a different price.
+ *     Only the entry prices are declared (Network, and Platform with its
+ *     included accounts); volume bands above that are on the page, not here.
  *   - No `sameAs` on the Organization — there is no verified QuantSentry
  *     social profile anywhere in this codebase to point at.
  *   - No `SearchAction` on the WebSite — the site has no search endpoint.
@@ -165,7 +166,40 @@ export function softwareApplicationNode(): JsonLdNode {
       "Business intelligence dashboards",
       "Sentry Risk Network",
     ],
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "EUR",
+      lowPrice: NETWORK_PRICE,
+      offerCount: 2,
+      url: absoluteUrl("/pricing"),
+      offers: [
+        monthlyOffer("Network", NETWORK_PRICE, "Screening against the Sentry Risk Network, at any account volume."),
+        monthlyOffer(
+          "Platform",
+          PLATFORM_BASE,
+          `Full platform with the first ${INCLUDED} active accounts included; larger books are priced in volume bands.`,
+        ),
+      ],
+    },
     publisher: { "@id": ORGANIZATION_ID },
+  };
+}
+
+function monthlyOffer(name: string, price: number, description: string): JsonLdNode {
+  return {
+    "@type": "Offer",
+    name,
+    description,
+    price,
+    priceCurrency: "EUR",
+    url: absoluteUrl("/pricing"),
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price,
+      priceCurrency: "EUR",
+      unitCode: "MON",
+      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+    },
   };
 }
 
