@@ -62,6 +62,9 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
     ...(TWITTER_SITE ? { site: TWITTER_SITE } : {}),
   },
+  // Search Console ownership (URL-prefix property https://quantsentry.com/,
+  // owned by ms@quanttechnology.com). Removing this tag un-verifies the site.
+  verification: { google: "AwBZx9XVjpDeyVZ_N_4gmBiP3WC2LpPfxhRUDlcS7F0" },
   // No `robots` block here on purpose. A directive set on the root layout is
   // inherited by app/not-found.tsx too, which put `index, follow` on the 404
   // page next to its `noindex`. The indexing directives live in
