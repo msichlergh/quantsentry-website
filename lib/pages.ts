@@ -90,7 +90,7 @@ export const pages = {
   "pricing": {
     "label": "Pricing",
     "title": "Pricing: Prop Firm Risk Software from €750/mo | QuantSentry",
-    "description": "Three plans: Network, Platform and Managed Risk Service. Platform pricing scales with monthly active trading accounts, and annual billing saves 20%."
+    "description": "Three plans: Network, Platform and Risk Desk. Platform pricing scales with monthly active trading accounts, and annual billing saves 20%."
   },
   "proof": {
     "label": "Success Stories",
