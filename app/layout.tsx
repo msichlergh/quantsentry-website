@@ -4,6 +4,7 @@ import Script from "next/script";
 import type { ReactNode } from "react";
 
 import { SiteAnalytics } from "@/lib/analytics-provider";
+import { GoogleTagManager } from "@/lib/gtm";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -83,6 +84,9 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <JsonLd nodes={[organizationNode(), webSiteNode()]} />
       </head>
       <body className={dmSans.variable}>
+        {/* First in <body> so the <noscript> fallback is the first element, per
+            Google's placement guidance. The scripts themselves load after hydration. */}
+        <GoogleTagManager />
         <Header />
         {children}
         <Footer />
