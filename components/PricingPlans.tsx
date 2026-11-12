@@ -242,7 +242,7 @@ export function PricingPlans() {
     },
     {
       key: "desk",
-      name: "Managed Risk Service",
+      name: "Risk Desk",
       icon: UsersThree,
       includes: { name: "Platform", icon: SquaresFour },
       sub: "Run by Our Analysts",
