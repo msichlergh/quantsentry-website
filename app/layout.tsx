@@ -4,7 +4,7 @@ import Script from "next/script";
 import type { ReactNode } from "react";
 
 import { SiteAnalytics } from "@/lib/analytics-provider";
-import { GoogleTagManager } from "@/lib/gtm";
+import { GtmHead, GtmNoScript } from "@/lib/gtm";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -79,14 +79,16 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         {/* Preload the two faces used for above-the-fold text so `font-display: swap` never flashes. */}
         <link rel="preload" href="/fonts/general-sans-400.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/general-sans-500.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        {/* Google Tag Manager, in the server-rendered <head> (Linear YPF-1672). */}
+        <GtmHead />
         {/* Site-wide entity graph. Every page inherits it, and the `@id`s here
             are what the per-page BlogPosting / BreadcrumbList nodes point at. */}
         <JsonLd nodes={[organizationNode(), webSiteNode()]} />
       </head>
       <body className={dmSans.variable}>
-        {/* First in <body> so the <noscript> fallback is the first element, per
-            Google's placement guidance. The scripts themselves load after hydration. */}
-        <GoogleTagManager />
+        {/* GTM <noscript> fallback, first in <body> per Google's placement
+            guidance. The GTM scripts themselves are in <head> above. */}
+        <GtmNoScript />
         <Header />
         {children}
         <Footer />
