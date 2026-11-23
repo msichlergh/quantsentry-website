@@ -89,4 +89,14 @@ export const resourceLinks = [
     label: "Roadmap",
     description: "What's live and what's next",
   },
+  {
+    href: "/changelog",
+    label: "Changelog",
+    description: "New features and fixes",
+  },
+  {
+    href: "/docs",
+    label: "Help Center",
+    description: "Product guides and documentation",
+  },
 ] as const;
