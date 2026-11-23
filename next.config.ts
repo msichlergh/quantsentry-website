@@ -100,6 +100,24 @@ const nextConfig: NextConfig = {
         destination: "/network",
         permanent: true,
       },
+      // The product changelog and help center live on the Productlane portal.
+      // Short quantsentry.com paths so links and emails never need the vendor
+      // URL. Temporary (307) so the target can move without stale caches.
+      {
+        source: "/changelog",
+        destination: "https://quantsentry.productlane.com/changelog",
+        permanent: false,
+      },
+      {
+        source: "/docs",
+        destination: "https://quantsentry.productlane.com/docs",
+        permanent: false,
+      },
+      {
+        source: "/help",
+        destination: "https://quantsentry.productlane.com/docs",
+        permanent: false,
+      },
     ];
   },
 };

@@ -23,6 +23,8 @@ const footerGroups = [
       ["Blind Spot Finder", "/diagnostic"],
       ["Trading Risk Comparison", "/compare"],
       ["Roadmap", "/roadmap"],
+      ["Changelog", "/changelog"],
+      ["Help Center", "/docs"],
     ],
   },
   {

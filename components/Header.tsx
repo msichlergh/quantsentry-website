@@ -10,8 +10,10 @@ import { DatabaseIcon as Database } from "@phosphor-icons/react/dist/csr/Databas
 import { FileTextIcon as FileText } from "@phosphor-icons/react/dist/csr/FileText";
 import { GaugeIcon as Gauge } from "@phosphor-icons/react/dist/csr/Gauge";
 import { GlobeIcon as Globe } from "@phosphor-icons/react/dist/csr/Globe";
+import { LifebuoyIcon as Lifebuoy } from "@phosphor-icons/react/dist/csr/Lifebuoy";
 import { MapTrifoldIcon as MapTrifold } from "@phosphor-icons/react/dist/csr/MapTrifold";
 import { PlugsConnectedIcon as PlugsConnected } from "@phosphor-icons/react/dist/csr/PlugsConnected";
+import { RocketLaunchIcon as RocketLaunch } from "@phosphor-icons/react/dist/csr/RocketLaunch";
 import { ShareNetworkIcon as ShareNetwork } from "@phosphor-icons/react/dist/csr/ShareNetwork";
 import { SparkleIcon as Sparkle } from "@phosphor-icons/react/dist/csr/Sparkle";
 import { SquaresFourIcon as SquaresFour } from "@phosphor-icons/react/dist/csr/SquaresFour";
@@ -38,6 +40,8 @@ function MenuIcon({ href }: { href: string }) {
   if (href === "/proof") return <Trophy {...props} />;
   if (href === "/roadmap") return <MapTrifold {...props} />;
   if (href === "/integrations") return <PlugsConnected {...props} />;
+  if (href === "/changelog") return <RocketLaunch {...props} />;
+  if (href === "/docs") return <Lifebuoy {...props} />;
   return <FileText {...props} />;
 }
 
