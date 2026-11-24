@@ -2052,6 +2052,18 @@ footer .brand { font-size: 26.93px; }
   background: linear-gradient(180deg, #ffffff 0%, #fdfefd 64%, #fafbfa 100%);
   box-shadow: 0 1px 2px rgba(21, 32, 33, .04), 0 14px 30px rgba(21, 32, 33, .06);
 }
+/* The standard card is always white, so it carries the light tokens itself.
+   Without this it inherits dark-theme text colours when placed in a dark
+   section (e.g. "More from <author>" under an article). */
+.insight-card:not(.insight-card-featured) {
+  --panel2: #f0f2ef;
+  --hair: #ced4d0;
+  --ink: #152021;
+  --ink2: #3d4a4b;
+  --ink3: #5f6d6f;
+  --ink4: #637173;
+  --cy: #087c7a;
+}
 .insight-card-main {
   display: flex;
   min-height: 0;
