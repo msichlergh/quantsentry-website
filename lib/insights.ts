@@ -86,6 +86,91 @@ export const insightAuthors = [
 
 export const insightArticles = [
   {
+    slug: "cross-account-hedging-prop-firm-payout-fraud",
+    title: "Cross-Account Hedging: How One Trader Farmed Payouts Across 15+ Accounts",
+    summary:
+      "A QuantSentry customer win: one trader hedged gold across more than 15 prop firm accounts and shared one device with two other account holders. Over $30k in further payouts stopped.",
+    category: "Industry Insights",
+    publishedAt: "2026-11-24",
+    publishedLabel: "24 Nov 2026",
+    readTime: "4 min read",
+    authorSlug: "akash-thakrar",
+    sections: [
+      {
+        heading: "One Trader, Two Rules Broken",
+        paragraphs: [
+          "This week's QuantSentry customer win started with what looked like a group of ordinary, profitable traders. Each account passed its evaluation, traded within the rules and made normal payout requests. Reviewed one at a time, nothing stood out.",
+          "Reviewed together, the picture changed. More than 15 of those accounts belonged to a single trader, and he was breaking two rules at once: hedging his own accounts against each other, and sharing a device and connection with other account holders.",
+        ],
+      },
+      {
+        heading: "Rule One: Hedging Across His Own Accounts",
+        paragraphs: [
+          "Cross-account hedging means opening opposite positions on the same instrument in different accounts at the same time. In this case, the trader went long gold on one account and short gold on another, at the same moment, dozens of times.",
+          "The scheme works because a prop firm pays out on profitable funded accounts but does not charge the trader for the losing side. Whichever direction gold moved, one account won and one account lost. Every payout request came from the winning side of the hedge. Across all his accounts together, the trader was actually making a loss. The firm's payouts were his only real profit.",
+        ],
+        list: [
+          "Opposite positions on the same instrument, opened within moments of each other.",
+          "Repeated dozens of times across more than 15 accounts.",
+          "Payouts requested only from the winning accounts.",
+          "A net trading loss once every account is added together.",
+        ],
+      },
+      {
+        heading: "Rule Two: Device and IP Sharing",
+        paragraphs: [
+          "The second signal was identity. Three different account holders logged in from the same browser and the same internet connection, minutes apart. Across the firm's entire book, it was the only device ever shared by three people.",
+          "Device and IP sharing on its own can have innocent explanations, such as a shared office or a family household. Combined with coordinated, opposite trades on the linked accounts, it pointed to one person controlling accounts registered to others.",
+        ],
+      },
+      {
+        heading: "Why Single-Account Reviews Miss This",
+        paragraphs: [
+          "None of this showed up one account at a time. Each account looked like a decent trader with an ordinary payout history. The abuse only exists in the relationship between accounts: the timing of opposite trades, the shared device and the combined profit and loss.",
+          "This is why multi-account fraud is so expensive for prop firms. Most risk checks look at accounts in isolation, so a well-run hedging scheme passes every individual check while the firm pays out on every winning leg.",
+        ],
+      },
+      {
+        heading: "How the Case Was Built",
+        paragraphs: [
+          "Before the trader's next payout went out, the QuantSentry team built a full evidence pack for the firm:",
+        ],
+        list: [
+          "Every linked account reconciled to the firm's own ledger, so the numbers matched the firm's records exactly.",
+          "More than 16,000 position pairs tested across the accounts, every pair, not a sample.",
+          "All other explanations ruled out before the case reached the firm.",
+          "Interview questions prepared by our white glove Risk Desk team, so the firm could put the evidence to the trader directly.",
+        ],
+        quote: {
+          name: "Akash Thakrar",
+          role: "Head of Corporate Development, QuantSentry",
+          text: "Having multiple accounts wasn't the problem. Betting against himself across them was.",
+        },
+      },
+      {
+        heading: "The Outcome: Over $30k in Payouts Stopped",
+        paragraphs: [
+          "More than $30k in further payouts were stopped before they went out. The firm's own team made the final call, with the evidence in hand and the interview questions ready.",
+          "That split matters. QuantSentry finds the pattern, proves it and prepares the case. The decision to withhold a payout or close an account stays with the firm.",
+        ],
+      },
+      {
+        heading: "How QuantSentry Protects Prop Firm Payouts",
+        paragraphs: [
+          "Every part of this case runs on capabilities that are live today, across CFD and futures prop firms on MT4, MT5, cTrader, DXtrade, TradeLocker, Match-Trader, Volumetrica and Rithmic:",
+        ],
+        list: [
+          "Seven detection engines, including copy trading, hedging and Martingale, on every plan.",
+          "Argus AI, which watches the firm's book around the clock and answers risk questions.",
+          "The Risk Intelligence Network, which spots repeat bad actors seen at other firms without sharing identities.",
+          "The Risk Desk, a white glove team that works the payout queue alongside the firm's own risk team.",
+        ],
+      },
+    ],
+    takeaway:
+      "Cross-account hedging hides in plain sight: every account looks clean on its own. Linking accounts by device, timing and combined profit and loss is what exposes it, and evidence built before the next payout is what stops it. Want to know what your own book is hiding? Ask for a Complimentary Risk Audit.",
+  },
+  {
     slug: "why-prop-firms-need-dedicated-risk-management",
     title: "Why Prop Firms Need Dedicated Risk Management",
     summary:
