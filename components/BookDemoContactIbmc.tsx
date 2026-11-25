@@ -11,10 +11,10 @@ import { useEffect, useRef, useState } from "react";
 //   - no Turnstile: the test route does not verify it
 // BookDemoContact itself is untouched.
 
-// Off until IBMC workspace intake is switched on. While it is off IBMC drops
-// every submission before reading it, so the form is shown but cannot be sent.
-// Flip to true once intake is on and IBMC_FORM_URL / IBMC_FORM_SECRET are set.
-const CONNECTED = false;
+// Sending switch. IBMC workspace intake is on, so the form sends. Set to false
+// to show the form without sending (IBMC drops every submission while intake
+// is off). Needs IBMC_FORM_URL / IBMC_FORM_SECRET set, or the route answers 503.
+const CONNECTED = true;
 
 const emailOk = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
 
