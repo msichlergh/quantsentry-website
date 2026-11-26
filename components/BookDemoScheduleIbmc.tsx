@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { Icon } from "@/components/BookDemoWizard";
 import type { Slot, SlotsView } from "@/lib/ibmc-booking";
@@ -44,8 +44,12 @@ export function BookDemoScheduleIbmc({
 }: {
   receiptId: string;
   onBooked: (startIso: string, timezone: string) => void;
-  /** IBMC holds a time but has not confirmed it yet; null when the time is not known. */
-  onConfirming: (startIso: string | null, timezone: string) => void;
+  /**
+   * IBMC holds a time but has not confirmed it yet (booked false), or the
+   * receipt is already booked from elsewhere (booked true). startIso is null
+   * when the time is not known.
+   */
+  onConfirming: (startIso: string | null, timezone: string, booked: boolean) => void;
   /** The 24h receipt is gone. The visitor gets the usual confirmation. */
   onExpired: () => void;
   /** "Not now": the usual confirmation, we reply within 24 hours. */
@@ -59,6 +63,17 @@ export function BookDemoScheduleIbmc({
   const [picked, setPicked] = useState<Slot | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  // The time IBMC is confirming. Kept apart from `picked`, which the
+  // calendar can clear.
+  const [holding, setHolding] = useState<Slot | null>(null);
+  // Polling stops when the picker goes away.
+  const alive = useRef(true);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+    };
+  }, []);
 
   const load = useCallback(async () => {
     setPhase("loading");
@@ -71,7 +86,7 @@ export function BookDemoScheduleIbmc({
       }
       const v = data as unknown as SlotsView;
       // This receipt already holds a time (a lost reply, a second tab).
-      if (PENDING.has(v.status)) return onConfirming(null, zone);
+      if (PENDING.has(v.status)) return onConfirming(null, zone, v.status === "booked");
       setView(v);
       setPhase("ready");
       // Open on the month of the first free time.
@@ -133,8 +148,10 @@ export function BookDemoScheduleIbmc({
 
   const waitForConfirmation = async (slot: Slot) => {
     setPhase("confirming");
+    setHolding(slot);
     for (let i = 0; i < CONFIRM_POLLS; i++) {
       await new Promise((r) => setTimeout(r, CONFIRM_POLL_MS));
+      if (!alive.current) return;
       try {
         const { http, data } = await callBooking({ action: "slots", receiptId });
         if (http === 404) return onExpired();
@@ -142,6 +159,7 @@ export function BookDemoScheduleIbmc({
         if (data.status === "available") {
           // The hold did not stick: back to the picker with fresh times.
           setPicked(null);
+          setHolding(null);
           setNotice("That time could not be confirmed. Please pick another.");
           setView(data as unknown as SlotsView);
           setPhase("ready");
@@ -152,7 +170,7 @@ export function BookDemoScheduleIbmc({
       }
     }
     // Still confirming: the time is held. Say so, and let email take over.
-    onConfirming(isoOf(slot), zone);
+    onConfirming(isoOf(slot), zone, false);
   };
 
   const minutes = view?.durationMinutes;
@@ -166,6 +184,7 @@ export function BookDemoScheduleIbmc({
   const keyFor = (d: number) => slotDayKey(new Date(shown.getFullYear(), shown.getMonth(), d));
   const times = day ? byDay.get(day) || [] : [];
   const moveMonth = (delta: number) => {
+    if (phase === "confirming") return;
     const m = new Date(shown.getFullYear(), shown.getMonth() + delta, 1);
     if (m < new Date(today.getFullYear(), today.getMonth(), 1)) return;
     setMonth(m);
@@ -220,7 +239,7 @@ export function BookDemoScheduleIbmc({
                   key={i}
                   type="button"
                   className={cls}
-                  disabled={!avail}
+                  disabled={!avail || phase === "confirming"}
                   onClick={() => {
                     setDay(k);
                     setPicked(null);
@@ -236,8 +255,8 @@ export function BookDemoScheduleIbmc({
         <div className="bd-cal-right">
           <div className="bd-cal-right-in">
             {phase === "confirming" ? (
-              <div className="bd-cal-note">
-                Confirming {picked ? slotLabel(isoOf(picked), zone) : "your time"}… This can take a moment.
+              <div className="bd-cal-note" role="status" aria-live="polite">
+                Confirming {holding ? slotLabel(isoOf(holding), zone) : "your time"}… This can take a moment.
               </div>
             ) : phase === "loading" ? (
               <div className="bd-cal-note">Loading available times…</div>
