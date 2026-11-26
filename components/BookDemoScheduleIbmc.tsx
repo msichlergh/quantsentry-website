@@ -108,7 +108,9 @@ export function BookDemoScheduleIbmc({
       );
       await load();
     } catch {
-      setNotice("We could not book that time. Please try again.");
+      // The reply was lost, not necessarily the booking: IBMC may have booked
+      // it. Don't say it failed, or the visitor books a second time.
+      setNotice("We lost the connection before that time was confirmed. Check your email for an invite before picking another time.");
       await load();
     } finally {
       setBusy(false);
