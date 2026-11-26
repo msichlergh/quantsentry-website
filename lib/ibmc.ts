@@ -84,7 +84,7 @@ const BOOKING_STATUS_RE = /^[a-z_]{1,32}$/;
  * host as the form's ingestion URL, so a bad response cannot send the visitor
  * anywhere else.
  */
-export function readBooking(data: unknown, formUrl: string): IbmcBooking | null {
+function readBooking(data: unknown, formUrl: string): IbmcBooking | null {
   if (!data || typeof data !== "object" || Array.isArray(data)) return null;
   const booking = (data as Record<string, unknown>).booking;
   if (!booking || typeof booking !== "object" || Array.isArray(booking)) return null;
