@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import { BookDemoBooking } from "@/components/BookDemoWizard";
 import { BookDemoContactIbmc } from "@/components/BookDemoContactIbmc";
 import { pages } from "@/lib/pages";
 
@@ -21,7 +20,7 @@ export const metadata: Metadata = buildMetadata({
 export default function Demo2Page() {
   return (
     <main className="page-content">
-      {/* Hero — centred above the booking card. */}
+      {/* Hero. */}
       <section className="hero dots bd-hero">
         <div className="wrap">
           <div className="kicker">
@@ -38,10 +37,8 @@ export default function Demo2Page() {
         </div>
       </section>
 
-      {/* Booking wizard + assurance strip. */}
-      <section className="bd-focus">
-        <BookDemoBooking />
-      </section>
+      {/* No booking wizard on this page: it books through GoHighLevel, and the
+          IBMC pilot only covers the contact form below. /demo keeps it. */}
 
       {/* How you turn it on — carried over from the previous demo page. */}
       <section className="theme-light">
