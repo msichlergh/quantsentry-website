@@ -18,6 +18,12 @@ import { createHmac } from "node:crypto";
 //   x-ibmc-webhook-signature  HMAC-SHA256 with the form credential over
 //                             `v1.<timestamp>.<eventId>.<raw body bytes>`,
 //                             64 lowercase hex chars, no `v1=` prefix
+//
+// Booking: when the IBMC form has booking on, an accepted response carries
+// `{ booking: { status, url } }`. The visitor opens that url on IBMC's hosted
+// page to pick a time. The url holds an opaque token in its fragment, so it is
+// never logged, and it is only passed on when it is https on the same host as
+// IBMC_FORM_URL.
 
 const HEADER = {
   version: "x-ibmc-webhook-version",
@@ -60,7 +66,48 @@ export type IbmcResult = {
   reason: string | null;
   /** Short, log-safe view of a successful response (keys + flags only). */
   summary: string | null;
+  /**
+   * Hosted booking link from an accepted response, already validated. The url
+   * carries a secret token in its fragment: never log it.
+   */
+  booking: IbmcBooking | null;
 };
+
+export type IbmcBooking = { status: string; url: string };
+
+const BOOKING_URL_MAX = 2048;
+const BOOKING_STATUS_RE = /^[a-z_]{1,32}$/;
+
+/**
+ * The booking link from an accepted response, or null. Accepts any status (a
+ * de-duplicated retry may not say "pending"), but only an https url on the same
+ * host as the form's ingestion URL, so a bad response cannot send the visitor
+ * anywhere else.
+ */
+export function readBooking(data: unknown, formUrl: string): IbmcBooking | null {
+  if (!data || typeof data !== "object" || Array.isArray(data)) return null;
+  const booking = (data as Record<string, unknown>).booking;
+  if (!booking || typeof booking !== "object" || Array.isArray(booking)) return null;
+  const { url, status } = booking as Record<string, unknown>;
+  if (typeof url !== "string" || url.length > BOOKING_URL_MAX) return null;
+
+  let parsed: URL;
+  let formHost: string;
+  try {
+    parsed = new URL(url);
+    formHost = new URL(formUrl).host;
+  } catch {
+    return null;
+  }
+  if (parsed.protocol !== "https:") return null;
+  if (parsed.host !== formHost) return null;
+  if (parsed.username || parsed.password) return null;
+
+  return {
+    status: typeof status === "string" && BOOKING_STATUS_RE.test(status) ? status : "unknown",
+    url: parsed.href,
+  };
+}
 
 /** Env var NAMES that are missing. Never values. */
 export function missingIbmcConfig(): string[] {
@@ -107,6 +154,7 @@ export async function submitToIbmc(payload: IbmcPayload, eventId: string): Promi
     status: res.status,
     reason: res.ok ? null : readReason(data),
     summary: res.ok ? summarise(data) : null,
+    booking: res.ok ? readBooking(data, url) : null,
   };
 }
 
@@ -140,13 +188,17 @@ const SAFE_VALUE_KEYS = new Set([
   "id",
 ]);
 
+const SAFE_STRING_RE = /^[\w.:-]{1,64}$/;
+
 function summarise(data: unknown): string | null {
   if (!data || typeof data !== "object" || Array.isArray(data)) return null;
   return Object.entries(data as Record<string, unknown>)
     .map(([k, v]) => {
       if (!SAFE_VALUE_KEYS.has(k)) return k;
       if (typeof v === "boolean" || typeof v === "number") return `${k}=${v}`;
-      if (typeof v === "string" && v.length <= 64) return `${k}=${v}`;
+      // Token-like strings only, so a url (and its fragment) never prints,
+      // even under an allowlisted key.
+      if (typeof v === "string" && SAFE_STRING_RE.test(v)) return `${k}=${v}`;
       return k;
     })
     .join(" ");

@@ -53,6 +53,11 @@ export function BookDemoContactIbmc() {
   const [busy, setBusy] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // IBMC's hosted booking link, when the form has booking on. It carries a
+  // secret token in its fragment: held in state only, never stored, logged or
+  // tracked, and opened from a button rather than an href so click-tracking
+  // tags never see it.
+  const [bookingUrl, setBookingUrl] = useState<string | null>(null);
   // Stamped on mount: the route's sub-2s timing check measures from when a
   // human could first see the form.
   const renderedAt = useRef(0);
@@ -106,6 +111,7 @@ export function BookDemoContactIbmc() {
         ok?: boolean;
         error?: string;
         errors?: Record<string, string>;
+        bookingUrl?: unknown;
       } | null;
       if (!res.ok || !data?.ok) {
         setErrors(data?.errors || {});
@@ -114,6 +120,10 @@ export function BookDemoContactIbmc() {
         return;
       }
       attempt.current = null;
+      // The route already checked host and scheme; this keeps a javascript:
+      // url out of location.assign regardless.
+      const link = data.bookingUrl;
+      setBookingUrl(typeof link === "string" && link.startsWith("https://") ? link : null);
       setSent(true);
     } catch {
       setError("Something went wrong. Please try again.");
@@ -125,7 +135,20 @@ export function BookDemoContactIbmc() {
     return (
       <div className="bd-contact-done" role="status">
         <h3>Message received.</h3>
-        <p>We reply within 24 hours.</p>
+        {bookingUrl ? (
+          <>
+            <p>Choose a time for a call, or wait for our reply within 24 hours.</p>
+            <button
+              type="button"
+              className="btn solid"
+              onClick={() => window.location.assign(bookingUrl)}
+            >
+              <span>Choose a time</span>
+            </button>
+          </>
+        ) : (
+          <p>We reply within 24 hours.</p>
+        )}
         <button
           type="button"
           className="bd-btn-link"
@@ -133,6 +156,7 @@ export function BookDemoContactIbmc() {
             setSent(false);
             setBusy(false);
             setMessage("");
+            setBookingUrl(null);
           }}
         >
           Send another
@@ -234,7 +258,7 @@ export function BookDemoContactIbmc() {
 
       <div className="bd-contact-foot">
         {CONNECTED ? (
-          <p className="bd-fine">Your details are used to reply, nothing else.</p>
+          <p className="bd-fine">Your details are used to reply and to arrange a call, nothing else.</p>
         ) : (
           <p className="bd-fine">
             Not connected yet. To reach us, use the form on the <Link href="/demo">demo page</Link>.

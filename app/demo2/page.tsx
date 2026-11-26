@@ -37,8 +37,9 @@ export default function Demo2Page() {
         </div>
       </section>
 
-      {/* No booking wizard on this page: it books through GoHighLevel, and the
-          IBMC pilot only covers the contact form below. /demo keeps it. */}
+      {/* No booking wizard on this page: it books through GoHighLevel. Here the
+          visitor books on IBMC's hosted page, offered once the contact form
+          below is accepted. /demo keeps the wizard. */}
 
       {/* How you turn it on — carried over from the previous demo page. */}
       <section className="theme-light">
@@ -83,7 +84,8 @@ export default function Demo2Page() {
         </div>
       </section>
 
-      {/* Talk to us — this copy posts to IBMC, not to the wizard's pipeline. */}
+      {/* Talk to us: this copy posts to IBMC, not to the wizard's pipeline. When
+          IBMC returns a booking link, the form offers "Choose a time". */}
       <section>
         <div className="wrap">
           <div className="grid g2" style={{ gap: 44, alignItems: "start" }}>
@@ -93,13 +95,14 @@ export default function Demo2Page() {
                 <span>Talk to Us</span>
               </div>
               <h2>
-                Not ready to book?
+                Send a message.
                 <br />
-                <span className="c">Send a message.</span>
+                <span className="c">Then pick a time to talk.</span>
               </h2>
               <p className="lede" style={{ marginTop: 18 }}>
-                Sales, product and partnership questions all land with the team directly. We
-                reply within 24 hours.
+                Sales, product and partnership questions all land with the team directly. Once
+                your message is in, you can choose a time for a call, or wait for our reply
+                within 24 hours.
               </p>
             </div>
             <div className="panel bd-panel">
