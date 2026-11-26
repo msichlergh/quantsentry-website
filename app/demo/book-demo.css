@@ -814,6 +814,11 @@ section.bd-focus {
   color: var(--ink3);
   margin-bottom: 16px;
 }
+/* /demo2 only: IBMC's "Choose a time" button, with "Send another" below it. */
+.bd-contact-done .btn + .bd-btn-link {
+  display: block;
+  margin-top: 14px;
+}
 
 /* ---------- Turnstile ----------
    Cloudflare's widget, rendered only when NEXT_PUBLIC_TURNSTILE_SITE_KEY is

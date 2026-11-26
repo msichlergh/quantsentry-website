@@ -14,6 +14,10 @@
 //
 // No fallback: when IBMC refuses, the visitor sees an error and the log says
 // why. This page exists to find out whether the integration works.
+//
+// When IBMC accepts with a booking link, the validated url goes back to the
+// browser as `bookingUrl` so the visitor can pick a time on IBMC's hosted page.
+// It carries a secret token: the log only says booking=yes|no.
 import { randomUUID } from "node:crypto";
 
 import { SITE_URL } from "@/app/_seo/site";
@@ -139,8 +143,22 @@ export async function POST(request: Request) {
         502,
       );
     }
-    console.log("[ibmc] accepted:", result.status, `event ${eventId}`, result.summary || "");
-    return json({ ok: true, delivered: true }, 200, rateLimitHeaders(ipLimit));
+    console.log(
+      "[ibmc] accepted:",
+      result.status,
+      `event ${eventId}`,
+      result.summary || "",
+      result.booking ? "booking=yes" : "booking=no",
+    );
+    return json(
+      {
+        ok: true,
+        delivered: true,
+        ...(result.booking ? { bookingUrl: result.booking.url } : {}),
+      },
+      200,
+      rateLimitHeaders(ipLimit),
+    );
   } catch (err) {
     console.error("[ibmc] request failed:", err instanceof Error ? err.message : String(err));
     return json(
