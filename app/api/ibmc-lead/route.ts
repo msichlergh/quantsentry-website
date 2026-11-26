@@ -17,7 +17,8 @@
 //
 // When IBMC accepts with a booking link, the validated url goes back to the
 // browser as `bookingUrl` so the visitor can pick a time on IBMC's hosted page.
-// It carries a secret token: the log only says booking=yes|no.
+// It carries a secret token: the log only says booking=<status>, a short
+// lowercase word, or booking=- when there is no booking link.
 import { randomUUID } from "node:crypto";
 
 import { SITE_URL } from "@/app/_seo/site";
@@ -148,7 +149,8 @@ export async function POST(request: Request) {
       result.status,
       `event ${eventId}`,
       result.summary || "",
-      result.booking ? "booking=yes" : "booking=no",
+      // Status only, never the url. Shows what IBMC sends on de-duplicated retries.
+      `booking=${result.booking ? result.booking.status : "-"}`,
     );
     return json(
       {
