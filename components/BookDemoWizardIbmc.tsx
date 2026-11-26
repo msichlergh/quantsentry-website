@@ -335,7 +335,10 @@ function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
                   <BdDialPicker
                     country={form.country}
                     dial={form.dial}
-                    onPick={(cc) => setForm((f) => ({ ...f, country: cc, dial: DIAL_CODES[cc] || "" }))}
+                    onPick={(cc) => {
+                      setForm((f) => ({ ...f, country: cc, dial: DIAL_CODES[cc] || "" }));
+                      dropErr("phone");
+                    }}
                   />
                   <input
                     type="tel"
