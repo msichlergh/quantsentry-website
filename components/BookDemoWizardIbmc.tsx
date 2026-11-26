@@ -22,7 +22,7 @@ import {
   type StepId,
 } from "@/components/BookDemoWizard";
 import { DIAL_CODES } from "@/lib/dial-codes";
-import { detectCountry, type LeadForm } from "@/lib/lead-client";
+import { detectCountry, slotLabel, tzOffsetLabel, type LeadForm } from "@/lib/lead-client";
 
 // /demo2 copy of the demo wizard that posts to the IBMC test route
 // (/api/ibmc-lead, `kind: "wizard"`) instead of /api/lead. Same markup and
@@ -478,12 +478,95 @@ function BookDemoChooseTime({ url, onReset }: { url: string; onReset: () => void
   );
 }
 
-type Sent = Accepted | { kind: "booked"; startIso: string; timezone: string };
+type Sent =
+  | Accepted
+  | { kind: "booked"; startIso: string; timezone: string }
+  | { kind: "confirming"; startIso: string | null; timezone: string; booked: boolean };
+
+// IBMC holds the time but its host calendar has not confirmed it yet, so it
+// must not say "You are booked". `booked` is the other case this screen
+// covers: the receipt was already booked elsewhere and the time is unknown.
+function BookDemoConfirmingIbmc({
+  startIso,
+  timezone,
+  booked,
+  onReset,
+}: {
+  startIso: string | null;
+  timezone: string;
+  booked: boolean;
+  onReset: () => void;
+}) {
+  let when = "";
+  if (startIso) {
+    let day: string;
+    try {
+      day = new Intl.DateTimeFormat("en-GB", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        timeZone: timezone || undefined,
+      }).format(new Date(startIso));
+    } catch {
+      day = new Date(startIso).toDateString();
+    }
+    // Same time format as the picker.
+    when = `${day} at ${slotLabel(startIso, timezone || undefined)}`;
+  }
+  if (booked) {
+    return (
+      <div className="bd-confirm">
+        <div className="bd-confirm-ico">
+          <Icon name="check" size={28} stroke={2} />
+        </div>
+        <h3 className="bd-confirm-h">You are booked.</h3>
+        <p className="bd-confirm-p">Your calendar invite is on its way by email.</p>
+        <div className="bd-confirm-actions">
+          <button type="button" className="bd-btn-link" onClick={onReset}>
+            Send another
+          </button>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="bd-confirm">
+      <div className="bd-confirm-ico">
+        <Icon name="clock" size={28} stroke={2} />
+      </div>
+      <h3 className="bd-confirm-h">Almost done.</h3>
+      <p className="bd-confirm-p">
+        {when ? (
+          <>
+            We are confirming <strong>{when}</strong>
+            {timezone ? ` (${tzOffsetLabel(timezone)})` : ""}. You will get an email once it is confirmed. If
+            that time falls through, we will reply within 24 hours.
+          </>
+        ) : (
+          <>
+            We are confirming your time. You will get an email once it is confirmed. If that time falls through,
+            we will reply within 24 hours.
+          </>
+        )}
+      </p>
+      <div className="bd-confirm-actions">
+        <button type="button" className="bd-btn-link" onClick={onReset}>
+          Send another
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export function BookDemoBookingIbmc() {
   const [sent, setSent] = useState<Sent | null>(null);
   const reset = () => setSent(null);
   const plain = useCallback(() => setSent({ kind: "plain" }), []);
+  const confirming = useCallback(
+    (startIso: string | null, timezone: string, booked: boolean) =>
+      setSent({ kind: "confirming", startIso, timezone, booked }),
+    [],
+  );
 
   return (
     <div className="bd-focus-inner">
@@ -497,6 +580,14 @@ export function BookDemoBookingIbmc() {
               onBooked={(startIso, timezone) => setSent({ kind: "booked", startIso, timezone })}
               onExpired={plain}
               onSkip={plain}
+              onConfirming={confirming}
+            />
+          ) : sent.kind === "confirming" ? (
+            <BookDemoConfirmingIbmc
+              startIso={sent.startIso}
+              timezone={sent.timezone}
+              booked={sent.booked}
+              onReset={reset}
             />
           ) : sent.kind === "hosted" ? (
             <BookDemoChooseTime url={sent.url} onReset={reset} />

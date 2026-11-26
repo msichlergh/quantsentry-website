@@ -114,3 +114,22 @@ describe("POST /api/ibmc-booking receipt scoping", () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 });
+
+describe("POST /api/ibmc-booking confirming", () => {
+  it("keeps the session while IBMC is confirming, and clears it once slots say booked", async () => {
+    fetchMock.mockResolvedValueOnce(ibmc(200, { status: "confirming" }));
+    const held = await call({ action: "book", receiptId: "r-1", slot: SLOT });
+    expect(await held.json()).toEqual({ status: "confirming" });
+    expect(held.headers.get("set-cookie")).toBeNull();
+
+    fetchMock.mockResolvedValueOnce(ibmc(200, { status: "confirming", slots: [] }));
+    const still = await call({ action: "slots", receiptId: "r-1" });
+    expect(await still.json()).toEqual({ status: "confirming", recordingEnabled: false, slots: [] });
+    expect(still.headers.get("set-cookie")).toBeNull();
+
+    fetchMock.mockResolvedValueOnce(ibmc(200, { status: "booked", slots: [] }));
+    const done = await call({ action: "slots", receiptId: "r-1" });
+    expect((await done.json()).status).toBe("booked");
+    expect(done.headers.get("set-cookie")).toMatch(/Max-Age=0/);
+  });
+});

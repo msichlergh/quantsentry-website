@@ -64,7 +64,13 @@ export async function POST(request: Request) {
       const reply = await requestBooking(session, { action: "slots" });
       if (reply.httpStatus === 404) return expired();
       if (reply.httpStatus >= 400) return json({ status: "error" }, 502);
-      return json({ ...safeSlots(reply.data) }, 200, rateLimitHeaders(limit));
+      const view = safeSlots(reply.data);
+      // "booked" can arrive here after a "confirming" hold: the receipt is used
+      // up, so the token goes, as it does on a booked "book" answer.
+      return json({ ...view }, 200, {
+        ...rateLimitHeaders(limit),
+        ...(view.status === "booked" ? { "Set-Cookie": clearSessionCookie() } : {}),
+      });
     }
 
     if (action === "book") {
