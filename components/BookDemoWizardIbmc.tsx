@@ -26,8 +26,9 @@ import { detectCountry, type LeadForm } from "@/lib/lead-client";
 // /demo2 copy of the demo wizard that posts to the IBMC test route
 // (/api/ibmc-lead, `kind: "wizard"`) instead of /api/lead. Same markup and
 // classes as BookDemoWizard, which stays untouched for /demo. Differences:
-//   - four steps: the schedule step is on hold until IBMC booking is settled
-//     (iframe or redirect), so the request is sent from "Prepare"
+//   - four steps, sent from "Prepare". When IBMC returns a booking link, the
+//     confirmation offers "Choose a time" (IBMC's page) instead of the GHL
+//     calendar
 //   - each answer goes to its own IBMC form field, not a single message
 //   - no analytics and no Turnstile, as in BookDemoContactIbmc
 
@@ -58,7 +59,7 @@ const STEP_OF: Record<string, StepId> = {
   phone: "contact",
 };
 
-function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
+function BookDemoWizardIbmc({ onDone }: { onDone: (bookingUrl: string | null) => void }) {
   const [form, setForm] = useState<LeadForm>(EMPTY_FORM);
   const [i, setI] = useState(0);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -164,6 +165,7 @@ function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
         ok?: boolean;
         error?: string;
         errors?: Record<string, string>;
+        bookingUrl?: unknown;
       } | null;
       if (!res.ok || !data?.ok) {
         const fieldErrors = data?.errors || {};
@@ -175,10 +177,11 @@ function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
         setBusy(false);
         return;
       }
-      // IBMC may return a booking link. Not offered yet: the booking step is
-      // on hold until the iframe or redirect question is settled.
       attempt.current = null;
-      onDone();
+      // The route already checked host and scheme; this keeps a javascript:
+      // url out of location.assign regardless.
+      const link = data.bookingUrl;
+      onDone(typeof link === "string" && link.startsWith("https://") ? link : null);
     } catch {
       setError("Something went wrong. Please try again.");
       setBusy(false);
@@ -439,24 +442,56 @@ function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
   );
 }
 
+// Shown when IBMC returns a booking link. IBMC's booking page sends
+// frame-ancestors 'none', so it cannot be framed in the card; the visitor
+// opens it instead. The url carries a secret token in its fragment: held in
+// state only, never logged or tracked, and opened from a button rather than an
+// href so click-tracking tags never see it.
+function BookDemoChooseTime({ url, onReset }: { url: string; onReset: () => void }) {
+  return (
+    <div className="bd-confirm">
+      <div className="bd-confirm-ico">
+        <Icon name="check" size={28} stroke={2} />
+      </div>
+      <h3 className="bd-confirm-h">Request received.</h3>
+      <p className="bd-confirm-p">
+        Choose a time for your twenty minute call, or wait for our reply within 24 hours.
+      </p>
+      <div className="bd-confirm-actions">
+        <button type="button" className="btn solid" onClick={() => window.location.assign(url)}>
+          <span>Choose a time</span>
+        </button>
+        <button type="button" className="bd-btn-link" onClick={onReset}>
+          Send another
+        </button>
+      </div>
+    </div>
+  );
+}
+
+type Sent = { bookingUrl: string | null };
+
 export function BookDemoBookingIbmc() {
-  const [done, setDone] = useState(false);
+  const [sent, setSent] = useState<Sent | null>(null);
+  const reset = () => setSent(null);
 
   return (
     <div className="bd-focus-inner">
       <div className="bd-booking">
         <div className="bd-cal">
-          {done ? (
+          {sent?.bookingUrl ? (
+            <BookDemoChooseTime url={sent.bookingUrl} onReset={reset} />
+          ) : sent ? (
             <BookDemoConfirm
               picked={{ ok: true, delivered: true, booked: false, startIso: null, timezone: "" }}
-              onReset={() => setDone(false)}
+              onReset={reset}
             />
           ) : (
-            <BookDemoWizardIbmc onDone={() => setDone(true)} />
+            <BookDemoWizardIbmc onDone={(bookingUrl) => setSent({ bookingUrl })} />
           )}
         </div>
       </div>
-      {!done && <BookDemoAssurance />}
+      {!sent && <BookDemoAssurance />}
     </div>
   );
 }
