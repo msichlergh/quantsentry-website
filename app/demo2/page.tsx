@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 
 import { BookDemoContactIbmc } from "@/components/BookDemoContactIbmc";
+import { BookDemoBookingIbmc } from "@/components/BookDemoWizardIbmc";
 import { pages } from "@/lib/pages";
 
 import { buildMetadata } from "../_seo/metadata";
 
 import "../demo/book-demo.css";
 
-// IBMC integration test: a copy of /demo whose contact form posts to IBMC
-// through /api/ibmc-lead. Not in lib/pages.ts, so not in the sitemap, and
+// IBMC integration test: a copy of /demo whose demo wizard and contact form
+// post to IBMC through /api/ibmc-lead. Not in lib/pages.ts, so not in the sitemap, and
 // noindex so it never competes with /demo.
 export const metadata: Metadata = buildMetadata({
   title: pages.demo.title,
@@ -37,9 +38,11 @@ export default function Demo2Page() {
         </div>
       </section>
 
-      {/* No booking wizard on this page: it books through GoHighLevel. Here the
-          visitor books on IBMC's hosted page, offered once the contact form
-          below is accepted. /demo keeps the wizard. */}
+      {/* Demo wizard, posting to IBMC. Four steps: the schedule step is on
+          hold until IBMC booking is settled. /demo keeps the GHL wizard. */}
+      <section className="bd-focus">
+        <BookDemoBookingIbmc />
+      </section>
 
       {/* How you turn it on — carried over from the previous demo page. */}
       <section className="theme-light">
