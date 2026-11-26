@@ -154,6 +154,7 @@ export function BookDemoScheduleIbmc({
       if (!alive.current) return;
       try {
         const { http, data } = await callBooking({ action: "slots", receiptId });
+        if (!alive.current) return;
         if (http === 404) return onExpired();
         if (data.status === "booked") return onBooked(isoOf(slot), zone);
         if (data.status === "available") {
@@ -209,13 +210,25 @@ export function BookDemoScheduleIbmc({
       <div className="bd-cal-body bd-cal-split">
         <div className="bd-cal-left">
           <div className="bd-cal-monthnav">
-            <button type="button" className="bd-cal-navbtn" onClick={() => moveMonth(-1)} aria-label="Previous month">
+            <button
+              type="button"
+              className="bd-cal-navbtn"
+              onClick={() => moveMonth(-1)}
+              disabled={phase === "confirming"}
+              aria-label="Previous month"
+            >
               ‹
             </button>
             <div className="bd-cal-monthlbl">
               {shown.toLocaleDateString("en-GB", { month: "long", year: "numeric" })}
             </div>
-            <button type="button" className="bd-cal-navbtn" onClick={() => moveMonth(1)} aria-label="Next month">
+            <button
+              type="button"
+              className="bd-cal-navbtn"
+              onClick={() => moveMonth(1)}
+              disabled={phase === "confirming"}
+              aria-label="Next month"
+            >
               ›
             </button>
           </div>
