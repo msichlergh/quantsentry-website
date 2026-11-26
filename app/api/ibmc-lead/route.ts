@@ -197,8 +197,8 @@ function parseContact(body: Record<string, unknown>): Parsed {
   };
 }
 
-// Demo wizard: the same rules the wizard checks in the browser
-// (components/BookDemoWizard.tsx, bdStepErrors), checked again here. Empty
+// Demo wizard: the rules the wizard checks in the browser (stepErrors in
+// components/BookDemoWizardIbmc.tsx), checked again here. Empty
 // optional answers are left out. `source` is fixed here, never read from the
 // body.
 function parseWizard(body: Record<string, unknown>): Parsed {

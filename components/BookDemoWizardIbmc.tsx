@@ -34,6 +34,20 @@ import { detectCountry, type LeadForm } from "@/lib/lead-client";
 const STEPS = BD_STEPS.filter((s) => s.id !== "schedule");
 const NO_SLOT = { startIso: null, requireSlot: false };
 
+// The wizard's own rules plus one the route needs: IBMC stores the phone as
+// one international number, so a dial code is required and the whole number
+// must fit in 15 digits (E.164). /demo sends the national part alone and
+// does not need this.
+function stepErrors(id: StepId, form: LeadForm): Record<string, string> {
+  const e = bdStepErrors(id, form, NO_SLOT);
+  if (id === "contact" && !e.phone) {
+    const digits = `${form.dial}${form.phone}`.replace(/\D/g, "");
+    if (!form.dial) e.phone = "Pick your country code";
+    else if (digits.length > 15) e.phone = "That number is too long";
+  }
+  return e;
+}
+
 // Which step holds each field the route can reject.
 const STEP_OF: Record<string, StepId> = {
   intent: "intent",
@@ -95,7 +109,7 @@ function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
   }, []);
 
   const next = () => {
-    const e = bdStepErrors(step.id, form, NO_SLOT);
+    const e = stepErrors(step.id, form);
     setErrors(e);
     if (Object.keys(e).length) return;
     setI((n) => Math.min(n + 1, STEPS.length - 1));
@@ -107,12 +121,12 @@ function BookDemoWizardIbmc({ onDone }: { onDone: () => void }) {
     // Every step, not just this one: someone can reach the end and then go
     // back and empty a field.
     const all = STEPS.reduce<Record<string, string>>(
-      (acc, s) => ({ ...acc, ...bdStepErrors(s.id, form, NO_SLOT) }),
+      (acc, s) => ({ ...acc, ...stepErrors(s.id, form) }),
       {},
     );
     if (Object.keys(all).length) {
       setErrors(all);
-      setI(STEPS.findIndex((s) => Object.keys(bdStepErrors(s.id, form, NO_SLOT)).length));
+      setI(STEPS.findIndex((s) => Object.keys(stepErrors(s.id, form)).length));
       return;
     }
 
