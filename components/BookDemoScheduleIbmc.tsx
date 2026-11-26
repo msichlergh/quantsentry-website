@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { Icon } from "@/components/BookDemoWizard";
+import type { Slot, SlotsView } from "@/lib/ibmc-booking";
 import { localTimezone, slotDayKey, slotLabel, tzOffsetLabel } from "@/lib/lead-client";
 
 // /demo2 time picker for IBMC's booking API. Shown after the wizard is
@@ -10,15 +11,6 @@ import { localTimezone, slotDayKey, slotLabel, tzOffsetLabel } from "@/lib/lead-
 // holds the booking token server side: this page knows the receipt id, the
 // open slots and nothing else. Same month-and-times layout as the GHL picker
 // on /demo, in the browser's own time zone.
-
-type Slot = { startTime: number; endTime: number };
-type SlotsView = {
-  status: string;
-  title?: string;
-  durationMinutes?: number;
-  recordingEnabled: boolean;
-  slots: Slot[];
-};
 
 type Phase = "loading" | "ready" | "error";
 
@@ -112,7 +104,7 @@ export function BookDemoScheduleIbmc({
       setNotice(
         data.status === "slot_unavailable"
           ? "That time was just taken. Please pick another."
-          : "We could not book that time. Please try again.",
+          : "That time is not confirmed. Please pick a time again.",
       );
       await load();
     } catch {
@@ -216,6 +208,9 @@ export function BookDemoScheduleIbmc({
               <div className="bd-cal-note">No times are open right now. We will reply within 24 hours.</div>
             ) : !day ? (
               <div className="bd-cal-note bd-cal-note-quiet">Pick a day to see available times.</div>
+            ) : !times.length ? (
+              // A reload after a taken slot can empty the chosen day.
+              <div className="bd-cal-note">No times are left on that day. Please pick another day.</div>
             ) : (
               <>
                 <div className="bd-cal-times-head">

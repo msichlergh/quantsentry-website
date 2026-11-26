@@ -92,6 +92,25 @@ describe("POST /api/ibmc-lead booking hand-off", () => {
     expect(res.headers.get("set-cookie")).toBeNull();
   });
 
+  it("API delivery without a receipt id: usual confirmation, the token url never reaches the page", async () => {
+    vi.spyOn(console, "error").mockImplementation(() => {});
+    fetchMock.mockResolvedValue(
+      new Response(
+        JSON.stringify({
+          ok: true,
+          result: "pending_booking",
+          booking: { status: "pending", deliveryMethod: "api", url: `https://crm.example.test/form-booking#${TOKEN}` },
+        }),
+        { status: 200 },
+      ),
+    );
+    const res = await submit();
+    const text = await res.text();
+    expect(JSON.parse(text)).toEqual({ ok: true, delivered: true });
+    expect(text).not.toContain(TOKEN);
+    expect(res.headers.get("set-cookie")).toBeNull();
+  });
+
   it("no booking: the usual confirmation", async () => {
     fetchMock.mockResolvedValue(receipt());
     const res = await submit();

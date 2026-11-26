@@ -44,6 +44,11 @@ import {
 
 export const dynamic = "force-dynamic";
 
+// Worst case: two IBMC attempts at 8s each plus the 0.4s pause between them
+// (lib/ibmc.ts). Kept comfortably above that, so a slow retry is not cut off
+// after IBMC has the lead but before the visitor sees the answer.
+export const maxDuration = 25;
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
@@ -161,6 +166,12 @@ export async function POST(request: Request) {
     //   - otherwise, a booking link: the page offers IBMC's hosted page
     //   - no booking: the usual confirmation
     const session = sessionFromReceipt(result.booking, result.receiptId);
+    if (!session && result.booking?.deliveryMethod === "api") {
+      // The token is meant for the server only. Without a usable receipt id or
+      // token there is no API session, and the url must not reach the page.
+      console.error("[ibmc] api booking without a usable receipt; usual confirmation shown", `event ${eventId}`);
+      return json({ ok: true, delivered: true }, 200, rateLimitHeaders(ipLimit));
+    }
     if (session) {
       return json(
         { ok: true, delivered: true, booking: { mode: "api", receiptId: session.receiptId } },

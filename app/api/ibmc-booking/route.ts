@@ -53,11 +53,10 @@ export async function POST(request: Request) {
     readCookie(request.headers.get("cookie"), BOOKING_COOKIE),
     process.env.IBMC_FORM_SECRET || "",
   );
+  if (!session) return json({ status: "expired" }, 404, { "Set-Cookie": clearSessionCookie() });
   // The cookie belongs to one receipt. A page still holding an older receipt
-  // (another tab, "Send another") must not drive this one.
-  if (!session || body.receiptId !== session.receiptId) {
-    return json({ status: "expired" }, 404, { "Set-Cookie": clearSessionCookie() });
-  }
+  // (another tab, "Send another") must not drive this one, nor wipe it.
+  if (body.receiptId !== session.receiptId) return json({ status: "expired" }, 404);
 
   const action = body.action;
   try {

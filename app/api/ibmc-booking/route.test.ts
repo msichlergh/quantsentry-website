@@ -105,3 +105,12 @@ describe("POST /api/ibmc-booking", () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 });
+
+describe("POST /api/ibmc-booking receipt scoping", () => {
+  it("does not clear the live session when an older receipt calls", async () => {
+    const res = await call({ action: "slots", receiptId: "r-old" });
+    expect(res.status).toBe(404);
+    expect(res.headers.get("set-cookie")).toBeNull();
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+});
