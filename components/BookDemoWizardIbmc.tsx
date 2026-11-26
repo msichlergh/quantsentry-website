@@ -22,7 +22,7 @@ import {
   type StepId,
 } from "@/components/BookDemoWizard";
 import { DIAL_CODES } from "@/lib/dial-codes";
-import { detectCountry, type LeadForm } from "@/lib/lead-client";
+import { detectCountry, tzOffsetLabel, type LeadForm } from "@/lib/lead-client";
 
 // /demo2 copy of the demo wizard that posts to the IBMC test route
 // (/api/ibmc-lead, `kind: "wizard"`) instead of /api/lead. Same markup and
@@ -478,12 +478,70 @@ function BookDemoChooseTime({ url, onReset }: { url: string; onReset: () => void
   );
 }
 
-type Sent = Accepted | { kind: "booked"; startIso: string; timezone: string };
+type Sent =
+  | Accepted
+  | { kind: "booked"; startIso: string; timezone: string }
+  | { kind: "confirming"; startIso: string | null; timezone: string };
+
+// IBMC holds the time but its host calendar has not confirmed it yet. Not a
+// booking, so it must not say "You are booked".
+function BookDemoConfirmingIbmc({
+  startIso,
+  timezone,
+  onReset,
+}: {
+  startIso: string | null;
+  timezone: string;
+  onReset: () => void;
+}) {
+  let when = "";
+  if (startIso) {
+    try {
+      when = new Intl.DateTimeFormat("en-GB", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: timezone || undefined,
+      }).format(new Date(startIso));
+    } catch {
+      when = new Date(startIso).toLocaleString("en-GB");
+    }
+  }
+  return (
+    <div className="bd-confirm">
+      <div className="bd-confirm-ico">
+        <Icon name="clock" size={28} stroke={2} />
+      </div>
+      <h3 className="bd-confirm-h">Almost done.</h3>
+      <p className="bd-confirm-p">
+        {when ? (
+          <>
+            We are confirming <strong>{when}</strong>
+            {timezone ? ` (${tzOffsetLabel(timezone)})` : ""}. You will get an email once it is confirmed.
+          </>
+        ) : (
+          <>We are confirming your time. You will get an email once it is confirmed.</>
+        )}
+      </p>
+      <div className="bd-confirm-actions">
+        <button type="button" className="bd-btn-link" onClick={onReset}>
+          Send another
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export function BookDemoBookingIbmc() {
   const [sent, setSent] = useState<Sent | null>(null);
   const reset = () => setSent(null);
   const plain = useCallback(() => setSent({ kind: "plain" }), []);
+  const confirming = useCallback(
+    (startIso: string | null, timezone: string) => setSent({ kind: "confirming", startIso, timezone }),
+    [],
+  );
 
   return (
     <div className="bd-focus-inner">
@@ -497,7 +555,10 @@ export function BookDemoBookingIbmc() {
               onBooked={(startIso, timezone) => setSent({ kind: "booked", startIso, timezone })}
               onExpired={plain}
               onSkip={plain}
+              onConfirming={confirming}
             />
+          ) : sent.kind === "confirming" ? (
+            <BookDemoConfirmingIbmc startIso={sent.startIso} timezone={sent.timezone} onReset={reset} />
           ) : sent.kind === "hosted" ? (
             <BookDemoChooseTime url={sent.url} onReset={reset} />
           ) : (

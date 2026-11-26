@@ -12,7 +12,15 @@ import { localTimezone, slotDayKey, slotLabel, tzOffsetLabel } from "@/lib/lead-
 // open slots and nothing else. Same month-and-times layout as the GHL picker
 // on /demo, in the browser's own time zone.
 
-type Phase = "loading" | "ready" | "error";
+type Phase = "loading" | "ready" | "error" | "confirming";
+
+// IBMC can answer a booking with "confirming": the time is held while the
+// host calendar confirms it. Its guide says to check the slots again; the
+// slots answer then says "confirming" until it turns "booked", or "available"
+// again if the hold did not stick. Poll for a while, then hand over.
+const CONFIRM_POLL_MS = 5_000;
+const CONFIRM_POLLS = 12;
+const PENDING = new Set(["confirming", "booked"]);
 
 async function callBooking(body: Record<string, unknown>) {
   const res = await fetch("/api/ibmc-booking", {
@@ -32,9 +40,12 @@ export function BookDemoScheduleIbmc({
   onBooked,
   onExpired,
   onSkip,
+  onConfirming,
 }: {
   receiptId: string;
   onBooked: (startIso: string, timezone: string) => void;
+  /** IBMC holds a time but has not confirmed it yet; null when the time is not known. */
+  onConfirming: (startIso: string | null, timezone: string) => void;
   /** The 24h receipt is gone. The visitor gets the usual confirmation. */
   onExpired: () => void;
   /** "Not now": the usual confirmation, we reply within 24 hours. */
@@ -59,6 +70,8 @@ export function BookDemoScheduleIbmc({
         return;
       }
       const v = data as unknown as SlotsView;
+      // This receipt already holds a time (a lost reply, a second tab).
+      if (PENDING.has(v.status)) return onConfirming(null, zone);
       setView(v);
       setPhase("ready");
       // Open on the month of the first free time.
@@ -70,7 +83,7 @@ export function BookDemoScheduleIbmc({
     } catch {
       setPhase("error");
     }
-  }, [receiptId, onExpired]);
+  }, [receiptId, onExpired, onConfirming, zone]);
 
   useEffect(() => {
     // Fetching on mount is the point of this effect; the state it sets comes
@@ -98,7 +111,8 @@ export function BookDemoScheduleIbmc({
       const { http, data } = await callBooking({ action: "book", receiptId, slot: picked });
       if (http === 404) return onExpired();
       if (data.status === "booked") return onBooked(isoOf(picked), zone);
-      // Anything but booked is not a reservation. Check the slots again
+      if (data.status === "confirming") return await waitForConfirmation(picked);
+      // Anything else is not a reservation. Check the slots again
       // before the visitor tries another time.
       setPicked(null);
       setNotice(
@@ -115,6 +129,30 @@ export function BookDemoScheduleIbmc({
     } finally {
       setBusy(false);
     }
+  };
+
+  const waitForConfirmation = async (slot: Slot) => {
+    setPhase("confirming");
+    for (let i = 0; i < CONFIRM_POLLS; i++) {
+      await new Promise((r) => setTimeout(r, CONFIRM_POLL_MS));
+      try {
+        const { http, data } = await callBooking({ action: "slots", receiptId });
+        if (http === 404) return onExpired();
+        if (data.status === "booked") return onBooked(isoOf(slot), zone);
+        if (data.status === "available") {
+          // The hold did not stick: back to the picker with fresh times.
+          setPicked(null);
+          setNotice("That time could not be confirmed. Please pick another.");
+          setView(data as unknown as SlotsView);
+          setPhase("ready");
+          return;
+        }
+      } catch {
+        // A lost poll is not an answer; keep checking.
+      }
+    }
+    // Still confirming: the time is held. Say so, and let email take over.
+    onConfirming(isoOf(slot), zone);
   };
 
   const minutes = view?.durationMinutes;
@@ -197,7 +235,11 @@ export function BookDemoScheduleIbmc({
 
         <div className="bd-cal-right">
           <div className="bd-cal-right-in">
-            {phase === "loading" ? (
+            {phase === "confirming" ? (
+              <div className="bd-cal-note">
+                Confirming {picked ? slotLabel(isoOf(picked), zone) : "your time"}… This can take a moment.
+              </div>
+            ) : phase === "loading" ? (
               <div className="bd-cal-note">Loading available times…</div>
             ) : phase === "error" ? (
               <div className="bd-cal-note">
@@ -252,11 +294,11 @@ export function BookDemoScheduleIbmc({
       )}
 
       <div className="bd-cal-foot bd-wiz-foot">
-        <button type="button" className="bd-wiz-back" onClick={onSkip}>
+        <button type="button" className="bd-wiz-back" onClick={onSkip} disabled={phase === "confirming"}>
           Not now
         </button>
         <button type="button" className="btn solid" disabled={!picked || busy} onClick={confirm}>
-          <span>{busy ? "Booking…" : "Confirm booking"}</span>
+          <span>{phase === "confirming" ? "Confirming…" : busy ? "Booking…" : "Confirm booking"}</span>
         </button>
       </div>
     </div>
