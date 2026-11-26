@@ -1,4 +1,5 @@
-// IBMC test intake. Only the /demo2 contact form posts here.
+// IBMC test intake. Only /demo2 posts here: the contact form, and the demo
+// wizard with `kind: "wizard"`.
 //
 // Same gate order as app/api/lead/route.ts, kept in its own file so the
 // production lead route is not touched by this test:
@@ -22,7 +23,12 @@
 import { randomUUID } from "node:crypto";
 
 import { SITE_URL } from "@/app/_seo/site";
-import { missingIbmcConfig, submitToIbmc, type IbmcAttribution } from "@/lib/ibmc";
+import {
+  missingIbmcConfig,
+  submitToIbmc,
+  type IbmcAttribution,
+  type IbmcPayload,
+} from "@/lib/ibmc";
 import { fingerprint, looksAutomated } from "@/lib/lead";
 import {
   RULES,
@@ -84,14 +90,10 @@ export async function POST(request: Request) {
   }
 
   // --- 6. Validation ------------------------------------------------------
-  const name = str(body.name, 120);
-  const email = str(body.email, 254).toLowerCase();
-  const company = str(body.company, 200);
-  const message = str(body.message, 5000);
-  const errors: Record<string, string> = {};
-  if (name.length < 2) errors.name = "Enter your name";
-  if (!EMAIL_RE.test(email)) errors.email = "Enter a valid work email";
-  if (!message) errors.message = "Tell us what it is about";
+  // Two forms post here: the contact form (no `kind`) and the demo wizard
+  // (`kind: "wizard"`). Each is validated on its own rules.
+  const { fields, errors } = body.kind === "wizard" ? parseWizard(body) : parseContact(body);
+  const email = fields.email;
   if (Object.keys(errors).length) {
     return json(
       { ok: false, code: "VALIDATION_ERROR", error: "Please check the highlighted fields.", errors },
@@ -124,10 +126,7 @@ export async function POST(request: Request) {
     // Key order is fixed so a retry of the same answers is byte-identical.
     const result = await submitToIbmc(
       {
-        full_name: name,
-        email,
-        message,
-        ...(company ? { company } : {}),
+        ...fields,
         pageUrl: pageUrl(request),
         attribution: attribution(body.attribution),
       },
@@ -176,6 +175,86 @@ export async function POST(request: Request) {
 
 function str(value: unknown, max: number): string {
   return typeof value === "string" ? value.trim().slice(0, max) : "";
+}
+
+type Fields = Omit<IbmcPayload, "pageUrl" | "attribution">;
+type Parsed = { fields: Fields; errors: Record<string, string> };
+
+// Contact form: name, email, message, optional company. Key order is fixed so
+// a retry of the same answers serialises to the same bytes.
+function parseContact(body: Record<string, unknown>): Parsed {
+  const name = str(body.name, 120);
+  const email = str(body.email, 254).toLowerCase();
+  const company = str(body.company, 200);
+  const message = str(body.message, 5000);
+  const errors: Record<string, string> = {};
+  if (name.length < 2) errors.name = "Enter your name";
+  if (!EMAIL_RE.test(email)) errors.email = "Enter a valid work email";
+  if (!message) errors.message = "Tell us what it is about";
+  return {
+    fields: { full_name: name, email, message, ...(company ? { company } : {}) },
+    errors,
+  };
+}
+
+// Demo wizard: the same rules the wizard checks in the browser
+// (components/BookDemoWizard.tsx, bdStepErrors), checked again here. Empty
+// optional answers are left out. `source` is fixed here, never read from the
+// body.
+function parseWizard(body: Record<string, unknown>): Parsed {
+  const firstName = str(body.firstName, 60);
+  const lastName = str(body.lastName, 60);
+  const email = str(body.email, 254).toLowerCase();
+  const phone = normalisePhone(str(body.phone, 40));
+  const website = normaliseWebsite(str(body.website, 200));
+  const businessType = str(body.businessType, 60);
+  const errors: Record<string, string> = {};
+  if (!businessType) errors.intent = "Pick the one that fits best";
+  if (firstName.length < 2) errors.firstName = "Enter your first name";
+  if (lastName.length < 2) errors.lastName = "Enter your last name";
+  if (!EMAIL_RE.test(email)) errors.email = "Enter a valid work email";
+  if (!phone) errors.phone = "Enter your phone number";
+  if (!website) errors.website = "That does not look like a website";
+
+  const optional: [keyof Fields, string][] = [
+    ["message", str(body.notes, 5000)],
+    ["risk_handling", str(body.riskHandling, 60)],
+    ["role", str(body.role, 60)],
+    ["timeline", str(body.timeline, 60)],
+    ["telegram", str(body.telegram, 64)],
+  ];
+  const fields: Fields = {
+    full_name: `${firstName} ${lastName}`,
+    email,
+    phone,
+    company_website: website,
+    business_type: businessType,
+  };
+  for (const [key, value] of optional) if (value) Object.assign(fields, { [key]: value });
+  fields.source = "demo_wizard";
+  return { fields, errors };
+}
+
+// "+49 151 234-5678" -> "+491512345678". A leading + and 6 to 15 digits, or "".
+function normalisePhone(raw: string): string {
+  const digits = raw.replace(/\D/g, "");
+  if (!raw.startsWith("+") || digits.length < 6 || digits.length > 15) return "";
+  return `+${digits}`;
+}
+
+// The IBMC field is a URL type, so the scheme is added when the visitor left it
+// out. Same host rule as bdUrlOk in the wizard: a dotted name with a real TLD.
+function normaliseWebsite(raw: string): string {
+  if (!raw || /\s/.test(raw)) return "";
+  try {
+    const u = new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
+    if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(u.hostname)) return "";
+    if (!/^[a-z]{2,}$/i.test(u.hostname.split(".").pop() || "")) return "";
+    if (u.username || u.password) return "";
+    return u.href;
+  } catch {
+    return "";
+  }
 }
 
 // Origin + path of the page that sent the form. IBMC strips the query anyway;

@@ -50,11 +50,22 @@ export type IbmcAttribution = Partial<
   >
 >;
 
+// Keys match the field keys on the IBMC form ("Fields & Mappings"). The wizard
+// keys (phone onwards) are optional fields on v2 of the form; the contact form
+// sends only full_name, email, message and company.
 export type IbmcPayload = {
   full_name: string;
   email: string;
-  message: string;
+  message?: string;
   company?: string;
+  phone?: string;
+  company_website?: string;
+  business_type?: string;
+  risk_handling?: string;
+  role?: string;
+  timeline?: string;
+  telegram?: string;
+  source?: string;
   pageUrl: string;
   attribution?: IbmcAttribution;
 };

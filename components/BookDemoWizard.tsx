@@ -64,7 +64,7 @@ const ICON_PATHS: Record<string, ReactNode> = {
   ),
 };
 
-function Icon({
+export function Icon({
   name,
   size = 14,
   stroke = 2,
@@ -94,25 +94,25 @@ function Icon({
 }
 
 // ---------- Step + answer sets ----------
-const BD_INTENTS: { v: string; i: keyof typeof ICON_PATHS }[] = [
+export const BD_INTENTS: { v: string; i: keyof typeof ICON_PATHS }[] = [
   { v: "Prop Trading Firm", i: "chart" },
   { v: "Brokerage", i: "bolt" },
   { v: "Fund or Asset Manager", i: "search" },
   { v: "Payments or Fintech", i: "plug" },
 ];
 
-const BD_RISK_TODAY = ["In House Team", "One Person, Part Time", "Outsourced", "Nobody Dedicated Yet"];
-const BD_ROLES = ["Founder / CEO", "Risk / Operations", "CTO / Tech Lead", "Other"];
-const BD_TIMELINES = [
+export const BD_RISK_TODAY = ["In House Team", "One Person, Part Time", "Outsourced", "Nobody Dedicated Yet"];
+export const BD_ROLES = ["Founder / CEO", "Risk / Operations", "CTO / Tech Lead", "Other"];
+export const BD_TIMELINES = [
   "As Soon as Possible",
   "Within 1 to 3 Months",
   "Within 3 to 6 Months",
   "Just Exploring for Now",
 ];
 
-type StepId = "intent" | "business" | "contact" | "prepare" | "schedule";
+export type StepId = "intent" | "business" | "contact" | "prepare" | "schedule";
 
-const BD_STEPS: { id: StepId; label: string; title: string }[] = [
+export const BD_STEPS: { id: StepId; label: string; title: string }[] = [
   { id: "intent", label: "Business", title: "Which best describes your business?" },
   { id: "business", label: "About", title: "About your business" },
   { id: "contact", label: "Contact", title: "Your contact details" },
@@ -157,7 +157,7 @@ function bdUrlOk(v: string) {
 // The slot is only required when the calendar actually has open times: with
 // no CRM connected (or an empty month) the request goes through without one
 // and the confirmation says "request received", never "booked".
-function bdStepErrors(
+export function bdStepErrors(
   stepId: StepId,
   form: LeadForm,
   extra: { startIso: string | null; requireSlot: boolean },
@@ -184,7 +184,7 @@ function bdStepErrors(
 // ---------- Dial code picker ----------
 // Search by country or by code — typing "+49", "49" or "germ" all land on
 // Germany. Same combobox shape as the time zone control.
-function BdDialPicker({
+export function BdDialPicker({
   country,
   dial,
   onPick,
@@ -596,7 +596,7 @@ function BdSchedulePicker({
 // One-tap chips instead of a native select. A select on mobile is a modal:
 // tap, wait, scroll, pick, dismiss. These are optional fields, and a select
 // is the fastest way to have an optional field skipped.
-function BdChoice({
+export function BdChoice({
   label,
   options,
   value,
@@ -629,7 +629,7 @@ function BdChoice({
   );
 }
 
-function BdField({
+export function BdField({
   label,
   hint,
   error,
@@ -654,7 +654,7 @@ function BdField({
 // ---------- The wizard ----------
 export type BookDemoResult = LeadResponse & { startIso: string | null; timezone: string };
 
-const EMPTY_FORM: LeadForm = {
+export const EMPTY_FORM: LeadForm = {
   intent: "",
   stage: "",
   role: "",
@@ -1278,7 +1278,7 @@ export function BookDemoConfirm({
 // ---------- Assurance strip ----------
 // Four statements of fact under the card: everything a visitor needs to know
 // before typing their name.
-function BookDemoAssurance() {
+export function BookDemoAssurance() {
   return (
     <ul className="bd-assure">
       <li>

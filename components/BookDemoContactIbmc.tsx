@@ -18,7 +18,7 @@ const CONNECTED = true;
 
 const emailOk = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
 
-type Attribution = Record<string, string>;
+export type Attribution = Record<string, string>;
 
 const UTM_KEYS: Record<string, string> = {
   utm_source: "utmSource",
@@ -29,7 +29,7 @@ const UTM_KEYS: Record<string, string> = {
   gclid: "gclid",
 };
 
-function readAttribution(): Attribution {
+export function readAttribution(): Attribution {
   const out: Attribution = {
     landingPage: `${window.location.origin}${window.location.pathname}`,
     firstSeenAt: new Date().toISOString(),
