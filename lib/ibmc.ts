@@ -20,10 +20,11 @@ import { createHmac } from "node:crypto";
 //                             64 lowercase hex chars, no `v1=` prefix
 //
 // Booking: when the IBMC form has booking on, an accepted response carries
-// `{ booking: { status, url } }`. The visitor opens that url on IBMC's hosted
-// page to pick a time. The url holds an opaque token in its fragment, so it is
-// never logged, and it is only passed on when it is https on the same host as
-// IBMC_FORM_URL.
+// `{ booking: { status, deliveryMethod, url } }`. With deliveryMethod "api" the
+// website shows its own time picker (lib/ibmc-booking.ts); otherwise the
+// visitor opens that url on IBMC's hosted page to pick a time. The url holds
+// an opaque token in its fragment, so it is never logged, and it is only
+// passed on when it is https on the same host as IBMC_FORM_URL.
 
 const HEADER = {
   version: "x-ibmc-webhook-version",
@@ -82,24 +83,37 @@ export type IbmcResult = {
    * carries a secret token in its fragment: never log it.
    */
   booking: IbmcBooking | null;
+  /** IBMC's id for the accepted submission (receipt), when it sent one. */
+  receiptId: string | null;
 };
 
-export type IbmcBooking = { status: string; url: string };
+/**
+ * How IBMC wants the booking step delivered. "api": our own time picker calls
+ * IBMC's booking API server-side with the token in the url. "hosted": send the
+ * visitor to IBMC's booking page.
+ */
+export type IbmcDelivery = "api" | "hosted";
+
+export type IbmcBooking = { status: string; url: string; deliveryMethod: IbmcDelivery };
 
 const BOOKING_URL_MAX = 2048;
+// IBMC serves booking from the calendar's own "Booking domain", which need not
+// be the host of IBMC_FORM_URL. A booking url is accepted on the form's host or
+// on one of these, and nowhere else.
+const BOOKING_HOSTS = new Set(["app.quanttechnology.com"]);
 const BOOKING_STATUS_RE = /^[a-z_]{1,32}$/;
 
 /**
  * The booking link from an accepted response, or null. Accepts any status (a
- * de-duplicated retry may not say "pending"), but only an https url on the same
- * host as the form's ingestion URL, so a bad response cannot send the visitor
- * anywhere else.
+ * de-duplicated retry may not say "pending"), but only an https url on the
+ * form's ingestion host or a listed booking domain, so a bad response cannot
+ * send the visitor anywhere else.
  */
 function readBooking(data: unknown, formUrl: string): IbmcBooking | null {
   if (!data || typeof data !== "object" || Array.isArray(data)) return null;
   const booking = (data as Record<string, unknown>).booking;
   if (!booking || typeof booking !== "object" || Array.isArray(booking)) return null;
-  const { url, status } = booking as Record<string, unknown>;
+  const { url, status, deliveryMethod } = booking as Record<string, unknown>;
   if (typeof url !== "string" || url.length > BOOKING_URL_MAX) return null;
 
   let parsed: URL;
@@ -111,12 +125,15 @@ function readBooking(data: unknown, formUrl: string): IbmcBooking | null {
     return null;
   }
   if (parsed.protocol !== "https:") return null;
-  if (parsed.host !== formHost) return null;
+  if (parsed.host !== formHost && !BOOKING_HOSTS.has(parsed.host)) return null;
   if (parsed.username || parsed.password) return null;
 
   return {
     status: typeof status === "string" && BOOKING_STATUS_RE.test(status) ? status : "unknown",
     url: parsed.href,
+    // Anything but an explicit "api" falls back to the hosted page, which works
+    // for every booking link.
+    deliveryMethod: deliveryMethod === "api" ? "api" : "hosted",
   };
 }
 
@@ -132,32 +149,48 @@ export function signIbmc(secret: string, timestamp: number, eventId: string, bod
   return createHmac("sha256", secret).update(`${VERSION}.${timestamp}.${eventId}.${body}`).digest("hex");
 }
 
+const RETRY_DELAY_MS = 400;
+
 /**
  * Sign and POST one submission. `eventId` must be a lowercase UUID chosen by
  * the caller: the same submission retried must carry the same id and the same
  * payload, which then serialises to the same bytes.
+ *
+ * A network failure or a 5xx is retried once here, with the same event id and
+ * body and a fresh timestamp and signature, so IBMC de-duplicates it.
  */
 export async function submitToIbmc(payload: IbmcPayload, eventId: string): Promise<IbmcResult> {
   const url = process.env.IBMC_FORM_URL || "";
   const secret = process.env.IBMC_FORM_SECRET || "";
-  // Serialised once: the signature covers these exact bytes.
+  // Serialised once: the signature covers these exact bytes, on every attempt.
   const body = JSON.stringify(payload);
-  const timestamp = Math.floor(Date.now() / 1000);
 
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      [HEADER.version]: VERSION,
-      [HEADER.timestamp]: String(timestamp),
-      [HEADER.eventId]: eventId,
-      [HEADER.signature]: signIbmc(secret, timestamp, eventId, body),
-    },
-    body,
-    signal: AbortSignal.timeout(TIMEOUT_MS),
-    cache: "no-store",
-  });
+  const send = () => {
+    const timestamp = Math.floor(Date.now() / 1000);
+    return fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        [HEADER.version]: VERSION,
+        [HEADER.timestamp]: String(timestamp),
+        [HEADER.eventId]: eventId,
+        [HEADER.signature]: signIbmc(secret, timestamp, eventId, body),
+      },
+      body,
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+      cache: "no-store",
+    });
+  };
+
+  let res: Response;
+  try {
+    res = await send();
+    if (res.status >= 500) throw new Error(`IBMC ${res.status}`);
+  } catch {
+    await new Promise((r) => setTimeout(r, RETRY_DELAY_MS));
+    res = await send();
+  }
 
   const data = await res.json().catch(() => null);
   return {
@@ -166,7 +199,16 @@ export async function submitToIbmc(payload: IbmcPayload, eventId: string): Promi
     reason: res.ok ? null : readReason(data),
     summary: res.ok ? summarise(data) : null,
     booking: res.ok ? readBooking(data, url) : null,
+    receiptId: res.ok ? readReceiptId(data) : null,
   };
+}
+
+const RECEIPT_ID_RE = /^[\w-]{1,64}$/;
+
+function readReceiptId(data: unknown): string | null {
+  if (!data || typeof data !== "object" || Array.isArray(data)) return null;
+  const id = (data as Record<string, unknown>).submissionId;
+  return typeof id === "string" && RECEIPT_ID_RE.test(id) ? id : null;
 }
 
 // The error shape is not documented. Pull a short code-like value from the

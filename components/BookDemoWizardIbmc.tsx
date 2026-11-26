@@ -1,9 +1,10 @@
 "use client";
 
 import type { ChangeEvent, FormEvent, KeyboardEvent } from "react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { readAttribution, type Attribution } from "@/components/BookDemoContactIbmc";
+import { BookDemoScheduleIbmc } from "@/components/BookDemoScheduleIbmc";
 import {
   BD_INTENTS,
   BD_RISK_TODAY,
@@ -26,9 +27,9 @@ import { detectCountry, type LeadForm } from "@/lib/lead-client";
 // /demo2 copy of the demo wizard that posts to the IBMC test route
 // (/api/ibmc-lead, `kind: "wizard"`) instead of /api/lead. Same markup and
 // classes as BookDemoWizard, which stays untouched for /demo. Differences:
-//   - four steps, sent from "Prepare". When IBMC returns a booking link, the
-//     confirmation offers "Choose a time" (IBMC's page) instead of the GHL
-//     calendar
+//   - four steps, sent from "Prepare". Then, by what IBMC's receipt says:
+//     API delivery -> our own time picker (BookDemoScheduleIbmc); hosted ->
+//     "Choose a time" opens IBMC's page; no booking -> the usual confirmation
 //   - each answer goes to its own IBMC form field, not a single message
 //   - no analytics and no Turnstile, as in BookDemoContactIbmc
 
@@ -59,7 +60,10 @@ const STEP_OF: Record<string, StepId> = {
   phone: "contact",
 };
 
-function BookDemoWizardIbmc({ onDone }: { onDone: (bookingUrl: string | null) => void }) {
+// What the lead route answered, as far as the page needs to know.
+type Accepted = { kind: "api"; receiptId: string } | { kind: "hosted"; url: string } | { kind: "plain" };
+
+function BookDemoWizardIbmc({ onDone }: { onDone: (accepted: Accepted) => void }) {
   const [form, setForm] = useState<LeadForm>(EMPTY_FORM);
   const [i, setI] = useState(0);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -166,6 +170,7 @@ function BookDemoWizardIbmc({ onDone }: { onDone: (bookingUrl: string | null) =>
         error?: string;
         errors?: Record<string, string>;
         bookingUrl?: unknown;
+        booking?: { mode?: unknown; receiptId?: unknown };
       } | null;
       if (!res.ok || !data?.ok) {
         const fieldErrors = data?.errors || {};
@@ -178,10 +183,14 @@ function BookDemoWizardIbmc({ onDone }: { onDone: (bookingUrl: string | null) =>
         return;
       }
       attempt.current = null;
-      // The route already checked host and scheme; this keeps a javascript:
-      // url out of location.assign regardless.
+      // API booking: the token stays server side, the page only gets the
+      // receipt id. Hosted booking: the route already checked host and scheme;
+      // this keeps a javascript: url out of location.assign regardless.
       const link = data.bookingUrl;
-      onDone(typeof link === "string" && link.startsWith("https://") ? link : null);
+      const receiptId = data.booking?.mode === "api" ? data.booking.receiptId : null;
+      if (typeof receiptId === "string" && receiptId) onDone({ kind: "api", receiptId });
+      else if (typeof link === "string" && link.startsWith("https://")) onDone({ kind: "hosted", url: link });
+      else onDone({ kind: "plain" });
     } catch {
       setError("Something went wrong. Please try again.");
       setBusy(false);
@@ -469,25 +478,39 @@ function BookDemoChooseTime({ url, onReset }: { url: string; onReset: () => void
   );
 }
 
-type Sent = { bookingUrl: string | null };
+type Sent = Accepted | { kind: "booked"; startIso: string; timezone: string };
 
 export function BookDemoBookingIbmc() {
   const [sent, setSent] = useState<Sent | null>(null);
   const reset = () => setSent(null);
+  const plain = useCallback(() => setSent({ kind: "plain" }), []);
 
   return (
     <div className="bd-focus-inner">
       <div className="bd-booking">
         <div className="bd-cal">
-          {sent?.bookingUrl ? (
-            <BookDemoChooseTime url={sent.bookingUrl} onReset={reset} />
-          ) : sent ? (
+          {!sent ? (
+            <BookDemoWizardIbmc onDone={setSent} />
+          ) : sent.kind === "api" ? (
+            <BookDemoScheduleIbmc
+              receiptId={sent.receiptId}
+              onBooked={(startIso, timezone) => setSent({ kind: "booked", startIso, timezone })}
+              onExpired={plain}
+              onSkip={plain}
+            />
+          ) : sent.kind === "hosted" ? (
+            <BookDemoChooseTime url={sent.url} onReset={reset} />
+          ) : (
             <BookDemoConfirm
-              picked={{ ok: true, delivered: true, booked: false, startIso: null, timezone: "" }}
+              picked={{
+                ok: true,
+                delivered: true,
+                booked: sent.kind === "booked",
+                startIso: sent.kind === "booked" ? sent.startIso : null,
+                timezone: sent.kind === "booked" ? sent.timezone : "",
+              }}
               onReset={reset}
             />
-          ) : (
-            <BookDemoWizardIbmc onDone={(bookingUrl) => setSent({ bookingUrl })} />
           )}
         </div>
       </div>
