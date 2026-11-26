@@ -38,8 +38,8 @@ export default function Demo2Page() {
         </div>
       </section>
 
-      {/* Demo wizard, posting to IBMC. Four steps: the schedule step is on
-          hold until IBMC booking is settled. /demo keeps the GHL wizard. */}
+      {/* Demo wizard, posting to IBMC. Four steps, then "Choose a time" on IBMC's
+          booking page when IBMC returns one. /demo keeps the GHL wizard. */}
       <section className="bd-focus">
         <BookDemoBookingIbmc />
       </section>
