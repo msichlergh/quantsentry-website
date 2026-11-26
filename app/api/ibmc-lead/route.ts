@@ -16,19 +16,23 @@
 // No fallback: when IBMC refuses, the visitor sees an error and the log says
 // why. This page exists to find out whether the integration works.
 //
-// When IBMC accepts with a booking link, the validated url goes back to the
-// browser as `bookingUrl` so the visitor can pick a time on IBMC's hosted page.
-// It carries a secret token: the log only says booking=<status>, a short
-// lowercase word, or booking=- when there is no booking link.
+// When IBMC accepts with a booking link for its hosted page, the validated url
+// goes back to the browser as `bookingUrl`. When it wants the booking API
+// instead, the token stays server side in a sealed cookie (lib/ibmc-booking.ts)
+// and the browser gets `booking: { mode: "api", receiptId }`.
+// The url carries a secret token: the log only says
+// booking=<status>/<deliveryMethod>, or booking=- when there is no booking.
 import { randomUUID } from "node:crypto";
 
 import { SITE_URL } from "@/app/_seo/site";
+import { originAllowed } from "@/lib/ibmc-origin";
 import {
   missingIbmcConfig,
   submitToIbmc,
   type IbmcAttribution,
   type IbmcPayload,
 } from "@/lib/ibmc";
+import { sealSession, sessionCookie, sessionFromReceipt } from "@/lib/ibmc-booking";
 import { fingerprint, looksAutomated } from "@/lib/lead";
 import {
   RULES,
@@ -39,6 +43,11 @@ import {
 } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
+
+// Worst case: two IBMC attempts at 8s each plus the 0.4s pause between them
+// (lib/ibmc.ts). Kept comfortably above that, so a slow retry is not cut off
+// after IBMC has the lead but before the visitor sees the answer.
+export const maxDuration = 25;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
@@ -149,8 +158,33 @@ export async function POST(request: Request) {
       `event ${eventId}`,
       result.summary || "",
       // Status only, never the url. Shows what IBMC sends on de-duplicated retries.
-      `booking=${result.booking ? result.booking.status : "-"}`,
+      `booking=${result.booking ? `${result.booking.status}/${result.booking.deliveryMethod}` : "-"}`,
     );
+    // Booking, three ways:
+    //   - deliveryMethod "api": the token is sealed into an HttpOnly cookie for
+    //     /api/ibmc-booking, and the page only learns the receipt id
+    //   - otherwise, a booking link: the page offers IBMC's hosted page
+    //   - no booking: the usual confirmation
+    const session = sessionFromReceipt(result.booking, result.receiptId);
+    if (!session && result.booking?.deliveryMethod === "api") {
+      // The token is meant for the server only. Without a usable receipt id or
+      // token there is no API session, and the url must not reach the page.
+      console.error("[ibmc] api booking without a usable receipt; usual confirmation shown", `event ${eventId}`);
+      return json({ ok: true, delivered: true }, 200, rateLimitHeaders(ipLimit));
+    }
+    if (session) {
+      return json(
+        { ok: true, delivered: true, booking: { mode: "api", receiptId: session.receiptId } },
+        200,
+        {
+          ...rateLimitHeaders(ipLimit),
+          "Set-Cookie": sessionCookie(
+            sealSession(session, process.env.IBMC_FORM_SECRET || ""),
+            (session.expiresAt - Date.now()) / 1000,
+          ),
+        },
+      );
+    }
     return json(
       {
         ok: true,
@@ -283,46 +317,6 @@ function attribution(raw: unknown): IbmcAttribution | undefined {
     if (value) out[key] = value;
   }
   return Object.keys(out).length ? out : undefined;
-}
-
-// --- Origin ---------------------------------------------------------------
-// Copy of the check in app/api/lead/route.ts, duplicated on purpose so this
-// test route does not require refactoring the production one.
-
-const ALLOWED_HOSTS = new Set(
-  [SITE_URL, process.env.NEXT_PUBLIC_SITE_URL]
-    .filter((v): v is string => Boolean(v))
-    .flatMap((value) => {
-      try {
-        const host = new URL(value).host;
-        return host.startsWith("www.") ? [host, host.slice(4)] : [host, `www.${host}`];
-      } catch {
-        return [];
-      }
-    }),
-);
-
-function originAllowed(request: Request): boolean {
-  const origin = request.headers.get("origin");
-  const referer = request.headers.get("referer");
-  const candidate = origin || referer;
-  if (!candidate || candidate === "null") return !origin && !referer;
-
-  let host: string;
-  try {
-    host = new URL(candidate).host;
-  } catch {
-    return false;
-  }
-
-  const self = request.headers.get("host");
-  if (self && host === self) return true;
-  if (ALLOWED_HOSTS.has(host)) return true;
-
-  const hostname = host.split(":")[0];
-  if (hostname === "vercel.app" || hostname.endsWith(".vercel.app")) return true;
-  if (hostname === "localhost" || hostname === "127.0.0.1" || hostname === "::1") return true;
-  return false;
 }
 
 function tooMany(limit: RateLimitResult) {
